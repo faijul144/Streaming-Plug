@@ -62,50 +62,45 @@ $(".reply").click(function (e) {
 });
 
 // Image Gallery
-
-$(".fbphotobox").hover(function () {
-  var aclass = $(this).data("name");
-  $(this).addClass(aclass);
-  setTimeout(function () {
-    $(".fbphotobox").each(function (key) {
-      var tar = $(this).data("name");
-      var ph = "photo-" + $(this).data("imgs");
-      console.log(ph);
-      // var valvar = `photo-` + key;
-      $("." + tar + "img").fbPhotoBox({
-        rightWidth: 360,
-        leftBgColor: "black",
-        rightBgColor: "white",
-        footerBgColor: "black",
-        overlayBgColor: "#222",
-        containerClassName: tar,
-        imageClassName: ph,
-        onImageShow: function () {
-          $(".fbphotobox img").fbPhotoBox("addTags", [
-            { x: 0.3, y: 0.3, w: 0.3, h: 0.3 },
-          ]);
-          var $author_name = $(this).attr("author");
-          var $author_img = $(this).attr("author-img-src");
-          var $post_id = $(this).attr("post-id");
-          var $img_des = $(this).attr("data-des");
-          $(".fbphotobox-image-content").html(
-            `<div class="owner-meta">
+$(".fbphotobox").each(function (key) {
+  var tar = $(this).data("name");
+  var ph = "photo-" + $(this).data("imgs");
+  console.log(ph);
+  // var valvar = `photo-` + key;
+  $("." + tar + "img").fbPhotoBox({
+    rightWidth: 360,
+    leftBgColor: "black",
+    rightBgColor: "white",
+    footerBgColor: "black",
+    overlayBgColor: "#222",
+    containerClassName: tar,
+    imageClassName: ph,
+    onImageShow: function () {
+      $(".fbphotobox img").fbPhotoBox("addTags", [
+        { x: 0.3, y: 0.3, w: 0.3, h: 0.3 },
+      ]);
+      var $author_name = $(this).attr("author");
+      var $author_img = $(this).attr("author-img-src");
+      var $post_id = $(this).attr("post-id");
+      var $img_des = $(this).attr("data-des");
+      $(".fbphotobox-image-content").html(
+        `<div class="owner-meta">
                               <span class="owner-avatar">
                                   <a href="streamer-details.html">
                                       <img src="` +
-              $author_img +
-              `"
+          $author_img +
+          `"
                                           alt="` +
-              $author_name +
-              `">
+          $author_name +
+          `">
                                   </a>
                               </span>
 
                               <div class="post-owner">
                                   <h5 class="mb-0 font-montserrat">
                                       <a href="streamer-details.html">` +
-              $author_name +
-              `</a>
+          $author_name +
+          `</a>
 
                                       <small class="verified"
                                           data-toggle="tooltip"
@@ -133,18 +128,18 @@ $(".fbphotobox").hover(function () {
                                   <div class="commenter-meta">
                                       <div class="commenter-avatar">
                                           <img src="` +
-              $author_img +
-              `"
+          $author_img +
+          `"
                                           alt="` +
-              $author_name +
-              `">
+          $author_name +
+          `">
                                       </div>
                                       <div class="comentar-name">
                                           <a href="javascript:void(0)">` +
-              $author_name +
-              `</a><span class="ml-2">` +
-              $img_des +
-              `</span>
+          $author_name +
+          `</a><span class="ml-2">` +
+          $img_des +
+          `</span>
                                       </div>
                                   </div>
                               </div>
@@ -268,11 +263,11 @@ $(".fbphotobox").hover(function () {
                       </div>
                           </div>
                           `
-          );
+      );
 
-          $(".ph-share").attr(
-            "data-content",
-            `<ul class="pop-share-links">
+      $(".ph-share").attr(
+        "data-content",
+        `<ul class="pop-share-links">
                   <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
                   <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
                   <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
@@ -285,43 +280,39 @@ $(".fbphotobox").hover(function () {
                       </li>
 
                   </ul >`
-          );
+      );
 
-          $(".fbphotobox-close-btn a").click(function () {
-            $(".fbphotobox").removeClass(tar);
-            console.log(tar);
-          });
-
-          $(
-            '.fbphotobox-image-content .verified[data-toggle="tooltip"]'
-          ).tooltip();
-
-          $(".ph-share")
-            .popover({ trigger: "manual", html: true, animation: true })
-            .on("mouseenter", function () {
-              var _this = this;
-              $(this).popover("show");
-              $(".popover").on("mouseleave", function () {
-                $(_this).popover("hide");
-              });
-            })
-            .on("mouseleave", function () {
-              var _this = this;
-              setTimeout(function () {
-                if (!$(".popover:hover").length) {
-                  $(_this).popover("hide");
-                }
-              }, 300);
-            });
-
-          $(".ph-actions a:not(.no-click)").click(function (e) {
-            e.preventDefault();
-            $(this).find("i").toggleClass("far fas");
-          });
-        },
+      $(".fbphotobox-close-btn a").click(function () {
+        $(".fbphotobox").removeClass(tar);
+        console.log(tar);
       });
-    });
-  }, 500);
+
+      $('.fbphotobox-image-content .verified[data-toggle="tooltip"]').tooltip();
+
+      $(".ph-share")
+        .popover({ trigger: "manual", html: true, animation: true })
+        .on("mouseenter", function () {
+          var _this = this;
+          $(this).popover("show");
+          $(".popover").on("mouseleave", function () {
+            $(_this).popover("hide");
+          });
+        })
+        .on("mouseleave", function () {
+          var _this = this;
+          setTimeout(function () {
+            if (!$(".popover:hover").length) {
+              $(_this).popover("hide");
+            }
+          }, 300);
+        });
+
+      $(".ph-actions a:not(.no-click)").click(function (e) {
+        e.preventDefault();
+        $(this).find("i").toggleClass("far fas");
+      });
+    },
+  });
 });
 
 // Audio Player
