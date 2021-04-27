@@ -87,7 +87,7 @@
         min-height: 750px;
     }
     .page_title_area {
-        padding: 0 40px;
+        padding: 0;
         position: relative;
     }
 }
@@ -490,9 +490,9 @@
         padding-right: 0;
         margin-top: 60px;
     }
-    .services_tab .nav-item {
+    /* .services_tab .nav-item {
         flex-basis: 30%;
-    }
+    } */
     .services_content_wrap .service_content {
         padding-right: 20px;
         padding-left: 10px;
@@ -507,6 +507,11 @@
     .cap_single {
         margin-bottom: 30px;
     }
+
+    .boxed_area .cap_single{
+        margin-bottom: 45px;
+    }
+
     .cap_top_wrap .cap_single .nmb {
         bottom: 0;
     }
@@ -548,9 +553,9 @@
     .about_4 .about_content .btn_group li::before, .team_details .team_bg::before {
         display: none;
     }
-    .team_details .td_social {
+    /* .team_details .td_social {
         right: 40px;
-    }
+    } */
     .team_details .team_content {
         padding-left: 0;
     }
@@ -876,18 +881,26 @@
         width: 100%;
         padding-top: 40px;
         padding-bottom: 60px;
+        right: 0;
+        top: 0;
+        transform: translateY(0);
     }
     .hero_4 .hero_content {
         padding-right: 0;
         padding-top: 160px;
     }
-    .services_tab .nav-item {
+    /* .services_tab .nav-item {
         flex-basis: 50%;
-    }
+    } */
     .services_tab .nav-link {
         margin: 0 10px;
-        padding: 25px 15px;
+        padding: 4px 13px;
     }
+
+    .services_tab .nav-link .title{
+        font-size: 13px;
+    }
+
     .services_content_wrap .service_content {
         padding: 0;
         padding-top: 30px;
@@ -917,6 +930,16 @@
     .cap_single {
         margin-bottom: 30px;
     }
+
+    .boxed_area .cap_single{
+        margin-bottom: 45px;
+        height: auto;
+    }
+
+    .pricing-content-container{
+        min-height: 0;
+    }
+
     .cap_top_wrap .cap_single .nmb {
         bottom: 0;
     }
@@ -950,7 +973,8 @@
         padding: 0 15px;
     }
     .page_title h3 {
-        font-size: 40px;
+        font-size: 30px;
+        margin-bottom: 40px;
     }
     .about_4 .about_content {
         padding: 0;
@@ -960,7 +984,7 @@
         font-size: 14px;
     }
     .page_title_wrap {
-        padding: 150px 0;
+        height: calc(25vw - 0px);
     }
     .d_content .title {
         font-size: 30px;
@@ -974,9 +998,9 @@
     .team_details .team_bg::before {
         display: none;
     }
-    .team_details .td_social {
+    /* .team_details .td_social {
         right: 20px;
-    }
+    } */
     .team_details .team_content {
         padding-left: 0;
     }
@@ -1139,5 +1163,71 @@
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .testimonial_3 .circle_image {
         margin-left: 60px;
+    }
+
+}
+
+/* Some Custom Sizings */
+
+@media screen and (max-width:991px){
+    .transparent_header{position: relative;}
+}
+
+@media only screen and (min-width: 404px) and (max-width:527px){
+    .services_tab .nav-link {
+        margin: 0 10px;
+        padding: 5px 20px;
+    }
+
+    .services_tab .nav-link .title{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width:767px) {
+    .footer_social{justify-content: center;}
+    .footer_widget .about_text{padding-right: 0;}
+    .team_details .td_social{
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width:762px){
+
+  .post-images{flex-basis: 50%;}
+
+}
+
+@media screen and (max-width:500px){
+
+  .post-images{flex-basis: 100%;}
+
+
+}
+
+@media screen and (min-width:992px){
+    .pricing_single.active{
+        width: 110%;
+    }
+}
+
+@media screen and (max-width:386px){
+
+    .social-login button{
+        padding: 10px;
+    }
+    .social-login button span{
+        font-size: 10px;
+    }
+
+    .social-login button .sc-icon{
+        height: 20px;
+        width: 20px;
+    }
+
+    .social-login button .sc-icon img{
+        width: 7px;
     }
 }

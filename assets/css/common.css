@@ -999,6 +999,7 @@
 .pagination_wrap ul a {
 	height: 50px;
 	width: 50px;
+	border-radius: 50px;
 	line-height: 50px;
 	background-color: #fff;
 	font-size: 15px;
@@ -1014,4 +1015,18 @@
 .pagination_wrap ul a:hover, .pagination_wrap ul a.current_page {
 	background-color: #070707;
 	color: #fff;
+}
+
+.gutters-5{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+.gutters-5>.col, .gutters-5>[class*=col-]{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.py-30{
+	padding: 3rem 0 !important;
 }
