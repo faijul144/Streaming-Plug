@@ -1237,10 +1237,3 @@
         width: 7px;
     }
 }
-
-@media screen and (max-width:400px){
-    .owner-avatar a img{
-        height: 45px;
-        width: 50px;
-    }
-}

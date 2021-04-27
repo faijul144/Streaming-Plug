@@ -5246,8 +5246,10 @@ box-shadow: none;
  .slideThree input[type=checkbox]:checked + label {
 	 left: 60px;
 }
+/* end .slideThree */
 
 .op-actions{
 	margin-top: 20px;
 }
-/* end .slideThree */
+
+.post-owner{flex:1}
