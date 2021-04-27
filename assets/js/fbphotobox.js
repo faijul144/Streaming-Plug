@@ -39,12 +39,16 @@
       // FBPhotobox stage close
       $(".fbphotobox-close-btn a").click(function () {
         $this.hide();
-        $(".fbphotobox-main-container").removeClass("d-flex");
+        $(".fbphotobox-main-container").removeClass(
+          "d-flex align-items-center justify-content-center w-100 border-0"
+        );
         return false;
       });
       $(".fbphotobox-overlay").click(function () {
         $this.hide();
-        $(".fbphotobox-main-container").removeClass("d-flex");
+        $(".fbphotobox-main-container").removeClass(
+          "d-flex align-items-center justify-content-center w-100 border-0"
+        );
         return false;
       });
 
@@ -362,7 +366,10 @@
               { easing: "easeOutQuint", queue: false, duration: 500 }
             );
             $(".fbphotobox-main-container")
-              .addClass("d-flex")
+              .addClass(
+                "d-flex align-items-center justify-content-center w-100 border-0"
+              )
+              .addClass()
               .animate(
                 { opacity: 1 },
                 {

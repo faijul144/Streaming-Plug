@@ -1209,7 +1209,7 @@
 
 @media screen and (min-width:992px){
     .pricing_single.active{
-        width: 110%;
+        width: 100%;
     }
 }
 
