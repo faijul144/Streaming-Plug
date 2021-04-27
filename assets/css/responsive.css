@@ -1170,10 +1170,6 @@
         margin-left: 60px;
     }
 
-    .owner-avatar a img{
-        height: 45px;
-        width: 45px;
-    }
 
 }
 
@@ -1239,5 +1235,12 @@
 
     .social-login button .sc-icon img{
         width: 7px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .owner-avatar a img{
+        height: 45px;
+        width: 50px;
     }
 }
