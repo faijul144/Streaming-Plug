@@ -1189,7 +1189,7 @@
     .footer_social{justify-content: center;}
     .footer_widget .about_text{padding-right: 0;}
     .team_details .td_social{
-        left: 0;
+        left: 10px;
     }
 
 }
