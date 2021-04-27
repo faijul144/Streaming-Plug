@@ -16,7 +16,9 @@
   padding-right: 24px;
   border-radius: 4px;
   user-select: none;
-  background-color: #fff;
+  background-color: rgba(216,216,216,0.83);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   box-sizing: border-box;
   outline: none; }
   .green-audio-player.player-accessible .play-pause-btn:hover,
@@ -52,7 +54,7 @@
     cursor: pointer;
     position: relative; }
     .green-audio-player .slider .gap-progress {
-      background-color: #44bfa3;
+      background-color: #fff;
       border-radius: inherit;
       position: absolute;
       pointer-events: none; }
@@ -60,7 +62,7 @@
         height: 16px;
         width: 16px;
         border-radius: 8px;
-        background-color: #44bfa3;
+        background-color: #566574;
         position: absolute;
         pointer-events: all;
         box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.32); }

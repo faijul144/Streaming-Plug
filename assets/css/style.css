@@ -4622,7 +4622,6 @@ margin: 15px 0;
 .main-post img{
 	width: 100%;
 	height: 100%;
-	margin: 10px 0 20px;
 	object-fit: cover;
 }
 
@@ -4632,26 +4631,54 @@ margin: 15px 0;
 	margin: 10px 0;
 }
 
-.main-post .multiple-pics img{
-	width: 50%;
-	margin: 4px 0;
+.main-post .multiple-pics a{
+	width: 49%;
+	margin: 5px 0;
 
 }
 
-.main-post .multiple-pics img:nth-child(odd){
-padding-right: 5px;
+.main-post .multiple-pics a:nth-child(odd){
+margin-right: 5px;
 }
-.main-post .multiple-pics img:nth-child(even){
-	padding-left: 5px;
+.main-post .multiple-pics a:nth-child(even){
+	margin-left: 5px;
 	}
-
-	.main-post .multiple-pics.even img{
+/*
+	.main-post .multiple-pics.even a{
 		height:250px
-	}
+	} */
 
-.main-post .multiple-pics.odd img:nth-child(3n){
+.main-post .multiple-pics.odd a:nth-child(3n){
 		width: 100%;
 		padding-right: 0;
+}
+
+
+.main-post .multiple-pics a:nth-child(4){
+	position: relative;
+}
+.overlay-ex:after{
+	content: attr(data-num);
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background:rgba(0,0,0,0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 70px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.38);
+	pointer-events: none;
+}
+
+.hideImg{
+	height: 0;
+	width: 0;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .post-options{
@@ -4659,12 +4686,13 @@ padding-right: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-	background:#eee
+	background: #efefef;
+    border-radius: 4px;
 }
 
 .post-options a{
 	font-size: 20px;
-	color: #0c0c0c;
+	color: #505050;
 }
 
 .post-options.ph-actions{
@@ -4857,6 +4885,13 @@ margin-bottom: 10px;
 height: 250px;
 position: relative;
 }
+
+.post-img-thumb a{
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
 .post-images .post-img-thumb img{
 height: 100%;
 width: 100%;
@@ -4933,12 +4968,14 @@ box-shadow: none;
 
 .audio-bg{
 	width: 100%;
-	height: 150px;
+	padding: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #eee;
 }
 .audio-bg img{
-	height: 100%;
-	width: 100%;
-	object-fit: cover;
+	width: 45px;
 }
 
 .player-box .post-options{
@@ -5208,5 +5245,9 @@ box-shadow: none;
 }
  .slideThree input[type=checkbox]:checked + label {
 	 left: 60px;
+}
+
+.op-actions{
+	margin-top: 20px;
 }
 /* end .slideThree */
