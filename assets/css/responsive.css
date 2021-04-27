@@ -625,6 +625,7 @@
 }
 /* SM Device :320px. */
 @media (max-width: 767px) {
+
     .body_space {
         padding: 0;
     }
@@ -1158,11 +1159,20 @@
     .portfolio_item .port_content {
         padding: 20px 25px;
     }
+    .main-post .multiple-pics a{
+        width: 100%;
+        margin: 5px 0 !important;
+    }
 }
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .testimonial_3 .circle_image {
         margin-left: 60px;
+    }
+
+    .owner-avatar a img{
+        height: 45px;
+        width: 50px;
     }
 
 }
