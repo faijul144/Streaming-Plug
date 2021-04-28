@@ -1738,7 +1738,7 @@ blockquote .author_info span{
 }
 .capablities_2 .capablities_bg::before, .capablities_5 .capablities_bg::before {
 	position: absolute;
-	background: #fff;
+	background: transparent;
 	width: 78%;
 	right: 0;
 	top: 0;
@@ -1964,7 +1964,7 @@ blockquote .author_info span{
 }
 .testimonial_bg::before {
 	position: absolute;
-	background: #fff;
+	background: transparent;
 	width: 78%;
 	left: 0;
 	top: 0;
