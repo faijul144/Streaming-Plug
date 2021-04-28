@@ -59,6 +59,12 @@
 	/* background: #f8f8f8; */
 	background: #fff;
 }
+
+svg{
+	font-family: 'aktiv-grotesk';
+font-weight: 600;
+}
+
 .img {
 	max-width: 100%;
 	transition: all 0.3s ease-out 0s;
