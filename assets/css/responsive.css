@@ -748,9 +748,9 @@
     .capablities_2 .capablities_bg::before {
         display: none
     }
-    .capablities_2 .capablities_bg, .capablities_5 .capablities_bg {
+    /* .capablities_2 .capablities_bg, .capablities_5 .capablities_bg {
         padding: 0;
-    }
+    } */
     .capablities_2 .capablities_content {
         padding-left: 0;
         padding-top: 30px;
@@ -933,7 +933,7 @@
     }
 
     .boxed_area .cap_single{
-        margin-bottom: 45px;
+        margin-bottom: 60px;
         height: auto;
     }
 
@@ -942,7 +942,7 @@
     }
 
     .cap_top_wrap .cap_single .nmb {
-        bottom: 0;
+        bottom: 15px;
     }
     .cap_bottom_wrap .cap_single {
         padding: 0;
@@ -1242,5 +1242,12 @@
     .footer_widget .logo img{
         max-width: none;
         width: 200px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .nav.content-count .nav-link::before{
+        top:unset;
+        bottom: -25px;
     }
 }
