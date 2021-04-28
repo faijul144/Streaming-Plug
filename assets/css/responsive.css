@@ -1237,3 +1237,10 @@
         width: 7px;
     }
 }
+
+@media screen and (min-width:400px) {
+    .footer_widget .logo img{
+        max-width: none;
+        width: 200px;
+    }
+}
