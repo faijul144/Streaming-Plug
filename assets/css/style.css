@@ -510,9 +510,14 @@ input, textarea, select {
 	color: #0c0c0c;
 }
 .main_menu_area .logo a {
-	max-width: 160px;
+	/* max-width: 160px; */
 	display: inline-block;
 }
+
+.main_menu_area .logo img{
+	width: 170px;
+}
+
 .header_area .header_wrap.sticky {
 	padding-top: 20px;
 }
