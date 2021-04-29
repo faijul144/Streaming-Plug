@@ -138,7 +138,7 @@
                             <div class="br_text">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Cookies</li>
+                                    <li>Support</li>
                                 </ul>
                             </div>
                         </div>
@@ -150,13 +150,52 @@
             <!-- privacy details start -->
             <section class="privacy_area d_content_wrap pt-120 pb-90">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-8 col-12">
                             <div class="sec_title text-center">
-                                <h2>Create your profile in few minutes</h2>
+                                <h2>Submit a request</h2>
                             </div>
-                        </div>
+                            <form id="sup_form" action="" name="">
+                                <div class="form-group">
+                                    <select class="custom-select" required>
+                                        <option>I have a questionabout Streaming Plug</option>
+                                        <option>I want to report a Community Guidelines issue (English only)</option>
+                                        <option>I want to report suspicious activity (English only)</option>
+                                        <option>I have a Trust and Safety questionregarding my account (English only)
+                                        </option>
+                                        <option>I have contacted the creator and I am filing a refund request </option>
+                                        <option>I want to file a copyright infringement claim (English only)</option>
+                                    </select>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email address associated with your Patreon
+                                        account<sup>*</sup></label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="sup_subject">Subject<sup>*</sup></label>
+                                    <input type="text" class="form-control" id="sup_subject"
+                                        placeholder="Enter Subject">
+                                    <small id="sup_subject" class="form-text text-muted">We'll never share your email
+                                        with
+                                        anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sup_text">Descpription<sup>*</sup></label>
+                                    <textarea class="form-control" id="sup_text" rows="3" placeholder="Please enter the details of your request. A member of our Community Happiness team will reach out with a response.
 
+                                    "></textarea>
+                                </div>
+                                <div class="form-group sup_file_input">
+                                    <input type="file" id="customFile">
+                                    <label for="customFile">Add Files</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="thm_btn br_btn">Submit</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>

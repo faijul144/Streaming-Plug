@@ -5330,3 +5330,29 @@ sup{font-size: 8px;}
 .diamond .price_icon{
 	margin-top: 10px;
 }
+
+/* Support Form */
+
+#sup_form sup,#sup_form a:hover{
+	color:#ff9100
+}
+#sup_form lable{}
+
+#sup_form a{
+	color: #000;
+}
+
+#sup_form .thm_btn{
+	padding: 8px 40px;
+}
+
+.sup_file_input input{
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}
+
+.sup_file_input lable{
+	width: 100%;
+}
