@@ -157,40 +157,222 @@
                             </div>
                             <form id="sup_form" action="" name="">
                                 <div class="form-group">
-                                    <select class="custom-select" required>
-                                        <option>I have a questionabout Streaming Plug</option>
-                                        <option>I want to report a Community Guidelines issue (English only)</option>
-                                        <option>I want to report suspicious activity (English only)</option>
-                                        <option>I have a Trust and Safety questionregarding my account (English only)
+                                    <select class="custom-select" id="choose-complain" required>
+                                        <!-- The form action and the required table for different can be accessed using data-target and data-action -->
+                                        <option value="" disabled>-</option>
+                                        <option value="" data-target="#qs" data-action="qs-action" selected>I have a
+                                            questionabout Streaming Plug</option>
+                                        <option value="" data-target="#rsa" data-action="rsa-action">I want to report
+                                            suspicious activity (English only)</option>
+                                        <option value="" data-target="#cg" data-action="cg-action">I want to report a
+                                            Community Guidelines issue (English only)</option>
+                                        <option value="" data-target="#ts" data-action="ts-action">I have a Trust and
+                                            Safety questionregarding my account (English only)
                                         </option>
-                                        <option>I have contacted the creator and I am filing a refund request </option>
-                                        <option>I want to file a copyright infringement claim (English only)</option>
+                                        <option value="" data-target="#cic" data-action="cic-action">I want to file a
+                                            copyright infringement claim (English only)</option>
                                     </select>
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <label for="email">Email address associated with your Patreon
+                                    <label for="s_email">Email address associated with your Streaming Plug
                                         account<sup>*</sup></label>
-                                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="s_email" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
                                     <label for="sup_subject">Subject<sup>*</sup></label>
                                     <input type="text" class="form-control" id="sup_subject"
                                         placeholder="Enter Subject">
-                                    <small id="sup_subject" class="form-text text-muted">We'll never share your email
-                                        with
-                                        anyone else.</small>
+                                    <small id="sup_subject" class="form-text text-muted">Please use a few word to
+                                        summarize your question</small>
+                                </div>
+                                <!-- I have a questionabout Streaming Plug -->
+                                <div id="qs" class="form-not-selected">
+                                    <div class="form-group">
+                                        <label for="qs-who">Are you a streamer, creator, or
+                                            neither?<sup>*</sup></label>
+                                        <select class="custom-select" id="qs-who" required>
+                                            <option value="">-</option>
+                                            <option value="">Streamer</option>
+                                            <option value="">Creator</option>
+                                            <option value="">Neither</option>
+                                        </select>
+                                        <small class="form-text text-muted">Pick a status that best represents you in
+                                            relation to the questions or feedback you are sharing with Community</small>
+                                    </div>
+                                </div>
+                                <!-- I want to report suspicious activity (English only) -->
+                                <div id="rsa" class="form-not-selected">
+                                    <div class="form-group">
+                                        <label for="rsa-why">Please select the issue that best describes your
+                                            situation?<sup>*</sup></label>
+                                        <select class="custom-select" id="rsa-why" required>
+                                            <option value="" disabled selected>-</option>
+                                            <option value="">I Want To Report A Fake Account</option>
+                                            <option value="">Can't Use Streaming Plug</option>
+                                            <option value="">Bullying & Harasment</option>
+                                            <option value="">Adult Content</option>
+                                            <option value="">Hate Speech</option>
+                                            <option value="">Other Guideline Issues</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="rsa_url">Profile URL<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="rsa_url">
+                                        <small class="form-text text-muted">Please provide the URL to the account you
+                                            are reporting about</small>
+                                    </div>
+                                </div>
+                                <!-- I want to report a Community Guidelines issue (English only) -->
+                                <div id="cg" class="form-not-selected">
+                                    <div class="form-group">
+                                        <label for="cg-issue">Please select the issue that best describes your
+                                            situation?<sup>*</sup></label>
+                                        <select class="custom-select" id="cg-issue" required>
+                                            <option value="" disabled selected>-</option>
+                                            <option value="">Hacked</option>
+                                            <option value="">Unauthorized</option>
+                                            <option value="">My Account Is Disabled For Fraud</option>
+                                            <option value="">I Wand To Report This Account As Spam</option>
+                                            <option value="">Genaral</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cg-who">Are you a streamer, creator, or
+                                            neither?<sup>*</sup></label>
+                                        <select class="custom-select" id="cg-who" required>
+                                            <option value="">-</option>
+                                            <option value="">Streamer</option>
+                                            <option value="">Creator</option>
+                                            <option value="">Neither</option>
+                                        </select>
+                                        <small class="form-text text-muted">Pick a status that best represents you in
+                                            relation to the questions or feedback you are sharing with Community</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cg_url">Profile URL<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="cg_url">
+                                        <small class="form-text text-muted">Please provide the URL to the account you
+                                            are reporting about</small>
+                                    </div>
+                                </div>
+                                <!-- I have a Trust and Safety questionregarding my account (English only) -->
+                                <div id="ts" class="form-not-selected">
+                                    <div class="form-group">
+                                        <label for="ts-que">General Account Question<sup>*</sup></label>
+                                        <select class="custom-select" id="ts-que" required>
+                                            <option value="" disabled selected>-</option>
+                                            <option value="">Can't withdraw balance?</option>
+                                            <option value="">My account is suspended</option>
+                                            <option value="">I have a question about my page launch</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- I want to file a copyright infringement claim (English only) -->
+                                <div id="cic" class="form-not-selected">
+                                    <div class="form-group">
+                                        <label for="cic_rel">Relationship to Copyrighted Content<sup>*</sup></label>
+                                        <select class="custom-select" id="cic_rel" required>
+                                            <option value="" disabled selected>-</option>
+                                            <option value="">I am the copyright owner</option>
+                                            <option value="">My organizetion owns the copywrite</option>
+                                            <option value="">I am an agent authourized on behalf of the copyright owner
+                                            </option>
+                                        </select>
+                                        <small class="form-text text-muted">Please note whether you are the owner of the
+                                            copyrighted content or submitting this claim on behalf of the copyright
+                                            owner.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_legal_name">Full Legal Name<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="cic_legal_name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_org">Name of Your Organization</label>
+                                        <input type="text" class="form-control" id="cic_org">
+                                        <small class="form-text text-muted">If you are submitting this claim on behalf
+                                            of an organization, please provide the organization's name here.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_mail_add">Mailing Address<sup>*</sup></label>
+                                        <textarea class="form-control" id="cic_mail_add" rows="6"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_phn">Phone<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="cic_phn" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_pat_email">Your Patreon Email Address<sup>*</sup></label>
+                                        <input type="email" class="form-control" id="cic_pat_email" required>
+                                        <small class="form-text text-muted">Please send the request from the email
+                                            associated with your Patreon account</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_copy_url">URL of Copyrighted Work(s)<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="cic_copy_url" required>
+                                        <small class="form-text text-muted">Identify the original copyrighted work that
+                                            you claim is being infringed. If multiple works are being infringed, then
+                                            please list all of the original works applicable.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_inf-urk">URL of Claimed Infringement(s)<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="cic_inf-urk" required>
+                                        <small class="form-text text-muted">Identify the infringing content. Include the
+                                            URL of the creator’s page, as well as any other relevant URLs or information
+                                            necessary to identify the location of the infringing content.
+                                        </small>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="custom-control custom-checkbox">
+                                            <label class="custom-control-label" for="customCheck1">I hereby
+                                                declare:</label>
+                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                            <small class="form-text text-muted">UNDER PENALTY OF PERJURY, the
+                                                information in this notification is accurate and I am the copyright
+                                                owner or am authorized to act on behalf of the owner of an exclusive
+                                                right that is allegedly infringed. I have a good faith belief that the
+                                                use of the works in the manner complained of is not authorized by the
+                                                copyright owner, its agent, or law.
+                                            </small>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cic_sig">Digital Signature<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="cic_sig" required>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="sup_text">Descpription<sup>*</sup></label>
-                                    <textarea class="form-control" id="sup_text" rows="3" placeholder="Please enter the details of your request. A member of our Community Happiness team will reach out with a response.
-
-                                    "></textarea>
+                                    <label for="sup_des">Descpription<sup>*</sup></label>
+                                    <textarea class="form-control" id="sup_des" rows="6"></textarea>
                                 </div>
                                 <div class="form-group sup_file_input">
                                     <input type="file" id="customFile">
                                     <label for="customFile">Add Files</label>
+                                    <div class="sup-file-inputs">
+                                        <div class="file">
+                                            <div class="file-content">
+                                                <i class="fas fa-link"></i>
+                                                Test-File.txt
+                                            </div>
+                                            <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <div class="file">
+                                            <div class="file-content">
+                                                <i class="fas fa-link"></i>
+                                                Test-File.txt
+                                            </div>
+                                            <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                                        </div>
+                                        <div class="file">
+                                            <div class="file-content">
+                                                <i class="fas fa-link"></i>
+                                                Test-File.txt
+                                            </div>
+                                            <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="text-center">
                                     <button type="submit" class="thm_btn br_btn">Submit</button>
                                 </div>
@@ -224,7 +406,7 @@
                             <div class="footer_widget footer_link">
                                 <h3>For Streamers</h3>
                                 <ul class="footer_link">
-                                    <li><a href="#">Sports</a></li>
+                                    <li><a href="category-detail.html">Sports</a></li>
                                     <li><a href="#">Meditation</a></li>
                                     <li><a href="#">Yoga Classes</a></li>
                                     <li><a href="#">Entertainment</a></li>
@@ -251,7 +433,7 @@
                                 <ul class="footer_link">
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="#">Developers</a></li>
-                                    <li><a href="#">Support</a></li>
+                                    <li><a href="support.html">Support</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -298,12 +480,17 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        $('#policy_list>li a').click(function () {
-            var sectionTo = $(this).attr('href');
-            $('html, body').animate({
-                scrollTop: $(sectionTo).offset().top - 150
-            }, 2000);
-        });
+        //Form Hide Add
+        var show_target = $("#choose-complain").find('option:selected').data("target");
+        $('.form-not-selected').hide();
+        $(show_target).css('display', 'block');
+        $('#choose-complain').change(function () {
+            var target = $(this).find('option:selected').data("target");
+            var action = $(this).find('option:selected').data("action");
+            $('#sup_form').attr('action', action)
+            $('.form-not-selected').slideUp();
+            $(target).slideDown();
+        })
     </script>
 </body>
 
