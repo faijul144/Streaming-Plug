@@ -1094,13 +1094,18 @@
     .pricing_single.active .price_head h2 {
         font-size: 90px;
     }
-    .pricing_single.active .price_icon {
+    .pricing_single .price_icon {
         width: 100px;
         height: 100px;
         line-height: 100px;
         margin-top: 35px;
         margin-bottom: 40px;
     }
+
+    .pricing_single .price_icon img{
+        width: 45px;
+    }
+
     .pricing_single.active .price_btn a {
         padding: 15px 35px;
     }

@@ -3937,10 +3937,9 @@ margin: 10px 0;
 }
 .pricing_single .price_icon {
 	background-color: #f8f8f8;
-	width: 45px;
-	height: 45px;
+	width: 70px;
+	height: 70px;
 	text-align: center;
-	line-height: 80px;
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -3949,7 +3948,15 @@ margin: 10px 0;
 	margin: auto;
 	margin-top: 35px;
 	margin-bottom: 40px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.pricing_single .price_icon img{
+	width: 38px;
+}
+
 .pricing_single .price_btn a {
 	padding: 15px 35px;
 	background: transparent;
@@ -5321,5 +5328,5 @@ sup{font-size: 8px;}
 }
 
 .diamond .price_icon{
-	margin-top: 0;
+	margin-top: 10px;
 }
