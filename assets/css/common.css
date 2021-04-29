@@ -1030,3 +1030,7 @@
 .py-30{
 	padding: 3rem 0 !important;
 }
+
+.mh-a{
+	min-height: auto !important;
+}

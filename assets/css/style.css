@@ -847,7 +847,7 @@ input, textarea, select {
     width: 50%;
     top: 55%;
     transform: translateY(-50%);
-    max-width: 700px;
+    max-width: 790px;
 
 }
 .hero_img_right:before {
@@ -3820,7 +3820,8 @@ margin: 10px 0;
 	padding: 0 20px;
 	margin-bottom: 30px;
 	background-color: #f8f8f8;
-	border: 1px solid transparent;
+	border: 1px solid #ececec;
+	border-radius: 3px;
 	transition: .3s;
 	-webkit-transition: .3s;
 	-moz-transition: .3s;
@@ -3830,7 +3831,7 @@ margin: 10px 0;
 .from_wrapper form input:focus, .from_wrapper form textarea:focus {
 	outline: none;
 	box-shadow: none;
-	border-color: #12100d;
+	border-color: #ababab;
 }
 .from_wrapper form textarea {
 	height: 180px;
@@ -3936,8 +3937,8 @@ margin: 10px 0;
 }
 .pricing_single .price_icon {
 	background-color: #f8f8f8;
-	width: 80px;
-	height: 80px;
+	width: 45px;
+	height: 45px;
 	text-align: center;
 	line-height: 80px;
 	border-radius: 50%;
@@ -3968,6 +3969,7 @@ margin: 10px 0;
 	margin-top: -5px;
 }
 
+
 /* .pricing_single.active .price_head h2 {
 	font-size: 105px;
 }
@@ -3990,7 +3992,7 @@ margin: 10px 0;
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
-    min-height: 275px;
+    min-height: 390px;
     overflow: hidden;
 	padding: 0;
 }
@@ -5075,6 +5077,7 @@ box-shadow: none;
 	margin: 0;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	box-shadow: 0 0 7px rgba(0 ,0, 0,0.25);
 }
 
 /* 4 box */
@@ -5276,3 +5279,45 @@ box-shadow: none;
 }
 
 .post-owner{flex:1}
+
+.side-mobile-menu .thm_btn{
+padding: 10px 0;
+width: 200px;
+margin: 0 auto;
+}
+
+sup{font-size: 8px;}
+
+.contact_text a,.pricing-content a{
+	color: #635f5f;
+}
+
+.contact_text a:hover,.pricing-content a:hover{
+	color: #ff9100;
+}
+
+.pricing_single.diamond{
+	padding: 25px;
+}
+
+.price-br{
+	position: relative;
+	margin: 50px 0;
+	border-color: #e8e8e8;
+}
+.price-br::before
+{
+	content: attr(data-text);
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	padding: 10px 20px;
+	background: #fff;
+	box-shadow: 0 0 2px rgba(0, 0, 0, .36);
+	border-radius: 50px;
+}
+
+.diamond .price_icon{
+	margin-top: 0;
+}
