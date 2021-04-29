@@ -138,7 +138,7 @@
                             <div class="br_text">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Contact</li>
+                                    <li>Cookies</li>
                                 </ul>
                             </div>
                         </div>
@@ -147,88 +147,20 @@
             </section>
             <!-- pagetitle end -->
 
-            <!-- contact info start -->
-            <section class="contact_info_area pt-120 pb-60">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-5">
-                            <div class="contact_box_wrap">
-                                <div class="single_contact mb-30">
-                                    <div class="contact_icon">
-                                        <i class="fal fa-envelope-open-text"></i>
-                                    </div>
-                                    <div class="contact_text">
-                                        <h4>Email Adress</h4>
-                                        <p><a href="mailto:support@streamingplug.com">support@streamingplug.com</a></p>
-                                        <p><a href="mailto:info@streamingplug.com">info@streamingplug.com</a></p>
-                                    </div>
-                                </div>
-                                <div class="single_contact mb-30">
-                                    <div class="contact_icon">
-                                        <i class="fal fa-phone"></i>
-                                    </div>
-                                    <div class="contact_text">
-                                        <h4>Phone Number</h4>
-                                        <p>+1 (438) 498-9697</p>
-                                    </div>
-                                </div>
-                                <div class="single_contact mb-30">
-                                    <div class="contact_icon">
-                                        <i class="fal fa-map-marker-alt"></i>
-                                    </div>
-                                    <div class="contact_text">
-                                        <h4>Our Location</h4>
-                                        <p>Bowery St, New York, NY 10013,USA</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-8 col-lg-7">
-                            <div class="contact_map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.989811801514!2d-73.99712258459492!3d40.718240779331246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259881ace0a11%3A0xf01b0563ddd79b4e!2sBowery%2C%20New%20York%2C%20NY%2010013%2C%20USA!5e0!3m2!1sen!2sbd!4v1619695771063!5m2!1sen!2sbd"
-                                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- contact info start -->
-
-            <!-- contact start -->
-            <section class="contact_area pb-120">
+            <!-- privacy details start -->
+            <section class="privacy_area d_content_wrap pt-120 pb-90">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <div class="from_wrapper">
-                                <form action="#">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <input type="text" name="fname" placeholder="Your Name">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <input type="email" name="email" placeholder="Mail Address">
-                                        </div>
-                                        <div class="col-12">
-                                            <input type="text" name="subject" placeholder="Enter Your Subject :">
-                                        </div>
-                                        <div class="col-12">
-                                            <textarea name="message" id="message" cols="30" rows="10"
-                                                placeholder="Your Massage :"></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="contact_btn text-center">
-                                                <a class="thm_btn br_btn thm_btn-black" href="#">Send Massage</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="sec_title text-center">
+                                <h2>Create your profile in few minutes</h2>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
-            <!-- contact end -->
+            <!-- services details end -->
         </main>
         <!-- main body end -->
 
@@ -326,6 +258,14 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        $('#policy_list>li a').click(function () {
+            var sectionTo = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(sectionTo).offset().top - 150
+            }, 2000);
+        });
+    </script>
 </body>
 
 </html>
