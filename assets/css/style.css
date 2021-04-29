@@ -5105,7 +5105,7 @@ box-shadow: none;
 /* Sign In Sign Up Form */
 
 .header_cus .header_wrap{
-	background: #f8f8f8;
+	background: #f1f1f1;
 }
 
 .header_cus .main_menu ul li a:not(:hover){
@@ -5299,7 +5299,11 @@ sup{font-size: 8px;}
 	color: #635f5f;
 }
 
-.contact_text a:hover,.pricing-content a:hover{
+.about_content p a{
+	color: #0c0c0c;
+}
+
+.contact_text a:hover,.pricing-content a:hover, .about_content p a:hover{
 	color: #ff9100;
 }
 
