@@ -40,18 +40,6 @@ $(function () {
         }
       }, 300);
     });
-
-  //Post Share Popover Inner HTML Links
-  $('.share[data-toggle="popover"]').attr(
-    "data-content",
-    `<ul class="pop-share-links">
-                <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fab fa-whatsapp"></i></a></li>
-                <li><a href="javascript:void(0)"><i class="fas fa-envelope"></i></a></li>
-                </ul >`
-  );
 });
 
 //Post Like, Bookmark Toogle Action
@@ -330,27 +318,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-//Post Setting
-$(".post-set").popover({
+$("#popup-holder").hide();
+$(".opt-pop").popover({
   html: true,
 });
 
-//Post Setting Popover Inner HTML Links
-$(".post-set").each(function () {
-  var $pin_id = $(this).attr("data-pin");
-  $(this).attr(
-    "data-content",
-    `<ul class="post-setting-list">
-              <li><a href="javascript:void(0)" class="post_pin" data-target="` +
-      $pin_id +
-      `"><i class="fas fa-thumbtack"></i>Pin Post</a></li>
-              <li><a href="javascript:void(0)"><i class="fas fa-globe"></i>Edit Audience</a></li>
-              <li><a href="javascript:void(0)"><i class="fas fa-bell"></i>Turn Of Post Notification</a></li>
-              <li><a href="javascript:void(0)"><i class="fas fa-pencil-alt"></i>Edit Post</a></li>
-              <li><a href="javascript:void(0)"><i class="fas fa-archive"></i>Archive</a></li>
-              <li><a href="javascript:void(0)"><i class="fas fa-trash-alt"></i>Remove Post</a></li>
-              </ul >`
-  );
+$(".opt-pop").each(function () {
+  var pop_list = $(this).data("list");
+  var content = $(pop_list).html();
+  $(this).attr("data-content", content);
 });
 
 // Pinned Post
@@ -361,4 +337,19 @@ $(".pinned_post a").click(function (e) {
     .find("span")
     .text($text == "Pinned Post" ? "Post Unpinned" : "Pinned Post");
   $(this).find("i").toggleClass("far fas");
+});
+
+var $url = $(location).attr("href");
+$(document).ready(function () {
+  setTimeout(function () {
+    $(".clipboard").on("click", function (e) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      e.preventDefault();
+      $temp.val($url).select();
+      console.log($temp.val());
+      document.execCommand("copy");
+      $temp.remove();
+    });
+  }, 3000);
 });

@@ -5260,8 +5260,8 @@ box-shadow: none;
 }
 
 /* Pricing Button */
-/* .slideThree */
- .slideThree {
+/* .my-switch */
+ .my-switch {
 	 display: flex;
 	 align-items: center;
 	width: 125px;
@@ -5272,7 +5272,7 @@ box-shadow: none;
 	 border-radius: 50px;
 	 box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.2);
 }
- .slideThree:after {
+ .my-switch:after {
 	 content: 'Yearly';
 	 color: #fff;
 	 position: absolute;
@@ -5282,7 +5282,7 @@ box-shadow: none;
 	 font-weight: bold;
 	 text-shadow: 1px 1px 0px rgba(255, 255, 255, .15);
 }
- .slideThree:before {
+ .my-switch:before {
 	 content: 'Monthly';
 	 color: #fff;
 	 position: absolute;
@@ -5291,7 +5291,7 @@ box-shadow: none;
 	 font: 12px/26px Arial, sans-serif;
 	 font-weight: bold;
 }
- .slideThree label {
+ .my-switch label {
 	 display: block;
 	 width: 62px;
 	 height: 29px;
@@ -5306,13 +5306,13 @@ box-shadow: none;
 	 transition: all 0.4s ease;
 	 box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
- .slideThree input[type=checkbox] {
+ .my-switch input[type=checkbox] {
 	 visibility: hidden;
 }
- .slideThree input[type=checkbox]:checked + label {
+ .my-switch input[type=checkbox]:checked + label {
 	 left: 60px;
 }
-/* end .slideThree */
+/* end .my-switch */
 
 .op-actions{
 	margin-top: 20px;
@@ -5505,7 +5505,7 @@ margin:  5px 0;
 	padding-left: 0;
 }
 
-.pack-radio label{
+.pack-radio div:not(.my-switch)>label{
 	padding:15px 30px;
 	box-shadow:0 0 3px rgba(0, 0, 0, .36);
 	border-radius: 3px;
@@ -5514,21 +5514,50 @@ margin:  5px 0;
     text-align: center;
 }
 
-.pack-radio .pack-title{
+.pack-title{
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-.pack-radio .pack_icon{
+.pack_icon{
 	margin: 10px 0;
 }
 
-.pack-radio .pack_icon img{
+.pack_icon img{
 	height: 45px;
 }
 
 .pack-radio input[type="radio"]:checked+label{
 	border-top:5px solid #ff9100;
+}
+
+.pack-price{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+    margin-top: 20px;
+    padding-top: 8px;
+    border-top: 1px solid #dadada;
+    color: #0c0c0c;
+}
+.pack-price:before{
+	content:"$";
+}
+
+.pack-radio .my-switch{
+	height: 24px;
+	right: 2px;
+
+}
+
+.pack-radio .my-switch>label{
+	height: 20px;
+	top: 2px;
+}
+
+.pack-radio .my-switch input[type=checkbox]:checked + label{
+	left: 61px;
 }
 
 .gateway-img label{
@@ -5548,4 +5577,60 @@ margin:  5px 0;
 
 .custom-control-input:focus~.custom-control-label::before{
 	box-shadow: 0 0 0 0.2rem rgba(255 ,145, 0,0.25);
+}
+
+
+.connect-link{
+	margin: 10px 0;
+	padding: 10px 15px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border:1px solid #c1c1c1;
+}
+
+.connect-link{
+	display: flex;
+	align-items: center;
+}
+
+.connect-link:first-child{
+	margin-top: 0;
+}
+
+.connect-link>span{
+	position: relative;
+	padding-left: 16px;
+}
+
+.connect-link>span>i{
+	position: absolute;
+	left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+	font-size: 13px;
+}
+
+.profile-opt{
+	position: absolute;
+    right: 6px;
+    top: 6px;
+    font-size: 15px;
+    color: #0c0c0c;
+}
+
+.profile-opt:hover{
+	color: #ff9100;
+}
+
+.opt-pop{
+	cursor: pointer;
+}
+
+.streamer-search .thm_btn{
+	padding: 0 12px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+	overflow: hidden;
 }

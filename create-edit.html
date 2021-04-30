@@ -138,7 +138,7 @@
                             <div class="br_text">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Support</li>
+                                    <li>Edit</li>
                                 </ul>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-lg-8 col-12">
                             <div class="sec_title text-center">
-                                <h2>Create Profile</h2>
+                                <h2>Edit Profile</h2>
                             </div>
                             <form class="form_cus" action="" name="">
                                 <!-- Name -->
@@ -192,29 +192,31 @@
 
                                 </div>
                                 <!-- Username And Role -->
-                                <div class="form-group">
-                                    <div class="form-row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="username">Username<sup>*</sup></label>
-                                                <input type="text" class="form-control" id="username"
-                                                    placeholder="Enter Username">
-                                            </div>
+                                <div class="form-row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="username">Username<sup>*</sup></label>
+                                            <input type="text" class="form-control" id="username"
+                                                placeholder="Enter Username">
                                         </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="country">Select Role<sup>*</sup></label>
-                                                <select class="custom-select" id="country" required>
-                                                    <option value="">-</option>
-                                                    <option value="canada">Streamer</option>
-                                                    <option value="us">Follower</option>
-                                                </select>
-                                            </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="role">Select Role<sup>*</sup></label>
+                                            <select class="custom-select" id="role" required>
+                                                <option value="">-</option>
+                                                <option value="canada" data-target=".streamer-part"
+                                                    data-action="steamer-form" selected>
+                                                    Streamer</option>
+                                                <option value="us" data-target=".follower-part"
+                                                    data-action="follower-form">
+                                                    Follower</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Select Sector -->
-                                <div class="form-group">
+                                <div class="form-group d-none-nr streamer-part">
                                     <label for="qs-who">Select Your Sector Of Expertice<sup>*</sup></label>
                                     <select class="custom-select" id="qs-who" required>
                                         <option value="">-</option>
@@ -229,6 +231,27 @@
                                     </select>
                                     <small class="form-text text-muted">Pick Your Field Your Expertise Which Will Be
                                         Your Main Streaming Topic</small>
+                                </div>
+                                <div class="form-group">
+                                    <label>Social Connect</label>
+                                    <div class="social-connect">
+                                        <div class="connect-link">
+                                            <span><i class="fab fa-facebook-f"></i><span>Facebook</span></span>
+                                            <a href="javascript:void(0)">Connect</a>
+                                        </div>
+                                        <div class="connect-link">
+                                            <span><i class="fab fa-twitter"></i><span>Twitter</span></span>
+                                            <a href="javascript:void(0)">Connect</a>
+                                        </div>
+                                        <div class="connect-link">
+                                            <span><i class="fab fa-linkedin"></i><span>Linkedin</span></span>
+                                            <a href="javascript:void(0)">Connect</a>
+                                        </div>
+                                        <div class="connect-link">
+                                            <span><i class="fab fa-instagram"></i><span>Instagram</span></span>
+                                            <a href="javascript:void(0)">Connect</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- Profile Img -->
                                 <div class="form-group img-input">
@@ -278,77 +301,100 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-row align-items-center pack-radio">
-                                    <div class="col-12">
-                                        <div class="label_img">Choose Package</div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="radio" name="packs" id="pack-1" value="pack-1">
-                                            <label for="pack-1">
-                                                <div class="pack-title">
-                                                    BRONZE
-                                                </div>
-                                                <div class="pack_icon">
-                                                    <img src="assets/img/icon/p_01.png" alt="Icon">
-                                                </div>
-                                            </label>
+                                <div class="d-none-nr follower-part">
+                                    <div class="form-row align-items-center pack-radio">
+                                        <div class="col-12 d-flex justify-content-between align-items-center mb-2">
+                                            <div class="label_img">Choose Package</div>
+                                            <!-- .Month/Year Switch -->
+                                            <div class="my-switch m-0">
+                                                <input type="checkbox" value="None" id="my-switch" name="check"
+                                                    checked />
+                                                <label for="my-switch"></label>
+                                            </div>
+                                            <!-- Month/Year Switch -->
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="radio" name="packs" id="pack-2" value="pack-2">
-                                            <label for="pack-2">
-                                                <div class="pack-title">
-                                                    SILVER
-                                                </div>
-                                                <div class="pack_icon">
-                                                    <img src="assets/img/icon/money.svg" alt="Icon">
-                                                </div>
-                                            </label>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="radio" name="packs" id="pack-1" value="pack-1">
+                                                <label for="pack-1">
+                                                    <div class="pack-title">
+                                                        BRONZE
+                                                    </div>
+                                                    <div class="pack_icon">
+                                                        <img src="assets/img/icon/p_01.png" alt="Icon">
+                                                    </div>
+                                                    <div class="pack-price">
+                                                        7
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="radio" name="packs" id="pack-3" value="pack-3">
-                                            <label for="pack-3">
-                                                <div class="pack-title">
-                                                    GOLD
-                                                </div>
-                                                <div class="pack_icon">
-                                                    <img src="assets/img/icon/p_03.png" alt="Icon">
-                                                </div>
-                                            </label>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="radio" name="packs" id="pack-2" value="pack-2">
+                                                <label for="pack-2">
+                                                    <div class="pack-title">
+                                                        SILVER
+                                                    </div>
+                                                    <div class="pack_icon">
+                                                        <img src="assets/img/icon/money.svg" alt="Icon">
+                                                    </div>
+                                                    <div class="pack-price">
+                                                        20
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="radio" name="packs" id="pack-4" value="pack-4">
-                                            <label for="pack-4">
-                                                <div class="pack-title">
-                                                    PLATINUM
-                                                </div>
-                                                <div class="pack_icon">
-                                                    <img src="assets/img/icon/p_02.png" alt="Icon">
-                                                </div>
-                                            </label>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="radio" name="packs" id="pack-3" value="pack-3">
+                                                <label for="pack-3">
+                                                    <div class="pack-title">
+                                                        GOLD
+                                                    </div>
+                                                    <div class="pack_icon">
+                                                        <img src="assets/img/icon/p_03.png" alt="Icon">
+                                                    </div>
+                                                    <div class="pack-price">
+                                                        45
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="radio" name="packs" id="pack-vip" value="pack-vip">
-                                            <label for="pack-vip">
-                                                <div class="pack-title">
-                                                    DIAMOND
-                                                </div>
-                                                <div class="pack_icon">
-                                                    <img src="assets/img/icon/diamond.svg" alt="Icon">
-                                                </div>
-                                            </label>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="radio" name="packs" id="pack-4" value="pack-4">
+                                                <label for="pack-4">
+                                                    <div class="pack-title">
+                                                        PLATINUM
+                                                    </div>
+                                                    <div class="pack_icon">
+                                                        <img src="assets/img/icon/p_02.png" alt="Icon">
+                                                    </div>
+                                                    <div class="pack-price">
+                                                        95
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <input type="radio" name="packs" id="pack-vip" value="pack-vip">
+                                                <label for="pack-vip">
+                                                    <div class="pack-title">
+                                                        DIAMOND
+                                                    </div>
+                                                    <div class="pack_icon">
+                                                        <img src="assets/img/icon/diamond.svg" alt="Icon">
+                                                    </div>
+                                                    <div class="pack-price">
+                                                        500
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
                                 <div class="form-group">
                                     <label>Select Your Payment Mathod<sup>*</sup></label>
                                     <ul class="gateway-img">
@@ -375,7 +421,7 @@
                                         </li>
                                         <li>
                                             <input type="radio" name="price" id="mastercard" value="pack-vip"
-                                                data-target="#vma">
+                                                data-target="#vma" checked>
                                             <label for="mastercard">
                                                 <img src="./assets/img/payment/mastercard.svg" alt="Payment Icon">
                                             </label>
@@ -390,6 +436,19 @@
                                     </ul>
                                     <small class="form-text text-muted">Select Your Prefered Payment Gateway</small>
                                 </div>
+                                <div id="ppal" class="pay-form">
+                                    <div class="form-group">
+                                        <label for="paypal_num">Paypal A/C number<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="paypal_num"
+                                            placeholder="Enter Account Number number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exp_date_pay">Expire Date<sup>*</sup></label>
+                                        <input type="date" class="form-control" id="exp_date_pay"
+                                            placeholder="DD/MM/YYYY">
+                                    </div>
+                                </div>
+
                                 <div id="vma" class="pay-form">
                                     <div class="form-row">
                                         <div class="col-12">
@@ -435,7 +494,17 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                <!-- Select Payment Type -->
+                                <!-- <div class="form-group">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+                                      </div>
+                                      <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+                                      </div>
+                                </div> -->
                                 <div class="text-center">
                                     <button type="submit" class="thm_btn br_btn">Submit</button>
                                 </div>
@@ -496,7 +565,6 @@
                                 <h3>Resources</h3>
                                 <ul class="footer_link">
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="#">Developers</a></li>
                                     <li><a href="support.html">Support</a></li>
                                 </ul>
                             </div>
@@ -554,19 +622,60 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+        // Payment Forms
+        var pay_target = $('.gateway-img input:checked').data("target");
         $('.pay-form').hide()
-        $('.gateway-img input').each(function () {
-            $(this).change(
+        $(pay_target).show();
+        $('.gateway-img input').change(
+            function () {
+                if ($(this).is(':checked')) {
+                    var target = $(this).data("target");
+                    $('.pay-form').slideUp()
+                    $(target).slideDown();
 
-                function () {
-                    if ($(this).checked) {
-                        var target = $(this).data("target");
-                        $(target).slideDown();
-                        $('.pay-form').slideUp()
+                }
+            });
 
-                    }
-                });
+        // Package Price Change
+        $(".pack-price").each(function () {
+            var price = $(this).text();
+            var priceSpan = `<span class="old-price d-none">` + price + `</span>`;
+            $(this).parent().append(priceSpan);
         })
+
+        $("#my-switch").change(function () {
+            if (!this.checked) {
+
+
+                $(".pack-price").each(function () {
+                    var price = $(this).parent().find(".old-price").text();
+                    var percent = ((price * 12) * 15) / 100;
+                    $(this).text((price * 12) - percent);
+                })
+
+            }
+            else {
+                $(".pack-price").each(function () {
+                    var price = $(this).parent().find(".old-price").text();
+                    $(this).text(price);
+
+                })
+            }
+        });
+
+        var target = $('#role').find('option:selected').data("target");
+        var action = $('#role').find('option:selected').data("action");
+        $(target).show();
+
+        // Role Swith
+        $('#role').change(function () {
+            var target = $(this).find('option:selected').data("target");
+            var action = $(this).find('option:selected').data("action");
+            $('.form_cus').attr('action', action)
+            $('.form_cus').find('.d-none-nr').slideUp();
+            $(target).slideDown();
+        })
+
     </script>
 </body>
 

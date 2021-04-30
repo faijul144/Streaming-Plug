@@ -171,6 +171,9 @@
                                         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                     </ul>
+                                    <span class="profile-opt opt-pop" data-container="body" data-toggle="popover"
+                                        data-placement="bottom" data-list="#profile-opt-list"><i
+                                            class="fas fa-ellipsis-v"></i></span>
                                     <div class="streamer-detail">
                                         <h3 class="streamer-name">
                                             Rasalina de willamson
@@ -313,8 +316,8 @@
                                                                                         data-container="body"
                                                                                         data-toggle="popover"
                                                                                         data-placement="bottom"
-                                                                                        data-pin="#pin-1"
-                                                                                        class="post-set no-click"><i
+                                                                                        data-list="#post-opt-list"
+                                                                                        class="post-set no-click opt-pop"><i
                                                                                             class="fas fa-ellipsis-h"></i></a>
 
                                                                                 </div><!-- post-owner -->
@@ -363,7 +366,8 @@
                                                                                     data-container="body"
                                                                                     data-toggle="popover"
                                                                                     data-placement="top"
-                                                                                    class="share no-click"><i
+                                                                                    data-list="#share-opt-list"
+                                                                                    class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
                                                                             <div class="right-side" class="bookmark">
@@ -521,8 +525,8 @@
                                                                                         data-container="body"
                                                                                         data-toggle="popover"
                                                                                         data-placement="bottom"
-                                                                                        data-pin="#pin-1"
-                                                                                        class="post-set no-click"><i
+                                                                                        data-list="#post-opt-list"
+                                                                                        class="post-set no-click opt-pop"><i
                                                                                             class="fas fa-ellipsis-h"></i></a>
 
                                                                                 </div><!-- post-owner -->
@@ -616,7 +620,8 @@
                                                                                     data-container="body"
                                                                                     data-toggle="popover"
                                                                                     data-placement="top"
-                                                                                    class="share no-click"><i
+                                                                                    data-list="#share-opt-list"
+                                                                                    class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
                                                                             <div class="right-side" class="bookmark">
@@ -774,8 +779,8 @@
                                                                                         data-container="body"
                                                                                         data-toggle="popover"
                                                                                         data-placement="bottom"
-                                                                                        data-pin="#pin-1"
-                                                                                        class="post-set no-click"><i
+                                                                                        data-list="#post-opt-list"
+                                                                                        class="post-set no-click opt-pop"><i
                                                                                             class="fas fa-ellipsis-h"></i></a>
 
                                                                                 </div><!-- post-owner -->
@@ -854,7 +859,8 @@
                                                                                     data-container="body"
                                                                                     data-toggle="popover"
                                                                                     data-placement="top"
-                                                                                    class="share no-click"><i
+                                                                                    data-list="#share-opt-list"
+                                                                                    class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
                                                                             <div class="right-side" class="bookmark">
@@ -1012,8 +1018,8 @@
                                                                                         data-container="body"
                                                                                         data-toggle="popover"
                                                                                         data-placement="bottom"
-                                                                                        data-pin="#pin-1"
-                                                                                        class="post-set no-click"><i
+                                                                                        data-list="#post-opt-list"
+                                                                                        class="post-set no-click opt-pop"><i
                                                                                             class="fas fa-ellipsis-h"></i></a>
 
                                                                                 </div><!-- post-owner -->
@@ -1071,7 +1077,8 @@
                                                                                     data-container="body"
                                                                                     data-toggle="popover"
                                                                                     data-placement="top"
-                                                                                    class="share no-click"><i
+                                                                                    data-list="#share-opt-list"
+                                                                                    class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
                                                                             <div class="right-side" class="bookmark">
@@ -1229,8 +1236,8 @@
                                                                                         data-container="body"
                                                                                         data-toggle="popover"
                                                                                         data-placement="bottom"
-                                                                                        data-pin="#pin-1"
-                                                                                        class="post-set no-click"><i
+                                                                                        data-list="#post-opt-list"
+                                                                                        class="post-set no-click opt-pop"><i
                                                                                             class="fas fa-ellipsis-h"></i></a>
 
                                                                                 </div><!-- post-owner -->
@@ -1291,7 +1298,8 @@
                                                                                     data-container="body"
                                                                                     data-toggle="popover"
                                                                                     data-placement="top"
-                                                                                    class="share no-click"><i
+                                                                                    data-list="#share-opt-list"
+                                                                                    class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
                                                                             <div class="right-side" class="bookmark">
@@ -1609,7 +1617,34 @@
         </main>
         <!-- main body end -->
 
-
+        <!-- Popup Inner List -->
+        <div id="popup-holder">
+            <div id="profile-opt-list">
+                <ul class="post-setting-list">
+                    <li><a href="create-edit.html"><i class="fas fa-user-edit"></i>Edit profile</a></li>
+                    <li><a href="javascript:void(0)" class="clipboard"><i class="fas fa-link"></i>Copy Link</a></li>
+                </ul>
+            </div>
+            <div id="post-opt-list">
+                <ul class="post-setting-list">
+                    <li><a href="javascript:void(0)"><i class="fas fa-thumbtack"></i>Pin Post</a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-globe"></i>Edit Audience</a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-bell"></i>Turn Of Post Notification</a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-pencil-alt"></i>Edit Post</a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-archive"></i>Archive</a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-trash-alt"></i>Remove Post</a></li>
+                </ul>
+            </div>
+            <div id="share-opt-list">
+                <ul class="pop-share-links">
+                    <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="javascript:void(0)"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
 
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
@@ -1659,7 +1694,6 @@
                                 <h3>Resources</h3>
                                 <ul class="footer_link">
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="#">Developers</a></li>
                                     <li><a href="support.html">Support</a></li>
                                 </ul>
                             </div>

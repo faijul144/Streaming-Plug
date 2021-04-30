@@ -215,12 +215,12 @@
                     <div class="sec_title sec_title_2 text-center">
                         <h2>Pricing Plan</h2>
                         <span>Select the plan that fits you</span>
-                        <!-- .slideThree -->
-                        <div class="slideThree">
-                            <input type="checkbox" value="None" id="slideThree" name="check" checked />
-                            <label for="slideThree"></label>
+                        <!-- .Month/Year Switch -->
+                        <div class="my-switch">
+                            <input type="checkbox" value="None" id="my-switch" name="check" checked />
+                            <label for="my-switch"></label>
                         </div>
-                        <!-- end .slideThree -->
+                        <!-- Month/Year Switch End -->
                     </div>
                     <div class="row justify-content-center gutters-5">
                         <div class="col-lg-3 col-md-6">
@@ -501,7 +501,6 @@
                                 <h3>Resources</h3>
                                 <ul class="footer_link">
                                     <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="#">Developers</a></li>
                                     <li><a href="support.html">Support</a></li>
                                 </ul>
                             </div>
@@ -568,7 +567,7 @@
             $(this).append(priceSpan);
         })
 
-        $("#slideThree").change(function () {
+        $("#my-switch").change(function () {
             if (!this.checked) {
 
 
@@ -576,7 +575,6 @@
                     $(this).find('.time').text("Yearly");
                     var price = $(this).find(".mprice").text();
                     var percent = ((price * 12) * 15) / 100;
-                    var saveText = `<span class="save-money">Save Up To 15%</save>`;
                     $(this).find("h2").text((price * 12) - percent);
                 })
 
@@ -584,7 +582,6 @@
             else {
                 $(".price_head").each(function () {
                     $(this).find('.time').text("Monthly");
-                    $('.save-money').remove();
                     var price = $(this).find(".mprice").text();
                     $(this).find("h2").text(price);
 
