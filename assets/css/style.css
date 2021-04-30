@@ -5460,16 +5460,24 @@ margin:  5px 0;
 
 .footer_link sup{font-size: 10px;}
 
+/* Payment Card Footer */
+
 .gateway-img{
 	display: flex;
 	align-items: center;
-	justify-content: flex-start;
+	justify-content: start;
+	flex-wrap: wrap;
 }
 .gateway-img li:not(:last-child){
-	margin-right: 7px;
+	margin-right: 8px;
 }
 .gateway-img li img{
 	width: 60px;
+}
+
+.footer_widget .gateway-img li img{
+	width: 80px;
+	max-width: none;
 }
 
 
@@ -5524,11 +5532,20 @@ margin:  5px 0;
 }
 
 .gateway-img label{
-	border: 2px solid #9a9a9a;
     border-radius: 3px;
     padding: 3px;
 }
 
 .gateway-img input[type="radio"]:checked+label{
+	box-shadow: 0px 0px 5px #c1c1c1;
+    transform: scale(1.1);
+}
+
+.custom-control-input:checked~.custom-control-label::before{
 	border-color: #ff9100;
+	background-color: #ff9100;
+}
+
+.custom-control-input:focus~.custom-control-label::before{
+	box-shadow: 0 0 0 0.2rem rgba(255 ,145, 0,0.25);
 }
