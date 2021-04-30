@@ -325,7 +325,17 @@ $(".opt-pop").popover({
 
 $(".opt-pop").each(function () {
   var pop_list = $(this).data("list");
+  $(pop_list).append(`<script>$(".clipboard").on("click", function (e) {
+    var $url = $(location).attr("href");
+    var $temp = $("<input>");
+    $("body").append($temp);
+    e.preventDefault();
+    $temp.val($url).select();
+    document.execCommand("copy");
+    $temp.remove();
+  });</script>`);
   var content = $(pop_list).html();
+
   $(this).attr("data-content", content);
 });
 
@@ -337,19 +347,4 @@ $(".pinned_post a").click(function (e) {
     .find("span")
     .text($text == "Pinned Post" ? "Post Unpinned" : "Pinned Post");
   $(this).find("i").toggleClass("far fas");
-});
-
-var $url = $(location).attr("href");
-$(document).ready(function () {
-  setTimeout(function () {
-    $(".clipboard").on("click", function (e) {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      e.preventDefault();
-      $temp.val($url).select();
-      console.log($temp.val());
-      document.execCommand("copy");
-      $temp.remove();
-    });
-  }, 3000);
 });
