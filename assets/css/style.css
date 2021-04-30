@@ -5370,12 +5370,12 @@ sup{font-size: 8px;}
 
 /* Support Form */
 
-#sup_form sup,#sup_form a:hover{
+#sup_form sup,#sup_form a:hover,.form_cus a:hover{
 	color:#ff9100
 }
-#sup_form lable{}
 
-#sup_form a{
+
+#sup_form a,.form_cus a{
 	color: #000;
 }
 
@@ -5388,7 +5388,7 @@ sup{font-size: 8px;}
 	font-size: 13px;
 }
 
-#sup_form label{
+#sup_form label,.form_cus label{
 	font-size: 16px;
 }
 
@@ -5470,4 +5470,21 @@ margin:  5px 0;
 }
 .gateway-img li img{
 	width: 60px;
+}
+
+
+/* Create Edit form */
+.img-input input{display: none;}
+.label_img{
+	color:#7e7e7e;
+	margin-bottom: .5rem;
+}
+.img-input label{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
+	padding: 25px 0;
+	border:1px solid #ced4da;
+	border-radius: 3px;
 }
