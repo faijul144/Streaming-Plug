@@ -283,6 +283,10 @@
     .body_space {
         padding: 0;
     }
+    .gateway-img li:not(:last-child){
+        margin-right: 3px;
+    }
+
     .header_area .header_wrap {
         padding: 20px 0;
         background: #fff;

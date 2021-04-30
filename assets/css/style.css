@@ -3068,6 +3068,24 @@ margin: 10px 0;
 	top: 100px;
 }
 
+.team_avatar::after,.owner-avatar a::after{
+content: attr(data-name-letter);
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+left: 0;
+top: 0;
+z-index: -1;
+background: #e8e8e8;
+box-shadow: inset 0 0 3px #cecece;
+border-radius: 50px;
+font-size: 25px;
+text-transform: uppercase;
+}
+
 .team_avatar img {
 	width: 100%;
     height: 100%;
@@ -4224,6 +4242,7 @@ margin: 10px 0;
 	color: #fff;
     margin-bottom: 12px;
 	margin-top: 1px;
+	white-space: nowrap;
 }
 
 .popular-sug ul{
@@ -4608,11 +4627,19 @@ margin: 15px 0;
 
 .owner-avatar{
 	margin-right: 10px;
+	height: 60px;
+	width: 60px;
+}
+
+.owner-avatar a{
+	height: 100%;
+	width: 100%;
+	position: relative;
 }
 
 .owner-avatar a img{
-	height: 60px;
-	width: 60px;
+	height: 100%;
+	width: 100%;
 	border-radius: 50%;
 	object-fit: cover;
 	border: 4px solid #fff;
@@ -5111,7 +5138,7 @@ box-shadow: none;
 /* Sign In Sign Up Form */
 
 .header_cus .header_wrap{
-	background: #f1f1f1;
+	background: #fff;
 }
 
 .header_cus .main_menu ul li a:not(:hover){
@@ -5429,4 +5456,18 @@ margin:  5px 0;
 
 .cat-port .team_single{
 	box-shadow: 0 0 4px rgba(0,0,0,.37);
+}
+
+.footer_link sup{font-size: 10px;}
+
+.gateway-img{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+.gateway-img li:not(:last-child){
+	margin-right: 7px;
+}
+.gateway-img li img{
+	width: 60px;
 }
