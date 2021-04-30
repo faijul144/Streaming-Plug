@@ -5488,3 +5488,47 @@ margin:  5px 0;
 	border:1px solid #ced4da;
 	border-radius: 3px;
 }
+
+.pack-radio input,.gateway-img input{
+	display: none;
+}
+
+.pack-radio .form-check{
+	padding-left: 0;
+}
+
+.pack-radio label{
+	padding:15px 30px;
+	box-shadow:0 0 3px rgba(0, 0, 0, .36);
+	border-radius: 3px;
+	border-top:5px solid transparent;
+	width: 100%;
+    text-align: center;
+}
+
+.pack-radio .pack-title{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.pack-radio .pack_icon{
+	margin: 10px 0;
+}
+
+.pack-radio .pack_icon img{
+	height: 45px;
+}
+
+.pack-radio input[type="radio"]:checked+label{
+	border-top:5px solid #ff9100;
+}
+
+.gateway-img label{
+	border: 2px solid #9a9a9a;
+    border-radius: 3px;
+    padding: 3px;
+}
+
+.gateway-img input[type="radio"]:checked+label{
+	border-color: #ff9100;
+}
