@@ -3915,6 +3915,8 @@ text-transform: uppercase;
 	background: #fff;
 	padding: 50px 30px;
 	box-shadow: 0 0 3px rgba(0 ,0, 0,0.2);
+	border-top: 5px solid #0c0c0c;
+	position: relative;
 }
 .pricing_single.active {
 	/* position: absolute; */
@@ -3926,7 +3928,6 @@ text-transform: uppercase;
 	/* top: 50%;
 	right: 0;
 	transform: translateY(-50%); */
-	border-top: 5px solid #0c0c0c;
 }
 .pricing_single .price_head h2 {
 	font-size: 90px;
@@ -5370,7 +5371,7 @@ sup{font-size: 8px;}
 
 /* Support Form */
 
-#sup_form sup,#sup_form a:hover,.form_cus a:hover{
+form a:hover,form a:hover{
 	color:#ff9100
 }
 
@@ -5383,9 +5384,11 @@ sup{font-size: 8px;}
 	padding: 8px 40px;
 }
 
-#sup_form sup{
+form sup{
 	color: #ff9100;
-	font-size: 13px;
+	font-size: 14px;
+	position: relative;
+    top: -3px;
 }
 
 #sup_form label,.form_cus label{
@@ -5633,4 +5636,24 @@ margin:  5px 0;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 	overflow: hidden;
+}
+
+.sec_title >.save-text{
+	color: #c1c1c1;
+	position: absolute;
+	bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.recommend{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #9a9a9a;
+    top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
 }

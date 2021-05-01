@@ -138,7 +138,7 @@
                             <div class="br_text">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Edit</li>
+                                    <li>Create</li>
                                 </ul>
                             </div>
                         </div>
@@ -153,7 +153,7 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-lg-8 col-12">
                             <div class="sec_title text-center">
-                                <h2>Edit Profile</h2>
+                                <h2>Complete Creating Your Profile</h2>
                             </div>
                             <form class="form_cus" action="" name="">
                                 <!-- Name -->
@@ -399,13 +399,6 @@
                                     <label>Select Your Payment Mathod<sup>*</sup></label>
                                     <ul class="gateway-img">
                                         <li>
-                                            <input type="radio" name="price" id="paypal" value="pack-vip"
-                                                data-target="#ppal">
-                                            <label for="paypal">
-                                                <img src="./assets/img/payment/paypal.svg" alt="Payment Icon">
-                                            </label>
-                                        </li>
-                                        <li>
                                             <input type="radio" name="price" id="stripe" value="pack-vip"
                                                 data-target="#strp">
                                             <label for="stripe">
@@ -430,25 +423,17 @@
                                             <input type="radio" name="price" id="americanexpress" value="pack-vip"
                                                 data-target="#vma">
                                             <label for="americanexpress">
-                                                <img src="./assets/img/payment/americanexpress.svg" alt="Payment Icon">
+                                                <img src="./assets/img/payment/amex.svg" alt="Payment Icon">
                                             </label>
                                         </li>
                                     </ul>
                                     <small class="form-text text-muted">Select Your Prefered Payment Gateway</small>
                                 </div>
-                                <div id="ppal" class="pay-form">
+                                <div id="strp" class="pay-form">
                                     <div class="form-group">
-                                        <label for="paypal_num">Paypal A/C number<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="paypal_num"
-                                            placeholder="Enter Account Number number">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exp_date_pay">Expire Date<sup>*</sup></label>
-                                        <input type="date" class="form-control" id="exp_date_pay"
-                                            placeholder="DD/MM/YYYY">
+                                        To complete your transaction, you will be transfered to Stripe's secure servers.
                                     </div>
                                 </div>
-
                                 <div id="vma" class="pay-form">
                                     <div class="form-row">
                                         <div class="col-12">
@@ -474,7 +459,10 @@
                                         </div>
                                         <div class="col-md-4 col-12">
                                             <div class="form-group">
-                                                <label for="cvv">CVV<sup>*</sup></label>
+                                                <label for="cvv">CVV<sup>*</sup><span class="ml-2 opt-pop"
+                                                        data-container="body" data-toggle="popover" data-placement="top"
+                                                        data-list="#cvv-hint"><i
+                                                            class="fas fa-exclamation-circle"></i></span></label>
                                                 <input type="text" class="form-control" id="cvv" placeholder="CVV">
                                             </div>
                                         </div>
@@ -494,17 +482,6 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- Select Payment Type -->
-                                <!-- <div class="form-group">
-                                    <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
-                                      </div>
-                                      <div class="custom-control custom-radio custom-control-inline">
-                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                        <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
-                                      </div>
-                                </div> -->
                                 <div class="text-center">
                                     <button type="submit" class="thm_btn br_btn">Submit</button>
                                 </div>
@@ -516,7 +493,15 @@
             <!-- Edit details forms -->
         </main>
         <!-- main body end -->
-
+        <!-- Popup Inner List -->
+        <div id="popup-holder">
+            <div id="cvv-hint">
+                <!-- <div class="mb-1">
+                    <img scr='./assets/img/cvv.png'>
+                </div> -->
+                <div class='text-center'>The CVV is the 3 digit number on the back of your card.</div>
+            </div>
+        </div>
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
@@ -538,14 +523,14 @@
                             <div class="footer_widget footer_link">
                                 <h3>For Streamers</h3>
                                 <ul class="footer_link">
-                                    <li><a href="category-detail.html">Sports</a></li>
-                                    <li><a href="#">Travel (Adults<sup>18+</sup>)</a></li>
-                                    <li><a href="#">Yoga Classes</a></li>
-                                    <li><a href="#">Entertainment</a></li>
-                                    <li><a href="#">Music </a></li>
-                                    <li><a href="#">News</a></li>
-                                    <li><a href="#">Strait Shows</a></li>
-                                    <li><a href="#">Trade Shows</a></li>
+                                    <li><a href="./cat-detail/sports.html">Sports</a></li>
+                                    <li><a href="./cat-detail/travel.html">Travel</a></li>
+                                    <li><a href="./cat-detail/yoga-classes.html">Yoga Classes</a></li>
+                                    <li><a href="./cat-detail/entertainment.html">Entertainment</a></li>
+                                    <li><a href="./cat-detail/music.html">Music </a></li>
+                                    <li><a href="./cat-detail/news.html">News</a></li>
+                                    <li><a href="./cat-detail/trade-shows.html">Trade Shows</a></li>
+                                    <li><a href="./cat-detail/adults.html">Adults<sup>18+</sup></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -571,11 +556,10 @@
                             <div class="footer_widget footer_link">
                                 <h3>Payment Gateway</h3>
                                 <ul class="gateway-img">
-                                    <li><img src="./assets/img/payment/paypal.svg" alt="Payment Icon"></li>
                                     <li><img src="./assets/img/payment/stripe.svg" alt="Payment Icon"></li>
                                     <li><img src="./assets/img/payment/visa.svg" alt="Payment Icon"></li>
                                     <li><img src="./assets/img/payment/mastercard.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/americanexpress.svg" alt="Payment Icon"></li>
+                                    <li><img src="./assets/img/payment/amex.svg" alt="Payment Icon"></li>
                                 </ul>
                             </div>
                         </div>
@@ -589,8 +573,7 @@
                             <div class="copyright_text text-left d-flex align-items-center">
                                 <img src="./assets/img/logo/2.svg" width="100" alt="Logo" class="mr-3">
                                 <p>Copyright By &copy; <a href="index.html" target="_blank">Streaming
-                                        Plug<sup>TM</sup></a>,
-                                    LLC, FL, USA - 2021
+                                        Plug<sup>TM</sup></a> LLC. Florida, USA - 2021
                                 </p>
                             </div>
                         </div>

@@ -340,4 +340,31 @@
       }
     });
   }
+
+  // Popover JS
+
+  $("#popup-holder").hide();
+  $(".opt-pop").popover({
+    html: true,
+  });
+
+  $(".opt-pop").each(function () {
+    var pop_list = $(this).data("list");
+    $(pop_list).append(`<script>$(".clipboard").on("click", function (e) {
+      var $url = $(location).attr("href");
+      var $temp = $("<input>");
+      $("body").append($temp);
+      e.preventDefault();
+      $temp.val($url).select();
+      document.execCommand("copy");
+      $temp.remove();
+    });
+    $('[data-toggle="modal"]').click(function () {
+      $(".opt-pop").popover("hide");
+    });
+  </script>`);
+    var content = $(pop_list).html();
+
+    $(this).attr("data-content", content);
+  });
 })(jQuery);

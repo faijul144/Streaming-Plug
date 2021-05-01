@@ -1036,3 +1036,7 @@
 }
 
 .d-none-nr{display: none;}
+
+.modal-header,.modal-body{
+	padding: 20px;
+}
