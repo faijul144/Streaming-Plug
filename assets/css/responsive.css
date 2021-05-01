@@ -229,8 +229,12 @@
         padding-right: 0;
     }
     .page_title_area {
-        padding: 0 25px;
+        padding: 0;
+
     }
+.page_title_wrap{
+    height: calc(25vw - 0px);}
+
     .team_details .team_content {
         padding-left: 30px;
         padding-right: 25px;
@@ -283,6 +287,10 @@
     .body_space {
         padding: 0;
     }
+    .sec_title >.save-text{
+        bottom: -56px;
+    }
+
     .gateway-img li:not(:last-child){
         margin-right: 3px;
     }
@@ -543,8 +551,11 @@
         width: 50%;
     }
     .page_title_area {
-        padding: 0 15px;
+        padding: 0px;
     }
+
+    .page_title_wrap{
+        height: calc(25vw - 0px);}
     .page_title h3 {
         font-size: 50px;
     }
@@ -633,6 +644,11 @@
     .body_space {
         padding: 0;
     }
+
+    .sec_title >.save-text{
+        bottom: -56px;
+    }
+
     .header_area .header_wrap {
         padding: 20px 0;
         background: #fff;
@@ -975,7 +991,7 @@
         padding-right: 0;
     }
     .page_title_area {
-        padding: 0 15px;
+        padding: 0;
     }
     .page_title h3 {
         font-size: 30px;
@@ -989,7 +1005,7 @@
         font-size: 14px;
     }
     .page_title_wrap {
-        height: calc(25vw - 0px);
+        height: calc(39vw - 0px);
     }
     .d_content .title {
         font-size: 30px;

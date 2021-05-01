@@ -3991,9 +3991,9 @@ text-transform: uppercase;
 	color: #fff;
 }
 
-.pricing_single.active .price_btn a{
+/* .pricing_single.active .price_btn a{
 	margin-top: -5px;
-}
+} */
 
 
 /* .pricing_single.active .price_head h2 {
@@ -5646,6 +5646,7 @@ margin:  5px 0;
     transform: translateX(-50%);
     font-size: 16px;
     font-weight: 500;
+	white-space: nowrap;
 }
 
 .recommend{
