@@ -1199,6 +1199,7 @@
     }
 
 
+
 }
 
 /* Some Custom Sizings */
@@ -1277,5 +1278,10 @@
     .nav.content-count .nav-link::before{
         top:unset;
         bottom: -25px;
+    }
+
+
+    .page_title_wrap {
+        height: calc(50vw - 0px);
     }
 }
