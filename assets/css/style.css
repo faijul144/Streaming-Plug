@@ -5578,15 +5578,17 @@ margin:  5px 0;
 
 .gateway-img label{
     border-radius: 3px;
-    padding: 3px;
+    /* padding: 3px; */
+	border: 1px solid transparent;
 }
 
 
 
-.gateway-img input[type="radio"]:checked+label img{
-	box-shadow: 0px 0px 5px #c1c1c1;
-    transform: scale(1.1);
+.gateway-img input[type="radio"]:checked+label{
+	/* box-shadow: 0px 0px 5px #c1c1c1;
+    transform: scale(1.1); */
 	transition: all 0.3s ease;
+	border-color: #e6e6e6;
 }
 
 .custom-control-input:checked~.custom-control-label::before{
@@ -5677,4 +5679,14 @@ margin:  5px 0;
 
 .t-big{
 	font-size: 30px;
+}
+
+.btn_cus_big{
+	padding: 12px 40px;
+	font-size: 16px;
+}
+
+.btn_sub_cus_big{
+	padding: 12px 55px;
+	font-size: 16px;
 }
