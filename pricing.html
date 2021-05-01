@@ -572,11 +572,22 @@
             if (!this.checked) {
 
 
-                $(".price_head").each(function () {
+                $(".price_head").each(function (i) {
                     $(this).find('.time').text("Yearly");
-                    var price = $(this).find(".mprice").text();
-                    var percent = ((price * 12) * 15) / 100;
-                    $(this).find("h2").text((price * 12) - percent);
+                    // var price = $(this).find(".mprice").text();
+                    // var percent = ((price * 12) * 15) / 100;
+                    // $(this).find("h2").text(Math.ceil((price * 12) - percent));
+                    if (i == 0) { $(this).find("h2").text('70'); }
+                    if (i == 1) { $(this).find("h2").text('210'); }
+                    if (i == 2) { $(this).find("h2").text('460'); }
+                    if (i == 3) { $(this).find("h2").text('970'); }
+                    if (i == 4) { $(this).find("h2").text('5100'); }
+
+
+
+
+
+
                 })
 
             }
