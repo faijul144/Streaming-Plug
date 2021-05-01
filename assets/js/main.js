@@ -370,11 +370,12 @@
       $temp.val($url).select();
       document.execCommand("copy");
       Swal.fire({
-        position: 'center',
+        position: 'bottom-end',
         icon: 'success',
         title: 'Copied',
         showConfirmButton: false,
         timer: 800,
+        toast: true,
     })
       $temp.remove();
     });
