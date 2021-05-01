@@ -510,6 +510,18 @@ input, textarea, select {
 	-webkit-animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
 }
+
+.sticky-sm{
+	left: 0;
+	margin: auto;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	border-bottom: 0;
+	box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
+	z-index: 44;
+}
+
 .header_area .header_wrap.sticky .logo a img:nth-child(2) {
 	display: inline-block;
 }

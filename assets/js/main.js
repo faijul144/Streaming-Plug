@@ -12,14 +12,24 @@
   // sticky
   var wind = $(window);
   var sticky = $("#sticky-header");
-  wind.on("scroll", function () {
-    var scroll = wind.scrollTop();
-    if (scroll < 100) {
-      sticky.removeClass("sticky");
-    } else {
-      sticky.addClass("sticky");
-    }
-  });
+  var main_nav = sticky.parents();
+  var menu_height = main_nav.height();
+  if (wind.width() > 767) {
+    wind.on("scroll", function () {
+      var scroll = wind.scrollTop();
+      if (scroll < 100) {
+        sticky.removeClass("sticky");
+      } else {
+        sticky.addClass("sticky");
+      }
+    });
+  } else {
+    main_nav.hasClass("transparent_header")
+      ? main_nav.removeClass("transparent_header").addClass("header-cus")
+      : "";
+    main_nav.css("height", main_nav + "px");
+    sticky.addClass("sticky-sm");
+  }
 
   // preloader
   $(window).on("load", function () {
