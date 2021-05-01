@@ -4408,7 +4408,10 @@ font-size: 16px;
 	.gray-bg{background-color: #fbfafd!important;}
 
 	.read-more{
-		color: #aaaaaa;
+		color: #ff9100;
+	}
+	.read-more:hover{
+		color: #fff;
 	}
 
 .tooltip-inner{
