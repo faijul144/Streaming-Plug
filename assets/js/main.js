@@ -361,19 +361,28 @@
 
   $(".opt-pop").each(function () {
     var pop_list = $(this).data("list");
-    $(pop_list).append(`<script>$(".clipboard").on("click", function (e) {
+    if ($(pop_list).hasClass("has_pop")) {
+      $(pop_list).append(`<script>$(".clipboard").on("click", function (e) {
       var $url = $(location).attr("href");
       var $temp = $("<input>");
       $("body").append($temp);
       e.preventDefault();
       $temp.val($url).select();
       document.execCommand("copy");
+      Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Copied',
+        showConfirmButton: false,
+        timer: 1500
+    })
       $temp.remove();
     });
     $('[data-toggle="modal"]').click(function () {
       $(".opt-pop").popover("hide");
     });
   </script>`);
+    }
     var content = $(pop_list).html();
 
     $(this).attr("data-content", content);

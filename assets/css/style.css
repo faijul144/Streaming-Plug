@@ -4654,8 +4654,8 @@ margin: 15px 0;
 .post-set{
 	color: #0c0c0c;
 	position: absolute;
-	right: 15px;
-    top: 5px;
+	right: 5px;
+    top: 0;
 }
 
 .post-setting-list li{
@@ -5328,6 +5328,8 @@ box-shadow: none;
 }
 
 .post-owner{flex:1}
+
+.post-owner>h5{padding-right: 30px;}
 
 .side-mobile-menu .thm_btn{
 padding: 10px 0;
