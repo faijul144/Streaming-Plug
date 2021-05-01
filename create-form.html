@@ -399,10 +399,10 @@
                                     <label>Select Your Payment Mathod<sup>*</sup></label>
                                     <ul class="gateway-img">
                                         <li>
-                                            <input type="radio" name="price" id="stripe" value="pack-vip"
+                                            <input type="radio" name="price" id="pal" value="pack-vip"
                                                 data-target="#strp">
-                                            <label for="stripe">
-                                                <img src="./assets/img/payment/stripe.svg" alt="Payment Icon">
+                                            <label for="pal">
+                                                <img src="./assets/img/payment/paypal.svg" alt="Payment Icon">
                                             </label>
                                         </li>
                                         <li>
@@ -414,7 +414,7 @@
                                         </li>
                                         <li>
                                             <input type="radio" name="price" id="mastercard" value="pack-vip"
-                                                data-target="#vma" checked>
+                                                data-target="#vma">
                                             <label for="mastercard">
                                                 <img src="./assets/img/payment/mastercard.svg" alt="Payment Icon">
                                             </label>
@@ -429,59 +429,6 @@
                                     </ul>
                                     <small class="form-text text-muted">Select Your Prefered Payment Gateway</small>
                                 </div>
-                                <div id="strp" class="pay-form">
-                                    <div class="form-group">
-                                        To complete your transaction, you will be transfered to Stripe's secure servers.
-                                    </div>
-                                </div>
-                                <div id="vma" class="pay-form">
-                                    <div class="form-row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="card_num">Card number<sup>*</sup></label>
-                                                <input type="text" class="form-control" id="card_num"
-                                                    placeholder="Enter Card number">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <label for="name_on_card">Name On Card<sup>*</sup></label>
-                                                <input type="text" class="form-control" id="name_on_card"
-                                                    placeholder="Enter Name On Card">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-8 col-12">
-                                            <div class="form-group">
-                                                <label for="exp_date">Expiration date<sup>*</sup></label>
-                                                <input type="text" class="form-control" id="exp_date"
-                                                    placeholder="MM/YY">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-12">
-                                            <div class="form-group">
-                                                <label for="cvv">CVV<sup>*</sup><span class="ml-2 opt-pop"
-                                                        data-container="body" data-toggle="popover" data-placement="top"
-                                                        data-list="#cvv-hint"><i
-                                                            class="fas fa-exclamation-circle"></i></span></label>
-                                                <input type="text" class="form-control" id="cvv" placeholder="CVV">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input"
-                                                        id="transaction">
-                                                    <label class="custom-control-label" for="transaction">Save
-                                                        Card</label>
-                                                    <small class="form-text text-muted">I acknowledge that my card
-                                                        information is saved in my Streaming Plug account for subsequent
-                                                        transactions.
-                                                    </small>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="text-center">
                                     <button type="submit" class="thm_btn br_btn">Submit</button>
                                 </div>
@@ -493,15 +440,7 @@
             <!-- Edit details forms -->
         </main>
         <!-- main body end -->
-        <!-- Popup Inner List -->
-        <div id="popup-holder">
-            <div id="cvv-hint">
-                <!-- <div class="mb-1">
-                    <img scr='./assets/img/cvv.png'>
-                </div> -->
-                <div class='text-center'>The CVV is the 3 digit number on the back of your card.</div>
-            </div>
-        </div>
+
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
@@ -605,19 +544,7 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        // Payment Forms
-        var pay_target = $('.gateway-img input:checked').data("target");
-        $('.pay-form').hide()
-        $(pay_target).show();
-        $('.gateway-img input').change(
-            function () {
-                if ($(this).is(':checked')) {
-                    var target = $(this).data("target");
-                    $('.pay-form').slideUp()
-                    $(target).slideDown();
 
-                }
-            });
 
         // Package Price Change
         $(".pack-price").each(function () {
