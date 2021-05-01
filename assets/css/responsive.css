@@ -641,6 +641,10 @@
 /* SM Device :320px. */
 @media (max-width: 767px) {
 
+.mb-sm-30{
+    margin-bottom: 30px;
+}
+
     .body_space {
         padding: 0;
     }

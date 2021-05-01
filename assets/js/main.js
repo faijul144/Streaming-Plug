@@ -374,7 +374,7 @@
         icon: 'success',
         title: 'Copied',
         showConfirmButton: false,
-        timer: 800
+        timer: 800,
     })
       $temp.remove();
     });
