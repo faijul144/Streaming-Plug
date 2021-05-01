@@ -12,7 +12,7 @@
   // sticky
   var wind = $(window);
   var sticky = $("#sticky-header");
-  var main_nav = sticky.parents();
+  var main_nav = sticky.parent();
   var menu_height = main_nav.height();
   if (wind.width() > 767) {
     wind.on("scroll", function () {
@@ -24,10 +24,11 @@
       }
     });
   } else {
-    main_nav.hasClass("transparent_header")
-      ? main_nav.removeClass("transparent_header").addClass("header-cus")
-      : "";
-    main_nav.css("height", main_nav + "px");
+    console.log(main_nav.is("header"));
+    if (main_nav.is("header") && main_nav.hasClass("transparent_header")) {
+      $(main_nav).addClass("header-cus").removeClass("transparent_header");
+    }
+    $(main_nav).css("height", menu_height + "px");
     sticky.addClass("sticky-sm");
   }
 
