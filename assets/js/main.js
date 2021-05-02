@@ -67,6 +67,48 @@
     $(".hamburger-menu > a").removeClass("active");
   });
 
+  //Index Page Estimate Slider
+  function decimalFormat(nStr) {
+    var $decimalDot = ".";
+    var $decimalComma = ",";
+
+    var currency_symbol_left = "$";
+    var currency_symbol_right = "";
+
+    nStr += "";
+    var x = nStr.split(".");
+    var x1 = x[0];
+    var x2 = x.length > 1 ? $decimalDot + x[1] : "";
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+      var x1 = x1.replace(rgx, "$1" + $decimalComma + "$2");
+    }
+    return currency_symbol_left + x1 + x2 + currency_symbol_right;
+  }
+
+  function earnAvg() {
+    var fee = 5;
+    var $decimal = 2;
+
+    var monthlySubscription = parseFloat($("#rangeMonthlySubscription").val());
+    var numberFollowers = parseFloat($("#rangeNumberFollowers").val());
+
+    var estimatedFollowers = (numberFollowers * 5) / 100;
+    var followersAndPrice = estimatedFollowers * monthlySubscription;
+    var percentageAvgFollowers = (followersAndPrice * fee) / 100;
+    var earnAvg = followersAndPrice - percentageAvgFollowers;
+
+    return decimalFormat(earnAvg.toFixed($decimal));
+  }
+  $("#estimatedEarn").html(earnAvg());
+
+  $("#rangeNumberFollowers, #rangeMonthlySubscription").on(
+    "change",
+    function () {
+      $("#estimatedEarn").html(earnAvg());
+    }
+  );
+
   // portfolio active
   $(".portfolio_active").owlCarousel({
     loop: true,

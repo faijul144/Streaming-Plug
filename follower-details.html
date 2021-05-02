@@ -846,12 +846,6 @@
                             </div>
                             <div class="footer_widget footer_link">
                                 <img src="./assets/img/payment/stripe-badge-transparent.png" alt="Payment Image">
-                                <!-- <ul class="gateway-img">
-                                    <li><img src="./assets/img/payment/stripe.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/visa.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/mastercard.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/amex.svg" alt="Payment Icon"></li>
-                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -899,7 +893,6 @@
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
-    <!-- <script src="assets/js/streamer.js"></script> -->
     <script>
         // Package Price Change
         $(".pack-price").each(function () {
@@ -910,14 +903,13 @@
 
         $("#my-switch").change(function () {
             if (!this.checked) {
-
-
                 $(".pack-price").each(function () {
-                    var price = $(this).parent().find(".old-price").text();
-                    var percent = ((price * 12) * 15) / 100;
-                    $(this).text((price * 12) - percent);
+                    if (i == 0) { $(this).text('70'); }
+                    if (i == 1) { $(this).text('210'); }
+                    if (i == 2) { $(this).text('460'); }
+                    if (i == 3) { $(this).text('970'); }
+                    if (i == 4) { $(this).text('5100'); }
                 })
-
             }
             else {
                 $(".pack-price").each(function () {

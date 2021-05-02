@@ -393,12 +393,6 @@
                             </div>
                             <div class="footer_widget footer_link">
                                 <img src="./assets/img/payment/stripe-badge-transparent.png" alt="Payment Image">
-                                <!-- <ul class="gateway-img">
-                                    <li><img src="./assets/img/payment/stripe.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/visa.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/mastercard.svg" alt="Payment Icon"></li>
-                                    <li><img src="./assets/img/payment/amex.svg" alt="Payment Icon"></li>
-                                </ul> -->
                             </div>
                         </div>
                     </div>
@@ -443,49 +437,6 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
-
-        function decimalFormat(nStr) {
-            var $decimalDot = '.';
-            var $decimalComma = ',';
-
-            var currency_symbol_left = '$';
-            var currency_symbol_right = '';
-
-            nStr += '';
-            var x = nStr.split('.');
-            var x1 = x[0];
-            var x2 = x.length > 1 ? $decimalDot + x[1] : '';
-            var rgx = /(\d+)(\d{3})/;
-            while (rgx.test(x1)) {
-                var x1 = x1.replace(rgx, '$1' + $decimalComma + '$2');
-            }
-            return currency_symbol_left + x1 + x2 + currency_symbol_right;
-        }
-
-        function earnAvg() {
-            var fee = 5;
-            $decimal = 2;
-
-            var monthlySubscription = parseFloat($('#rangeMonthlySubscription').val());
-            var numberFollowers = parseFloat($('#rangeNumberFollowers').val());
-
-            var estimatedFollowers = (numberFollowers * 5 / 100)
-            var followersAndPrice = (estimatedFollowers * monthlySubscription);
-            var percentageAvgFollowers = (followersAndPrice * fee / 100);
-            var earnAvg = followersAndPrice - percentageAvgFollowers;
-
-            return decimalFormat(earnAvg.toFixed($decimal));
-        }
-        $('#estimatedEarn').html(earnAvg());
-
-        $("#rangeNumberFollowers, #rangeMonthlySubscription").on('change', function () {
-
-            $('#estimatedEarn').html(earnAvg());
-
-        });
-
-    </script>
 </body>
 
 </html>
