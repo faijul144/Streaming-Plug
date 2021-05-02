@@ -101,7 +101,8 @@
     var estimatedFollowers = (numberFollowers * 5) / 100;
     var followersAndPrice = estimatedFollowers * monthlySubscription;
     var percentageAvgFollowers = (followersAndPrice * fee) / 100;
-    var earnAvg = followersAndPrice - percentageAvgFollowers;
+    // var earnAvg = followersAndPrice - percentageAvgFollowers;
+    var earnAvg = followersAndPrice;
 
     return decimalFormat(earnAvg.toFixed($decimal));
   }
