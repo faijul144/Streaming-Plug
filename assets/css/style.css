@@ -5250,6 +5250,8 @@ box-shadow: none;
 	text-align: center;
 }
 
+
+
 .short_text{
 	margin: 10px 0;
 	text-align: center;
@@ -5691,5 +5693,6 @@ margin:  5px 0;
 	font-size: 16px;
 }
 
-.short_text a,.foot a{color: #ff9100;}
-.short_text a:hover,.foot a:hover{color: #0c0c0c;}
+.short_text a,.foot a,.signup-form a{color: #ff9100;}
+.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #0c0c0c;}
+.signup-form .custom-control-label{line-height: 23px;}
