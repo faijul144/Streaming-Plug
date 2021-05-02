@@ -97,8 +97,6 @@
 
     var monthlySubscription = parseFloat($("#rangeMonthlySubscription").val());
     var numberFollowers = parseFloat($("#rangeNumberFollowers").val());
-    console.log(numberFollowers);
-    console.log(monthlySubscription);
 
     var estimatedFollowers = (numberFollowers * 5) / 100;
     var followersAndPrice = numberFollowers * monthlySubscription;
