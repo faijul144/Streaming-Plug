@@ -67,6 +67,11 @@
     $(".hamburger-menu > a").removeClass("active");
   });
 
+  // Enable Bootstrap Tooltip
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
   //Index Page Estimate Slider
   function decimalFormat(nStr) {
     var $decimalDot = ".";
