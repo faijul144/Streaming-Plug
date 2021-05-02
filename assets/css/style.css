@@ -5690,3 +5690,6 @@ margin:  5px 0;
 	padding: 12px 55px;
 	font-size: 16px;
 }
+
+.short_text a,.foot a{color: #ff9100;}
+.short_text a:hover,.foot a:hover{color: #0c0c0c;}
