@@ -4151,7 +4151,7 @@ text-transform: uppercase;
     background-color: #ff9100;
     left:15%;
     transform-origin: 50%;
-    animation: circle .5s alternate infinite ease;
+    animation: circle .6s alternate infinite ease;
 }
 
 @keyframes circle{
@@ -4170,6 +4170,7 @@ text-transform: uppercase;
         top:0%;
     }
 }
+
 .circle:nth-child(2){
     left:45%;
     animation-delay: .2s;
@@ -4177,7 +4178,7 @@ text-transform: uppercase;
 .circle:nth-child(3){
     left:auto;
     right:15%;
-    animation-delay: .3s;
+    animation-delay: .4s;
 }
 .shadow{
     width:20px;
