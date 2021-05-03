@@ -98,11 +98,9 @@
     var monthlySubscription = parseFloat($("#rangeMonthlySubscription").val());
     var numberFollowers = parseFloat($("#rangeNumberFollowers").val());
 
-    var estimatedFollowers = (numberFollowers * 5) / 100;
     var followersAndPrice = numberFollowers * monthlySubscription;
     var percentageAvgFollowers = (followersAndPrice * fee) / 100;
-    // var earnAvg = followersAndPrice - percentageAvgFollowers;
-    var earnAvg = followersAndPrice;
+    var earnAvg = followersAndPrice - percentageAvgFollowers;
 
     return decimalFormat(earnAvg.toFixed($decimal));
   }
