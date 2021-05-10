@@ -5697,4 +5697,13 @@ margin:  5px 0;
 .short_text a:hover,.foot a:hover,.signup-form a:hover{color: #0c0c0c;}
 .signup-form .custom-control-label{line-height: 23px;}
 
+.main_menu ul li a.oicon{
+	border: 1px solid #fff;
+    padding: 6px;
+    line-height: 0;
+	font-size: 30px;
+}
 
+.main_menu ul li:hover a.oicon{
+	color: #fff;
+}
