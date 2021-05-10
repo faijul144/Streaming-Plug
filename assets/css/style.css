@@ -2734,7 +2734,7 @@ blockquote .author_info span{
 .footer_widget .about_text {
 	padding-right: 60px;
 }
-.footer_widget .about_text p {
+.footer_widget .about_text p,.footer_widget p{
 	color: #aaaaaa;
 	line-height: 28px;
 }
