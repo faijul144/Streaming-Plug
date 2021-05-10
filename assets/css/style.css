@@ -428,6 +428,8 @@ input, textarea, select {
 }
 
 .main_menu ul li ul.submenu {
+max-height: 215px;
+overflow: auto;
 	position: absolute;
 	top: 110%;
 	left: 0;
