@@ -1040,3 +1040,7 @@
 .modal-header,.modal-body{
 	padding: 20px;
 }
+
+.border-rounded-10{
+	border-radius: 10px;
+}
