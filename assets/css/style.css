@@ -2590,6 +2590,7 @@ blockquote .author_info span{
 	padding: 11px 22px;
 	background: #f8f8f8;
 	margin-right: 10px;
+	border-radius: 50px;
 }
 .post_tag_wrap .related_tag ul li a:hover {
 	color: #fff;
@@ -5706,4 +5707,21 @@ margin:  5px 0;
 
 .main_menu ul li:hover a.oicon{
 	color: #fff;
+}
+
+.blog_details_area .d_content ul{
+	padding-left: 10px;
+	margin: 10px 0 15px;
+}
+
+.blog_details_area .d_content ul li{
+	margin-bottom: 12px;
+	line-height: 28px;
+}
+
+.blog_details_area .d_content a {
+	color: #0c0c0c;
+}
+.blog_details_area .d_content a:hover {
+	color: #ff9100;
 }
