@@ -1289,3 +1289,11 @@
         height: calc(50vw - 0px);
     }
 }
+
+/* @media screen and (min-width:991px) {
+    .blog_item .post_thumb img{
+        max-height: 400px;
+        object-fit: cover;
+        object-position: center;
+    }
+} */
