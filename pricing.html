@@ -181,7 +181,39 @@
                         <span class="save-text">Save 15% For A Yearly Plan</span>
                     </div>
                     <div class="row justify-content-center gutters-5">
-                        <div class="col-lg-3 col-md-6">
+                        <div class="col-lg-4 col-md-4  mt-md-0 mt-sm-4 free-plan">
+                            <div class="pricing_single text-center free-bg">
+                                <div class="price_head">
+                                    <span class="pack">Free</span>
+                                    <h2>0</h2>
+                                    <span class="time">Monthly</span>
+                                </div>
+                                <hr>
+
+                                <div class="pricing-content-container">
+                                    <ul class="pricing-content">
+                                        <li>Monthly Subscription Price Up to 50$</li>
+                                        <li>4 videos uploading / Month</li>
+                                        <li>2h/Daily Live streaming</li>
+                                        <li>Live chat</li>
+                                        <li>Guest screen share</li>
+                                        <li><a href="javascript:void(0)">Accept virtual gifts</a></li>
+                                        <li>80% of Earnings</li>
+                                        <li>Unlimited viwers</li>
+                                        <li>No processing fees</li>
+                                        <li>Accept Tips</li>
+                                    </ul>
+                                </div>
+                                <div class="price_icon">
+                                    <img src="assets/img/icon/tax-free.svg" alt="Icon">
+                                </div>
+                                <div class="price_btn">
+                                    <a href="javascript:void(0)">select plan</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4  mt-md-0 mt-sm-4 free-plan">
                             <div class="pricing_single text-center">
                                 <div class="price_head">
                                     <span class="pack">Bronze</span>
@@ -205,6 +237,9 @@
                                     <a href="javascript:void(0)">select plan</a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-12 d-md-block d-lg-block d-sm-none">
+                            <hr class="price-br" data-text="You Can Choose From Our Premium Plan" />
                         </div>
                         <div class="col-lg-3 col-md-6">
                             <div class="pricing_single text-center">
@@ -294,11 +329,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 d-md-block d-lg-block d-sm-none">
-                            <hr class="price-br" data-text="You Can Also Choose Our VIP Package" />
-                        </div>
-                        <div class="col-lg-5 col-md-6  mt-md-0 mt-sm-4">
-                            <div class="pricing_single text-center diamond">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="pricing_single text-center">
                                 <div class="price_head">
                                     <span class="pack">Diamond</span>
                                     <h2>500</h2>
@@ -306,7 +338,7 @@
                                 </div>
                                 <hr>
 
-                                <div class="pricing-content-container mh-a">
+                                <div class="pricing-content-container">
                                     <ul class="pricing-content">
                                         <li>Unlimited Bundle with VIP services.</li>
                                         <li>Mostly for celebrities, Governments, NGOs</li>
@@ -533,11 +565,11 @@
 
                 $(".price_head").each(function (i) {
                     $(this).find('.time').text("Yearly");
-                    if (i == 0) { $(this).find("h2").text('70'); }
-                    if (i == 1) { $(this).find("h2").text('210'); }
-                    if (i == 2) { $(this).find("h2").text('460'); }
-                    if (i == 3) { $(this).find("h2").text('970'); }
-                    if (i == 4) { $(this).find("h2").text('5100'); }
+                    if (i == 1) { $(this).find("h2").text('70'); }
+                    if (i == 2) { $(this).find("h2").text('210'); }
+                    if (i == 3) { $(this).find("h2").text('460'); }
+                    if (i == 4) { $(this).find("h2").text('970'); }
+                    if (i == 5) { $(this).find("h2").text('5100'); }
                 })
 
             }

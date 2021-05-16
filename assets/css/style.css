@@ -4043,6 +4043,15 @@ text-transform: uppercase;
 	padding: 0;
 }
 
+.free-plan .pricing-content-container{
+    min-height: 305px;
+
+}
+
+.free-bg{
+	background: #f5f5f5 !important;
+}
+
 .pricing-content-container .pricing-content{
 	text-align: left;
 }
@@ -5346,11 +5355,11 @@ margin: 0 auto;
 
 sup{font-size: 8px;}
 
-.contact_text a,.pricing-content a{
+.contact_text a{
 	color: #635f5f;
 }
 
-.about_content p a{
+.about_content p a,.pricing-content a{
 	color: #0c0c0c;
 }
 
