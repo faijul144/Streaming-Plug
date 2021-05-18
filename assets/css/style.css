@@ -5737,8 +5737,8 @@ margin:  5px 0;
 	color: #ff9100;
 }
 
-.pr_area article:not(:last-child){
-	margin-bottom: 70px;
+.pr_area article{
+	margin-bottom: 30px;
 }
 
 .pr_area .post_thumb{
