@@ -1201,7 +1201,9 @@
     .testimonial_3 .circle_image {
         margin-left: 60px;
     }
-
+    .pr_area .post_thumb img{
+        height: auto;
+    }
 
 
 }
