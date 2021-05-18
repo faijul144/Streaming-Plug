@@ -5736,3 +5736,26 @@ margin:  5px 0;
 .blog_details_area .d_content a:hover {
 	color: #ff9100;
 }
+
+.pr_area article:not(:last-child){
+	margin-bottom: 70px;
+}
+
+.pr_area .post_thumb{
+	text-align: center;
+}
+
+.pr_area .post_thumb img{
+	height: 300px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.pr_area .blog_item .post_content .btn_wrap .author_info .thumb{
+	border-radius: 0;
+	height: 75px;
+	width: 75px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
