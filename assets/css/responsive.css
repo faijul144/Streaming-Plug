@@ -284,6 +284,10 @@
 }
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .pricing-content-container{
+        min-height: 420px;
+    }
+
     .body_space {
         padding: 0;
     }
@@ -618,14 +622,14 @@
         font-size: 90px;
     }
     .pricing_single.active .price_icon {
-        width: 100px;
-        height: 100px;
-        line-height: 100px;
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
         margin-top: 35px;
         margin-bottom: 40px;
     }
     .pricing_single.active .price_btn a {
-        padding: 15px 35px;
+        padding: 10px 35px;
     }
     .pricing_single {
        margin-bottom: 30px;
