@@ -397,6 +397,33 @@
     });
   }
 
+  // Pricing Tabel
+  // Table Price Change
+  $(".price_head").each(function () {
+    var price = $(this).find("h2").text();
+    var priceSpan = `<span class="mprice d-none">` + price + `</span>`;
+    $(this).append(priceSpan);
+  });
+
+  $("#my-switch").change(function () {
+    if (!this.checked) {
+      $(".price_head").each(function (i) {
+        $(this).find(".time").text("Yearly");
+        var price = $(this).find(".mprice").text();
+        var percent = (price * 10) / 100;
+        $(this)
+          .find("h2")
+          .text(Math.floor(price * 12 - percent));
+      });
+    } else {
+      $(".price_head").each(function () {
+        $(this).find(".time").text("Monthly");
+        var price = $(this).find(".mprice").text();
+        $(this).find("h2").text(price);
+      });
+    }
+  });
+
   // Popover JS
 
   $("#popup-holder").hide();
