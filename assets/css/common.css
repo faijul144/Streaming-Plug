@@ -1052,3 +1052,7 @@
 .p-13{
 	padding: 0.13rem;
 }
+
+.min-h-auto{
+	min-height: auto !important;
+}
