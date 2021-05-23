@@ -1204,8 +1204,15 @@
     .pr_area .post_thumb img{
         height: auto;
     }
+}
 
+/* Rotate Screen */
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
 
+.pricing_area .col-lg-3{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
 }
 
 /* Some Custom Sizings */
