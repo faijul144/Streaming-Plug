@@ -56,14 +56,14 @@
         <!-- preloader end -->
 
         <!-- header start -->
-        <header class="header_area header_4 header_cus">
+        <header class="header_area header_4 transparent_header">
             <div id="sticky-header" class="header_wrap">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="main_menu_area">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/1.svg" alt="Streaming Plug Logo" width="160">
+                                    <img src="assets/img/logo/2.svg" alt="Streaming Plug Logo" width="160">
                                     <img src="assets/img/logo/1.svg" alt="Streaming Plug Logo" width="160">
                                 </a>
                             </div>
@@ -97,12 +97,34 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class="hamburger-menu d-lg-none">
-                                <a class="menu-toggle" href="javascript:void(0);">
-                                    <span class="menu__bar"></span>
-                                    <span class="menu__bar"></span>
-                                    <span class="menu__bar"></span>
-                                </a>
+                            <div class="d-inline-flex d-lg-none">
+                                <div class="main_menu sm-menu-lang">
+                                    <ul>
+                                        <li class="menu_item_has_child">
+                                            <a href="javascript:void(0)" class="oicon"><i class="fas fa-globe"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="javascript:void(0)">Arabic</a></li>
+                                                <li><a href="javascript:void(0)">English</a></li>
+                                                <li><a href="javascript:void(0)">French</a></li>
+                                                <li><a href="javascript:void(0)">German</a></li>
+                                                <li><a href="javascript:void(0)">Russian</a></li>
+                                                <li><a href="javascript:void(0)">Chinese</a></li>
+                                                <li><a href="javascript:void(0)">Polish</a></li>
+                                                <li><a href="javascript:void(0)">Hindi</a></li>
+                                                <li><a href="javascript:void(0)">Portuguese</a></li>
+                                                <li><a href="javascript:void(0)">Hebrew</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="hamburger-menu d-lg-none">
+
+                                    <a class="menu-toggle" href="javascript:void(0);">
+                                        <span class="menu__bar"></span>
+                                        <span class="menu__bar"></span>
+                                        <span class="menu__bar"></span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -124,7 +146,7 @@
                         <a href="about.html">Streaming Plug</a>
                     </li>
                     <li><a href="explore.html">Explore</a></li>
-                    <li class="dropdown"><a href="javascript:void(0)"><i class="fas fa-globe mr-2"></i>Languages</a>
+                    <!-- <li class="dropdown"><a href="javascript:void(0)"><i class="fas fa-globe mr-2"></i>Languages</a>
                         <ul class="sub-menu">
                             <li><a href="javascript:void(0)">Arabic</a></li>
                             <li><a href="javascript:void(0)">English</a></li>
@@ -137,10 +159,10 @@
                             <li><a href="javascript:void(0)">Portuguese</a></li>
                             <li><a href="javascript:void(0)">Hebrew</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="sign-in.html">Login</a></li>
-                    <li class="header_btn mt-3"><a class="thm_btn br_btn_2" href="sign-up.html">Become A
+                    <li class="header_btn mt-3"><a class="thm_btn br_btn_2 text-white" href="sign-up.html">Become A
                             Streamer</a>
                     </li>
                 </ul>
@@ -175,7 +197,8 @@
                     <div class="">
                         <div class="row">
                             <div class="col-lg-4 mb-sm-5">
-                                <div class="team_left pos-rel mb-30">
+
+                                <div class="team_left pos-rel mb-30 pro-tab">
                                     <!--there is  "offline","online", "away" classes for status color change-->
                                     <div class="streamer_thumb online steamer-status" data-name-letter="R">
                                         <img src="assets/img/team/team_thumb.jpg" alt="">
@@ -233,9 +256,20 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- <button class="thm_btn thm_btn-black br_btn w-100">
+                                    Become an affiliate
+                                </button> -->
+                                <div class="team_left aff_man mb-30 pro-aff">
+                                    <a href="javascript:void(0)" data-target=".pro-tab" class="tab-click">Profile</a>
+                                </div>
+                                <div class="team_left aff_man active-tab">
+                                    <a href="javascript:void(0)" data-target="#aff" class="tab-click">Affiliate
+                                        Manager</a>
+                                </div>
+
                             </div>
                             <div class="col-lg-8">
-                                <div class="container">
+                                <div class="container pro-tab">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-end streamer-search">
@@ -514,6 +548,139 @@
                                         </div>
 
 
+                                    </div>
+                                </div>
+                                <div class="container" id="aff">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="services_tab">
+                                                <ul class="nav" id="myTab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="nav-tab-01" data-toggle="tab"
+                                                            href="#nav-1" role="tab" aria-controls="nav-1"
+                                                            aria-selected="false">
+                                                            <span class="title"><i
+                                                                    class="far fa-file-alt"></i>Stat</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="nav-tab-02" data-toggle="tab"
+                                                            href="#nav-2" role="tab" aria-controls="nav-2"
+                                                            aria-selected="true">
+                                                            <span class="title"><i
+                                                                    class="far fa-image"></i>Assets</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="nav-tab-03" data-toggle="tab"
+                                                            href="#nav-3" role="tab" aria-controls="nav-3"
+                                                            aria-selected="false">
+                                                            <span class="title"><i
+                                                                    class="far fa-video"></i>Payout</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content tab-border" id="myTabContent">
+                                                <!-- Stat -->
+                                                <div class="tab-pane fade active show" id="nav-1" role="tabpanel"
+                                                    aria-labelledby="nav-tab-01">
+                                                </div>
+                                                <!-- Assets -->
+                                                <div class="tab-pane fade" id="nav-2" role="tabpanel"
+                                                    aria-labelledby="nav-tab-02">
+                                                    <div class="services-content-wrapper">
+                                                        <div class="row align-items-center">
+                                                            <div class="col-12">
+                                                                <div class="post-photos">
+                                                                    <div class="post-images">
+                                                                        <div class="aff-img">
+                                                                            <a class="post-img-thumb"
+                                                                                href="./assets/img/portfolio/port_d_01.jpg">
+                                                                                <img src="./assets/img/portfolio/port_d_01.jpg"
+                                                                                    alt="Post Image" />
+                                                                            </a>
+                                                                            <div class="aff-link">
+                                                                                <input type="text"
+                                                                                    value="https://yourlink.com"
+                                                                                    id="img-1">
+                                                                                <label for="img-1"
+                                                                                    class="fas fa-clipboard"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Copy Link"></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-images">
+                                                                        <div class="aff-img">
+                                                                            <a class="post-img-thumb"
+                                                                                href="./assets/img/portfolio/port_d_02.jpg">
+                                                                                <img src="./assets/img/portfolio/port_d_02.jpg"
+                                                                                    alt="Post Image" />
+                                                                            </a>
+                                                                            <div class="aff-link">
+                                                                                <input type="text"
+                                                                                    value="https://yourlink.com"
+                                                                                    id="img-2">
+                                                                                <label for="img-2"
+                                                                                    class="fas fa-clipboard"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Copy Link"></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-images aff-img">
+                                                                        <div class="aff-img">
+                                                                            <a class="post-img-thumb"
+                                                                                href="./assets/img/portfolio/port_d_03.jpg">
+                                                                                <img src="./assets/img/portfolio/port_d_03.jpg"
+                                                                                    alt="Post Image" />
+                                                                            </a>
+                                                                            <div class="aff-link">
+                                                                                <input type="text"
+                                                                                    value="https://yourlink.com"
+                                                                                    id="img-3">
+                                                                                <label for="img-3"
+                                                                                    class="fas fa-clipboard"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Copy Link"></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="post-images">
+                                                                        <div class="aff-img">
+                                                                            <a class="post-img-thumb"
+                                                                                href="./assets/img/blog/3reasonwhy.png">
+                                                                                <img src="./assets/img/blog/3reasonwhy.png"
+                                                                                    alt="Post Image" />
+                                                                            </a>
+                                                                            <div class="aff-link">
+                                                                                <input type="text"
+                                                                                    value="https://yourlink.com"
+                                                                                    id="img-4">
+                                                                                <label for="img-4"
+                                                                                    class="fas fa-clipboard"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Copy Link"></label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Payout -->
+                                                <div class="tab-pane fade" id="nav-3" role="tabpanel"
+                                                    aria-labelledby="nav-tab-03">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -842,7 +1009,6 @@
                                     <li><a href="./cat-detail/trade-shows.html">Trade Shows</a></li>
                                     <li><a href="javascript:void(0)">Virtual Live Events</a></li>
                                     <li><a href="javascript:void(0)">Creators-of-all-kinds</a></li>
-                                    <li><a href="./cat-detail/covid.html">Covid-19</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -857,6 +1023,7 @@
                                     <li><a href="cookies.html">Cookies</a></li>
                                     <li><a href="terms.html">Terms Of Use</a></li>
                                     <li><a href="community.html">Community Guidelines</a></li>
+                                    <li><a href="javacript:void(0)">Become an affiliate</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </div>
@@ -868,10 +1035,12 @@
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="support.html">Support</a></li>
                                     <li><a href="pr-release.html">Press Release</a></li>
+                                    <li><a href="./cat-detail/covid.html">Covid-19</a></li>
                                 </ul>
                             </div>
                             <div class="footer_widget footer_link text-left">
                                 <img src="./assets/img/payment/stripe-badge-transparent.png" alt="Payment Image">
+                                <h3 class="mt-3 mb-2 font-weight-light">Featured On</h3>
                                 <img src="./assets/img/payment/streamingplugO.jpg" alt="Payment Image"
                                     class="my-2 border-rounded-10">
                                 <img src="./assets/img/press/processed.jpeg" alt="Press Image"
@@ -927,9 +1096,12 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/simple-lightbox.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/affiliate.js"></script>
+
     <script>
         // Package Price Change
         $(".pack-price").each(function () {

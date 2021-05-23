@@ -10,7 +10,7 @@ $(".gallery").each(function () {
 // Hide more than 4
 $(".gallery").each(function () {
   $(this)
-    .find("a")
+    .find(">a")
     .each(function (i, val) {
       if (i > 3) {
         $(this).addClass("hideImg");

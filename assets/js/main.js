@@ -92,7 +92,7 @@
   }
 
   function earnAvg() {
-    var fee = 4;
+    var fee = 5;
     var $decimal = 2;
 
     var monthlySubscription = parseFloat($("#rangeMonthlySubscription").val());
