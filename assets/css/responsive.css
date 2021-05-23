@@ -1224,8 +1224,8 @@
 }
 
 .pricing_area .col-lg-4{
-    flex: 0 0 80% !important;
-    max-width: 80% !important;
+    flex: 0 0 80%;
+    max-width: 80%;
 }
 
 }
