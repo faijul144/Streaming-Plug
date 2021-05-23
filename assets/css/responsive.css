@@ -1212,7 +1212,14 @@
 .pricing_area .col-lg-3{
     flex: 0 0 50%;
     max-width: 50%;
+    margin-bottom: 15px;
 }
+
+.pricing_area .col-lg-4{
+    flex: 0 0 80% !important;
+    max-width: 80% !important;
+}
+
 }
 
 /* Some Custom Sizings */
