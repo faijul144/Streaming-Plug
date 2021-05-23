@@ -5778,5 +5778,14 @@ margin:  5px 0;
 }
 
 .footer_link h5{
-	color: #aaaaaa;
+	color: #fff;
+}
+
+
+
+.blog_dtls_wrap .d_content>p:first-of-type:first-letter{
+	float: left;
+	padding-right: 5px;
+    line-height: 25px;
+    font-size: 40px;
 }
