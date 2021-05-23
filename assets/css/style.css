@@ -5762,3 +5762,21 @@ margin:  5px 0;
 
 .m_wrap a{color: #ff9100;}
 .m_wrap a:hover{color: #000;}
+
+.pay-img{
+	position: absolute;
+    bottom: -15px;
+    padding: 0px 3px;
+    background: #fff;
+    width: 30px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 3px;
+    left: 14px;
+}
+
+.footer_link h5{
+	color: #aaaaaa;
+}
