@@ -267,7 +267,7 @@
         padding: 50px 25px;
     }
     .pricing_single.active {
-        padding: 55px 40px;
+        padding: 50px 40px;
     }
     .faq_wrapper {
         padding-left: 0;
@@ -1112,7 +1112,7 @@
         position: unset;
         margin-left: 0;
         margin-right: 0;
-        padding: 55px 30px;
+        padding: 50px 30px;
         transform: translateY(0);
     }
     .pricing_single.active .price_head h2 {
