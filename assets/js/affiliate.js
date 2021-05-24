@@ -1,3 +1,4 @@
+// Profile And Affiliate Manager Change
 $(".pro-tab").slideUp();
 $(".tab-click").click(function (e) {
   e.preventDefault();
@@ -7,6 +8,7 @@ $(".tab-click").click(function (e) {
   $(this).parent().addClass("active-tab");
 });
 
+// Asset Img
 new SimpleLightbox(".aff-img a", {
   showCounter: false,
   nav: false,

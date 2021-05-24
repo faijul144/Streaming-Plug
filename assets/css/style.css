@@ -5809,7 +5809,16 @@ color: #0c0c0c;
 border-color: #0c0c0c;
 }
 .sm-menu-lang{
-	margin-right: 30px;
+	margin-right: 15px;
+}
+
+.sm-menu-lang.main_menu ul li ul.submenu{
+	left: unset;
+	right: 0;
+}
+
+.sm-menu-lang.main_menu ul li a.oicon{
+	font-size: 22px;
 }
 
 /* Affiliate */

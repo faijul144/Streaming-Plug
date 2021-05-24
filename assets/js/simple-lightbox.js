@@ -1090,7 +1090,7 @@
                         _this5.domNodes.additionalHtml.innerHTML =
                           _this5.options.additionalHtml;
 
-                        _this5.domNodes.captionContainer.appendChild(
+                        _this5.domNodes.image.appendChild(
                           _this5.domNodes.additionalHtml
                         );
                       }
