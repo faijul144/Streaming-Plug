@@ -198,7 +198,7 @@
                         <div class="row">
                             <div class="col-lg-4 mb-sm-5">
 
-                                <div class="team_left pos-rel mb-30 pro-tab">
+                                <div class="team_left pos-rel mb-30">
                                     <!--there is  "offline","online", "away" classes for status color change-->
                                     <div class="streamer_thumb online steamer-status" data-name-letter="R">
                                         <img src="assets/img/team/team_thumb.jpg" alt="">
@@ -259,17 +259,14 @@
                                 <!-- <button class="thm_btn thm_btn-black br_btn w-100">
                                     Become an affiliate
                                 </button> -->
-                                <div class="team_left aff_man mb-30 pro-aff active-tab">
-                                    <a href="javascript:void(0)" data-target=".pro-tab" class="tab-click">Profile</a>
-                                </div>
                                 <div class="team_left aff_man">
-                                    <a href="javascript:void(0)" data-target=".aff" class="tab-click">Affiliate
+                                    <a href="affiliate.html" class="tab-click">Affiliate
                                         Manager</a>
                                 </div>
 
                             </div>
                             <div class="col-lg-8">
-                                <div class="container pro-tab aff-enabled">
+                                <div class="container">
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="d-flex align-items-center justify-content-end streamer-search">
@@ -548,163 +545,6 @@
                                         </div>
 
 
-                                    </div>
-                                </div>
-                                <div class="container aff-enabled" id="aff">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="services_tab">
-                                                <ul class="nav" id="myTab" role="tablist">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link active" data-toggle="tab" href="#nav-01"
-                                                            role="tab" aria-controls="nav-01" aria-selected="false">
-                                                            <span class="title"><i
-                                                                    class="far fa-file-alt"></i>Stat</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#nav-2" role="tab"
-                                                            aria-controls="nav-2" aria-selected="true">
-                                                            <span class="title"><i
-                                                                    class="far fa-image"></i>Assets</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#nav-3" role="tab"
-                                                            aria-controls="nav-3" aria-selected="false">
-                                                            <span class="title"><i
-                                                                    class="far fa-video"></i>Payout</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-content tab-border" id="myTabContent">
-                                                <!-- Stat -->
-                                                <div class="tab-pane fade active show" id="nav-01" role="tabpanel"
-                                                    aria-labelledby="nav-tab-01">
-                                                    <div class="row">
-                                                        <div class="col-md-12 mb-30">
-                                                            <canvas id="myChart" width="400" height="200"></canvas>
-                                                        </div>
-                                                        <div class="col-md-4 mb-30">
-                                                            <div class="stat-card">
-                                                                <h3>Today</h3>
-                                                                <ul class="stat-list">
-                                                                    <li><span>Click</span><span>0</span></li>
-                                                                    <li><span>Commission</span><span>0</span></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 mb-30">
-                                                            <div class="stat-card">
-                                                                <h3>Total Clicks</h3>
-                                                                <div class="stat-count">1000</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4 mb-30">
-                                                            <div class="stat-card">
-                                                                <h3>Balance</h3>
-                                                                <div class="stat-balance">$50000</div>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <!-- Assets -->
-                                                <div class="tab-pane fade" id="nav-2" role="tabpanel"
-                                                    aria-labelledby="nav-tab-02">
-                                                    <div class="services-content-wrapper">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-12">
-                                                                <div class="post-photos">
-                                                                    <div class="post-images">
-                                                                        <div class="aff-img" data-img="aff-1">
-                                                                            <a class="post-img-thumb" id="aff-1"
-                                                                                href="./assets/img/portfolio/port_d_01.jpg">
-                                                                                <img src="./assets/img/portfolio/port_d_01.jpg"
-                                                                                    alt="Post Image" />
-                                                                            </a>
-                                                                            <div class="aff-link">
-                                                                                <input type="text"
-                                                                                    value="https://yourlink.com"
-                                                                                    id="img-1">
-                                                                                <label for="img-1"
-                                                                                    class="fas fa-clipboard"
-                                                                                    data-toggle="tooltip"
-                                                                                    data-placement="top"
-                                                                                    title="Copy Link"></label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="post-images">
-                                                                        <div class="aff-img" data-img="aff-2">
-                                                                            <a class="post-img-thumb" id="aff-2"
-                                                                                href="./assets/img/portfolio/port_d_02.jpg">
-                                                                                <img src="./assets/img/portfolio/port_d_02.jpg"
-                                                                                    alt="Post Image" />
-                                                                            </a>
-                                                                            <div class="aff-link">
-                                                                                <input type="text"
-                                                                                    value="https://yourlink.com"
-                                                                                    id="img-2">
-                                                                                <label for="img-2"
-                                                                                    class="fas fa-clipboard"
-                                                                                    data-toggle="tooltip"
-                                                                                    data-placement="top"
-                                                                                    title="Copy Link"></label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="post-images">
-                                                                        <div class="aff-img" data-img="aff-3">
-                                                                            <a class="post-img-thumb" id="aff-3"
-                                                                                href="./assets/img/portfolio/port_d_03.jpg">
-                                                                                <img src="./assets/img/portfolio/port_d_03.jpg"
-                                                                                    alt="Post Image" />
-                                                                            </a>
-                                                                            <div class="aff-link">
-                                                                                <input type="text"
-                                                                                    value="https://yourlink12.com"
-                                                                                    id="img-3">
-                                                                                <label for="img-3"
-                                                                                    class="fas fa-clipboard"
-                                                                                    data-toggle="tooltip"
-                                                                                    data-placement="top"
-                                                                                    title="Copy Link"></label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="post-images">
-                                                                        <div class="aff-img" data-img="aff-4">
-                                                                            <a class="post-img-thumb" id="aff-4"
-                                                                                href="./assets/img/blog/3reasonwhy.png">
-                                                                                <img src="./assets/img/blog/3reasonwhy.png"
-                                                                                    alt="Post Image" />
-                                                                            </a>
-                                                                            <div class="aff-link">
-                                                                                <input type="text"
-                                                                                    value="https://yourlink.com"
-                                                                                    id="img-4">
-                                                                                <label for="img-4"
-                                                                                    class="fas fa-clipboard"
-                                                                                    data-toggle="tooltip"
-                                                                                    data-placement="top"
-                                                                                    title="Copy Link"></label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!-- Payout -->
-                                                <div class="tab-pane fade" id="nav-3" role="tabpanel"
-                                                    aria-labelledby="nav-tab-03">
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1120,12 +960,9 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/simple-lightbox.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/affiliate.js"></script>
 
     <script>
         // Package Price Change
