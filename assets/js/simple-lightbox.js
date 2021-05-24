@@ -1093,6 +1093,32 @@
                         _this5.domNodes.image.appendChild(
                           _this5.domNodes.additionalHtml
                         );
+
+                        _this5.domNodes.image
+                          .querySelector(".aff-link label")
+                          .addEventListener("click", function (e) {
+                            e.preventDefault();
+                            const el = document.createElement("textarea");
+                            el.value =
+                              _this5.domNodes.image.querySelector(
+                                "input"
+                              ).value;
+                            el.setAttribute("readonly", "");
+                            el.style.position = "absolute";
+                            el.style.left = "-9999px";
+                            _this5.domNodes.image.appendChild(el);
+                            el.select();
+                            document.execCommand("copy");
+                            Swal.fire({
+                              position: "bottom-end",
+                              icon: "success",
+                              title: "Copied",
+                              showConfirmButton: false,
+                              timer: 800,
+                              toast: true,
+                            });
+                            _this5.domNodes.image.removeChild(el);
+                          });
                       }
                     });
                   },
@@ -1165,6 +1191,7 @@
                         "click." + this.eventNamespace,
                         "touchstart." + this.eventNamespace,
                       ],
+
                       this.close.bind(this)
                     );
 

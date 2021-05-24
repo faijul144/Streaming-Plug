@@ -9,42 +9,19 @@ $(".tab-click").click(function (e) {
 });
 
 // Asset Img
-new SimpleLightbox(".aff-img a", {
-  showCounter: false,
-  nav: false,
-  rel: false,
-  loop: false,
-  captions: true,
-  captionsData: "text",
-  swipeTolerance: 99999,
-  additionalHtml: [
-    `<div class="aff-link">
-      <input type="text"
-          value="https://yourlink.com"
-          id="img-4">
-      <label for="img-4"
-          class="fas fa-clipboard"
-          data-toggle="tooltip"
-          data-placement="top"
-          title="Copy Link"></label>
-    </div><script>$(".aff-link>label").on("click", function (e) {
-        var $data = $(this).parent().find("input").val();
-        var $temp = $("<input>");
-        $("body").append($temp);
-        e.preventDefault();
-        $temp.val($data).select();
-        document.execCommand("copy");
-        Swal.fire({
-          position: "bottom-end",
-          icon: "success",
-          title: "Copied",
-          showConfirmButton: false,
-          timer: 800,
-          toast: true,
-        });
-        $temp.remove();
-      });</script>`,
-  ],
+$(".aff-img").each(function () {
+  var $gal = $(this).data("img");
+  var $links = $(this).find(".aff-link").html();
+  $gal = new SimpleLightbox("#" + $gal, {
+    showCounter: false,
+    nav: false,
+    rel: false,
+    loop: false,
+    captions: true,
+    captionsData: "text",
+    swipeTolerance: 99999,
+    additionalHtml: [`<div class="aff-link p-1 bg-white">` + $links + `</div>`],
+  });
 });
 
 // Copy

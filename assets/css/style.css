@@ -5815,6 +5815,7 @@ border-color: #0c0c0c;
 .sm-menu-lang.main_menu ul li ul.submenu{
 	left: unset;
 	right: 0;
+	min-width: 180px;
 }
 
 .sm-menu-lang.main_menu ul li a.oicon{
@@ -5893,7 +5894,7 @@ border-color: #0c0c0c;
 	height: 35px;
     padding: 10px 30px 10px 10px;
     border: 1px solid #d8d8d8;
-	border-radius: 100px;
+	border-radius: 5px;
 }
 
 .aff-link label{
