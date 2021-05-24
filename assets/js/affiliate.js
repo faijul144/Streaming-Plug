@@ -10,8 +10,20 @@ $(".aff-img").each(function () {
     captions: true,
     captionsData: "text",
     swipeTolerance: 99999,
+    disableScroll: true,
     additionalHtml: [`<div class="aff-link p-1 bg-white">` + $links + `</div>`],
   });
+});
+
+// Casout Card
+$(".payment-choose-payout").hide();
+$("#payout").click(function () {
+  $(this)
+    .parent()
+    .parent()
+    .parent()
+    .find(".payment-choose-payout")
+    .slideToggle();
 });
 
 // Copy
@@ -32,38 +44,6 @@ $(".aff-link>label").on("click", function (e) {
   });
   $temp.remove();
 });
-
-// Chart
-// const labels = ["Jan", "Feb", "March"];
-// var data = {
-//   labels: labels,
-//   datasets: [
-//     {
-//       label: "Number Of Click",
-//       data: [
-//         { x: new Date(2012, 01, 1), y: 26 },
-//         { x: new Date(2012, 02, 3), y: 38 },
-//         { x: new Date(2012, 01, 5), y: 43 },
-//         { x: new Date(2012, 03, 7), y: 29 },
-//         { x: new Date(2012, 01, 11), y: 41 },
-//       ],
-//       borderColor: "rgb(75, 192, 192)",
-//       fill: false,
-//     },
-//   ],
-// };
-// var ctx = document.getElementById("myChart").getContext("2d");
-// var myChart = new Chart(ctx, {
-//   type: "line",
-//   data: data,
-//   options: {
-//     scales: {
-//       y: {
-//         beginAtZero: true,
-//       },
-//     },
-//   },
-// });
 
 // Hight Chart
 var chart = Highcharts.stockChart("newChart", {
@@ -113,50 +93,41 @@ $(".chart-view-types li button").each(function () {
   });
 });
 
-// $("#months").click(function () {
-//   chart.update({
-//     plotOptions: {
-//       series: {
-//         dataGrouping: {
-//           units: [["month", [1]]],
-//         },
-//       },
+// apex chart
+// var options = {
+//   series: [
+//     {
+//       name: "Desktops",
+//       data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
 //     },
-//   });
-// });
+//   ],
+//   chart: {
+//     height: 350,
+//     type: "line",
+//     zoom: {
+//       enabled: false,
+//     },
+//   },
+//   dataLabels: {
+//     enabled: false,
+//   },
+//   stroke: {
+//     curve: "straight",
+//   },
+//   title: {
+//     text: "Summary",
+//     align: "left",
+//   },
+//   grid: {
+//     row: {
+//       colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
+//       opacity: 0.5,
+//     },
+//   },
+//   xaxis: {
+//     categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+//   },
+// };
 
-// $("#date").click(function () {
-//   chart.update({
-//     plotOptions: {
-//       series: {
-//         dataGrouping: {
-//           units: [["day", [1]]],
-//         },
-//       },
-//     },
-//   });
-// });
-
-// $("#week").click(function () {
-//   chart.update({
-//     plotOptions: {
-//       series: {
-//         dataGrouping: {
-//           units: [["week", [1]]],
-//         },
-//       },
-//     },
-//   });
-// });
-
-// $("#year").click(function () {
-//   chart.update({
-//     plotOptions: {
-//       series: {
-//         dataGrouping: {
-//           units: [["year", [1]]],
-//         },
-//       },
-//     },
-//   });
-// });
+// var chart = new ApexCharts(document.querySelector("#newChart"), options);
+// chart.render();

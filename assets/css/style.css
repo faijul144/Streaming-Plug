@@ -5944,7 +5944,7 @@ border-color: #0c0c0c;
 	display: flex;
 	justify-content: space-between;
 	padding: 10px 0;
-	border-bottom: 1px solid #7c7770;
+	border-bottom: 1px solid #e4e4e4;
 }
 
 .stat-count,.stat-balance{
@@ -5982,7 +5982,7 @@ border-color: #0c0c0c;
 }
 .aff-table tr th,.aff-table tr td{
 	padding: 10px;
-    border: 1px solid #dadada;
+    border: 1px solid #e4e4e4;
     font-size: 18px;
 }
 .aff-table tr th{
@@ -6013,3 +6013,14 @@ font-size: 20px;
 	background: #0c0c0c;
 }
 
+.payment-choose-payout{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.payment-choose-payout button{
+	padding: 5px 20px;
+}

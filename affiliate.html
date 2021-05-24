@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/barfiller.css">
     <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/apexcharts.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet"
         href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
@@ -207,7 +208,7 @@
                                                         <a class="nav-link active" data-toggle="tab" href="#nav-01"
                                                             role="tab" aria-controls="nav-01" aria-selected="false">
                                                             <span class="title"><i
-                                                                    class="far fa-file-alt"></i>Stat</span>
+                                                                    class="fas fa-chart-area"></i>Stat</span>
                                                         </a>
                                                     </li>
                                                     <li class="nav-item">
@@ -221,7 +222,7 @@
                                                         <a class="nav-link" data-toggle="tab" href="#nav-3" role="tab"
                                                             aria-controls="nav-3" aria-selected="false">
                                                             <span class="title"><i
-                                                                    class="far fa-video"></i>Payout</span>
+                                                                    class="far fa-money-bill-alt"></i>Payout</span>
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -231,24 +232,7 @@
                                                 <div class="tab-pane fade active show" id="nav-01" role="tabpanel"
                                                     aria-labelledby="nav-tab-01">
                                                     <div class="row">
-                                                        <div class="col-md-12 mb-30">
-                                                            <ul class="chart-view-types">
-                                                                <li><button data-type="day" id="ch-day"
-                                                                        class="thm_btn thm_btn-black br_btn">Day</button>
-                                                                </li>
-                                                                <li><button data-type="month" id="ch-month"
-                                                                        class="thm_btn  br_btn">Month</button>
-                                                                </li>
-                                                                <li><button data-type="week" id="ch-week"
-                                                                        class="thm_btn br_btn">Week</button>
-                                                                </li>
-                                                                <li><button data-type="year" id="ch-year"
-                                                                        class="thm_btn br_btn">Year</button>
-                                                                </li>
-                                                            </ul>
-                                                            <div id="newChart"></div>
 
-                                                        </div>
                                                         <div class="col-md-4 mb-30">
                                                             <div class="stat-card">
                                                                 <h3>Today</h3>
@@ -270,7 +254,24 @@
                                                                 <div class="stat-balance bnum">$50000</div>
                                                             </div>
                                                         </div>
+                                                        <div class="col-md-12 mt-30">
+                                                            <ul class="chart-view-types">
+                                                                <li><button data-type="day" id="ch-day"
+                                                                        class="thm_btn thm_btn-black br_btn">Day</button>
+                                                                </li>
+                                                                <li><button data-type="month" id="ch-month"
+                                                                        class="thm_btn  br_btn">Month</button>
+                                                                </li>
+                                                                <li><button data-type="week" id="ch-week"
+                                                                        class="thm_btn br_btn">Week</button>
+                                                                </li>
+                                                                <li><button data-type="year" id="ch-year"
+                                                                        class="thm_btn br_btn">Year</button>
+                                                                </li>
+                                                            </ul>
+                                                            <div id="newChart"></div>
 
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <!-- Assets -->
@@ -291,8 +292,7 @@
                                                                                 <input type="text"
                                                                                     value="https://yourlink.com"
                                                                                     id="img-1">
-                                                                                <label for="img-1"
-                                                                                    class="fas fa-clipboard"
+                                                                                <label for="img-1" class="fas fa-link"
                                                                                     data-toggle="tooltip"
                                                                                     data-placement="top"
                                                                                     title="Copy Link"></label>
@@ -310,8 +310,7 @@
                                                                                 <input type="text"
                                                                                     value="https://yourlink.com"
                                                                                     id="img-2">
-                                                                                <label for="img-2"
-                                                                                    class="fas fa-clipboard"
+                                                                                <label for="img-2" class="fas fa-link"
                                                                                     data-toggle="tooltip"
                                                                                     data-placement="top"
                                                                                     title="Copy Link"></label>
@@ -329,8 +328,7 @@
                                                                                 <input type="text"
                                                                                     value="https://yourlink12.com"
                                                                                     id="img-3">
-                                                                                <label for="img-3"
-                                                                                    class="fas fa-clipboard"
+                                                                                <label for="img-3" class="fas fa-link"
                                                                                     data-toggle="tooltip"
                                                                                     data-placement="top"
                                                                                     title="Copy Link"></label>
@@ -348,8 +346,7 @@
                                                                                 <input type="text"
                                                                                     value="https://yourlink.com"
                                                                                     id="img-4">
-                                                                                <label for="img-4"
-                                                                                    class="fas fa-clipboard"
+                                                                                <label for="img-4" class="fas fa-link"
                                                                                     data-toggle="tooltip"
                                                                                     data-placement="top"
                                                                                     title="Copy Link"></label>
@@ -376,11 +373,71 @@
                                                                     <td class="bnum">$500000</td>
                                                                     <td>
                                                                         <ul class="action-list">
-                                                                            <li><a href="javascript:void(0)">Marge</a>
+                                                                            <li><a href="javascript:void(0)"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Merge The Balance With Your Main Account">Merge</a>
                                                                             </li>
-                                                                            <li><a href="javascript:void(0)">Cash
-                                                                                    Out</a></li>
+                                                                            <li>
+                                                                                <a href="javascript:void(0)"
+                                                                                    id="payout">Cash
+                                                                                    Out</a>
+                                                                            </li>
                                                                         </ul>
+                                                                        <form class="payment-choose-payout">
+                                                                            <div class="form-group">
+                                                                                <label>Select Your Payment
+                                                                                    Mathod<sup>*</sup></label>
+                                                                                <ul class="gateway-img">
+                                                                                    <li>
+                                                                                        <input type="radio" name="price"
+                                                                                            id="pal" value="pack-vip"
+                                                                                            data-target="#strp">
+                                                                                        <label for="pal">
+                                                                                            <img src="./assets/img/payment/paypal.svg"
+                                                                                                alt="Payment Icon">
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <input type="radio" name="price"
+                                                                                            id="visa" value="pack-vip"
+                                                                                            data-target="#vma">
+                                                                                        <label for="visa">
+                                                                                            <img src="./assets/img/payment/visa.svg"
+                                                                                                alt="Payment Icon">
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <input type="radio" name="price"
+                                                                                            id="mastercard"
+                                                                                            value="pack-vip"
+                                                                                            data-target="#vma">
+                                                                                        <label for="mastercard">
+                                                                                            <img src="./assets/img/payment/mastercard.svg"
+                                                                                                alt="Payment Icon">
+                                                                                        </label>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <input type="radio" name="price"
+                                                                                            id="americanexpress"
+                                                                                            value="pack-vip"
+                                                                                            data-target="#vma">
+                                                                                        <label for="americanexpress">
+                                                                                            <img src="./assets/img/payment/amex.svg"
+                                                                                                alt="Payment Icon">
+                                                                                        </label>
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <small
+                                                                                    class="form-text text-muted">Select
+                                                                                    Your Prefered Payment
+                                                                                    Gateway</small>
+                                                                            </div>
+                                                                            <div class="text-center">
+                                                                                <button type="submit"
+                                                                                    class="thm_btn br_btn btn_sub_cus_big ">Proceed</button>
+                                                                            </div>
+                                                                        </form>
                                                                     </td>
                                                                 </tr>
                                                             </table>
@@ -525,6 +582,7 @@
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/highstock.src.js"></script>
+    <script src="assets/js/apexcharts.min.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/affiliate.js"></script>

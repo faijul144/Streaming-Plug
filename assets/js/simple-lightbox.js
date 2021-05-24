@@ -945,7 +945,7 @@
                       }
 
                       _this5.domNodes.image.style.top =
-                        (window.innerHeight - imageHeight) / 2 + "px";
+                        (window.innerHeight - imageHeight) / 2 - 20 + "px";
                       _this5.domNodes.image.style.left =
                         (window.innerWidth -
                           imageWidth -
