@@ -1,9 +1,13 @@
 // Profile And Affiliate Manager Change
 $("pro-aff").hasClass("active-tab") ? $(".pro-tab").hide() : "";
 
+$(".aff-enabled").hide();
+$(".active-tab").data("target").show();
+
 $(".tab-click").click(function (e) {
   e.preventDefault();
   $(".pro-tab").fadeOut("fast");
+  $(".aff-enabled").slideUp();
   $($(this).data("target")).fadeIn();
   $(".tab-click").parent().removeClass("active-tab");
   $(this).parent().addClass("active-tab");
