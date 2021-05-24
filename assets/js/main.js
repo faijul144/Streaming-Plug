@@ -476,6 +476,7 @@
     return x1 + x2;
   }
 
-  $(".stat-count").text(decComa($(".stat-count").text()));
-  $(".stat-balance").text(decComa($(".stat-balance").text()));
+  $(".bnum").each(function () {
+    $(this).text(decComa($(this).text()));
+  });
 })(jQuery);

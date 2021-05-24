@@ -178,13 +178,14 @@
             <section class="page_title_area">
                 <div class="page_title_wrap" data-background="assets/img/bg/bread.png">
                     <div class="container">
-                        <!-- <div class="row">
-                            <div class="col-12">
-                                <div class="page_title text-center">
-                                    <h3>Team Details</h3>
-                                </div>
+                        <div class="breadcrumb_wrap">
+                            <div class="br_text">
+                                <ul>
+                                    <li><a href="streamer-details.html">Streamer</a></li>
+                                    <li>Affiliate</li>
+                                </ul>
                             </div>
-                        </div> -->
+                        </div>
 
                     </div>
                 </div>
@@ -231,7 +232,22 @@
                                                     aria-labelledby="nav-tab-01">
                                                     <div class="row">
                                                         <div class="col-md-12 mb-30">
-                                                            <canvas id="myChart" width="400" height="200"></canvas>
+                                                            <ul class="chart-view-types">
+                                                                <li><button data-type="day" id="ch-date"
+                                                                        class="thm_btn thm_btn-black br_btn">Date</button>
+                                                                </li>
+                                                                <li><button data-type="month" id="ch-month"
+                                                                        class="thm_btn  br_btn">Month</button>
+                                                                </li>
+                                                                <li><button data-type="week" id="ch-week"
+                                                                        class="thm_btn br_btn">Week</button>
+                                                                </li>
+                                                                <li><button data-type="year" id="ch-year"
+                                                                        class="thm_btn br_btn">Year</button>
+                                                                </li>
+                                                            </ul>
+                                                            <div id="newChart"></div>
+
                                                         </div>
                                                         <div class="col-md-4 mb-30">
                                                             <div class="stat-card">
@@ -245,13 +261,13 @@
                                                         <div class="col-md-4 mb-30">
                                                             <div class="stat-card">
                                                                 <h3>Total Clicks</h3>
-                                                                <div class="stat-count">1000</div>
+                                                                <div class="stat-count bnum">1000</div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-4 mb-30">
                                                             <div class="stat-card">
                                                                 <h3>Balance</h3>
-                                                                <div class="stat-balance">$50000</div>
+                                                                <div class="stat-balance bnum">$50000</div>
                                                             </div>
                                                         </div>
 
@@ -349,6 +365,27 @@
                                                 <!-- Payout -->
                                                 <div class="tab-pane fade" id="nav-3" role="tabpanel"
                                                     aria-labelledby="nav-tab-03">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <table class="aff-table">
+                                                                <tr>
+                                                                    <th>Available Amuount</th>
+                                                                    <th>Action</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="bnum">$500000</td>
+                                                                    <td>
+                                                                        <ul class="action-list">
+                                                                            <li><a href="javascript:void(0)">Marge</a>
+                                                                            </li>
+                                                                            <li><a href="javascript:void(0)">Cash
+                                                                                    Out</a></li>
+                                                                        </ul>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -486,42 +523,13 @@
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/simple-lightbox.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/highstock.src.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/affiliate.js"></script>
 
-    <script>
-        // Package Price Change
-        $(".pack-price").each(function () {
-            var price = $(this).text();
-            var priceSpan = `<span class="old-price d-none">` + price + `</span>`;
-            $(this).parent().append(priceSpan);
-        })
 
-        $("#my-switch").change(function () {
-            if (!this.checked) {
-                $(".pack-price").each(function () {
-                    if (i == 0) { $(this).text('70'); }
-                    if (i == 1) { $(this).text('210'); }
-                    if (i == 2) { $(this).text('460'); }
-                    if (i == 3) { $(this).text('970'); }
-                    if (i == 4) { $(this).text('5100'); }
-                })
-            }
-            else {
-                $(".pack-price").each(function () {
-                    var price = $(this).parent().find(".old-price").text();
-                    $(this).text(price);
-
-                })
-            }
-        });
-
-        var target = $('#role').find('option:selected').data("target");
-        var action = $('#role').find('option:selected').data("action");
-        $(target).show();
-    </script>
 
 </body>
 

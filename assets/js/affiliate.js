@@ -1,19 +1,3 @@
-// Profile And Affiliate Manager Change
-// $("pro-aff").hasClass("active-tab") ? $(".pro-tab").hide() : "";
-
-// $(".aff-enabled").hide();
-// $(".active-tab").data("target").show();
-
-// $(".tab-click").click(function (e) {
-//   e.preventDefault();
-//   $(".pro-tab").fadeOut("fast");
-//   $(".aff-enabled").slideUp();
-//   $($(this).data("target")).fadeIn();
-//   $(".tab-click").parent().removeClass("active-tab");
-//   $(this).parent().addClass("active-tab");
-//   $("#thetop").click();
-// });
-
 // Asset Img
 $(".aff-img").each(function () {
   var $gal = $(this).data("img");
@@ -50,33 +34,129 @@ $(".aff-link>label").on("click", function (e) {
 });
 
 // Chart
-const labels = ["Jan", "Feb", "March"];
-var data = {
-  labels: labels,
-  datasets: [
-    {
-      label: "Number Of Click",
-      data: [
-        { x: new Date(2012, 01, 1), y: 26 },
-        { x: new Date(2012, 02, 3), y: 38 },
-        { x: new Date(2012, 01, 5), y: 43 },
-        { x: new Date(2012, 03, 7), y: 29 },
-        { x: new Date(2012, 01, 11), y: 41 },
-      ],
-      borderColor: "rgb(75, 192, 192)",
-      fill: false,
-    },
-  ],
-};
-var ctx = document.getElementById("myChart").getContext("2d");
-var myChart = new Chart(ctx, {
-  type: "line",
-  data: data,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true,
+// const labels = ["Jan", "Feb", "March"];
+// var data = {
+//   labels: labels,
+//   datasets: [
+//     {
+//       label: "Number Of Click",
+//       data: [
+//         { x: new Date(2012, 01, 1), y: 26 },
+//         { x: new Date(2012, 02, 3), y: 38 },
+//         { x: new Date(2012, 01, 5), y: 43 },
+//         { x: new Date(2012, 03, 7), y: 29 },
+//         { x: new Date(2012, 01, 11), y: 41 },
+//       ],
+//       borderColor: "rgb(75, 192, 192)",
+//       fill: false,
+//     },
+//   ],
+// };
+// var ctx = document.getElementById("myChart").getContext("2d");
+// var myChart = new Chart(ctx, {
+//   type: "line",
+//   data: data,
+//   options: {
+//     scales: {
+//       y: {
+//         beginAtZero: true,
+//       },
+//     },
+//   },
+// });
+
+// Hight Chart
+var chart = Highcharts.stockChart("newChart", {
+  xAxis: {
+    ordinal: false,
+  },
+
+  plotOptions: {
+    series: {
+      dataGrouping: {
+        forced: true,
+        approximation: "sum",
       },
     },
   },
+
+  rangeSelector: {
+    enabled: false,
+  },
+
+  series: [
+    {
+      data: [
+        [Date.UTC(2020, 0, 1), 9],
+        [Date.UTC(2021, 0, 2), 3],
+        [Date.UTC(2020, 3, 1), 1],
+        [Date.UTC(2021, 4, 1), 7],
+      ],
+    },
+  ],
 });
+
+$(".chart-view-types li button").each(function () {
+  var type = $(this).data("type");
+  $("#ch-" + type).click(function () {
+    $(".chart-view-types li button").removeClass("thm_btn-black");
+    $(this).addClass("thm_btn-black");
+    chart.update({
+      plotOptions: {
+        series: {
+          dataGrouping: {
+            units: [[type, [0]]],
+          },
+        },
+      },
+    });
+  });
+});
+
+// $("#months").click(function () {
+//   chart.update({
+//     plotOptions: {
+//       series: {
+//         dataGrouping: {
+//           units: [["month", [1]]],
+//         },
+//       },
+//     },
+//   });
+// });
+
+// $("#date").click(function () {
+//   chart.update({
+//     plotOptions: {
+//       series: {
+//         dataGrouping: {
+//           units: [["day", [1]]],
+//         },
+//       },
+//     },
+//   });
+// });
+
+// $("#week").click(function () {
+//   chart.update({
+//     plotOptions: {
+//       series: {
+//         dataGrouping: {
+//           units: [["week", [1]]],
+//         },
+//       },
+//     },
+//   });
+// });
+
+// $("#year").click(function () {
+//   chart.update({
+//     plotOptions: {
+//       series: {
+//         dataGrouping: {
+//           units: [["year", [1]]],
+//         },
+//       },
+//     },
+//   });
+// });

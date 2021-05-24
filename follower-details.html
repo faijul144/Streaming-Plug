@@ -715,8 +715,8 @@
                                         <div class="label_img">Choose Package</div>
                                         <!-- .Month/Year Switch -->
                                         <div class="my-switch m-0">
-                                            <input type="checkbox" value="None" id="my-switch" name="check" checked />
-                                            <label for="my-switch"></label>
+                                            <input type="checkbox" value="None" id="pay-s" name="check" checked />
+                                            <label for="pay-s"></label>
                                         </div>
                                         <!-- Month/Year Switch -->
                                     </div>
@@ -725,13 +725,13 @@
                                             <input type="radio" name="packs" id="pack-1" value="pack-1">
                                             <label for="pack-1">
                                                 <div class="pack-title">
-                                                    BRONZE
+                                                    Free
                                                 </div>
                                                 <div class="pack_icon">
-                                                    <img src="assets/img/icon/p_01.png" alt="Icon">
+                                                    <img src="assets/img/icon/tax-free.svg" alt="Icon">
                                                 </div>
                                                 <div class="pack-price">
-                                                    7
+                                                    0
                                                 </div>
                                             </label>
                                         </div>
@@ -741,26 +741,10 @@
                                             <input type="radio" name="packs" id="pack-2" value="pack-2">
                                             <label for="pack-2">
                                                 <div class="pack-title">
-                                                    SILVER
+                                                    Silver
                                                 </div>
                                                 <div class="pack_icon">
                                                     <img src="assets/img/icon/money.svg" alt="Icon">
-                                                </div>
-                                                <div class="pack-price">
-                                                    20
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="form-group">
-                                            <input type="radio" name="packs" id="pack-3" value="pack-3">
-                                            <label for="pack-3">
-                                                <div class="pack-title">
-                                                    GOLD
-                                                </div>
-                                                <div class="pack_icon">
-                                                    <img src="assets/img/icon/p_03.png" alt="Icon">
                                                 </div>
                                                 <div class="pack-price">
                                                     45
@@ -770,16 +754,32 @@
                                     </div>
                                     <div class="col">
                                         <div class="form-group">
+                                            <input type="radio" name="packs" id="pack-3" value="pack-3">
+                                            <label for="pack-3">
+                                                <div class="pack-title">
+                                                    Gold
+                                                </div>
+                                                <div class="pack_icon">
+                                                    <img src="assets/img/icon/p_03.png" alt="Icon">
+                                                </div>
+                                                <div class="pack-price">
+                                                    80
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
                                             <input type="radio" name="packs" id="pack-4" value="pack-4">
                                             <label for="pack-4">
                                                 <div class="pack-title">
-                                                    PLATINUM
+                                                    Platinum
                                                 </div>
                                                 <div class="pack_icon">
                                                     <img src="assets/img/icon/p_02.png" alt="Icon">
                                                 </div>
                                                 <div class="pack-price">
-                                                    95
+                                                    160
                                                 </div>
                                             </label>
                                         </div>
@@ -789,13 +789,14 @@
                                             <input type="radio" name="packs" id="pack-vip" value="pack-vip">
                                             <label for="pack-vip">
                                                 <div class="pack-title">
-                                                    DIAMOND
+                                                    Vip Package
                                                 </div>
                                                 <div class="pack_icon">
                                                     <img src="assets/img/icon/diamond.svg" alt="Icon">
                                                 </div>
-                                                <div class="pack-price">
-                                                    500
+                                                <div class="">
+                                                    contact us at: <a
+                                                        href="mailto:info@streamingplug.com">info@streamingplug.com</a>
                                                 </div>
                                             </label>
                                         </div>
@@ -972,14 +973,12 @@
             $(this).parent().append(priceSpan);
         })
 
-        $("#my-switch").change(function () {
+        $("#pay-s").change(function () {
             if (!this.checked) {
                 $(".pack-price").each(function () {
-                    if (i == 0) { $(this).text('70'); }
-                    if (i == 1) { $(this).text('210'); }
-                    if (i == 2) { $(this).text('460'); }
-                    if (i == 3) { $(this).text('970'); }
-                    if (i == 4) { $(this).text('5100'); }
+                    var price = $(this).parent().find(".old-price").text();
+                    var percent = (price * 10) / 100;
+                    $(this).text(Math.floor(price * 12 - percent));
                 })
             }
             else {
