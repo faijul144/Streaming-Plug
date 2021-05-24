@@ -41,6 +41,7 @@ $(".aff-link>label").on("click", function (e) {
     showConfirmButton: false,
     timer: 800,
     toast: true,
+    iconColor: "#ff9100",
   });
   $temp.remove();
 });

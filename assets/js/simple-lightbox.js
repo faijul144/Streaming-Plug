@@ -1116,6 +1116,7 @@
                               showConfirmButton: false,
                               timer: 800,
                               toast: true,
+                              iconColor: "#ff9100",
                             });
                             _this5.domNodes.image.removeChild(el);
                           });

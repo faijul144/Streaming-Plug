@@ -4428,8 +4428,12 @@ font-size: 16px;
 
 	.gray-bg{background-color: #fbfafd!important;}
 
-	.read-more{
+	.read-more,.follower a{
 		color: #ff9100;
+	}
+
+	.follower a:hover{
+		color: #0c0c0c;
 	}
 	.read-more:hover{
 		color: #fff;
