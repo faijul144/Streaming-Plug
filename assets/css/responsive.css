@@ -645,6 +645,10 @@
 /* SM Device :320px. */
 @media (max-width: 767px) {
 
+.aff-table{
+    width: 100%;
+}
+
 .mb-sm-30{
     margin-bottom: 30px;
 }

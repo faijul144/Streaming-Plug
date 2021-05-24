@@ -4484,7 +4484,7 @@ font-size: 16px;
 	background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
 	padding: 0 25px 25px;
 	border-radius: 5px;
-    box-shadow: 1px 0 3px rgba(0 ,0, 0,0.19);
+    box-shadow: 0px 0 3px rgba(0 ,0, 0,0.19);
 }
 
 .streamer_thumb{
@@ -5925,7 +5925,7 @@ border-color: #0c0c0c;
 	padding: 20px;
 	height: 220px;
 	width: 100%;
-	background: #fff;
+	background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
 	box-shadow: 0 0 4px rgba(0, 0, 0, .36);
 	border-radius: 5px;
 }
@@ -6023,4 +6023,27 @@ font-size: 20px;
 
 .payment-choose-payout button{
 	padding: 5px 20px;
+}
+
+.aff-box .cap_icon{
+	font-size: 60px;
+	text-align: center;
+	width: 100%;
+}
+
+.box_3-list{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.box_3-list li:not(:last-child){
+	margin-right: 20px;
+}
+
+.box_3-list .cap_single{
+	background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
+	box-shadow: 0 0 3px rgba(0, 0, 0, .36);
+	min-width: 240px;
 }

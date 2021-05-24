@@ -1056,3 +1056,8 @@
 .min-h-auto{
 	min-height: auto !important;
 }
+
+.br-3x{
+	border-radius: 3px !important;
+	overflow: hidden;
+}
