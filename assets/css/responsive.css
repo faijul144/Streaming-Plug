@@ -649,6 +649,18 @@
     width: 100%;
 }
 
+.search-filter-btn.thm_btn{
+    padding: 10px 15px;
+}
+
+.aff-table tr th, .aff-table tr td{
+    font-size: 16px;
+}
+
+.aff-table tr th{
+    font-size: 18px;
+}
+
 .mb-sm-30{
     margin-bottom: 30px;
 }
