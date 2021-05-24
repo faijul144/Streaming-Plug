@@ -904,6 +904,12 @@
     .hero_4 .hero_wrap {
         padding: 0;
     }
+
+    .hero_4 .hero_wrap>.container-fluid{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     .hero_img_right {
         position: relative;
         height: 100%;
@@ -916,7 +922,8 @@
     }
     .hero_4 .hero_content {
         padding-right: 0;
-        padding-top: 160px;
+        padding-top: 40px;
+        padding-bottom: 50px;
     }
     /* .services_tab .nav-item {
         flex-basis: 50%;
