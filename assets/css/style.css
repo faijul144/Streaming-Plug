@@ -6025,11 +6025,18 @@ font-size: 20px;
 	padding: 5px 20px;
 }
 
+.post-images .video-js{
+	width: 100%;
+	height: 250px;
+}
+
 .aff-box .cap_icon{
 	font-size: 60px;
 	text-align: center;
 	width: 100%;
 }
+
+
 
 .box_3-list{
 	display: flex;
