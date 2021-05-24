@@ -6047,3 +6047,12 @@ font-size: 20px;
 	box-shadow: 0 0 3px rgba(0, 0, 0, .36);
 	min-width: 240px;
 }
+
+.box_3-list .cap_single a{
+	color:#ff9100;
+	transition: color 0.3s ease;
+}
+
+.box_3-list .cap_single a:hover{
+	color:#0c0c0c;
+}
