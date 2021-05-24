@@ -460,4 +460,22 @@
 
     $(this).attr("data-content", content);
   });
+
+  function decComa(nStr) {
+    var $decimalDot = ".";
+    var $decimalComma = ",";
+
+    nStr += "";
+    var x = nStr.split(".");
+    var x1 = x[0];
+    var x2 = x.length > 1 ? $decimalDot + x[1] : "";
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+      var x1 = x1.replace(rgx, "$1" + $decimalComma + "$2");
+    }
+    return x1 + x2;
+  }
+
+  $(".stat-count").text(decComa($(".stat-count").text()));
+  $(".stat-balance").text(decComa($(".stat-balance").text()));
 })(jQuery);

@@ -1,11 +1,13 @@
 // Profile And Affiliate Manager Change
-$(".pro-tab").slideUp();
+$("pro-aff").hasClass("active-tab") ? $(".pro-tab").hide() : "";
+
 $(".tab-click").click(function (e) {
   e.preventDefault();
-  $(".pro-tab").slideUp();
-  $($(this).data("target")).slideDown();
+  $(".pro-tab").fadeOut("fast");
+  $($(this).data("target")).fadeIn();
   $(".tab-click").parent().removeClass("active-tab");
   $(this).parent().addClass("active-tab");
+  $("#thetop").click();
 });
 
 // Asset Img
@@ -41,4 +43,36 @@ $(".aff-link>label").on("click", function (e) {
     toast: true,
   });
   $temp.remove();
+});
+
+// Chart
+const labels = ["Jan", "Feb", "March"];
+var data = {
+  labels: labels,
+  datasets: [
+    {
+      label: "Number Of Click",
+      data: [
+        { x: new Date(2012, 01, 1), y: 26 },
+        { x: new Date(2012, 02, 3), y: 38 },
+        { x: new Date(2012, 01, 5), y: 43 },
+        { x: new Date(2012, 03, 7), y: 29 },
+        { x: new Date(2012, 01, 11), y: 41 },
+      ],
+      borderColor: "rgb(75, 192, 192)",
+      fill: false,
+    },
+  ],
+};
+var ctx = document.getElementById("myChart").getContext("2d");
+var myChart = new Chart(ctx, {
+  type: "line",
+  data: data,
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
 });
