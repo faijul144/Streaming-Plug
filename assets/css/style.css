@@ -5819,7 +5819,8 @@ border-color: #0c0c0c;
 }
 
 .sm-menu-lang.main_menu ul li a.oicon{
-	font-size: 22px;
+	font-size: 15px;
+    padding: 3px;
 }
 
 /* Affiliate */
