@@ -1061,3 +1061,12 @@
 	border-radius: 3px !important;
 	overflow: hidden;
 }
+
+.br-10x{
+	border-radius: 10px !important;
+	overflow: hidden;
+}
+
+.w-150px{
+	width: 150px;
+}

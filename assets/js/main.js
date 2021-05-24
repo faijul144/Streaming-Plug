@@ -448,6 +448,7 @@
         showConfirmButton: false,
         timer: 800,
         toast: true,
+        iconColor: "#ff9100",
     })
       $temp.remove();
     });
@@ -478,5 +479,29 @@
 
   $(".bnum").each(function () {
     $(this).text(decComa($(this).text()));
+  });
+
+  $(".sure-btn").click(function (e) {
+    e.preventDefault();
+    var mes = $(this).data("message");
+    Swal.fire({
+      title: mes,
+      showDenyButton: false,
+      showCancelButton: true,
+      confirmButtonText: `Yes`,
+      confirmButtonColor: "#f74646",
+      cancelButtonColor: "#ff9100",
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire({
+          icon: "success",
+          title: "Cleared!",
+          showConfirmButton: false,
+          timer: 800,
+          iconColor: "#ff9100",
+        });
+      }
+    });
   });
 })(jQuery);
