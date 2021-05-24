@@ -6091,5 +6091,5 @@ overflow: hidden;}
 
 
 .swal2-styled:focus {
-    box-shadow: none;
+    box-shadow: none !important;
 }
