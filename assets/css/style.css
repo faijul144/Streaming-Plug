@@ -5968,6 +5968,7 @@ border-color: #0c0c0c;
 }
 .chart-view-types li{
 	padding: 0 10px;
+	margin-bottom: 10px;
 }
 .chart-view-types li button{
 	padding: 5px 16px;
