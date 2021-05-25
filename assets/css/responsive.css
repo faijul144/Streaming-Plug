@@ -649,12 +649,12 @@
     width: 100%;
 }
 
-.payment-choose-payout .price-br::before{
+.price-br::before{
     padding: 5px 10px ;
     font-size: 12px;
 }
 
-.payment-choose-payout .btn_sub_cus_big.thm_btn {
+.btn_sub_cus_big.thm_btn {
     padding: 5px 30px;
     font-size: 14px;
 }
