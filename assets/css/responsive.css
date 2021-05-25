@@ -649,6 +649,16 @@
     width: 100%;
 }
 
+.payment-choose-payout .price-br::before{
+    padding: 5px 10px ;
+    font-size: 12px;
+}
+
+.payment-choose-payout .btn_sub_cus_big.thm_btn {
+    padding: 5px 30px;
+    font-size: 14px;
+}
+
 .search-filter-btn.thm_btn{
     padding: 10px 15px;
 }
@@ -659,6 +669,12 @@
 
 .aff-table tr th{
     font-size: 18px;
+}
+
+.acc-detail-top div{
+    padding: 0;
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .mb-sm-30{
