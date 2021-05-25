@@ -282,6 +282,15 @@
                                                                                 class="far fa-money-bill-alt"></i>Payout</span>
                                                                     </a>
                                                                 </li>
+                                                                <li class="nav-item">
+                                                                    <a class="nav-link" data-toggle="tab" href="#nav-4"
+                                                                        role="tab" aria-controls="nav-4"
+                                                                        aria-selected="false">
+                                                                        <span class="title"><i
+                                                                                class="fas fa-history"></i>Payment
+                                                                            History</span>
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                         <div class="tab-content tab-border" id="myTabContent">
@@ -563,9 +572,9 @@
                                                                                         </div>
                                                                                         <hr class="price-br w-100"
                                                                                             data-text="Or you may choose">
-                                                                                        <div class="form-row">
+                                                                                        <div class="form-row text-left">
                                                                                             <div
-                                                                                                class="col-md-6 col-12">
+                                                                                                class="col-md-12 col-12">
                                                                                                 <div class="form-group">
                                                                                                     <label
                                                                                                         for="bname">Bank<sup>*</sup></label>
@@ -576,7 +585,7 @@
                                                                                                 </div>
                                                                                             </div>
                                                                                             <div
-                                                                                                class="col-md-6 col-12">
+                                                                                                class="col-md-12 col-12">
                                                                                                 <div class="form-group">
                                                                                                     <label
                                                                                                         for="bbrance">Branch<sup>*</sup></label>
@@ -604,6 +613,145 @@
                                                                                                 class="thm_btn br_btn btn_sub_cus_big ">Proceed</button>
                                                                                         </div>
                                                                                     </form>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Payout History -->
+                                                            <div class="tab-pane fade" id="nav-4" role="tabpanel"
+                                                                aria-labelledby="nav-tab-04">
+                                                                <div class="row">
+
+                                                                    <div class="col-md-12 mb-2 text-right">
+                                                                        <div class="col-12">
+                                                                            <button
+                                                                                class="thm_btn search-filter-btn sure-btn mb-3"
+                                                                                data-message="Do you want to clear the history?">Clear
+                                                                                History</button>
+                                                                        </div>
+                                                                        <div
+                                                                            class="d-flex align-items-center justify-content-start flex-wrap">
+                                                                            <div
+                                                                                class="flilter btn-inline-block text-right mr-3 mb-3">
+                                                                                <span>Filter by Date</span>
+                                                                                <select
+                                                                                    class="ml-2 custom-select w-auto"
+                                                                                    id="filter">
+                                                                                    <option value="0" selected>-
+                                                                                    </option>
+                                                                                    <option value="1">1</option>
+                                                                                    <option value="2">2</option>
+                                                                                    <option value="3">3</option>
+                                                                                    <option value="4">4</option>
+                                                                                    <option value="5">5</option>
+                                                                                    <option value="6">6</option>
+                                                                                    <option value="7">7</option>
+                                                                                    <option value="8">8</option>
+                                                                                    <option value="9">9</option>
+                                                                                    <option value="10">10</option>
+                                                                                    <option value="11">11</option>
+                                                                                    <option value="12">12</option>
+                                                                                    <option value="13">13</option>
+                                                                                    <option value="14">14</option>
+                                                                                    <option value="15">15</option>
+                                                                                    <option value="16">16</option>
+                                                                                    <option value="17">17</option>
+                                                                                    <option value="18">18</option>
+                                                                                    <option value="19">19</option>
+                                                                                    <option value="20">20</option>
+                                                                                    <option value="21">21</option>
+                                                                                    <option value="22">22</option>
+                                                                                    <option value="23">23</option>
+                                                                                    <option value="24">24</option>
+                                                                                    <option value="25">25</option>
+                                                                                    <option value="26">26</option>
+                                                                                    <option value="27">27</option>
+                                                                                    <option value="28">28</option>
+                                                                                    <option value="29">29</option>
+                                                                                    <option value="30">30</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="flilter btn-inline-block text-right mr-3 mb-3">
+                                                                                <span>Filter by Month</span>
+                                                                                <select
+                                                                                    class="ml-2 custom-select w-auto"
+                                                                                    id="filter">
+                                                                                    <option value="0" selected>-
+                                                                                    </option>
+                                                                                    <option value="1">January</option>
+                                                                                    <option value="2">February</option>
+                                                                                    <option value="3">March</option>
+                                                                                    <option value="4">April</option>
+                                                                                    <option value="5">May</option>
+                                                                                    <option value="6">June</option>
+                                                                                    <option value="7">July</option>
+                                                                                    <option value="8">August</option>
+                                                                                    <option value="9">September</option>
+                                                                                    <option value="10">October</option>
+                                                                                    <option value="11">November</option>
+                                                                                    <option value="12">December</option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div
+                                                                                class="flilter btn-inline-block text-right mr-3 mb-3">
+                                                                                <span>Filter by Year</span>
+                                                                                <select
+                                                                                    class="ml-2 custom-select w-auto"
+                                                                                    id="filter">
+                                                                                    <option value="0" selected>-
+                                                                                    </option>
+                                                                                    <option value="2021">2021</option>
+                                                                                    <option value="2020">2020</option>
+                                                                                    <option value="2019">2019</option>
+                                                                                </select>
+                                                                            </div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <table class="aff-table w-100">
+                                                                            <tr>
+                                                                                <th>Available Amuount</th>
+                                                                                <th>Date</th>
+                                                                                <th>Method</th>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="bnum">$500000</td>
+                                                                                <td>
+                                                                                    24 May,2021
+                                                                                </td>
+                                                                                <td>
+                                                                                    Paypal
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="bnum">$500000</td>
+                                                                                <td>
+                                                                                    22 May,2021
+                                                                                </td>
+                                                                                <td>
+                                                                                    Stripe
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="bnum">$500000</td>
+                                                                                <td>
+                                                                                    21 May,2021
+                                                                                </td>
+                                                                                <td>
+                                                                                    Mastercard
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="bnum">$500000</td>
+                                                                                <td>
+                                                                                    20 May,2021
+                                                                                </td>
+                                                                                <td>
+                                                                                    Merged
                                                                                 </td>
                                                                             </tr>
                                                                         </table>
