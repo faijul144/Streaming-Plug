@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/barfiller.css">
+    <link rel="stylesheet" href="assets/css/video-js.css">
+    <link rel="stylesheet" href="assets/css/video-js-forest.css">
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css" />
@@ -86,6 +88,8 @@
                                                 <li><a href="javascript:void(0)">Hindi</a></li>
                                                 <li><a href="javascript:void(0)">Portuguese</a></li>
                                                 <li><a href="javascript:void(0)">Hebrew</a></li>
+                                                <li><a href="javascript:void(0)">Spanish</a></li>
+                                                <li><a href="javascript:void(0)">Italian</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="pricing.html">Pricing</a></li>
@@ -112,6 +116,8 @@
                                                 <li><a href="javascript:void(0)">Hindi</a></li>
                                                 <li><a href="javascript:void(0)">Portuguese</a></li>
                                                 <li><a href="javascript:void(0)">Hebrew</a></li>
+                                                <li><a href="javascript:void(0)">Spanish</a></li>
+                                                <li><a href="javascript:void(0)">Italian</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -224,8 +230,6 @@
                                             </small>
                                         </h3>
                                         <div class="status-meta">
-                                            <span class="state">Active 10 days ago</span>
-                                            <span class="designation">Musician</span>
                                             <span><i class="far fa-map-marker-alt"></i>Birmingham, United Kingdom
                                             </span>
                                             <span><i class="far fa-user-circle"></i>Member since Apr 14, 2021</span>
@@ -236,19 +240,10 @@
 
                                             <p>I have a passion for everything related to music, my
                                                 interests and experiences inspire my professionalism and style of
-                                                work..<a href="javascript:void(0)">read more</a>
+                                                work..<a href="javascript:void(0)" data-toggle="modal"
+                                                    data-target="#about-me">read more</a>
                                             </p>
 
-                                        </div>
-                                        <div class="skills">
-                                            <span>Skills: </span>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Sports</a></li>
-                                                <li><a href="javascript:void(0)">Entertainment</a></li>
-                                                <li><a href="javascript:void(0)">Music </a></li>
-                                                <li><a href="javascript:void(0)">Meditation and Yoga</a></li>
-                                                <li><a href="javascript:void(0)">Travel</a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -429,6 +424,39 @@
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
+                                                                                <div class="post-images">
+                                                                                    <div class="video-post aff-img">
+                                                                                        <video
+                                                                                            class="video-js vjs-theme-forest"
+                                                                                            controls preload="auto"
+                                                                                            width="640" height="250"
+                                                                                            poster="./assets/img/bg/video_bg_2.jpg"
+                                                                                            data-setup="{}">
+                                                                                            <source
+                                                                                                src="./assets/media/demo.mp4"
+                                                                                                type="video/mp4">
+                                                                                            <p class="vjs-no-js">
+                                                                                                To view this video
+                                                                                                please enable
+                                                                                                JavaScript, and consider
+                                                                                                upgrading
+                                                                                                to a
+                                                                                                web browser that
+                                                                                            </p>
+                                                                                        </video>
+                                                                                        <div class="aff-link">
+                                                                                            <input type="text"
+                                                                                                value="https://yourlink.com"
+                                                                                                id="img-4">
+                                                                                            <label for="img-4"
+                                                                                                class="fas fa-link"
+                                                                                                data-toggle="tooltip"
+                                                                                                data-placement="top"
+                                                                                                title=""
+                                                                                                data-original-title="Copy Link"></label>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
 
                                                                         </div>
@@ -560,6 +588,30 @@
                         <img scr='./assets/img/cvv.png'>
                     </div> -->
                     <div class='text-center'>The CVV is the 3 digit number on the back of your card.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Me Modal -->
+        <div class="modal fade" id="about-me" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">About Me</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>I’m a professional musician based in Birmingham, specializing in
+                            folk and modern music.</p>
+
+                        <p>I have a passion for everything related to music, my
+                            interests and experiences inspire my professionalism and style of
+                            work.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -824,6 +876,7 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/simple-lightbox.js"></script>
+    <script src="assets/js/video.min.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/highstock.src.js"></script>
