@@ -5981,8 +5981,36 @@ border-color: #0c0c0c;
 }
 
 /* Affiliate Table */
+
+.acc-detail-top{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
+.acc-detail-top div{
+	padding: 10px 90px;
+    background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .36);
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+	text-align: center;
+}
+
+.acc-detail-top div p{
+	margin-bottom: 5px;
+}
+
 .aff-table{
-	width: 80%;
+	width: 100%;
     margin: auto;
     table-layout: fixed;
     text-align: center;
