@@ -6179,6 +6179,7 @@ overflow: hidden;}
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
+	margin: 0;
 }
 
 .seetings-tab .services_tab .nav-item{
@@ -6194,7 +6195,7 @@ overflow: hidden;}
 	box-shadow: 0 0 3px rgba(0, 0, 0, .36);
 }
 
-.selected-cats{
+.boxed-selects{
 	display: flex;
 	justify-content: flex-start;
     align-items: center;
@@ -6202,12 +6203,13 @@ overflow: hidden;}
 	flex-wrap: wrap;
 }
 
-.selected-cats>div{
+.boxed-selects>div{
 	margin-right: 10px;
+	margin-bottom: 5px;
 	padding: 0;
 }
 
-.selected-cats>div>label{
+.boxed-selects>div>label{
 	display: flex;
     margin-bottom: 8px;
     padding: 3px 0;
@@ -6217,7 +6219,7 @@ overflow: hidden;}
     box-shadow: 0 0 2px rgba(0, 0, 0, .36);
 }
 
-.selected-cats>div>label::before, .selected-cats>div>label::after{
+.boxed-selects>div>label::before, .boxed-selects>div>label::after{
 	left: 6px;
 	top: 7px;
 }

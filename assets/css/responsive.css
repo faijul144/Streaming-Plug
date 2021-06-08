@@ -200,6 +200,12 @@
     .services_tab .nav-link {
         margin: 0 10px;
     }
+
+    .seetings-tab .services_tab .nav-link{
+        margin: 0;
+        padding: 8px 15px;
+    }
+
     .cap_bottom_wrap .cap_single {
         padding: 20px 0;
     }
@@ -965,6 +971,11 @@
         padding: 4px 13px;
     }
 
+    .seetings-tab .services_tab .nav-link{
+        margin: 0;
+        padding: 8px 15px;
+    }
+
     .services_tab .nav-link .title{
         font-size: 13px;
     }
@@ -1279,6 +1290,11 @@
     .services_tab .nav-link {
         margin: 0 10px;
         padding: 5px 20px;
+    }
+
+    .seetings-tab .services_tab .nav-link{
+        margin: 0;
+        padding: 8px 15px;
     }
 
     .services_tab .nav-link .title{
