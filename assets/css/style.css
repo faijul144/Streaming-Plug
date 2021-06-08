@@ -4052,6 +4052,12 @@ text-transform: uppercase;
 	padding: 0;
 }
 
+.streamer-package-set .pricing-content-container{
+	min-height: 0;
+	height: 175px;
+	overflow-y: auto;
+}
+
 .low-plan .pricing-content-container{
     min-height: 305px;
 
@@ -4346,6 +4352,12 @@ text-transform: uppercase;
 	background: #0c0c0c;
 	  transition: background 0.3s ease;
   }
+
+  .thm_btn:hover{
+	background: #0c0c0c;
+	  transition: background 0.8s ease;
+  }
+
 
   /* .search-bar .thm_btn:hover::before{
 	transition: width 0.2s ease;
@@ -6217,9 +6229,91 @@ overflow: hidden;}
     padding-right: 11px;
     border-radius: 3px;
     box-shadow: 0 0 2px rgba(0, 0, 0, .36);
+	font-size: 15px;
 }
 
 .boxed-selects>div>label::before, .boxed-selects>div>label::after{
 	left: 6px;
 	top: 7px;
 }
+
+/* Not Sub */
+
+.not-subed{
+	display: flex;
+	width: 100%;
+	height: 500px;
+	position: relative;
+
+}
+
+.blur-bg-img{
+	height: 100%;
+	width: 100%;
+	filter: blur(5px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("./../img/bg/bread.png");
+	object-fit: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.blur-bg-img::after{
+	content: "";
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .36);
+}
+
+.sub-ac{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-size:30px;
+	width: 100%;
+	color: #fff;
+}
+
+.sub-ac>div{
+	margin-bottom: 15px;
+}
+
+.sub-ac>div i{
+	font-size: 50px;
+	color: #ff9100;
+}
+
+/* Post Text Box */
+
+.create-post{
+	padding: 20px;
+	border-radius: 3px;
+	background-color: #eee;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, .36);
+}
+.create-post textarea{
+	width: 100%;
+    border: 1px solid #f2f2f2;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+	resize: none;
+	height: 80px;
+}
+
+.posting-opt{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.create-post input[type="file"]{display: none;}

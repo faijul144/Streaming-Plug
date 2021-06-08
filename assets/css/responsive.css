@@ -31,6 +31,10 @@
     .header_2 .header_wrap, .header_3 .header_wrap, .header_4 .header_wrap {
         padding-top: 40px;
     }
+    .header_cus .header_wrap{
+        padding-top: 20px;
+    }
+
     .header_3 .main_menu {
         margin-left: -20px;
     }
