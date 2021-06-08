@@ -6193,3 +6193,31 @@ overflow: hidden;}
 	border-radius: 3px;
 	box-shadow: 0 0 3px rgba(0, 0, 0, .36);
 }
+
+.selected-cats{
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+	flex-wrap: wrap;
+}
+
+.selected-cats>div{
+	margin-right: 10px;
+	padding: 0;
+}
+
+.selected-cats>div>label{
+	display: flex;
+    margin-bottom: 8px;
+    padding: 3px 0;
+    padding-left: 30px;
+    padding-right: 11px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .36);
+}
+
+.selected-cats>div>label::before, .selected-cats>div>label::after{
+	left: 6px;
+	top: 7px;
+}
