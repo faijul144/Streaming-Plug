@@ -5176,7 +5176,12 @@ box-shadow: none;
 
 .header_cus .header_wrap{
 	background: #fff;
+	padding-top: 20px;
 }
+
+
+
+
 
 .header_cus .main_menu ul li a:not(:hover){
 	color: #0c0c0c;
@@ -6120,4 +6125,71 @@ overflow: hidden;}
 
 .swal2-styled:focus {
     box-shadow: none !important;
+}
+
+/* Profile Image & Cover Edit */
+
+.profil-img-edit{
+	position: relative;
+}
+.profil-img-edit input{
+	display: none;
+}
+.profil-img-edit .edit-op{
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.streamer_thumb.profil-img-edit .edit-op{
+	top: 3px;
+}
+
+.profil-img-edit .edit-op label{
+	margin-bottom: 0;
+}
+
+.profil-img-edit .edit-op label i{
+	border-radius: 50%;
+	font-size: 35px;
+}
+
+.streamer_thumb.profil-img-edit .edit-op label i{
+	font-size: 25px;
+}
+
+.profil-img-edit .edit-op label i{
+	color: rgba(0, 0, 0, .7);
+}
+
+.profil-img-edit:hover .edit-op{
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Settings */
+.seetings-tab .services_tab .nav{
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.seetings-tab .services_tab .nav-item{
+	display: block;
+	width: 100%;
+}
+
+.seetings-tab .services_tab .nav-link{
+	padding: 8px 15px;
+	display: block;
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .36);
 }
