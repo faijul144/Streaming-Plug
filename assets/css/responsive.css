@@ -659,6 +659,11 @@
     width: 100%;
 }
 
+.create-post{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 .price-br::before{
     padding: 5px 10px ;
     font-size: 12px;
