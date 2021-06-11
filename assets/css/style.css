@@ -6352,3 +6352,8 @@ overflow: hidden;}
 
 
 .create-post input[type="file"]{display: none;}
+
+/* Payment Modal */
+.custom-radio label{
+font-size: 16px;
+}

@@ -504,4 +504,21 @@
       }
     });
   });
+
+  // Select Payment Method
+  $(".select-method").each(function () {
+    let other = $(this).data("target");
+    $(other).find("input").attr("disabled", "disabled");
+    if ($(this).is(":checked")) {
+      let target = $(this).data("target");
+      $(target).find("input").removeAttr("disabled");
+    }
+    $(".select-method").change(function () {
+      if ($(this).is(":checked")) {
+        let target = $(this).data("target");
+        $(other).find("input").attr("disabled", "disabled");
+        $(target).find("input").removeAttr("disabled");
+      }
+    });
+  });
 })(jQuery);
