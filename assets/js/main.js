@@ -584,19 +584,6 @@
         console.log(imgWidth);
         curPosX = parseInt(dragImg.css("background-position-x"));
         curPosY = parseInt(dragImg.css("background-position-y"));
-        // if (curPosY > 0) {
-        //   curPosY = 0;
-        // }
-        // if (curPosX > 0) {
-        //   curPosX = 0;
-        // }
-        // if (curPosY < -imgHeight) {
-        //   curPosY = -imgHeight;
-        // }
-        // if (curPosX < -imgWidth) {
-        //   curPosX = -imgWidth;
-        // }
-        // if (curPosY < -imgHeight + 50) { curPosY = -imgHeight; }
         dragImg.css({
           "background-position-y": curPosY,
           "background-position-x": curPosX,
