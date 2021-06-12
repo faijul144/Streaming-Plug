@@ -5958,26 +5958,7 @@ border-color: #0c0c0c;
 	position: relative;
 }
 
-.stat-card .active-pack{
-	position: absolute;
-	top: 77px;
-	left: 50%;
-    font-size: 18px;
-	font-weight: 600;
-	transform: translateX(-50%);
-	width: 100%;
-    text-align: center;
-}
 
-.stat-card .active-pack::before{
-	content: attr(data-text);
-    position: absolute;
-    top: -18px;
-    left: 50%;
-	font-weight: normal;
-    font-size: 14px;
-    transform: translateX(-50%);
-}
 
 .stat-list{
 	display: flex;
