@@ -542,7 +542,12 @@
     });
     $(".done-edit").click(function (e) {
       e.preventDefault();
-      $(this).parent().parent().find(".drag-img").addClass("mouse-dis");
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .find(".drag-img")
+        .addClass("mouse-dis");
       $(this).hide();
       $(this).parent().find(".dropdown-toogle").show();
     });

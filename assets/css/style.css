@@ -3297,6 +3297,8 @@ text-transform: uppercase;
 	content: "";
 	opacity: .6;
 }
+.profil-img-edit .page_title_wrap::before{display: none;}
+
 .page_title h3 {
 	font-size: 75px;
 	color: #fff;
