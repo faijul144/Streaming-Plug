@@ -655,6 +655,8 @@
 /* SM Device :320px. */
 @media (max-width: 767px) {
 
+    .posting-opt>div>label, .posting-opt>div>a{font-size: 11px;}
+
 .aff-table{
     width: 100%;
 }

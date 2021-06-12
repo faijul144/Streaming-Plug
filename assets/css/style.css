@@ -5955,6 +5955,28 @@ border-color: #0c0c0c;
 	background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
 	box-shadow: 0 0 4px rgba(0, 0, 0, .36);
 	border-radius: 5px;
+	position: relative;
+}
+
+.stat-card .active-pack{
+	position: absolute;
+	top: 77px;
+	left: 50%;
+    font-size: 18px;
+	font-weight: 600;
+	transform: translateX(-50%);
+	width: 100%;
+    text-align: center;
+}
+
+.stat-card .active-pack::before{
+	content: attr(data-text);
+    position: absolute;
+    top: -18px;
+    left: 50%;
+	font-weight: normal;
+    font-size: 14px;
+    transform: translateX(-50%);
 }
 
 .stat-list{
@@ -6242,6 +6264,24 @@ overflow: hidden;}
 	margin-bottom: 5px;
 	padding: 0;
 }
+
+.boxed-selects .pr-input{
+	flex: 0;
+    height: 100%;
+	box-shadow: 0 0 2px transparent;
+    background: transparent;
+	padding: 6px 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.boxed-selects .pr-input.checked{
+	flex: 0.8;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .36);
+	background: #fff;
+}
+
 
 .boxed-selects>div>label{
 	display: flex;
