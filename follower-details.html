@@ -179,13 +179,21 @@
         <main>
             <!-- pagetitle start -->
             <section class="page_title_area profil-img-edit">
-                <div class="page_title_wrap" data-background="assets/img/bg/bread.png">
-                    <div class="container">
-                        <div class="edit-op">
-                            <label for="cover-pic"><i class="fa fa-camera"></i></label>
+                <div class="page_title_wrap drag-img" data-background="assets/img/bg/video_bg_2.jpg" data-type="cover">
+                    <div class="edit-op">
+                        <a href="#" class="done-edit">Done Edit</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toogle" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fa fa-camera"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <label for="cover-pic" class="dropdown-item" href="#">Upload
+                                    Photo</label>
+                                <a class="dropdown-item" href="#">Choose Photo</a>
+                                <a class="dropdown-item reorg-img" href="#">Rearrange Photo</a>
+                            </div>
                         </div>
-                        <input type="file" name="cover-pic" id="cover-pic">
                     </div>
+                    <input type="file" name="" id="cover-pic">
                 </div>
             </section>
             <!-- pagetitle end -->
@@ -201,11 +209,24 @@
                                     <!--there is  "offline","online", "away" classes for status color change-->
                                     <div class="streamer_thumb online steamer-status profil-img-edit"
                                         data-name-letter="R">
-                                        <img src="assets/img/team/team_thumb.jpg" alt="">
-                                        <div class="edit-op">
-                                            <label for="cover-pic"><i class="fa fa-camera"></i></label>
+                                        <div data-background="assets/img/bg/video_bg_2.jpg" alt=""
+                                            class="drag-img pro-img">
                                         </div>
-                                        <input type="file" name="cover-pic" id="cover-pic">
+                                        <div class="edit-op">
+                                            <a href="#" class="done-edit">Done Edit</a>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toogle" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                        class="fa fa-camera"></i></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <label for="pro-pic" class="dropdown-item" href="#">Upload
+                                                        Photo</label>
+                                                    <a class="dropdown-item" href="#">Choose Photo</a>
+                                                    <a class="dropdown-item reorg-img" href="#">Rearrange Photo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="file" name="cover-pic" id="pro-pic">
                                         <div class="status"></div>
                                     </div>
                                     <ul class="td_social">
@@ -220,7 +241,7 @@
                                     <span class="profile-opt opt-pop" data-container="body" data-toggle="popover"
                                         data-placement="bottom" data-list="#profile-opt-list"><i
                                             class="fas fa-ellipsis-v"></i></span>
-                                    <div class="streamer-detail">
+                                    <div class="streamer-detail pt-100">
                                         <h3 class="streamer-name">
                                             Rasalina de willamson
                                             <small class="verified" data-toggle="tooltip" data-placement="top"
@@ -857,36 +878,11 @@
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
 
-    <!-- <script>
-        // Package Price Change
-        $(".pack-price").each(function () {
-            var price = $(this).text();
-            var priceSpan = `<span class="old-price d-none">` + price + `</span>`;
-            $(this).parent().append(priceSpan);
-        })
 
-        $("#pay-s").change(function () {
-            if (!this.checked) {
-                $(".pack-price").each(function () {
-                    var price = $(this).parent().find(".old-price").text();
-                    var percent = (price * 10) / 100;
-                    $(this).text(Math.floor(price * 12 - percent));
-                })
-            }
-            else {
-                $(".pack-price").each(function () {
-                    var price = $(this).parent().find(".old-price").text();
-                    $(this).text(price);
+    </script>
 
-                })
-            }
-        });
-
-        var target = $('#role').find('option:selected').data("target");
-        var action = $('#role').find('option:selected').data("action");
-        $(target).show();
-    </script> -->
 
 </body>
 

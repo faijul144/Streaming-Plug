@@ -181,10 +181,22 @@
         <!-- main body start -->
         <main>
             <!-- pagetitle start -->
-            <section class="page_title_area">
-                <div class="page_title_wrap" data-background="assets/img/bg/bread.png">
-                    <div class="container">
+            <section class="page_title_area profil-img-edit">
+                <div class="page_title_wrap drag-img" data-background="assets/img/bg/video_bg_2.jpg" data-type="cover">
+                    <div class="edit-op">
+                        <a href="#" class="done-edit">Done Edit</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toogle" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><i class="fa fa-camera"></i></a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <label for="cover-pic" class="dropdown-item" href="#">Upload
+                                    Photo</label>
+                                <a class="dropdown-item" href="#">Choose Photo</a>
+                                <a class="dropdown-item reorg-img" href="#">Rearrange Photo</a>
+                            </div>
+                        </div>
                     </div>
+                    <input type="file" name="" id="cover-pic">
                 </div>
             </section>
             <!-- pagetitle end -->
@@ -195,10 +207,28 @@
                     <div class="">
                         <div class="row">
                             <div class="col-lg-4 mb-sm-5">
-                                <div class="team_left pos-rel aff_man mb-30">
+                                <div class="team_left pos-rel mb-30">
                                     <!--there is  "offline","online", "away" classes for status color change-->
-                                    <div class="streamer_thumb online steamer-status" data-name-letter="R">
-                                        <img src="assets/img/team/team_thumb.jpg" alt="">
+                                    <div class="streamer_thumb online steamer-status profil-img-edit"
+                                        data-name-letter="R">
+                                        <div data-background="assets/img/bg/video_bg_2.jpg" alt=""
+                                            class="drag-img pro-img">
+                                        </div>
+                                        <div class="edit-op">
+                                            <a href="#" class="done-edit">Done Edit</a>
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toogle" id="dropdownMenuButton"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                                        class="fa fa-camera"></i></a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <label for="pro-pic" class="dropdown-item" href="#">Upload
+                                                        Photo</label>
+                                                    <a class="dropdown-item" href="#">Choose Photo</a>
+                                                    <a class="dropdown-item reorg-img" href="#">Rearrange Photo</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="file" name="cover-pic" id="pro-pic">
                                         <div class="status"></div>
                                     </div>
                                     <ul class="td_social">
@@ -213,7 +243,7 @@
                                     <span class="profile-opt opt-pop" data-container="body" data-toggle="popover"
                                         data-placement="bottom" data-list="#profile-opt-list"><i
                                             class="fas fa-ellipsis-v"></i></span>
-                                    <div class="streamer-detail">
+                                    <div class="streamer-detail pt-100">
                                         <h3 class="streamer-name">
                                             Rasalina de willamson
                                             <small class="verified" data-toggle="tooltip" data-placement="top"

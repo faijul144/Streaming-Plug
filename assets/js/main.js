@@ -505,6 +505,101 @@
     });
   });
 
+  // Image Move
+  $(".drag-img").each(function () {
+    let dragImg = $(this);
+    let imgURL = $(this).data("background");
+    let imgHeight = 0;
+    let imgWidth = 0;
+    let start_y;
+    let start_x;
+    let newPosX;
+    let newPosY;
+    let curPosX = dragImg.css("background-position-x");
+    let curPosY = dragImg.css("background-position-y");
+    let mouseDown = false;
+    let imgExtra = dragImg.append(
+      `<img class="d-none" style="height:100%;width:100%;object-fit:cover;" src="` +
+        imgURL +
+        `">`
+    );
+    dragImg.addClass("mouse-dis");
+
+    $(".done-edit").hide();
+
+    $(".reorg-img").click(function (e) {
+      e.preventDefault();
+      $(this)
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .parent()
+        .find(".drag-img")
+        .removeClass("mouse-dis");
+      $(this).parent().parent().find(".dropdown-toogle").hide();
+      $(this).parent().parent().parent().find(".done-edit").show();
+    });
+    $(".done-edit").click(function (e) {
+      e.preventDefault();
+      $(this).parent().parent().find(".drag-img").addClass("mouse-dis");
+      $(this).hide();
+      $(this).parent().find(".dropdown-toogle").show();
+    });
+
+    dragImg.mousedown(function (e) {
+      dragImg.hasClass("mouse-dis") ? (mouseDown = false) : (mouseDown = true);
+    });
+
+    $(document).mouseup(function () {
+      mouseDown = false;
+      dragImg.css({
+        "background-position-y": curPosY,
+        "background-position-x": curPosX,
+      });
+    });
+
+    dragImg.mouseenter(function (e) {
+      start_x = e.clientX;
+      start_y = e.clientY;
+    });
+
+    $(document).mousemove(function (e) {
+      newPosY = e.clientY - start_y;
+      newPosX = e.clientX - start_x;
+      start_y = e.clientY;
+      start_x = e.clientX;
+      imgHeight = imgExtra.height();
+      imgWidth = imgExtra.width();
+      if (mouseDown) {
+        dragImg.css({
+          "background-position-x": "+=" + newPosX,
+          "background-position-y": "+=" + newPosY,
+        });
+        console.log(imgWidth);
+        curPosX = parseInt(dragImg.css("background-position-x"));
+        curPosY = parseInt(dragImg.css("background-position-y"));
+        // if (curPosY > 0) {
+        //   curPosY = 0;
+        // }
+        // if (curPosX > 0) {
+        //   curPosX = 0;
+        // }
+        // if (curPosY < -imgHeight) {
+        //   curPosY = -imgHeight;
+        // }
+        // if (curPosX < -imgWidth) {
+        //   curPosX = -imgWidth;
+        // }
+        // if (curPosY < -imgHeight + 50) { curPosY = -imgHeight; }
+        dragImg.css({
+          "background-position-y": curPosY,
+          "background-position-x": curPosX,
+        });
+      }
+    });
+  });
+
   // Select Payment Method
   $(".select-method").each(function () {
     let other = $(this).data("target");
