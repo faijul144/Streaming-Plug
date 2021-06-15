@@ -6168,6 +6168,7 @@ overflow: hidden;}
 .profil-img-edit .cover-image .edit-op{
 	left: 25px;
     bottom: 20px;
+	transition: all 0.3s ease;
 }
 
 
@@ -6181,7 +6182,7 @@ overflow: hidden;}
     line-height: 0;
     background: rgba(0, 0, 0, 0.341);
     border-radius: 3px;
-
+	transition: all 0.3s ease;
 }
 
 .profil-img-edit .edit-op label{
@@ -6200,8 +6201,31 @@ overflow: hidden;}
     color: #fff;
 }
 
-.streamer_thumb.profil-img-edit .edit-op .dropdown-toogle i{
-	font-size: 15px;
+.profil-img-edit .cover-image .edit-op:hover{
+	bottom: 25px;
+}
+
+
+
+.profil-img-edit .edit-op .opt-pop{
+	color: rgba(0, 0, 0, 0.7);
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+
+.profil-img-edit .cover-image .edit-op:hover .dropdown-toogle,.streamer_thumb.profil-img-edit .edit-op:hover{
+background: rgba(0, 0, 0, 0.7);
+}
+
+.profil-img-edit .cover-image .edit-op:hover .dropdown-toogle i,.streamer_thumb.profil-img-edit .edit-op:hover i{
+	color: rgba(152, 152, 152, 0.7);
+	transition: all 0.3s ease;
+	}
+
+.popover .post-setting-list label{
+	margin: 0;
+	color: #010101;
 }
 
 
@@ -6400,4 +6424,22 @@ overflow: hidden;}
 /* Payment Modal */
 .custom-radio label{
 font-size: 16px;
+}
+
+/* Share Modal */
+
+.share-modal .social-share i{
+	font-size: 32px;
+}
+
+.fb-btn {
+    color: #3e5c9b !important;
+}
+
+.twitter-btn {
+    color: #1da1f2 !important;
+}
+
+.whatsapp-btn {
+    color: #50b154 !important;
 }

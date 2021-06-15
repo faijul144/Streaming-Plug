@@ -199,17 +199,9 @@
                                         <div data-background="assets/img/bg/video_bg_2.jpg" alt=""
                                             class="drag-img pro-img">
                                             <div class="edit-op">
-                                                <div class="dropdown">
-                                                    <a href="#" class="dropdown-toogle" id="dropdownMenuButton"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="false"><i class="fa fa-camera"></i></a>
-                                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                        <label for="pro-pic" class="dropdown-item" href="#">Upload
-                                                            Photo</label>
-                                                        <a class="dropdown-item" href="#">Choose From Photo</a>
-                                                        <a class="dropdown-item" href="#">Rearrange Photo</a>
-                                                    </div>
-                                                </div>
+                                                <a href="javascipt:void(0)" class="opt-pop" data-container="body"
+                                                    data-toggle="popover" data-placement="bottom"
+                                                    data-list="#profile-pic-opt"><i class="fa fa-camera"></i></a>
                                             </div>
                                         </div>
 
@@ -501,7 +493,11 @@
                                                                                     class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
+                                                                            <div class="right-side" class="bookmark">
+                                                                                <a href="#"><i
+                                                                                        class="far fa-bookmark"></i></a>
 
+                                                                            </div>
                                                                         </div>
                                                                     </div><!-- card-body -->
 
@@ -753,7 +749,11 @@
                                                                                     class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
+                                                                            <div class="right-side" class="bookmark">
+                                                                                <a href="#"><i
+                                                                                        class="far fa-bookmark"></i></a>
 
+                                                                            </div>
                                                                         </div>
                                                                     </div><!-- card-body -->
 
@@ -990,7 +990,11 @@
                                                                                     class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
+                                                                            <div class="right-side" class="bookmark">
+                                                                                <a href="#"><i
+                                                                                        class="far fa-bookmark"></i></a>
 
+                                                                            </div>
                                                                         </div>
                                                                     </div><!-- card-body -->
 
@@ -1206,7 +1210,11 @@
                                                                                     class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
+                                                                            <div class="right-side" class="bookmark">
+                                                                                <a href="#"><i
+                                                                                        class="far fa-bookmark"></i></a>
 
+                                                                            </div>
                                                                         </div>
                                                                     </div><!-- card-body -->
 
@@ -1425,7 +1433,11 @@
                                                                                     class="share opt-pop no-click"><i
                                                                                         class="fas fa-share-square"></i>0</a>
                                                                             </div>
+                                                                            <div class="right-side" class="bookmark">
+                                                                                <a href="#"><i
+                                                                                        class="far fa-bookmark"></i></a>
 
+                                                                            </div>
                                                                         </div>
                                                                     </div><!-- card-body -->
 
@@ -1742,7 +1754,8 @@
             <div id="profile-opt-list" class="has_pop">
                 <ul class="post-setting-list">
                     <li><a href="streamer-settings.html"><i class="fas fa-cog"></i>Profile Setting</a></li>
-                    <li><a href="javascript:void(0)" class="clipboard"><i class="fas fa-link"></i>Copy Link</a></li>
+                    <li><a href="javascript:void(0)" data-target=".share-modal" data-toggle="modal"><i
+                                class="fas fa-share-square"></i>Share</a></li>
                 </ul>
             </div>
             <div id="post-opt-list" class="has_pop">
@@ -1753,6 +1766,14 @@
                     <li><a href="javascript:void(0)"><i class="fas fa-pencil-alt"></i>Edit Post</a></li>
                     <li><a href="javascript:void(0)"><i class="fas fa-archive"></i>Archive</a></li>
                     <li><a href="javascript:void(0)"><i class="fas fa-trash-alt"></i>Remove Post</a></li>
+                </ul>
+            </div>
+            <div id="profile-pic-opt">
+                <ul class="post-setting-list">
+                    <li><label for="pro-pic" href="#">Upload
+                            Photo</label></li>
+                    <li><a href="javascript:void(0)">Choose From Photo</a></li>
+                    <li><a href="javascript:void(0)">Rearrange Photo</a></li>
                 </ul>
             </div>
             <div id="share-opt-list" class="has_pop">
@@ -1952,6 +1973,163 @@
             </div>
         </div>
 
+        <!-- Share Modal -->
+        <div class="modal fade share-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mySmallModalLabel">Share</h5>
+                        <button type="button" class="close close-inherit" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://portal.streamingplug.com/Ahmadmarouf"
+                                        title="Facebook" target="_blank"
+                                        class="social-share text-muted d-block text-center h6">
+                                        <i class="fab fa-facebook-square fb-btn"></i>
+                                        <span class="btn-block mt-3">Facebook</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="https://twitter.com/intent/tweet?url=https://portal.streamingplug.com/Ahmadmarouf&amp;text=Ahmadmarouf"
+                                        data-url="https://portal.streamingplug.com/Ahmadmarouf"
+                                        class="social-share text-muted d-block text-center h6" target="_blank"
+                                        title="Twitter">
+                                        <i class="fab fa-twitter twitter-btn"></i> <span
+                                            class="btn-block mt-3">Twitter</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="whatsapp://send?text=https://portal.streamingplug.com/Ahmadmarouf"
+                                        data-action="share/whatsapp/share"
+                                        class="social-share text-muted d-block text-center h6" title="WhatsApp">
+                                        <i class="fab fa-whatsapp whatsapp-btn"></i> <span
+                                            class="btn-block mt-3">WhatsApp</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="mailto:?subject=Ahmadmarouf&amp;body=https://portal.streamingplug.com/Ahmadmarouf"
+                                        class="social-share text-muted d-block text-center h6" title="Email">
+                                        <i class="far fa-envelope"></i> <span class="btn-block mt-3">Email</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="sms://?body=Check this https://portal.streamingplug.com/Ahmadmarouf"
+                                        class="social-share text-muted d-block text-center h6" title="Text message">
+                                        <i class="fa fa-sms"></i> <span class="btn-block mt-3">Text message</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="javascript:void(0);" id="btn_copy_url"
+                                        class="social-share text-muted d-block text-center clipboard" title="Copy link">
+                                        <i class="fas fa-link"></i> <span class="btn-block mt-3">Copy link</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Pay Modal -->
+        <div class="modal fade" id="pay-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Choose Payment Method</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="payment-choose-payout align-items-start">
+                            <div class="custom-control custom-radio custom-control-inline mb-3">
+                                <input type="radio" class="custom-control-input select-method" name="method" id="card"
+                                    value="card" data-target="#card-section" checked>
+                                <label class="custom-control-label" for="card">Select Card</label>
+                            </div>
+
+                            <div class="form-group" id="card-section">
+                                <label>Select Your Payment
+                                    Mathod<sup>*</sup></label>
+                                <ul class="gateway-img">
+                                    <li>
+                                        <input type="radio" name="price" id="pal" value="pack-vip" data-target="#strp">
+                                        <label for="pal">
+                                            <img src="./assets/img/payment/paypal.svg" alt="Payment Icon">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="price" id="visa" value="pack-vip" data-target="#vma">
+                                        <label for="visa">
+                                            <img src="./assets/img/payment/visa.svg" alt="Payment Icon">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="price" id="mastercard" value="pack-vip"
+                                            data-target="#vma">
+                                        <label for="mastercard">
+                                            <img src="./assets/img/payment/mastercard.svg" alt="Payment Icon">
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="price" id="americanexpress" value="pack-vip"
+                                            data-target="#vma">
+                                        <label for="americanexpress">
+                                            <img src="./assets/img/payment/amex.svg" alt="Payment Icon">
+                                        </label>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline mb-3">
+                                <input type="radio" class="custom-control-input select-method" name="method" id="bank"
+                                    value="bank" data-target="#bank-section">
+                                <label class="custom-control-label" for="bank">Enter Bank Statement</label>
+                            </div>
+
+                            <div class="form-row" id="bank-section">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="bname">Bank<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="bname"
+                                            placeholder="Enter Your Bank Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="bbrance">Branch<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="bbrance"
+                                            placeholder="Enter Your Bank Branch">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="ano">Account
+                                            No<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="ano"
+                                            placeholder="Enter Account No.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center w-100">
+                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big ">Proceed</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
@@ -2054,96 +2232,7 @@
             </div>
         </footer>
         <!-- footer end -->
-        <!-- Pay Modal -->
-        <div class="modal fade" id="pay-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Choose Payment Method</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="payment-choose-payout align-items-start">
-                            <div class="custom-control custom-radio custom-control-inline mb-3">
-                                <input type="radio" class="custom-control-input select-method" name="method" id="card"
-                                    value="card" data-target="#card-section" checked>
-                                <label class="custom-control-label" for="card">Select Card</label>
-                            </div>
 
-                            <div class="form-group" id="card-section">
-                                <label>Select Your Payment
-                                    Mathod<sup>*</sup></label>
-                                <ul class="gateway-img">
-                                    <li>
-                                        <input type="radio" name="price" id="pal" value="pack-vip" data-target="#strp">
-                                        <label for="pal">
-                                            <img src="./assets/img/payment/paypal.svg" alt="Payment Icon">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="price" id="visa" value="pack-vip" data-target="#vma">
-                                        <label for="visa">
-                                            <img src="./assets/img/payment/visa.svg" alt="Payment Icon">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="price" id="mastercard" value="pack-vip"
-                                            data-target="#vma">
-                                        <label for="mastercard">
-                                            <img src="./assets/img/payment/mastercard.svg" alt="Payment Icon">
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" name="price" id="americanexpress" value="pack-vip"
-                                            data-target="#vma">
-                                        <label for="americanexpress">
-                                            <img src="./assets/img/payment/amex.svg" alt="Payment Icon">
-                                        </label>
-                                    </li>
-                                </ul>
-
-                            </div>
-                            <div class="custom-control custom-radio custom-control-inline mb-3">
-                                <input type="radio" class="custom-control-input select-method" name="method" id="bank"
-                                    value="bank" data-target="#bank-section">
-                                <label class="custom-control-label" for="bank">Enter Bank Statement</label>
-                            </div>
-
-                            <div class="form-row" id="bank-section">
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="bname">Bank<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="bname"
-                                            placeholder="Enter Your Bank Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="bbrance">Branch<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="bbrance"
-                                            placeholder="Enter Your Bank Branch">
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-12">
-                                    <div class="form-group">
-                                        <label for="ano">Account
-                                            No<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="ano"
-                                            placeholder="Enter Account No.">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center w-100">
-                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big ">Proceed</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- body wrap end -->
 
