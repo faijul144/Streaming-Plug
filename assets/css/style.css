@@ -426,8 +426,19 @@ input, textarea, select {
 	color: #fff;
 }
 
+.main_menu .pro-img-thumb a>div{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
 .main_menu ul li ul.submenu {
-max-height: 215px;
+height: 215px;
 overflow: auto;
 	position: absolute;
 	top: 110%;
@@ -450,6 +461,24 @@ overflow: auto;
 	-ms-transition: all 0.3s ease-out 0s;
 	-o-transition: all 0.3s ease-out 0s;
 }
+
+.main_menu ul li.pro-img-thumb .submenu{
+	height: auto;
+	padding: 3px 0 0;
+    min-width: 180px;
+}
+
+.main_menu ul li.pro-img-thumb:hover > a, .main_menu ul li.pro-img-thumb.active > a{
+	background: transparent;
+}
+
+.main_menu ul li.pro-img-thumb .submenu li:first-child{
+	border-bottom: 1px solid #e4e4e4;
+}
+.main_menu ul li.pro-img-thumb .submenu li:last-child{
+	border-top: 1px solid #e4e4e4;
+}
+
 .main_menu ul li:hover > ul.submenu {
 	transform: scaleY(1);
 	-webkit-transform: scaleY(1);
@@ -6541,3 +6570,4 @@ font-size: 16px;
 	  border-color: #ff9100;
 	  background: #f1f1f1;
   }
+
