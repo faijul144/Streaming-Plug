@@ -427,9 +427,16 @@
   // Popover JS
 
   $("#popup-holder").hide();
-  $(".opt-pop").popover({
-    html: true,
-  });
+  if ($(".opt-pop").hasClass("pop-focus")) {
+    $(".opt-pop").popover({
+      html: true,
+      trigger: "focus ",
+    });
+  } else {
+    $(".opt-pop").popover({
+      html: true,
+    });
+  }
 
   $(".opt-pop").each(function () {
     var pop_list = $(this).data("list");
@@ -517,8 +524,25 @@
       if ($(this).is(":checked")) {
         let target = $(this).data("target");
         $(other).find("input").attr("disabled", "disabled");
+        $(other).find("input").val("");
         $(target).find("input").removeAttr("disabled");
+        $(".card-forms").slideUp();
       }
     });
   });
+
+  $(".card-forms").hide();
+  if ($(".gateway-img").find("input").is(":checked")) {
+    $(".card-forms").slideUp();
+    $(target).slideDown();
+  }
+  $(".gateway-img")
+    .find("input")
+    .change(function () {
+      let target = $(this).data("target");
+      if ($(this).is(":checked")) {
+        $(".card-forms").slideUp();
+        $(target).slideDown();
+      }
+    });
 })(jQuery);

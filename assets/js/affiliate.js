@@ -16,7 +16,7 @@ $(".aff-img").each(function () {
 });
 
 // Casout Card
-$(".payment-choose-payout").hide();
+$(".aff-table .payment-choose-payout").hide();
 $("#payout").click(function () {
   $(this)
     .parent()

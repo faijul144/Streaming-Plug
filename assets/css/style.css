@@ -5701,6 +5701,16 @@ margin:  5px 0;
 	cursor: pointer;
 }
 
+.opt-pop.pop-focus{
+	cursor: auto;
+}
+
+.cvv-img{
+	width: 50px;
+    margin: auto;
+    display: block;
+}
+
 .streamer-search .thm_btn{
 	padding: 0 12px;
     border-top-right-radius: 3px;
@@ -6083,9 +6093,9 @@ font-size: 20px;
     padding: 10px 0;
 }
 
-.payment-choose-payout .gateway-img{
+/* .payment-choose-payout .gateway-img{
 	justify-content: center;
-}
+} */
 
 .payment-choose-payout button{
 	padding: 5px 20px;
