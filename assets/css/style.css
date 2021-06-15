@@ -6506,3 +6506,38 @@ font-size: 16px;
 	  font-size: 18px;
 	  flex: 1;
   }
+
+  /* Login Select */
+  .select-login-as{
+	  display: flex;
+	  flex-wrap: wrap;
+	  align-items: center;
+	  justify-content: space-between;
+	  box-shadow: 0 1px 3px rgba(0, 0, 0, .36);
+	  border-radius: 5px;
+	  overflow: hidden;
+  }
+
+  .select-login-as .login-role{
+	 flex:1;
+  }
+
+  .select-login-as .login-role input{
+	  display: none;
+  }
+  .select-login-as .login-role label{
+	  display: inline-flex;
+	  width: 100%;
+	  justify-content: center;
+	  padding: 10px 0;
+	  font-size: 15px;
+	  background: #fff;
+	  border-top: 2px solid transparent;
+	  transition: all 0.3s ease;
+	  margin-bottom: 0;
+  }
+
+  .select-login-as .login-role input:checked+label{
+	  border-color: #ff9100;
+	  background: #f1f1f1;
+  }
