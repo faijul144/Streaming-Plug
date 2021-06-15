@@ -4550,6 +4550,7 @@ font-size: 16px;
 	transform: translateX(-50%);
     border: 4px solid #fff;
 	box-shadow: 0px 4px 4px rgba(0 ,0, 0,0.29);
+	overflow: hidden;
 }
 
 .streamer_thumb .status{
@@ -6161,17 +6162,26 @@ overflow: hidden;}
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	transition: all 0.3s ease;
-	opacity: 0;
-	visibility: hidden;
 	z-index: 3;
 }
 
+.profil-img-edit .cover-image .edit-op{
+	left: 25px;
+    bottom: 20px;
+}
+
+
 .streamer_thumb.profil-img-edit .edit-op{
-	top: 3px;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	top: 100px;
+	display: flex;
+    align-items: flex-start;
+    line-height: 0;
+    background: rgba(0, 0, 0, 0.341);
+    border-radius: 3px;
+
 }
 
 .profil-img-edit .edit-op label{
@@ -6179,37 +6189,28 @@ overflow: hidden;}
 	font-size: inherit;
 }
 
-.profil-img-edit .edit-op .dropdown-toogle i{
-	border-radius: 50%;
-	font-size: 35px;
+.profil-img-edit .cover-image .edit-op .dropdown-toogle{
+	font-size: 16px;
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    background: rgba(0, 0, 0, 0.341);
+    border-radius: 3px;
+    padding: 15px 10px;
+    color: #fff;
 }
 
 .streamer_thumb.profil-img-edit .edit-op .dropdown-toogle i{
-	font-size: 25px;
+	font-size: 15px;
 }
 
-.done-edit{
-	padding: 2px 6px;
-    background: #0a0a0a;
-    white-space: nowrap;
-    color: #fff;
-    border-radius: 3px;
-    font-size: 10px;
-}
-
-.done-edit:hover{
-    color: #fff;
-	background:#ff9100;
-}
 
 .profil-img-edit .edit-op .dropdown-toogle i{
 	color: rgba(0, 0, 0, .7);
+	margin-right: 5px;
+	line-height: 0;
 }
 
-.profil-img-edit:hover .edit-op{
-	opacity: 1;
-	visibility: visible;
-}
 
 /* Settings */
 .seetings-tab .services_tab .nav{
@@ -6236,7 +6237,7 @@ overflow: hidden;}
 	display: flex;
 	justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 	flex-wrap: wrap;
 }
 
