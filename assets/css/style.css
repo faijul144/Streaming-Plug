@@ -6430,16 +6430,17 @@ font-size: 16px;
 
 .share-modal .social-share i{
 	font-size: 32px;
+	transition: all 0.3s ease;
 }
 
-.fb-btn {
+.social-share:hover .fb-btn {
     color: #3e5c9b !important;
 }
 
-.twitter-btn {
+.social-share:hover .twitter-btn {
     color: #1da1f2 !important;
 }
 
-.whatsapp-btn {
+.social-share:hover .whatsapp-btn {
     color: #50b154 !important;
 }

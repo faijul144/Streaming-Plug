@@ -167,11 +167,11 @@
         <main>
             <!-- pagetitle start -->
             <section class="page_title_area profil-img-edit">
-                <div class="page_title_wrap drag-img" data-background="assets/img/bg/video_bg_2.jpg" data-type="cover">
+                <div class="page_title_wrap cover-image" data-background="assets/img/bg/video_bg_2.jpg">
                     <div class="edit-op">
                         <div class="dropdown">
                             <a href="#" class="dropdown-toogle" id="dropdownMenuButton" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false"><i class="fa fa-camera"></i></a>
+                                aria-haspopup="true" aria-expanded="false"><i class="fa fa-camera"></i> Change Cover</a>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <label for="cover-pic" class="dropdown-item" href="#">Upload
                                     Photo</label>
@@ -198,20 +198,13 @@
                                         data-name-letter="R">
                                         <div data-background="assets/img/bg/video_bg_2.jpg" alt=""
                                             class="drag-img pro-img">
-                                        </div>
-                                        <div class="edit-op">
-                                            <div class="dropdown">
-                                                <a href="#" class="dropdown-toogle" id="dropdownMenuButton"
-                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                                        class="fa fa-camera"></i></a>
-                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                    <label for="pro-pic" class="dropdown-item" href="#">Upload
-                                                        Photo</label>
-                                                    <a class="dropdown-item" href="#">Choose From Photo</a>
-                                                    <a class="dropdown-item" href="#">Rearrange Photo</a>
-                                                </div>
+                                            <div class="edit-op">
+                                                <a href="javascipt:void(0)" class="opt-pop" data-container="body"
+                                                    data-toggle="popover" data-placement="bottom"
+                                                    data-list="#profile-pic-opt"><i class="fa fa-camera"></i></a>
                                             </div>
                                         </div>
+
                                         <input type="file" name="cover-pic" id="pro-pic">
                                         <div class="status"></div>
                                     </div>
@@ -784,6 +777,14 @@
                     <li><a href="javascript:void(0)" class="clipboard"><i class="fas fa-link"></i>Copy Link</a></li>
                 </ul>
 
+            </div>
+            <div id="profile-pic-opt">
+                <ul class="post-setting-list">
+                    <li><label for="pro-pic" href="#">Upload
+                            Photo</label></li>
+                    <li><a href="javascript:void(0)">Choose From Photo</a></li>
+                    <li><a href="javascript:void(0)">Rearrange Photo</a></li>
+                </ul>
             </div>
             <div id="popup-holder">
                 <div id="cvv-hint">
