@@ -651,6 +651,7 @@ input, textarea, select {
 	background: #fff;
 	padding: 10px 0;
 	transition: all 0.3s ease;
+	border-radius: 0;
 }
 
 .mob-bottom-menu>div:not(:last-child){
@@ -671,6 +672,7 @@ input, textarea, select {
 	border-radius: 50%;
 	background: transparent;
 	overflow: hidden;
+
 }
 
 .mob-bottom-menu>div a.icon-link i{
@@ -6267,8 +6269,9 @@ font-size: 20px;
 	display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     padding: 10px 0;
+	text-align: left;
 }
 
 /* .payment-choose-payout .gateway-img{

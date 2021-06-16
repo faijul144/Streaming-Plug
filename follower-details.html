@@ -248,7 +248,7 @@
                                             <ul class="submenu">
                                                 <li><a href="follower-details.html">Profile</a></li>
                                                 <li><a href="follower-wallet.html">Wallet</a></li>
-                                                <li><a href="affiliate.html">Affiliate</a></li>
+                                                <li><a href="follower-affiliate.html">Affiliate</a></li>
                                                 <li><a href="javascript:void(0)">Log Out</a></li>
                                             </ul>
                                         </li>
@@ -314,8 +314,10 @@
                 <ul id="mobile-menu-active">
                     <li><a href="follower-details.html">Profile</a></li>
                     <li><a href="follower-wallet.html">Wallet</a></li>
-                    <li><a href="affiliate.html">Affiliate</a></li>
+                    <li><a href="follower-affiliate.html">Affiliate</a></li>
                     <li><a href="sign-in.html">Log Out</a></li>
+                    <li class="header_btn"><a class="thm_btn br_btn_2 text-white" href="explore.html">More
+                            Streamers</a>
                     </li>
                 </ul>
             </nav>
@@ -328,7 +330,7 @@
         <main>
             <!-- pagetitle start -->
             <section class="page_title_area profil-img-edit">
-                <div class="page_title_wrap cover-image" data-background="assets/img/bg/video_bg_2.jpg">
+                <div class="page_title_wrap cover-image" data-background="assets/img/bg/video_bg.jpg">
                     <div class="edit-op">
                         <div class="dropdown">
                             <a href="#" class="dropdown-toogle" id="dropdownMenuButton" data-toggle="dropdown"
@@ -378,9 +380,9 @@
                                         <li><a href="https://www.instagram.com/streamingplug00" target="_blank"><i
                                                     class="fab fa-instagram"></i></a></li>
                                     </ul>
-                                    <span class="profile-opt" data-container="body" data-toggle="popover"
-                                        data-placement="bottom" data-list="#profile-opt-list"><i
-                                            class="fas fa-ellipsis-v"></i></span>
+                                    <a href="javascript:void(0)" class="profile-opt" data-toggle="modal"
+                                        data-target="#edit-pro"><i class="fas fa-cog" data-toggle="tooltip"
+                                            data-placement="top" title="Edit Profile"></i></a>
                                     <div class="streamer-detail pt-100">
                                         <h3 class="streamer-name">
                                             Rasalina de willamson
@@ -409,16 +411,6 @@
                                             <a href="javascript:void(0)" class="thm_btn br_btn">Message Me</a>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- <button class="thm_btn thm_btn-black br_btn w-100">
-                                    Become an affiliate
-                                </button> -->
-                                <div class="team_left aff_man mb-30">
-                                    <a href="follower-wallet.html" class="tab-click">Manage Wallet</a>
-                                </div>
-                                <div class="team_left aff_man mb-30">
-                                    <a href="affiliate.html" target="_blank" class="tab-click">Affiliate
-                                        Manager</a>
                                 </div>
 
                             </div>
@@ -814,6 +806,15 @@
                                                                                 data-list="#share-opt-list"
                                                                                 class="share opt-pop no-click"><i
                                                                                     class="fas fa-share-square"></i>0</a>
+                                                                            <a href="javacript:void(0)"
+                                                                                data-toggle="modal"
+                                                                                data-target="#tip-modal"
+                                                                                class="no-click">
+                                                                                <i class="fas fa-donate"
+                                                                                    class="no-click"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Tip Streamer"></i></a>
                                                                         </div>
                                                                         <div class="right-side" class="bookmark">
                                                                             <a href="#"><i
@@ -1049,6 +1050,15 @@
                                                                                 data-list="#share-opt-list"
                                                                                 class="share opt-pop no-click"><i
                                                                                     class="fas fa-share-square"></i>0</a>
+                                                                            <a href="javacript:void(0)"
+                                                                                data-toggle="modal"
+                                                                                data-target="#tip-modal"
+                                                                                class="no-click">
+                                                                                <i class="fas fa-donate"
+                                                                                    class="no-click"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Tip Streamer"></i></a>
                                                                         </div>
                                                                         <div class="right-side" class="bookmark">
                                                                             <a href="#"><i
@@ -1263,6 +1273,15 @@
                                                                                 data-list="#share-opt-list"
                                                                                 class="share opt-pop no-click"><i
                                                                                     class="fas fa-share-square"></i>0</a>
+                                                                            <a href="javacript:void(0)"
+                                                                                data-toggle="modal"
+                                                                                data-target="#tip-modal"
+                                                                                class="no-click">
+                                                                                <i class="fas fa-donate"
+                                                                                    class="no-click"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Tip Streamer"></i></a>
                                                                         </div>
                                                                         <div class="right-side" class="bookmark">
                                                                             <a href="#"><i
@@ -1480,6 +1499,16 @@
                                                                                 data-list="#share-opt-list"
                                                                                 class="share opt-pop no-click"><i
                                                                                     class="fas fa-share-square"></i>0</a>
+
+                                                                            <a href="javacript:void(0)"
+                                                                                data-toggle="modal"
+                                                                                data-target="#tip-modal"
+                                                                                class="no-click">
+                                                                                <i class="fas fa-donate"
+                                                                                    class="no-click"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Tip Streamer"></i></a>
                                                                         </div>
                                                                         <div class="right-side" class="bookmark">
                                                                             <a href="#"><i
@@ -2296,6 +2325,15 @@
                                                                                 data-list="#share-opt-list"
                                                                                 class="share opt-pop no-click"><i
                                                                                     class="fas fa-share-square"></i>0</a>
+                                                                            <a href="javacript:void(0)"
+                                                                                data-toggle="modal"
+                                                                                data-target="#tip-modal"
+                                                                                class="no-click">
+                                                                                <i class="fas fa-donate"
+                                                                                    class="no-click"
+                                                                                    data-toggle="tooltip"
+                                                                                    data-placement="top"
+                                                                                    title="Tip Streamer"></i></a>
                                                                         </div>
                                                                         <div class="right-side" class="bookmark">
                                                                             <a href="#"><i
