@@ -419,7 +419,7 @@ input, textarea, select {
 	border-radius: 50px;
 }
 .main_menu ul li:hover > a,  .main_menu ul li.active > a {
-	background-color: #272727;
+	background-color: #f2f2f2;
 }
 
 .sticky .main_menu ul li:hover > a,.sticky .main_menu ul li.active > a{
@@ -5892,7 +5892,7 @@ margin:  5px 0;
 }
 
 .short_text a,.foot a,.signup-form a{color: #ff9100;}
-.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #f2f2f2;}
+.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #0c0c0c;}
 .signup-form .custom-control-label{line-height: 23px;}
 
 .main_menu ul li a.oicon{
