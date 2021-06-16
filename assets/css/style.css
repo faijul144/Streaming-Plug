@@ -473,7 +473,7 @@ input, textarea, select {
 	background: transparent;
 }
 
-.main_menu ul li.pro-img-thumb .submenu li:first-child{
+.main_menu ul li.pro-img-thumb .submenu li.with-border{
 	border-bottom: 1px solid #e4e4e4;
 }
 .main_menu ul li.pro-img-thumb .submenu li:last-child{
@@ -623,6 +623,8 @@ input, textarea, select {
 
 .main_menu ul.signed-in>li{
 	border-radius: 50%;
+	align-items: flex-end;
+	display: inline-flex;
 }
 
 .mob-bottom-menu{
