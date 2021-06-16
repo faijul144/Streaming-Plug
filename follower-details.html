@@ -410,6 +410,13 @@
                                 <!-- <button class="thm_btn thm_btn-black br_btn w-100">
                                     Become an affiliate
                                 </button> -->
+                                <div class="team_left aff_man mb-30">
+                                    <a href="follower-wallet.html" class="tab-click">Manage Wallet</a>
+                                </div>
+                                <div class="team_left aff_man mb-30">
+                                    <a href="affiliate.html" target="_blank" class="tab-click">Affiliate
+                                        Manager</a>
+                                </div>
 
                             </div>
                             <div class="col-lg-8">
@@ -436,7 +443,7 @@
                                                     <a class="nav-link" id="nav-tab-03" data-toggle="tab" href="#nav-3"
                                                         role="tab" aria-controls="nav-3" aria-selected="false">
                                                         <span class="title"><i
-                                                                class="far fa-bookmark"></i>Bookmark</span>
+                                                                class="far fa-bookmark"></i>Bookmarked</span>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -2414,149 +2421,14 @@
             <!-- team details end -->
         </main>
         <!-- main body end -->
-        <!-- Tip Modal -->
-        <div class="modal fade" id="tip-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Send Tip To @johndoe</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="payment-choose-payout align-items-start text-left">
 
-                            <div class="form-group w-100 mb-30">
-                                <label for="paypal-email">Tip<sup>*</sup></label>
-                                <input type="number" class="form-control" id="tip" placeholder="Enter Amount">
-                            </div>
-
-                            <div class="custom-control custom-radio custom-control-inline mb-3">
-                                <input type="radio" class="custom-control-input select-method" name="method" id="card"
-                                    value="card" data-target="#card-section" checked>
-                                <label class="custom-control-label" for="card">Select Card</label>
-                            </div>
-
-                            <div id="card-section">
-                                <div class="form-group">
-                                    <label>Select Your Payment
-                                        Mathod<sup>*</sup></label>
-                                    <ul class="gateway-img">
-                                        <li>
-                                            <input type="radio" name="price" id="pal" value="pack-vip"
-                                                data-target="#paypal-form">
-                                            <label for="pal">
-                                                <img src="./assets/img/payment/paypal.svg" alt="Payment Icon">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="price" id="visa" value="pack-vip"
-                                                data-target="#credit-form">
-                                            <label for="visa">
-                                                <img src="./assets/img/payment/visa.svg" alt="Payment Icon">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="price" id="mastercard" value="pack-vip"
-                                                data-target="#credit-form">
-                                            <label for="mastercard">
-                                                <img src="./assets/img/payment/mastercard.svg" alt="Payment Icon">
-                                            </label>
-                                        </li>
-                                        <li>
-                                            <input type="radio" name="price" id="americanexpress" value="pack-vip"
-                                                data-target="#credit-form">
-                                            <label for="americanexpress">
-                                                <img src="./assets/img/payment/amex.svg" alt="Payment Icon">
-                                            </label>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                                <div class="selected-card-form">
-                                    <div id="paypal-form" class="card-forms">
-                                        <div class="form-group">
-                                            <label for="paypal-email">Email<sup>*</sup></label>
-                                            <input type="email" class="form-control" id="paypal-email"
-                                                placeholder="Enter Paypal Email">
-                                        </div>
-                                    </div>
-                                    <div id="credit-form" class="card-forms">
-                                        <div class="form-row">
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <label for="card-number">Card Number<sup>*</sup></label>
-                                                    <input type="number" class="form-control" id="card-number"
-                                                        placeholder="Enter Card Number">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label for="exp-date">Expire Date<sup>*</sup></label>
-                                                    <input type="text" class="form-control" id="exp-date"
-                                                        placeholder="MM/YY">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group pos-rel">
-                                                    <label for="cvv">CVV<sup>*</sup></label>
-                                                    <input type="number" class="form-control pop-focus opt-pop" id="cvv"
-                                                        placeholder="Enter CVV" data-container="body"
-                                                        data-toggle="popover" data-placement="top"
-                                                        data-list="#cvv-hint">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="custom-control custom-radio custom-control-inline mb-3">
-                                <input type="radio" class="custom-control-input select-method" name="method" id="bank"
-                                    value="bank" data-target="#bank-section">
-                                <label class="custom-control-label" for="bank">Enter Bank Statement</label>
-                            </div>
-
-                            <div class="form-row" id="bank-section">
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="bname">Bank<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="bname"
-                                            placeholder="Enter Your Bank Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12">
-                                    <div class="form-group">
-                                        <label for="bbrance">Branch<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="bbrance"
-                                            placeholder="Enter Your Bank Branch">
-                                    </div>
-                                </div>
-                                <div class="col-md-12 col-12">
-                                    <div class="form-group">
-                                        <label for="ano">Account
-                                            No<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="ano"
-                                            placeholder="Enter Account No.">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center w-100">
-                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big ">Send</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Popup Inner List -->
         <div id="popup-holder">
             <div id="profile-opt-list" class="has_pop">
                 <ul class="post-setting-list">
-                    <li><a href="streamer-settings.html"><i class="fas fa-cog"></i>Edit Profile</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#edit-pro"><i
+                                class="fas fa-cog"></i>Edit Profile</a></li>
                 </ul>
             </div>
             <div id="cvv-hint">
