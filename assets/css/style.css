@@ -6764,3 +6764,28 @@ font-size: 16px;
 .notification-data .time{
 	font-size: 14px;
 }
+
+/* Streamer Delete Section */
+.deletion-part{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .36);
+	margin-top: 40px;
+	padding: 30px 50px;
+	font-size: 16px;
+	columns: #0c0c0c;
+	text-align: center;
+}
+
+.deletion-part i{
+	font-size: 40px;
+	color: #e25e00;
+	margin-bottom: 30px;
+}
+
+.dlt_btn{
+	background-color: #e25e00;
+	margin-top: 20px;
+}
