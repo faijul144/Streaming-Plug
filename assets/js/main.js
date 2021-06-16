@@ -488,19 +488,8 @@
   </script>`);
     }
     var content = $(pop_list).html();
-    let popcat = $(this).data("cat");
-    if (typeof popcat !== "undefined" && popcat !== false) {
-      var pop_extra = popcat.split(",");
 
-      jQuery.each(pop_extra, function () {
-        content = $(pop_list)
-          .find("ul")
-          .append(`<li>${$(this)[0].outerHTML}</li>`);
-        pthis.attr("data-content", content[0].outerHTML);
-      });
-    } else {
-      $(this).attr("data-content", content);
-    }
+    $(this).attr("data-content", content);
   });
 
   function decComa(nStr) {
@@ -544,6 +533,26 @@
         });
       }
     });
+  });
+
+  //Limit List Explore
+  $(".limit-list").each(function () {
+    $(this)
+      .find("li:not(.limit-open)")
+      .each(function (i) {
+        i > 1 ? $(this).addClass("shrink") : "";
+      });
+  });
+
+  $(".limit-open a").click(function (e) {
+    e.preventDefault();
+    $(this)
+      .parent()
+      .parent()
+      .find("li:not(.limit-open)")
+      .each(function (i) {
+        i > 1 ? $(this).toggleClass("shrink") : "";
+      });
   });
 
   // Select Payment Method
