@@ -439,11 +439,11 @@ input, textarea, select {
 
 
 .main_menu ul li ul.submenu {
-height: 215px;
-overflow: auto;
+	height: 215px;
+	overflow: auto;
 	position: absolute;
 	top: 110%;
-	left: 0;
+	right: 0;
 	min-width: 230px;
 	background: #fff;
 	padding: 15px 0;
