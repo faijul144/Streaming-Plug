@@ -3266,6 +3266,51 @@ line-height: normal;
 margin: 10px 0;
 }
 
+.team_single .team_text ul.cat{}
+.team_single .team_text ul.cat li a{
+	display: inline-flex;
+    padding: 5px 10px;
+    background: #f0f0f0;
+    color: #565656;
+    border-radius: 50pc;
+    font-size: 12px;
+    white-space: nowrap;
+    border: 1px solid #f2f2f2;
+    box-shadow: 1px 1px 3px rgba(0 ,0 ,0 ,.15);
+	transition: all 0.3s ease;
+}
+
+.team_single .team_text ul.cat li.more a{
+	padding: 0;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: 20px;
+}
+
+.team_single .team_text ul.cat li a:hover{
+	transform: translateY(-3px);
+    box-shadow: 3px 3px 5px rgba(0 ,0 ,0 ,.07);
+    background: #ff9100;
+	border-color: #ff9100;
+	color: #fff;
+}
+
+.team_single .team_text ul.cat li a:focus{
+    box-shadow: 2px 2px 3px rgba(0 ,0 ,0 ,.1);
+	transform: translateY(-1px);
+	background: #ff9100;
+	border-color: #ff9100;
+	color: #fff;
+}
+
+.team_single .team_text span.f-count{
+	font-size: 14px;
+    margin-top: 5px;
+}
+
 .team_single .team_thumb{
 	height: 150px;
 	position: relative;

@@ -392,6 +392,8 @@
                                             </small>
                                         </h3>
                                         <div class="status-meta">
+                                            <span>Active 2 days ago</span>
+                                            <span class="follower">100 Streamers Subscribed</span>
                                             <span><i class="far fa-map-marker-alt"></i>Birmingham, United Kingdom
                                             </span>
                                             <span><i class="far fa-user-circle"></i>Member since Apr 14, 2021</span>
@@ -2469,8 +2471,7 @@
         <div id="popup-holder">
             <div id="profile-opt-list" class="has_pop">
                 <ul class="post-setting-list">
-                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#edit-pro"><i
-                                class="fas fa-cog"></i>Profile Setting</a></li>
+                    <li><a href="follower-settings.html"><i class="fas fa-cog"></i>Profile Setting</a></li>
                     <li><a href="javascript:void(0)" data-target=".share-modal" data-toggle="modal"><i
                                 class="fas fa-share-square"></i>Share</a></li>
                 </ul>
@@ -2523,135 +2524,7 @@
                 </div>
             </div>
         </div>
-        <!-- Edit Profile Modal -->
-        <div class="modal fade" id="edit-pro" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Edit Profile</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="form_cus" action="" name="">
-                            <!-- Name -->
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="fname">First Name<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="fname"
-                                            placeholder="Enter First Name">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="lname">Last Name<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="lname"
-                                            placeholder="Enter Last Name">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Email Phone -->
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="email">Email<sup>*</sup></label>
-                                        <input type="email" class="form-control" id="email" placeholder="Enter Email">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="phone">Phone<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="phone"
-                                            placeholder="Enter Phone Number" required>
-                                    </div>
-                                </div>
 
-                            </div>
-                            <!-- Username And Role -->
-                            <div class="form-row">
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="username">Username<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="username"
-                                            placeholder="Enter Username">
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label for="role">Role<sup>*</sup></label>
-                                        <input type="text" class="form-control" id="role" value="Follower" disabled
-                                            readonly>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>Social Connect</label>
-                                <div class="social-connect">
-                                    <div class="connect-link">
-                                        <span><i class="fab fa-facebook-f"></i><span>Facebook</span></span>
-                                        <a href="javascript:void(0)">Connect</a>
-                                    </div>
-                                    <div class="connect-link">
-                                        <span><i class="fab fa-twitter"></i><span>Twitter</span></span>
-                                        <a href="javascript:void(0)">Connect</a>
-                                    </div>
-                                    <div class="connect-link">
-                                        <span><i class="fab fa-linkedin"></i><span>Linkedin</span></span>
-                                        <a href="javascript:void(0)">Connect</a>
-                                    </div>
-                                    <div class="connect-link">
-                                        <span><i class="fab fa-instagram"></i><span>Instagram</span></span>
-                                        <a href="javascript:void(0)">Connect</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Localtion -->
-                            <div class="form-group">
-                                <label for="loc">Address<sup>*</sup></label>
-                                <input type="text" class="form-control" id="loc" placeholder="Enter Your Address"
-                                    required>
-                            </div>
-
-                            <!-- About You -->
-                            <div class="form-group">
-                                <label for="sup_des">About You<sup>*</sup></label>
-                                <textarea class="form-control" id="sup_des" rows="6" placeholder="Write Here"
-                                    required></textarea>
-                            </div>
-                            <!-- ID Prof -->
-                            <div class="form-group sup_file_input">
-                                <div class="label_img">Your ID Proof</div>
-                                <input type="file" id="customFile">
-                                <label for="customFile">Add Your ID Proof</label>
-                                <div class="sup-file-inputs">
-                                    <div class="file">
-                                        <div class="file-content">
-                                            <i class="fas fa-link"></i>
-                                            National ID.img
-                                        </div>
-                                        <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-                                    </div>
-                                    <div class="file">
-                                        <div class="file-content">
-                                            <i class="fas fa-link"></i>
-                                            Birth Certificate
-                                        </div>
-                                        <a href="javascript:void(0)"><i class="fas fa-times"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big ">Update</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Share Modal -->
         <div class="modal fade share-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
             aria-hidden="true">
