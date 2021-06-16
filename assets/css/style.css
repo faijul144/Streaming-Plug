@@ -424,7 +424,7 @@ input, textarea, select {
 }
 
 .sticky .main_menu ul li:hover > a,.sticky .main_menu ul li.active > a{
-	color: #fff;
+	color: #0c0c0c;
 }
 
 .pro-img-thumb a>div{
