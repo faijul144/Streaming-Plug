@@ -430,7 +430,7 @@
   if ($(".opt-pop").hasClass("pop-focus")) {
     $(".opt-pop").popover({
       html: true,
-      trigger: "focus ",
+      trigger: "focus",
     });
   } else {
     $(".opt-pop").popover({
