@@ -5892,7 +5892,7 @@ margin:  5px 0;
 }
 
 .short_text a,.foot a,.signup-form a{color: #ff9100;}
-.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #0c0c0c;}
+.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #f2f2f2;}
 .signup-form .custom-control-label{line-height: 23px;}
 
 .main_menu ul li a.oicon{
@@ -5903,7 +5903,7 @@ margin:  5px 0;
 }
 
 .main_menu ul li:hover a.oicon{
-	color: #fff;
+	color: #0c0c0c;
 }
 
 .blog_details_area .d_content ul{
