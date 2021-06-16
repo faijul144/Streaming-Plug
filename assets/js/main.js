@@ -427,16 +427,38 @@
   // Popover JS
 
   $("#popup-holder").hide();
-  if ($(".opt-pop").hasClass("pop-focus")) {
-    $(".opt-pop").popover({
-      html: true,
-      trigger: "focus",
-    });
-  } else {
-    $(".opt-pop").popover({
-      html: true,
-    });
-  }
+  $(".opt-pop").each(function () {
+    if ($(this).hasClass("pop-focus")) {
+      $(this).popover({
+        html: true,
+        trigger: "focus",
+      });
+    } else {
+      $(this).popover({
+        html: true,
+        trigger: "click",
+      });
+    }
+  });
+  $(".pop-ex").popover({
+    html: true,
+  });
+  $(".pop-ex").each(function () {
+    var pop_list = $(this).data("list");
+    var content = $(pop_list).html();
+    $(this).attr("data-content", content);
+  });
+
+  $("body").on("click", function (e) {
+    //did not click a popover toggle, or icon in popover toggle, or popover
+    if (
+      $(e.target).data("toggle") !== "popover" &&
+      $(e.target).parents('[data-toggle="popover"]').length === 0 &&
+      $(e.target).parents(".popover.in").length === 0
+    ) {
+      $('[data-toggle="popover"]').popover("hide");
+    }
+  });
 
   $(".opt-pop").each(function () {
     var pop_list = $(this).data("list");

@@ -380,9 +380,9 @@
                                         <li><a href="https://www.instagram.com/streamingplug00" target="_blank"><i
                                                     class="fab fa-instagram"></i></a></li>
                                     </ul>
-                                    <a href="javascript:void(0)" class="profile-opt" data-toggle="modal"
-                                        data-target="#edit-pro"><i class="fas fa-cog" data-toggle="tooltip"
-                                            data-placement="top" title="Edit Profile"></i></a>
+                                    <span class="profile-opt pop-ex" data-container="body" data-toggle="popover"
+                                        data-placement="bottom" data-list="#profile-opt-list"><i
+                                            class="fas fa-ellipsis-v"></i></span>
                                     <div class="streamer-detail pt-100">
                                         <h3 class="streamer-name">
                                             Rasalina de willamson
@@ -2470,7 +2470,9 @@
             <div id="profile-opt-list" class="has_pop">
                 <ul class="post-setting-list">
                     <li><a href="javascript:void(0)" data-toggle="modal" data-target="#edit-pro"><i
-                                class="fas fa-cog"></i>Edit Profile</a></li>
+                                class="fas fa-cog"></i>Profile Setting</a></li>
+                    <li><a href="javascript:void(0)" data-target=".share-modal" data-toggle="modal"><i
+                                class="fas fa-share-square"></i>Share</a></li>
                 </ul>
             </div>
             <div id="cvv-hint">
@@ -2646,6 +2648,71 @@
                                 <button type="submit" class="thm_btn br_btn btn_sub_cus_big ">Update</button>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Share Modal -->
+        <div class="modal fade share-modal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="mySmallModalLabel">Share</h5>
+                        <button type="button" class="close close-inherit" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fa fa-times-circle"></i></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://portal.streamingplug.com/Ahmadmarouf"
+                                        title="Facebook" target="_blank"
+                                        class="social-share text-muted d-block text-center h6">
+                                        <i class="fab fa-facebook-square fb-btn"></i>
+                                        <span class="btn-block mt-3">Facebook</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="https://twitter.com/intent/tweet?url=https://portal.streamingplug.com/Ahmadmarouf&amp;text=Ahmadmarouf"
+                                        data-url="https://portal.streamingplug.com/Ahmadmarouf"
+                                        class="social-share text-muted d-block text-center h6" target="_blank"
+                                        title="Twitter">
+                                        <i class="fab fa-twitter twitter-btn"></i> <span
+                                            class="btn-block mt-3">Twitter</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="whatsapp://send?text=https://portal.streamingplug.com/Ahmadmarouf"
+                                        data-action="share/whatsapp/share"
+                                        class="social-share text-muted d-block text-center h6" title="WhatsApp">
+                                        <i class="fab fa-whatsapp whatsapp-btn"></i> <span
+                                            class="btn-block mt-3">WhatsApp</span>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="mailto:?subject=Ahmadmarouf&amp;body=https://portal.streamingplug.com/Ahmadmarouf"
+                                        class="social-share text-muted d-block text-center h6" title="Email">
+                                        <i class="far fa-envelope"></i> <span class="btn-block mt-3">Email</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="sms://?body=Check this https://portal.streamingplug.com/Ahmadmarouf"
+                                        class="social-share text-muted d-block text-center h6" title="Text message">
+                                        <i class="fa fa-sms"></i> <span class="btn-block mt-3">Text message</span>
+                                    </a>
+                                </div>
+                                <div class="col-md-4 col-6 mb-3">
+                                    <a href="javascript:void(0);" id="btn_copy_url"
+                                        class="social-share text-muted d-block text-center clipboard" title="Copy link">
+                                        <i class="fas fa-link"></i> <span class="btn-block mt-3">Copy link</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
