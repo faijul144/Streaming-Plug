@@ -69,7 +69,7 @@
                                     <img src="assets/img/logo/1.svg" alt="Streaming Plug Logo" width="160">
                                 </a>
                             </div>
-                            <div class="main_menu d-lg-block">
+                            <div class="main_menu d-none d-md-block">
                                 <nav class="ul_li_center clearfix">
                                     <ul class="d-flex align-items-center signed-in">
                                         <li class="menu_item_has_child">
@@ -127,7 +127,6 @@
                                                 <li><a href="javascript:void(0)">Balance: $0.00</a></li>
                                                 <li><a href="streamer-details.html">Profile</a></li>
                                                 <li><a href="streamer-wallet.html">Wallet</a></li>
-                                                <li><a href="javascript:void(0)">Bookmarks</a></li>
                                                 <li><a href="javascript:void(0)">Log Out</a></li>
                                             </ul>
                                         </li>
@@ -137,7 +136,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                            <div class=" d-none align-items-center">
+                            <div class=" d-inline-flex d-md-none align-items-center">
                                 <div class="main_menu sm-menu-lang">
                                     <ul>
                                         <li class="menu_item_has_child">
@@ -159,13 +158,20 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="hamburger-menu d-lg-none">
-
-                                    <a class="menu-toggle" href="javascript:void(0);">
-                                        <span class="menu__bar"></span>
-                                        <span class="menu__bar"></span>
-                                        <span class="menu__bar"></span>
-                                    </a>
+                                <div class="mob-bottom-menu">
+                                    <div>
+                                        <a href="javascript:void(0)" class="icon-link" data-count="5"><i
+                                                class="far fa-comment-dots"></i></a>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:void(0)" class="icon-link" data-count="5"><i
+                                                class="far fa-bell"></i></a>
+                                    </div>
+                                    <div class="hamburger-menu pro-img-thumb">
+                                        <a class="menu-toggle" href="javascript:void(0);">
+                                            <div data-background="./assets/img/team/team_thumb.jpg"></div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -184,12 +190,10 @@
             <!-- side-mobile-menu start -->
             <nav class="side-mobile-menu">
                 <ul id="mobile-menu-active">
-                    <li>
-                        <a href="about.html">Streaming Plug</a>
-                    </li>
-                    <li><a href="explore.html">Explore</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="sign-in.html">Login</a></li>
+                    <li><a href="javascript:void(0)">Balance: $0.00</a></li>
+                    <li><a href="streamer-details.html">Profile</a></li>
+                    <li><a href="streamer-wallet.html">Wallet</a></li>
+                    <li><a href="sign-in.html">Log Out</a></li>
                     <li class="header_btn mt-3"><a class="thm_btn br_btn_2 text-white"
                             href="streamer-settings.html">Edit Profile</a>
                     </li>
