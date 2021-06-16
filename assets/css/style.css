@@ -568,11 +568,11 @@ overflow: auto;
 
 
 .main_menu ul>li:hover a.icon-link{
-	background: #0c0c0c;
+	background: #f2f2f2;
 }
 
 .main_menu ul>li:hover a.icon-link i{
-	color: #fff;
+	color: #0c0c0c;
 
 }
 
