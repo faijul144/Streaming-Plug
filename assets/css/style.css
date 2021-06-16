@@ -6691,6 +6691,7 @@ font-size: 16px;
 	display: flex;
 	align-items: center;
 	padding: 8px 10px;
+	margin-bottom: 30px;
 }
 
 .notification-box .pro-img-thumb{
