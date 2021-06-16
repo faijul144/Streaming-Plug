@@ -655,7 +655,7 @@
 /* SM Device :320px. */
 @media (max-width: 767px) {
 
-    .posting-opt>div>label, .posting-opt>div>a{font-size: 11px;}
+.posting-opt>div>label, .posting-opt>div>a{font-size: 11px;}
 
 .aff-table{
     width: 100%;
@@ -974,21 +974,38 @@
         padding-top: 0px;
         padding-bottom: 60px;
     }
-    /* .services_tab .nav-item {
-        flex-basis: 50%;
-    } */
     .services_tab .nav-link {
         margin: 0 10px;
-        padding: 4px 13px;
+        padding: 0;
+        height: 30px;
+        width: 30px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
     }
 
     .seetings-tab .services_tab .nav-link{
         margin: 0;
         padding: 8px 15px;
+        height: auto;
+        width: auto;
+    }
+
+    .seetings-tab .services_tab .nav-link .title i {
+        margin-right: 10px;
     }
 
     .services_tab .nav-link .title{
         font-size: 13px;
+    }
+    .services_tab .nav-link .title i{
+        margin-right: 0;
+    }
+
+
+    .services_tab .nav-link .title>span{
+        display: none;
     }
 
     .services_content_wrap .service_content {
@@ -1298,10 +1315,6 @@
 }
 
 @media only screen and (min-width: 404px) and (max-width:527px){
-    .services_tab .nav-link {
-        margin: 0 10px;
-        padding: 5px 20px;
-    }
 
     .seetings-tab .services_tab .nav-link{
         margin: 0;

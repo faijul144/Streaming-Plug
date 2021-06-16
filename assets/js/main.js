@@ -535,6 +535,24 @@
     });
   });
 
+  // Max Three Cat Check
+  let maxChecks = $(".boxed-selects").data("max");
+  $(".boxed-selects .custom-control-input:checked").length >= maxChecks
+    ? $(".boxed-selects .custom-control-input")
+        .not(":checked")
+        .attr("disabled", true)
+    : "";
+  $(".boxed-selects .custom-control-input").change(function () {
+    $(".boxed-selects .custom-control-input:checked").length >= maxChecks
+      ? $(".boxed-selects .custom-control-input")
+          .not(":checked")
+          .attr("disabled", true)
+      : $(".boxed-selects .custom-control-input:disabled").attr(
+          "disabled",
+          false
+        );
+  });
+
   // Select Payment Method
   $(".select-method").each(function () {
     let other = $(this).data("target");
