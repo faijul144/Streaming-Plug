@@ -535,26 +535,6 @@
     });
   });
 
-  //Limit List Explore
-  $(".limit-list").each(function () {
-    $(this)
-      .find("li:not(.limit-open)")
-      .each(function (i) {
-        i > 1 ? $(this).addClass("shrink") : "";
-      });
-  });
-
-  $(".limit-open a").click(function (e) {
-    e.preventDefault();
-    $(this)
-      .parent()
-      .parent()
-      .find("li:not(.limit-open)")
-      .each(function (i) {
-        i > 1 ? $(this).toggleClass("shrink") : "";
-      });
-  });
-
   // Select Payment Method
   $(".select-method").each(function () {
     let other = $(this).data("target");
