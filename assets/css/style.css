@@ -540,7 +540,8 @@ overflow: auto;
 
 .main_menu ul li.nf ul.submenu{
 	min-width: 300px;
-    height: 360px;
+	height: auto;
+    padding-bottom: 50px;
 }
 
 .main_menu ul li.nf ul.submenu li.see-all{
@@ -554,6 +555,49 @@ overflow: auto;
     width: 100%;
     border-top: 1px solid #d4d4d4;
     border-radius: 0;
+	background: #fff;
+}
+
+
+
+.main_menu ul li.nf ul.submenu .inner-data{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.main_menu ul li.nf ul.submenu .inner-data .pro-img-thumb{
+	flex: 1;
+	height: 40px;
+	width: 40px;
+	margin: 0;
+}
+.main_menu ul li.nf ul.submenu .inner-data .short{
+	width: 190px;
+	display: flex;
+	flex-direction: column;
+	padding: 0 10px ;
+}
+.main_menu ul li.nf ul.submenu .inner-data .short .upper-message,.main_menu ul li.nf ul.submenu .inner-data .short .message{
+	display: inline-block;
+	white-space: nowrap;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 16px;
+}
+
+.main_menu ul li.nf ul.submenu .inner-data .short .message{
+	font-size: 12px;
+}
+
+.main_menu ul li.nf ul.submenu .inner-data .short span{
+	color: #ff9100;
+	font-weight: 600;
+}
+.main_menu ul li.nf ul.submenu .inner-data .meta{
+	flex:1;
+	white-space: nowrap;
+	font-size: 10px;
 }
 
 .main_menu ul li a.icon-link,.mob-bottom-menu>div a.icon-link{
@@ -6695,7 +6739,7 @@ font-size: 16px;
 	margin-bottom: 30px;
 }
 
-.notification-box .pro-img-thumb{
+.pro-img-thumb{
 	height: 50px;
 	width: 50px;
 	background-size: cover;
