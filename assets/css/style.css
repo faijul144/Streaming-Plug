@@ -418,7 +418,7 @@ input, textarea, select {
 	text-transform: uppercase;
 	border-radius: 50px;
 }
-.main_menu ul li:hover > a,  .main_menu ul li.active > a {
+.main_menu ul li:hover > a:not(.thm_btn),  .main_menu ul li.active > a:not(.thm_btn) {
 	background-color: #f2f2f2;
 	color: #0c0c0c;
 }
@@ -5457,8 +5457,12 @@ box-shadow: none;
 	background-color: #0c0c0c;
 }
 
-.header_4.header_cus .header_btn .thm_btn:hover,.header_4.header_cus .header_btn .thm_btn,.header_cus .main_menu ul li.active > a{
+.header_4.header_cus .header_btn .thm_btn:hover,.header_4.header_cus .header_btn .thm_btn{
 	color: #fff;
+}
+
+.header_cus .main_menu ul li.active > a{
+	color: #0c0c0c;
 }
 
 .join-login{
