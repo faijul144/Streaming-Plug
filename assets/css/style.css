@@ -420,6 +420,7 @@ input, textarea, select {
 }
 .main_menu ul li:hover > a,  .main_menu ul li.active > a {
 	background-color: #f2f2f2;
+	color: #0c0c0c;
 }
 
 .sticky .main_menu ul li:hover > a,.sticky .main_menu ul li.active > a{
