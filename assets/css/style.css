@@ -556,11 +556,11 @@ overflow: auto;
 }
 
 .main_menu ul li a.icon-link,.mob-bottom-menu>div a.icon-link{
-	font-size: 30px;
+	font-size: 28px;
     padding: 0;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 44px;
+    width: 44px;
     align-items: center;
     justify-content: center;
     display: inline-flex;
