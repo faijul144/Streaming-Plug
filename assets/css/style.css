@@ -6766,7 +6766,7 @@ font-size: 16px;
 }
 
 /* Streamer Delete Section */
-.deletion-part{
+.deletion-part, #goodbymodal .modal-body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -6775,7 +6775,7 @@ font-size: 16px;
 	margin-top: 40px;
 	padding: 30px 50px;
 	font-size: 16px;
-	columns: #0c0c0c;
+	color: #0c0c0c;
 	text-align: center;
 }
 
@@ -6789,3 +6789,18 @@ font-size: 16px;
 	background-color: #e25e00;
 	margin-top: 20px;
 }
+
+#goodbymodal .emoji{
+	margin-bottom: 30px;
+}
+
+#goodbymodal .emoji img{
+	width: 100px;
+}
+
+#goodbymodal .modal-body{margin: 0;}
+
+#goodbymodal p{color: #0c0c0c;font-size: 15px;}
+
+#goodbymodal p a{color:#ff9100; transition:all 0.3s ease}
+#goodbymodal p a:hover{color:#0c0c0c}

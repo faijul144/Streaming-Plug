@@ -535,7 +535,9 @@
                                                             be deleted.
                                                         </span>
                                                         <div class="text-left">
-                                                            <button type="button" class="thm_btn br_btn dlt_btn">Delete
+                                                            <button type="button" class="thm_btn br_btn dlt_btn"
+                                                                data-toggle="modal"
+                                                                data-target="#ac-delete-modal">Delete
                                                                 Account</button>
                                                         </div>
                                                     </div>
@@ -898,19 +900,72 @@
         </main>
         <!-- main body end -->
 
-        <!-- Popup Inner List -->
-        <div id="popup-holder">
-            <div id="popup-holder">
-                <div id="cvv-hint">
-                    <!-- <div class="mb-1">
-                        <img scr='./assets/img/cvv.png'>
-                    </div> -->
-                    <div class='text-center'>The CVV is the 3 digit number on the back of your card.</div>
+        <!-- Account Delete Modal -->
+        <div class="modal fade" id="ac-delete-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Delete Your Account</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="text-left">
+
+                            <div class="form-row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email">Email<sup>*</sup></label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter Account Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="bbrance">Password<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="bbrance"
+                                            placeholder="Enter Account Password">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="reason">Password<sup>*</sup></label>
+                                        <textarea name="" id="reason" rows="5" class="form-control"
+                                            placeholder="Reason for leaving us"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center w-100">
+                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big" data-dismiss="modal"
+                                    data-toggle="modal" data-target="#goodbymodal">Send</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="modal fade" id="goodbymodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="emoji"><img src="./assets/img/icon/crying.svg" alt="Crying Emoji"></div>
+                        <p>We are sad to know that you are leaving us. I hope you would change your mind. Don't worry
+                            your account will only be deleted after 30 days. Till then it will be in disabled state. So
+                            if you fill like comming back just <a href="sign-in.html">sign in</a> and everything will be
+                            as it was.</p>
+                        <div class="text-center w-100">
+                            <a class="thm_btn br_btn btn_sub_cus_big" href="index.html">Bye for
+                                now!</a>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
