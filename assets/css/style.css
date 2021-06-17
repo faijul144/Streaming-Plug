@@ -6683,8 +6683,8 @@ background: rgba(0, 0, 0, 0.7);
 font-size: 16px;
 }
 
-/* Package Modal */
-#pack-modal .modal-xl-cus{
+/* Package XL */
+.modal-xl-cus{
 	max-width: 1200px;
 }
 

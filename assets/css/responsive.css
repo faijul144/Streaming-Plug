@@ -100,7 +100,7 @@
 /* LG Device :992px. */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-    #pack-modal .modal-xl-cus{
+    .modal-xl-cus{
         max-width: 1000px;
     }
 
@@ -302,7 +302,7 @@
 /* MD Device :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
 
-    #pack-modal .modal-xl-cus{
+   .modal-xl-cus{
         max-width: 750px;
     }
 
@@ -667,7 +667,7 @@
 }
 /* SM Device :320px. */
 @media (max-width: 767px) {
-    #pack-modal .modal-xl-cus{
+    .modal-xl-cus{
         max-width: 500px;
     }
 .table-container{
