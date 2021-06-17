@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/barfiller.css">
-    <link rel="stylesheet" href="assets/css/metisMenu.css">
-    <link rel="stylesheet" href="assets/css/green-audio-player.css">
     <link rel="stylesheet" href="assets/css/video-js.css">
     <link rel="stylesheet" href="assets/css/video-js-forest.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -246,14 +245,14 @@
                                                 <div data-background="./assets/img/team/team_thumb.jpg"></div>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="follower-details.html">Profile</a></li>
-                                                <li><a href="follower-wallet.html">Wallet</a></li>
-                                                <li><a href="follower-affiliate.html">Affiliate</a></li>
+                                                <li><a href="javascript:void(0)" class="with-border">Balance: $0.00</a>
+                                                </li>
+                                                <li><a href="aff-user-details.html">Profile</a></li>
                                                 <li><a href="javascript:void(0)">Log Out</a></li>
                                             </ul>
                                         </li>
                                         <li class="header_btn d-none d-md-block"><a class="thm_btn br_btn_2"
-                                                href="explore.html">More Streamers</a>
+                                                href="affiliate-settings.html">Edit Profile</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -312,12 +311,9 @@
             <!-- side-mobile-menu start -->
             <nav class="side-mobile-menu">
                 <ul id="mobile-menu-active">
-                    <li><a href="follower-details.html">Profile</a></li>
-                    <li><a href="follower-wallet.html">Wallet</a></li>
-                    <li><a href="follower-affiliate.html">Affiliate</a></li>
+                    <li><a href="javascript:void(0)">Balance: $0.00</a></li>
+                    <li><a href="aff-user-details.html">Profile</a></li>
                     <li><a href="sign-in.html">Log Out</a></li>
-                    <li class="header_btn"><a class="thm_btn br_btn_2 text-white" href="explore.html">More
-                            Streamers</a>
                     </li>
                 </ul>
             </nav>
@@ -330,7 +326,8 @@
         <main>
             <!-- pagetitle start -->
             <section class="page_title_area profil-img-edit">
-                <div class="page_title_wrap" data-background="assets/img/bg/video_bg_2.jpg">
+                <div class="page_title_wrap cover-image" data-background="assets/img/bg/video_bg_3.jpg">
+
                 </div>
             </section>
             <!-- pagetitle end -->
@@ -340,70 +337,195 @@
                 <div class="container">
                     <div class="">
                         <div class="row">
-                            <div class="col-lg-4 mb-sm-5">
-                                <div class="team_left pos-rel aff_man mb-30">
-                                    <!--there is  "offline","online", "away" classes for status color change-->
-                                    <div class="streamer_thumb online steamer-status profil-img-edit"
-                                        data-name-letter="R">
-                                        <div data-background="assets/img/bg/video_bg_2.jpg" alt=""
-                                            class="drag-img pro-img">
-                                        </div>
-                                        <div class="status"></div>
-                                    </div>
-                                    <div class="streamer-detail pt-100">
-                                        <h3 class="streamer-name">
-                                            Rasalina de willamson
-                                            <small class="verified" data-toggle="tooltip" data-placement="top"
-                                                title="User Verified">
-                                                <i class="ti-check-box"></i>
-                                            </small>
-                                        </h3>
-                                        <div class="status-meta">
-                                            <span class="follower"><a href="followers.html" target="_blank">Followed By
-                                                    10</a></span>
-                                            <span class="designation">Musician</span>
-                                            <span><i class="far fa-map-marker-alt"></i>Birmingham, United Kingdom
-                                            </span>
-                                            <span><i class="far fa-user-circle"></i>Member since Apr 14, 2021</span>
-                                        </div>
-                                        <div class="streamer-about">
-                                            <p>I’m a professional musician based in Birmingham, specializing in
-                                                folk and modern music.</p>
+                            <div class="col-lg-3 mb-sm-5">
 
-                                            <p>I have a passion for everything related to music, my
-                                                interests and experiences inspire my professionalism and style of
-                                                work...<a href="javascript:void(0)" data-toggle="modal"
-                                                    data-target="#about-me">read more</a>
-                                            </p>
-
-                                        </div>
-                                        <div class="skills">
-                                            <span>Skills: </span>
-                                            <ul>
-                                                <li><a href="javascript:void(0)">Sports</a></li>
-                                                <li><a href="javascript:void(0)">Entertainment</a></li>
-                                                <li><a href="javascript:void(0)">Music </a></li>
-                                                <li><a href="javascript:void(0)">Meditation and Yoga</a></li>
-                                                <li><a href="javascript:void(0)">Travel</a></li>
-                                            </ul>
-                                        </div>
+                                <div class="seetings-tab mb-30">
+                                    <div class="services_tab">
+                                        <ul class="nav" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#l-1" role="tab"
+                                                    aria-controls="l-1" aria-selected="false">
+                                                    <span class="title"><i class="fas fa-user"></i>Profile</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-4" role="tab"
+                                                    aria-controls="l-4" aria-selected="false">
+                                                    <span class="title"><i class="far fa-shield-alt"></i>Privacy &
+                                                        Security</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
 
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-9">
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-12">
-                                            <div class="not-subed">
-                                                <div class="blur-bg-img"></div>
-                                                <div class="sub-ac">
-                                                    <div><i class="fas fa-lock"></i></div>
-                                                    <div>Please Subscibe To View Content</div>
-                                                    <a class="thm_btn br_btn btn_sub_cus_big" data-toggle="modal"
-                                                        data-target="#pack-modal">Subscribe</a>
+                                        <div class="col-lg-12">
+                                            <div class="tab-content tab-border">
+                                                <div class="tab-pane fade active show" id="l-1" role="tabpanel"
+                                                    aria-labelledby="l-tab-01">
+                                                    <form class="form_cus" action="" name="">
+                                                        <!-- Name -->
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="fname">First Name<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="fname"
+                                                                        placeholder="Enter First Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="lname">Last Name<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="lname"
+                                                                        placeholder="Enter Last Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Email Phone -->
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="email">Email<sup>*</sup></label>
+                                                                    <input type="email" class="form-control" id="email"
+                                                                        placeholder="Enter Email">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="phone">Phone<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="phone"
+                                                                        placeholder="Enter Phone Number" required>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <!-- Username And Role -->
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="username">Username<sup>*</sup></label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="username" placeholder="Enter Username">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group">
+                                                                    <label for="role">Role<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="role"
+                                                                        value="Follower" disabled readonly>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Social Connect</label>
+                                                            <div class="social-connect">
+                                                                <div class="connect-link">
+                                                                    <span><i
+                                                                            class="fab fa-facebook-f"></i><span>Facebook</span></span>
+                                                                    <a href="javascript:void(0)">Connect</a>
+                                                                </div>
+                                                                <div class="connect-link">
+                                                                    <span><i
+                                                                            class="fab fa-twitter"></i><span>Twitter</span></span>
+                                                                    <a href="javascript:void(0)">Connect</a>
+                                                                </div>
+                                                                <div class="connect-link">
+                                                                    <span><i
+                                                                            class="fab fa-linkedin"></i><span>Linkedin</span></span>
+                                                                    <a href="javascript:void(0)">Connect</a>
+                                                                </div>
+                                                                <div class="connect-link">
+                                                                    <span><i
+                                                                            class="fab fa-instagram"></i><span>Instagram</span></span>
+                                                                    <a href="javascript:void(0)">Connect</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Localtion -->
+                                                        <div class="form-group">
+                                                            <label for="loc">Address<sup>*</sup></label>
+                                                            <input type="text" class="form-control" id="loc"
+                                                                placeholder="Enter Your Address" required>
+                                                        </div>
+
+                                                        <!-- About You -->
+                                                        <div class="form-group">
+                                                            <label for="sup_des">About You<sup>*</sup></label>
+                                                            <textarea class="form-control" id="sup_des" rows="6"
+                                                                placeholder="Write Here" required></textarea>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <button type="submit"
+                                                                class="thm_btn br_btn btn_sub_cus_big ">Update</button>
+                                                        </div>
+                                                    </form>
+                                                    <div class="deletion-part">
+                                                        <i class="fa fa-exclamation-triangle mr-1"></i>
+                                                        <span>If you want delete your account press the following button
+                                                            and
+                                                            go through the deletion steps also this action cannot be
+                                                            reversed, all your data, posts and your subscriptions will
+                                                            be deleted.
+                                                        </span>
+                                                        <div class="text-left">
+                                                            <button type="button" class="thm_btn br_btn dlt_btn"
+                                                                data-toggle="modal"
+                                                                data-target="#ac-delete-modal">Delete
+                                                                Account</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="l-4" role="tabpanel"
+                                                    aria-labelledby="l-tab-04">
+                                                    <form action="" class="d-flex flex-column">
+                                                        <div class="check-green">
+                                                            <input type="checkbox" name="check-green" id="l2">
+                                                            <label for="l2">
+                                                                <div></div>
+                                                            </label>
+                                                            <span>Hide last seen</span>
+                                                        </div>
+                                                        <div class="check-green">
+                                                            <input type="checkbox" name="check-green" id="l3">
+                                                            <label for="l3">
+                                                                <div></div>
+                                                            </label>
+                                                            <span>Hide number of streamers subscribed</span>
+                                                        </div>
+                                                        <div class="check-green">
+                                                            <input type="checkbox" name="check-green" id="l5" checked>
+                                                            <label for="l5">
+                                                                <div></div>
+                                                            </label>
+                                                            <span>Show my subscribed streamers</span>
+                                                        </div>
+                                                        <div class="check-green">
+                                                            <input type="checkbox" name="check-green" id="l4">
+                                                            <label for="l4">
+                                                                <div></div>
+                                                            </label>
+                                                            <span>Hide my country</span>
+                                                        </div>
+                                                        <div class="check-green">
+                                                            <input type="checkbox" name="check-green" id="l5" checked>
+                                                            <label for="l5">
+                                                                <div></div>
+                                                            </label>
+                                                            <span>Show my birthdate</span>
+                                                        </div>
+                                                        <div class="text-center">
+                                                            <button type="submit"
+                                                                class="thm_btn br_btn btn_sub_cus_big ">Save</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -416,171 +538,72 @@
         </main>
         <!-- main body end -->
 
-
-        <!-- About Me Modal -->
-        <div class="modal fade" id="about-me" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        <!-- Account Delete Modal -->
+        <div class="modal fade" id="ac-delete-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">About Me</h5>
+                        <h5 class="modal-title">Delete Your Account</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>I’m a professional musician based in Birmingham, specializing in
-                            folk and modern music.</p>
+                        <form class="text-left">
 
-                        <p>I have a passion for everything related to music, my
-                            interests and experiences inspire my professionalism and style of
-                            work.
-                        </p>
+                            <div class="form-row">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="email">Email<sup>*</sup></label>
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="Enter Account Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="bbrance">Password<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="bbrance"
+                                            placeholder="Enter Account Password" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="reason">Reason for leaving us<sup>*</sup></label>
+                                        <textarea name="" id="reason" rows="5" class="form-control"
+                                            placeholder="Reason for leaving us" required></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center w-100">
+                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big" data-dismiss="modal"
+                                    data-toggle="modal" data-target="#goodbymodal">Send</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- About Me Modal -->
-        <div class="modal fade" id="pack-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        <div class="modal fade" id="goodbymodal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl-cus">
+            <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">John Doe Pricing</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
                     <div class="modal-body">
-                        <div class="row justify-content-center gutters-5">
+                        <div class="emoji"><img src="./assets/img/icon/crying.svg" alt="Crying Emoji"></div>
+                        <p>We are sad to know that you are leaving us. I hope you would change your mind. Don't worry
+                            your account will only be deleted after 30 days. Till then it will be in disabled state. So
+                            if you fill like comming back just <a href="sign-in.html">sign in</a> and everything will be
+                            as it was.</p>
+                        <div class="text-center w-100">
+                            <a class="thm_btn br_btn btn_sub_cus_big" href="index.html">Bye for
+                                now!</a>
 
-                            <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="pricing_single text-center free-bg">
-                                    <div class="price_head">
-                                        <span class="pack">Free</span>
-                                        <h2>0</h2>
-                                        <span class="time">Monthly</span>
-                                    </div>
-                                    <hr>
-
-                                    <div class="pricing-content-container">
-                                        <ul class="pricing-content">
-                                            <li>Unlimited Subscribers</li>
-                                            <li>Live Streaming 2hr/Day</li>
-                                            <li>Live Chats And Comments</li>
-                                            <li>Unlimited Messages</li>
-                                            <li>Accept Tips</li>
-                                            <li>No Ads</li>
-                                            <li>No Processing Fees</li>
-                                            <li>24/7 Customer Service</li>
-                                        </ul>
-                                    </div>
-                                    <div class="price_icon">
-                                        <img src="assets/img/icon/tax-free.svg" alt="Icon">
-                                    </div>
-                                    <div class="price_btn">
-                                        <a href="sign-up.html">select
-                                            plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="pricing_single text-center">
-                                    <div class="price_head">
-                                        <span class="pack">Silver</span>
-                                        <h2>45</h2>
-                                        <span class="time">Monthly</span>
-                                    </div>
-                                    <hr>
-                                    <div class="pricing-content-container">
-                                        <ul class="pricing-content">
-                                            <li>Unlimited Subscribers</li>
-                                            <li>Live Streaming 4hr/Day</li>
-                                            <li>Live Chats And Comments</li>
-                                            <li>Unlimited Messages</li>
-                                            <li>Accept Tips</li>
-                                            <li>No Ads</li>
-                                            <li>5% Processing Fees</li>
-                                            <li>24/7 Customer Service</li>
-                                        </ul>
-                                    </div>
-                                    <div class="price_icon">
-                                        <img src="assets/img/icon/money.svg" width="40" alt="Icon">
-                                    </div>
-                                    <div class="price_btn">
-                                        <a href="sign-up.html">select
-                                            plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="pricing_single active text-center">
-                                    <span class="recommend">Recommended</span>
-                                    <div class="price_head">
-                                        <span class="pack">Gold</span>
-                                        <h2>80</h2>
-                                        <span class="time">Monthly</span>
-                                    </div>
-                                    <hr>
-                                    <div class="pricing-content-container">
-                                        <ul class="pricing-content">
-                                            <li>Unlimited Subscribers</li>
-                                            <li>Live Streaming 6hr/Day</li>
-                                            <li>Live Chats And Comments</li>
-                                            <li>Unlimited Messages</li>
-                                            <li>Accept Tips</li>
-                                            <li>Accept Crypto Currency</li>
-                                            <li>5% Processing Fees</li>
-                                            <li>24/7 Customer Service</li>
-                                        </ul>
-                                    </div>
-                                    <div class="price_icon">
-                                        <img src="assets/img/icon/p_03.png" alt="Icon">
-                                    </div>
-                                    <div class="price_btn">
-                                        <a href="sign-up.html">select
-                                            plan</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-md-6">
-                                <div class="pricing_single text-center">
-                                    <div class="price_head">
-                                        <span class="pack">Platinum</span>
-                                        <h2>160</h2>
-                                        <span class="time">Monthly</span>
-                                    </div>
-                                    <hr>
-
-                                    <div class="pricing-content-container">
-                                        <ul class="pricing-content">
-                                            <li>Unlimited Subscribers</li>
-                                            <li>Live Streaming 8hr/Day</li>
-                                            <li>Live Chat And Comments</li>
-                                            <li>Unlimited Messages</li>
-                                            <li>Accept Tips</li>
-                                            <li>Accept Crypto Currency</li>
-                                            <li>5% Processing Fees</li>
-                                            <li>24/7 Customer Service</li>
-                                        </ul>
-                                    </div>
-                                    <div class="price_icon">
-                                        <img src="assets/img/icon/p_02.png" alt="Icon">
-                                    </div>
-                                    <div class="price_btn">
-                                        <a href="sign-up.html">select
-                                            plan</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
@@ -698,13 +721,11 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/simple-lightbox.js"></script>
     <script src="assets/js/video.min.js"></script>
-    <script src="assets/js/green-audio-player.js"></script>
-    <script src="assets/js/simple-lightbox.min.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/streamer.js"></script>
 
 </body>
 
