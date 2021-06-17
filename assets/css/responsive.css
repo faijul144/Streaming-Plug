@@ -670,6 +670,12 @@
     #pack-modal .modal-xl-cus{
         max-width: 500px;
     }
+.table-container{
+    width: 100%;
+    overflow: auto;
+}
+.table-container .aff-table{width: 700px;}
+
 .posting-opt>div>label, .posting-opt>div>a{font-size: 11px;}
 
 .aff-table{

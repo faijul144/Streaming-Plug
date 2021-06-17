@@ -6837,7 +6837,7 @@ font-size: 16px;
 }
 
 /* Streamer Delete Section */
-.deletion-part, #goodbymodal .modal-body{
+.deletion-part, #goodbymodal .modal-body, .usub-modal .modal-body{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -6861,17 +6861,63 @@ font-size: 16px;
 	margin-top: 20px;
 }
 
-#goodbymodal .emoji{
+#goodbymodal .emoji, .usub-modal .emoji{
 	margin-bottom: 30px;
 }
 
-#goodbymodal .emoji img{
+#goodbymodal .emoji img,.usub-modal .emoji img{
 	width: 100px;
 }
 
-#goodbymodal .modal-body{margin: 0;}
+#goodbymodal .modal-body, .usub-modal .modal-body{margin: 0;}
 
-#goodbymodal p{color: #0c0c0c;font-size: 15px;}
+#goodbymodal p, .usub-modal p{color: #0c0c0c;font-size: 15px;}
 
-#goodbymodal p a{color:#ff9100; transition:all 0.3s ease}
-#goodbymodal p a:hover{color:#0c0c0c}
+#goodbymodal p a, .usub-modal p a{color:#ff9100; transition:all 0.3s ease}
+#goodbymodal p a:hover, .usub-modal p a:hover{color:#0c0c0c}
+
+/* Unsubscrib Button */
+
+.unsub-btn{
+	position: absolute;
+    top: 15px;
+    right: 12px;
+    padding: 5px 15px;
+    overflow: hidden;
+	background: #ff9100;
+    border-radius: 100px;
+    color: #fff;
+	z-index: 0;
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.unsub-btn.on-pro{
+	top: 10px;
+    right: 7px;
+    padding: 2px 12px;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.unsub-btn:hover{
+	background: #0c0c0c;
+	box-shadow: 1px 3px 3px rgba(0, 0, 0, .3);
+	transform: translateY(-3px);
+}
+
+.unsub-btn:hover:focus{
+	transform: translateY(-1px);
+	box-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.team_single:hover .unsub-btn{
+	opacity: 1;
+	visibility: visible;
+}
+
+.team_left:hover .unsub-btn{
+	opacity: 0.75;
+	visibility: visible;
+}
