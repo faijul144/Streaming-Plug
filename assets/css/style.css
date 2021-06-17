@@ -6946,7 +6946,9 @@ font-size: 16px;
 }
 .about-list li{
 	margin-bottom: 0;
-    font-size: 15px;}
+    font-size: 15px;
+	position: relative;
+}
 .about-list li p{
 	margin-bottom: 0;
     color: #0c0c0c;
@@ -6964,9 +6966,22 @@ font-size: 16px;
     color: #0c0c0c;
 	transition: color 0.3s ease;
 }
+
+.about-list.social-link li a{
+	padding-left: 20px;
+}
+.about-list.social-link li a i{
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+	left: 0;
+	font-size: 14px;
+}
+
 .about-list li a:hover{
     color: #ff9100;
 }
+
 
 #about-me .modal-content{
 	min-height: 80vh;
