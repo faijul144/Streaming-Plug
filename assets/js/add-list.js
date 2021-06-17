@@ -1,7 +1,4 @@
 "use strict";
-
-let inputButton = $(".add-btn");
-let actionBtn = $(".sm-action-btn");
 let date = new Date();
 let editId;
 let rand =
@@ -12,67 +9,61 @@ let rand =
   date.getHours();
 let thisContainer, currentBtnText, pressedAddBtn;
 
-inputButton.click(function (e) {
+$(".add-btn").click(function (e) {
   e.preventDefault();
   let listContainer = $(this).parent().find(".inputed-list");
   let inputField = $(this).data("target");
-  let inputValue = $(inputField).val();
-  let listTemplate = `<div id=${rand}>
+
+  if ($(inputField).val().length == "") {
+    alert("Please Input Data");
+  } else {
+    let inputValue = $(inputField).val();
+    let listTemplate = `<div id=${rand}>
 <span>${inputValue}</span>
 <div class="sm-action">
     <button class="sm-action-btn"
-        data-action="edit">
+    type="button"
+        data-action="edit" onclick="editCon('${rand}')">
         <i class="far fa-pencil"></i>
     </button>
     <button class="sm-action-btn"
-        data-action="remove">
-        <i class="far fa-times"></i>
+    type="button"
+        data-action="remove" onclick="deleteCon('${rand}')">
+        <i class="far fa-times""></i>
     </button>
 </div>
 </div>`;
-
-  if (inputValue.length == "") {
-    alert("Please Input Data");
-  } else {
-    inputValue = inputValue;
     listContainer.append(listTemplate);
   }
 });
 
-actionBtn.click(function (e) {
-  e.preventDefault();
-  let action = $(this).data("action");
-  if (action == "edit") {
-    thisContainer = $(this).parent().parent().find("span");
-    editId = $(this).parent().parent().attr("id");
-    alert(editId);
-    let editBtn = $(this).parent().parent().parent().parent().find(".add-btn");
-    currentBtnText = editBtn.text();
-    pressedAddBtn = $(this)
-      .parent()
-      .parent()
-      .parent()
-      .parent()
-      .find(".add-btn")
-      .data("target");
-    let currentValue = $(this).parent().parent().find("span").text();
-    $(pressedAddBtn).val(currentValue);
-    editBtn.text("Update");
-    editBtn.addClass("edit-btn");
-    editBtn.removeClass("add-btn");
-    editBtn.attr("data-change", editId);
-  }
-  if (action == "remove") {
-    $(this).parent().parent().remove();
-  }
-});
+function deleteCon(x) {
+  $("#" + x).remove();
+}
 
-$(".edit-btn").click(function (e) {
-  e.preventDefault();
-  let tar = $(this).data("change");
-  thisContainer.text($(pressedAddBtn).val());
-  $(pressedAddBtn).val("");
-  editBtn.addClass("add-btn");
-  editBtn.removeClass("edit-btn");
-  editBtn.text(currentBtnText);
-});
+function editCon(x) {
+  let thisBtn = $("#" + x);
+  let currentValue = thisBtn.find("span").text();
+  thisBtn.empty();
+  thisBtn.append(`<input type="text" class="form-control" value="${currentValue}">
+<button type="button" class="thm_btn br_btn btn_sub_cus_edit" onclick="updateCon('${x}')">Update</button>`);
+}
+
+function updateCon(x) {
+  let thisBtn = $("#" + x);
+  let newValue = thisBtn.find("input").val();
+  thisBtn.empty();
+  thisBtn.append(`<span>${newValue}</span>
+  <div class="sm-action">
+      <button class="sm-action-btn"
+      type="button"
+          data-action="edit" onclick="editCon('${x}')">
+          <i class="far fa-pencil"></i>
+      </button>
+      <button class="sm-action-btn"
+      type="button"
+          data-action="remove" onclick="deleteCon('${x}')">
+          <i class="far fa-times""></i>
+      </button>
+  </div>`);
+}

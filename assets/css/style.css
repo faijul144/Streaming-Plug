@@ -6978,6 +6978,14 @@ font-size: 16px;
     text-transform: capitalize;
 }
 
+.thm_btn.btn_sub_cus_edit{
+	margin: 0;
+    padding: 8px 20px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
 
 
 /* Added list actions */
