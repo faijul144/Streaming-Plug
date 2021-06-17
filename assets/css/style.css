@@ -6979,54 +6979,42 @@ font-size: 16px;
 }
 
 
-.added-cards{
-	display: flex;
-	width: 360px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, .36);
-    border-radius: 3px;
-	background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
+
+/* Added list actions */
+.inputed-list{
+	margin: 10px 0;
+}
+.inputed-list>div{
 	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
-.added-cards img{
-	width: 60px;
-	box-shadow: 1px 1px 3px rgba(0, 0, 0, .2);
-}
-.added-cards .card-action{
+.inputed-list>div .sm-action{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.added-cards .sm-ac-btn{
+.inputed-list>div .sm-action button{
+	background: #ececec;
 	height: 25px;
-    width: 25px;
-    border-radius: 50%;
-    margin: 0 5px;
-    background: #ececec;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .36);
-	transition: all 0.3s ease;
-}
-.added-cards .sm-ac-btn i{
-	font-size: 12px;
-	color: #0c0c0c;
-	transition: all 0.3s ease;
-}
-.added-cards .sm-ac-btn:hover{
-	transform: translateY(-3px);
-	box-shadow: 1px 2px 3px rgba(0, 0, 0, .36);
-	background: #ff9100;
-}
-
-.added-cards .sm-ac-btn:hover{
-	transform: translateY(-1px);
+	width: 25px;
+	border-radius: 3px;
+	margin: 0 5px;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, .36);
+	transition: all 0.3s ease;
 }
-
-.added-cards .sm-ac-btn:hover i{
+.inputed-list>div .sm-action button i{
+	color: #0c0c0c;
+	font-size: 14px;
+	transition: all 0.3s ease;
+}
+.inputed-list>div .sm-action button:hover{
+	background: #ff9100;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, .36);
+	transform: translateY(-2px);
+}
+.inputed-list>div .sm-action button:hover i{
 	color: #fff;
 }
