@@ -593,7 +593,34 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="form-row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="gender">Gender<sup>*</sup></label>
+                                                                    <select id="gender" class="form-control">
+                                                                        <option value="Male" selected></option>
+                                                                        <option value="Female"></option>
+                                                                        <option value="Others"></option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="religion">Religion<sup>*</sup></label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="religion" value="Islam">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label for="location">Birthday<sup>*</sup></label>
+                                                                    <input type="text" class="form-control"
+                                                                        id="location" value="11/29/1995">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <!-- About You -->
                                                         <div class="form-group">
                                                             <label for="sup_des">About You<sup>*</sup></label>
@@ -609,6 +636,93 @@
                                                 </div>
                                                 <div class="tab-pane fade" id="l-7" role="tabpanel"
                                                     aria-labelledby="l-tab-07">
+                                                    <form class="form_cus" action="" name="">
+                                                        <!-- Localtion -->
+                                                        <div class="form-group">
+                                                            <h4 class="mb-3">Add Company</h4>
+                                                            <div id="company-input">
+                                                                <label for="com-name">Company Name<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="com-name" placeholder="Company Name" required>
+                                                                <label for="com-add">Company Address<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="com-add" placeholder="Company Address" required>
+                                                                <label for="possition">Possition<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="possition" placeholder="Possition" required>
+                                                                <div class="col-md-6">
+                                                                    <label for="jfrom">From<sup>*</sup></label>
+                                                                    <select name="from" class="form-control" id="jfrom">
+                                                                        <option value="2021">2021</option>
+                                                                        <option value="2020">2020</option>
+                                                                        <option value="2021">2019</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="tfrom">To<sup>*</sup></label>
+                                                                    <select name="from" class="form-control" id="tfrom">
+                                                                        <option value="Present">Present</option>
+                                                                        <option value="2021">2021</option>
+                                                                        <option value="2020">2020</option>
+                                                                        <option value="2019">2019</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" data-target="#company-input"
+                                                                data-for="company"
+                                                                class="thm_btn br_btn multy-btn btn_sub_cus_md">Add
+                                                                Localtion</button>
+                                                            <div class="inputed-list">
+                                                                <h4 class="mt-20 mb-3">Added Companies</h4>
+                                                                <div id="adfadsadasf">
+                                                                    <div>
+                                                                        <div class="data">Streaming Plug Advertisement
+                                                                            Agency</div>
+                                                                        <div class="data">Marketing Manager, Canada
+                                                                        </div>
+                                                                        <div class="data">From 2021 - present</div>
+                                                                    </div>
+                                                                    <div class="sm-action">
+                                                                        <button class="sm-action-btn" data-action="edit"
+                                                                            onclick="editMulCon('adfadsadasf')">
+                                                                            <i class="far fa-pencil"></i>
+                                                                        </button>
+                                                                        <button class="sm-action-btn"
+                                                                            data-action="remove"
+                                                                            onclick="deleteCon('adfadsadasf')">
+                                                                            <i class="far fa-times"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="adfassdsdads1f">
+                                                                    <div>
+                                                                        <div class="data">Streaming Plug Advertisement
+                                                                            Agency</div>
+                                                                        <div class="data">Kingdomcome, Canada
+                                                                        </div>
+                                                                        <div class="data">Marketing Manager</div>
+                                                                        <div class="data">From 2021 - present</div>
+                                                                    </div>
+                                                                    <div class="sm-action">
+                                                                        <button class="sm-action-btn" data-action="edit"
+                                                                            onclick="editMulCon('adfassdsdads1f')">
+                                                                            <i class="far fa-pencil"></i>
+                                                                        </button>
+                                                                        <button class="sm-action-btn"
+                                                                            data-action="remove"
+                                                                            onclick="deleteCon('adfassdsdads1f')">
+                                                                            <i class="far fa-times"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="text-center">
+                                                            <button type="submit"
+                                                                class="thm_btn br_btn btn_sub_cus_big">Update</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
                                                 <!-- Packages -->
                                                 <div class="tab-pane fade" id="l-3" role="tabpanel"
