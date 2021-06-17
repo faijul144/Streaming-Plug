@@ -6927,19 +6927,10 @@ font-size: 16px;
 
 .tab-title{
 	position: relative;
-	font-size: 30px;
+	font-size: 20px;
 	display: inline-block;
-	padding-bottom: 10px;
 }
-.tab-title:after{
-	content: "";
-	height: 3px;
-	width: 70%;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background: #ff9100;
-}
+
 .about-list{
 	display: block;
     margin-bottom: 30px;
@@ -6956,15 +6947,22 @@ font-size: 16px;
 	line-height: 25px;
 }
 .about-list li h4.sub-head-title{
-	font-size: 21px;
-    margin: 15px 0 5px;
+	font-size: 16px;
+    margin: 5px 0;
+	font-weight: 500;
 }
-.about-list li p.name{
-	font-size: 20px;
-}
+
 .about-list li a{
     color: #0c0c0c;
 	transition: color 0.3s ease;
+}
+
+.discription {
+	margin-bottom: 10px;
+}
+
+.discription p{
+	margin-bottom: 5px;
 }
 
 .about-list.social-link li a{
@@ -6985,4 +6983,45 @@ font-size: 16px;
 
 #about-me .modal-content{
 	min-height: 80vh;
+}
+
+/* Card Add Section Settings */
+
+.thm_btn.btn_sub_cus_md{
+	padding: 5px 15px;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+
+.added-cards li form{
+	display: flex;
+	width: 200px;
+	align-items: center;
+	justify-content: space-between;
+}
+.added-cards li form img{
+	width: 40px;
+}
+.added-cards li form .card-action{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.added-cards li form .sm-ac-btn{
+	height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.added-cards li form .sm-ac-btn i{
+	font-size: 10px;
+	color: #fff;
+}
+.added-cards li form .sm-ac-btn:hover{
+	background: #ff9100;
 }
