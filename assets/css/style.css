@@ -6922,3 +6922,52 @@ font-size: 16px;
 	opacity: 0.75;
 	visibility: visible;
 }
+
+/* About Modal Inner */
+
+.tab-title{
+	position: relative;
+	font-size: 30px;
+	display: inline-block;
+	padding-bottom: 10px;
+}
+.tab-title:after{
+	content: "";
+	height: 3px;
+	width: 70%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #ff9100;
+}
+.about-list{
+	display: block;
+    margin-bottom: 30px;
+}
+.about-list li{
+	margin-bottom: 0;
+    font-size: 15px;}
+.about-list li p{
+	margin-bottom: 0;
+    color: #0c0c0c;
+    font-size: 16px;
+	line-height: 25px;
+}
+.about-list li h4.sub-head-title{
+	font-size: 21px;
+    margin: 15px 0 5px;
+}
+.about-list li p.name{
+	font-size: 20px;
+}
+.about-list li a{
+    color: #0c0c0c;
+	transition: color 0.3s ease;
+}
+.about-list li a:hover{
+    color: #ff9100;
+}
+
+#about-me .modal-content{
+	min-height: 80vh;
+}
