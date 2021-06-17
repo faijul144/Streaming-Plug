@@ -357,6 +357,12 @@
                                                         Security</span>
                                                 </a>
                                             </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-5" role="tab"
+                                                    aria-controls="l-5" aria-selected="false">
+                                                    <span class="title"><i class="far fa-coins"></i>Affiliate</span>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -367,6 +373,7 @@
                                     <div class="row">
                                         <div class="col-lg-12">
                                             <div class="tab-content tab-border">
+                                                <!-- Prifile Edit -->
                                                 <div class="tab-pane fade active show" id="l-1" role="tabpanel"
                                                     aria-labelledby="l-tab-01">
                                                     <form class="form_cus" action="" name="">
@@ -482,6 +489,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <!-- Privacy Settings -->
                                                 <div class="tab-pane fade" id="l-4" role="tabpanel"
                                                     aria-labelledby="l-tab-04">
                                                     <form action="" class="d-flex flex-column">
@@ -525,6 +533,22 @@
                                                                 class="thm_btn br_btn btn_sub_cus_big ">Save</button>
                                                         </div>
                                                     </form>
+                                                </div>
+                                                <!-- Unsub Affiliate -->
+                                                <div class="tab-pane fade" id="l-5" role="tabpanel"
+                                                    aria-labelledby="l-tab-04">
+                                                    <div class="deletion-part">
+                                                        <i class="fa fa-exclamation-triangle mr-1"></i>
+                                                        <span>Are you sure your want to disable your affiliate account.
+                                                            If so please click the bellow button and following
+                                                            unsubscribtion process.
+                                                        </span>
+                                                        <div class="text-left">
+                                                            <button type="button" class="thm_btn br_btn dlt_btn"
+                                                                data-toggle="modal"
+                                                                data-target="#pay-modal">Unsubscribe</button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -606,6 +630,167 @@
                 </div>
             </div>
         </div>
+
+        <!-- Pay Modal -->
+        <div class="modal fade" id="pay-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Cash out $5K</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="payment-choose-payout align-items-start text-left">
+                            <div class="custom-control custom-radio custom-control-inline mb-3">
+                                <input type="radio" class="custom-control-input select-method" name="method" id="card"
+                                    value="card" data-target="#card-section" checked>
+                                <label class="custom-control-label" for="card">Select Card</label>
+                            </div>
+
+                            <div id="card-section">
+                                <div class="form-group">
+                                    <label>Select Your Payment
+                                        Mathod<sup>*</sup></label>
+                                    <ul class="gateway-img">
+                                        <li>
+                                            <input type="radio" name="price" id="pal" value="pack-vip"
+                                                data-target="#paypal-form">
+                                            <label for="pal">
+                                                <img src="./assets/img/payment/paypal.svg" alt="Payment Icon">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="price" id="visa" value="pack-vip"
+                                                data-target="#credit-form">
+                                            <label for="visa">
+                                                <img src="./assets/img/payment/visa.svg" alt="Payment Icon">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="price" id="mastercard" value="pack-vip"
+                                                data-target="#credit-form">
+                                            <label for="mastercard">
+                                                <img src="./assets/img/payment/mastercard.svg" alt="Payment Icon">
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="price" id="americanexpress" value="pack-vip"
+                                                data-target="#credit-form">
+                                            <label for="americanexpress">
+                                                <img src="./assets/img/payment/amex.svg" alt="Payment Icon">
+                                            </label>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                                <div class="selected-card-form">
+                                    <div id="paypal-form" class="card-forms">
+                                        <div class="form-group">
+                                            <label for="paypal-email">Email<sup>*</sup></label>
+                                            <input type="email" class="form-control" id="paypal-email"
+                                                placeholder="Enter Paypal Email">
+                                        </div>
+                                    </div>
+                                    <div id="credit-form" class="card-forms">
+                                        <div class="form-row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label for="card-number">Card Number<sup>*</sup></label>
+                                                    <input type="number" class="form-control" id="card-number"
+                                                        placeholder="Enter Card Number">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="exp-date">Expire Date<sup>*</sup></label>
+                                                    <input type="text" class="form-control" id="exp-date"
+                                                        placeholder="MM/YY">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group pos-rel">
+                                                    <label for="cvv">CVV<sup>*</sup></label>
+                                                    <input type="number" class="form-control pop-focus opt-pop" id="cvv"
+                                                        placeholder="Enter CVV" data-container="body"
+                                                        data-toggle="popover" data-placement="top"
+                                                        data-list="#cvv-hint">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="custom-control custom-radio custom-control-inline mb-3">
+                                <input type="radio" class="custom-control-input select-method" name="method" id="bank"
+                                    value="bank" data-target="#bank-section">
+                                <label class="custom-control-label" for="bank">Enter Bank Statement</label>
+                            </div>
+
+                            <div class="form-row" id="bank-section">
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="bname">Bank<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="bname"
+                                            placeholder="Enter Your Bank Name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <div class="form-group">
+                                        <label for="bbrance">Branch<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="bbrance"
+                                            placeholder="Enter Your Bank Branch">
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-12">
+                                    <div class="form-group">
+                                        <label for="ano">Account
+                                            No<sup>*</sup></label>
+                                        <input type="text" class="form-control" id="ano"
+                                            placeholder="Enter Account No.">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center w-100">
+                                <button type="submit" class="thm_btn br_btn btn_sub_cus_big" data-dismiss="modal"
+                                    data-toggle="modal" data-target="#message-modal">Proceed</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade usub-modal" id="message-modal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="emoji"><img src="./assets/img/icon/wink.svg" alt="Crying Emoji"></div>
+                        <p>You are all set! But if you change your mind you can become an affiliate whenever you want.
+                        </p>
+                        <div class="text-center w-100">
+                            <a class="thm_btn br_btn btn_sub_cus_big" href="follower-details.html">Bye!</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CVV Popover -->
+        <div id="popup-holder">
+            <div id="cvv-hint">
+                <div class="mb-1">
+                    <img src='./assets/img/cvv.png' class="cvv-img">
+                </div>
+                <div class='text-center'>The CVV is the 3 digit number on the back of your card.</div>
+            </div>
+        </div>
+
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
@@ -662,6 +847,7 @@
                                     <li><a href="blog.html">Blog</a></li>
                                     <li><a href="support.html">Support</a></li>
                                     <li><a href="pr-release.html">Press Release</a></li>
+                                    <li><a href="advertisement.html">Advertising With Us</a></li>
                                     <li><a href="./cat-detail/covid.html">Covid-19</a></li>
                                 </ul>
                             </div>
