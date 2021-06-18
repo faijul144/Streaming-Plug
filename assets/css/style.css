@@ -6799,9 +6799,7 @@ font-size: 16px;
 	  flex: 1;
   }
 
-  .dl.check-green input:checked + label {
-	background: #0c0c0c;
-  }
+
 
   /* Login Select */
   .select-login-as{
@@ -7076,4 +7074,32 @@ font-size: 16px;
 }
 .inputed-list>div .sm-action button:hover i{
 	color: #fff;
+}
+
+/* Black & White Mode Switch */
+
+.dl.check-green input:checked + label {
+	background: #0c0c0c;
+  }
+
+.pro-img-thumb ul li .dl.check-green {
+	padding: 8px 25px;
+	padding-right: 15px;
+}
+.pro-img-thumb ul li .dl.check-green span{
+	font-size: 15px;
+	color:#000
+}
+.pro-img-thumb ul li .dl.check-green label{
+	width: 45px;
+	height: 18px;
+}
+
+.pro-img-thumb ul li .dl.check-green label > div{
+	height: 12px;
+	width: 12px;
+}
+
+.pro-img-thumb ul li .dl.check-green input:checked + label > div{
+	right: 28px;
 }

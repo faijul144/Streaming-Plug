@@ -1,16 +1,28 @@
 $primaryDark: #151515;
 $secondaryDark: #212121;
+$darkBorderColor: #252525;
 $primaryWhite: #fff;
 
 .dark-mode {
   .header_cus .header_wrap {
     background: $primaryDark;
   }
-  .header_cus .main_menu ul li a:not(:hover) {
+  .header_cus .main_menu ul li a:not(:hover),
+  .pro-img-thumb ul li .dl.check-green span {
     color: $primaryWhite;
   }
   .main_menu ul li ul.submenu,
   .main_menu ul li.nf ul.submenu li.see-all {
     background: $secondaryDark;
+  }
+  .main_menu ul li.pro-img-thumb .submenu li:last-child,
+  .main_menu ul li.nf ul.submenu li.see-all {
+    border-color: $darkBorderColor;
+  }
+  .pro-img-thumb ul li .dl.check-green span {
+    color: #ddd;
+  }
+  .header_cus .main_menu ul li ul.submenu {
+    box-shadow: 0 0 4px #1b1b1b;
   }
 }

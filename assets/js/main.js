@@ -19,21 +19,36 @@
     });
   });
 
-  //Light Dark Toogle
   var wind = $(window);
+  //Light Dark Toogle
   let themeSwitch = `
   <li>
-    <div class="check-green dl mb-0">
-          <input type="checkbox" name="check-green" id="l1">
-          <label for="l1">
-              <div></div>
-          </label>
-      </div>
+    <div class="check-green dl mb-0 w-100 justify-content-between">
+    <span class="ml-0">Dark Mode</span>
+    <div>
+        <input type="checkbox" name="check-green" id="l1">
+        <label for="l1">
+            <div></div>
+        </label>
+    </div>
+    </div>
   </li>`;
+
+  $(".site-logo").each(function () {
+    let lightLogo = $(this).data("lightlogo");
+    let darkLogo = $(this).data("darklogo");
+    if ($("body").hasClass("dark-mode")) {
+      $(this).attr("src", darkLogo);
+    } else {
+      $(this).attr("src", lightLogo);
+    }
+  });
 
   if ($("body").find(".mob-bottom-menu div").length > 0) {
     if (wind.width() > 767) {
-      $(".main_menu nav>ul>li:first-child").before(themeSwitch);
+      $(".main_menu nav>ul>li.pro-img-thumb>ul>li:last-child").before(
+        themeSwitch
+      );
       themeChange();
     } else {
       $("#mobile-menu-active").append(themeSwitch);
@@ -44,6 +59,15 @@
   function themeChange() {
     $(".dl").change(function () {
       $("body").toggleClass("dark-mode");
+      $(".site-logo").each(function () {
+        let lightLogo = $(this).data("lightlogo");
+        let darkLogo = $(this).data("darklogo");
+        if ($("body").hasClass("dark-mode")) {
+          $(this).attr("src", darkLogo);
+        } else {
+          $(this).attr("src", lightLogo);
+        }
+      });
     });
   }
 

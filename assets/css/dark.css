@@ -2,11 +2,25 @@
   background: #151515;
 }
 
-.dark-mode .header_cus .main_menu ul li a:not(:hover) {
+.dark-mode .header_cus .main_menu ul li a:not(:hover),
+.dark-mode .pro-img-thumb ul li .dl.check-green span {
   color: #fff;
 }
 
 .dark-mode .main_menu ul li ul.submenu,
 .dark-mode .main_menu ul li.nf ul.submenu li.see-all {
   background: #212121;
+}
+
+.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
+.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+  border-color: #252525;
+}
+
+.dark-mode .pro-img-thumb ul li .dl.check-green span {
+  color: #ddd;
+}
+
+.dark-mode .header_cus .main_menu ul li ul.submenu {
+  box-shadow: 0 0 4px #1b1b1b;
 }
