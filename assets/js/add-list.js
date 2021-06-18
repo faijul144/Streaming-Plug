@@ -1,5 +1,8 @@
 "use strict";
 let date = new Date();
+// All the templates that are genarated have the variable name accordingly
+
+// For single input field
 
 $(".add-btn").click(function (e) {
   e.preventDefault();
@@ -31,14 +34,15 @@ $(".add-btn").click(function (e) {
     </button>
 </div>
 </div>`;
+    if (listContainer.find("h4").hasClass("d-none")) {
+      listContainer.find("h4").removeClass("d-none");
+    }
     listContainer.append(listTemplate);
     $(inputField).val("");
   }
 });
 
-function deleteCon(x) {
-  $("#" + x).remove();
-}
+// For single edit field
 
 function editCon(x) {
   let thisBtn = $("#" + x);
@@ -47,6 +51,8 @@ function editCon(x) {
   thisBtn.append(`<input type="text" class="form-control" value="${currentValue}">
 <button type="button" class="thm_btn br_btn btn_sub_cus_edit" onclick="updateCon('${x}')">Update</button>`);
 }
+
+// For single update submission
 
 function updateCon(x) {
   let thisBtn = $("#" + x);
@@ -67,7 +73,9 @@ function updateCon(x) {
   </div>`);
 }
 
-//Multyinput
+//Multyinput button
+
+//For the sake for template chage between company and institute paramiter must be passed
 
 $(".multy-btn").click(function (e) {
   let dataArray = [];
@@ -132,10 +140,20 @@ $(".multy-btn").click(function (e) {
       </button>
   </div>
 </div>`;
-  addFor == "company" ? (template = companyTemp) : (template = instituteTemp);
+  if (addFor == "company") {
+    template = companyTemp;
+  }
+  if (addFor == "institute") {
+    template = instituteTemp;
+  }
 
+  if (listContainer.find("h4").hasClass("d-none")) {
+    listContainer.find("h4").removeClass("d-none");
+  }
   listContainer.append(template);
 });
+
+// multi edit field
 
 function editMulCon(x, addedfor) {
   let thisBtn = $("#" + x);
@@ -169,9 +187,13 @@ function editMulCon(x, addedfor) {
   let fromL = formSelectOpt.length;
   var i, j;
   let fullTime;
-  addedfor == "company"
-    ? (fullTime = currentValue[3].split(/\From|[^A-Z0-9]/gi).clean(""))
-    : (fullTime = currentValue[2].split(/\From|[^A-Z0-9]/gi).clean(""));
+
+  if (addedfor == "company") {
+    fullTime = currentValue[3].split(/\From|[^A-Z0-9]/gi).clean("");
+  }
+  if (addedfor == "institute") {
+    fullTime = currentValue[2].split(/\From|[^A-Z0-9]/gi).clean("");
+  }
 
   for (i = fromI; i < fromL; i++) {
     if (formSelectOpt[i].includes(fullTime[0])) {
@@ -241,13 +263,20 @@ function editMulCon(x, addedfor) {
   </div>
   `;
 
-  addedfor == "company" ? (template = comTemplate) : (template = insTemplate);
+  if (addedfor == "company") {
+    template = comTemplate;
+  }
+  if (addedfor == "institute") {
+    template = insTemplate;
+  }
 
   thisBtn.empty();
   thisBtn.addClass("d-block");
 
   thisBtn.append(template);
 }
+
+// multi update submission
 
 function multiUpdate(x, addedfor) {
   let updateCon = $("#" + x);
@@ -298,11 +327,36 @@ function multiUpdate(x, addedfor) {
       <i class="far fa-times"></i>
   </button>
 </div>`;
-  addedfor == "company" ? (template = companyTemp) : (template = instituteTemp);
+
+  if (addedfor == "company") {
+    template = companyTemp;
+  }
+  if (addedfor == "institute") {
+    template = instituteTemp;
+  }
+
   updateCon.empty();
   updateCon.removeClass("d-block");
   updateCon.append(template);
 }
+
+// delete action
+
+function deleteCon(x) {
+  if (
+    $("#" + x)
+      .parent()
+      .find(">div").length <= 1
+  ) {
+    $("#" + x)
+      .parent()
+      .find("h4")
+      .addClass("d-none");
+  }
+  $("#" + x).remove();
+}
+
+// for cleaning up arrays with black strings
 
 Array.prototype.clean = function (deleteValue) {
   for (var i = 0; i < this.length; i++) {

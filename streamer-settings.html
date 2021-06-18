@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="assets/css/video-js-forest.css">
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
-    <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -598,9 +598,9 @@
                                                                 <div class="form-group">
                                                                     <label for="gender">Gender<sup>*</sup></label>
                                                                     <select id="gender" class="form-control">
-                                                                        <option value="Male" selected></option>
-                                                                        <option value="Female"></option>
-                                                                        <option value="Others"></option>
+                                                                        <option value="Male" selected>Male</option>
+                                                                        <option value="Female">Female</option>
+                                                                        <option value="Others">Others</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
@@ -609,15 +609,15 @@
                                                                 <div class="form-group">
                                                                     <label for="religion">Religion<sup>*</sup></label>
                                                                     <input type="text" class="form-control"
-                                                                        id="religion" value="Islam">
+                                                                        id="religion" value="Islam" placeholder="date">
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <label for="location">Birthday<sup>*</sup></label>
-                                                                    <input type="text" class="form-control"
-                                                                        id="location" value="11/29/1995">
+                                                                    <label for="bd">Birthday<sup>*</sup></label>
+                                                                    <input type="text" class="form-control dateInput"
+                                                                        id="bd" value="01-01-1990">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -643,13 +643,13 @@
                                                             <div id="company-input">
                                                                 <label for="com-name">Company Name<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="com-name" placeholder="Company Name" required>
+                                                                    id="com-name" placeholder="Company Name">
                                                                 <label for="com-add">Company Address<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="com-add" placeholder="Company Address" required>
+                                                                    id="com-add" placeholder="Company Address">
                                                                 <label for="possition">Possition<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="possition" placeholder="Possition" required>
+                                                                    id="possition" placeholder="Possition">
                                                                 <div class="form-row">
                                                                     <div class="col-md-6">
                                                                         <label for="jfrom">From<sup>*</sup></label>
@@ -731,10 +731,10 @@
                                                             <div id="company-input">
                                                                 <label for="sch-name">School Name<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="sch-name" placeholder="Company Name" required>
+                                                                    id="sch-name" placeholder="School Name">
                                                                 <label for="sch-add">School Address<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="sch-add" placeholder="Company Address" required>
+                                                                    id="sch-add" placeholder="School Address">
                                                                 <div class="form-row">
                                                                     <div class="col-md-6">
                                                                         <label for="schjfrom">From<sup>*</sup></label>
@@ -793,10 +793,10 @@
                                                             <div id="company-input">
                                                                 <label for="col-name">College Name<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="col-name" placeholder="Company Name" required>
+                                                                    id="col-name" placeholder="College Name">
                                                                 <label for="col-add">College Address<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="col-add" placeholder="Company Address" required>
+                                                                    id="col-add" placeholder="College Address">
                                                                 <div class="form-row">
                                                                     <div class="col-md-6">
                                                                         <label for="coljfrom">From<sup>*</sup></label>
@@ -856,11 +856,11 @@
                                                                 <label for="uni-name">University
                                                                     Name<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="uni-name" placeholder="Company Name" required>
+                                                                    id="uni-name" placeholder="University Name">
                                                                 <label for="uni-add">University
                                                                     Address<sup>*</sup></label>
                                                                 <input type="text" class="form-control mb-2"
-                                                                    id="uni-add" placeholder="Company Address" required>
+                                                                    id="uni-add" placeholder="University Address">
                                                                 <div class="form-row">
                                                                     <div class="col-md-6">
                                                                         <label for="unijfrom">From<sup>*</sup></label>
@@ -1630,7 +1630,7 @@
 
     <!-- jquery include -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>

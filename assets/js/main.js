@@ -9,6 +9,16 @@
     );
   });
 
+  // datepicker
+  $(".dateInput").each(function () {
+    $(this).datepicker({
+      orientation: "auto left",
+      autoclose: true,
+      todayHighlight: true,
+      toggleActive: true,
+    });
+  });
+
   // sticky
   var wind = $(window);
   var sticky = $("#sticky-header");
