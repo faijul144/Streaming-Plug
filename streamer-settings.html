@@ -637,7 +637,7 @@
                                                 <div class="tab-pane fade" id="l-7" role="tabpanel"
                                                     aria-labelledby="l-tab-07">
                                                     <form class="form_cus" action="" name="">
-                                                        <!-- Localtion -->
+                                                        <!-- Company -->
                                                         <div class="form-group">
                                                             <h4 class="mb-3">Add Company</h4>
                                                             <div id="company-input">
@@ -687,11 +687,11 @@
                                                                         </div>
                                                                         <div class="data">Marketing Manager
                                                                         </div>
-                                                                        <div class="data">From 2021 - Present</div>
+                                                                        <div class="data">From 2020 - Present</div>
                                                                     </div>
                                                                     <div class="sm-action">
                                                                         <button class="sm-action-btn" data-action="edit"
-                                                                            onclick="editMulCon('adfadsadasf')">
+                                                                            onclick="editMulCon('adfadsadasf','company')">
                                                                             <i class="far fa-pencil"></i>
                                                                         </button>
                                                                         <button class="sm-action-btn"
@@ -708,16 +708,205 @@
                                                                         <div class="data">Kindomecome, Canada
                                                                         </div>
                                                                         <div class="data">Marketing Manager</div>
-                                                                        <div class="data">From 2021 - Present</div>
+                                                                        <div class="data">From 2019 - 2020</div>
                                                                     </div>
                                                                     <div class="sm-action">
                                                                         <button class="sm-action-btn" data-action="edit"
-                                                                            onclick="editMulCon('adfassdsdads1f')">
+                                                                            onclick="editMulCon('adfassdsdads1f','company')">
                                                                             <i class="far fa-pencil"></i>
                                                                         </button>
                                                                         <button class="sm-action-btn"
                                                                             data-action="remove"
                                                                             onclick="deleteCon('adfassdsdads1f')">
+                                                                            <i class="far fa-times"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Institutes -->
+                                                        <!-- School -->
+                                                        <div class="form-group">
+                                                            <h4 class="mb-3">Add School</h4>
+                                                            <div id="company-input">
+                                                                <label for="sch-name">School Name<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="sch-name" placeholder="Company Name" required>
+                                                                <label for="sch-add">School Address<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="sch-add" placeholder="Company Address" required>
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6">
+                                                                        <label for="schjfrom">From<sup>*</sup></label>
+                                                                        <select name="from"
+                                                                            class="form-control from-select "
+                                                                            id="schjfrom">
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2019">2019</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="schtfrom">To<sup>*</sup></label>
+                                                                        <select name="from"
+                                                                            class="form-control to-select"
+                                                                            id="schtfrom">
+                                                                            <option value="Present">Present</option>
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2019">2019</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" data-target="#company-input"
+                                                                data-for="institute"
+                                                                class="thm_btn br_btn multy-btn btn_sub_cus_md mt-3">Add
+                                                                School</button>
+                                                            <div class="inputed-list">
+                                                                <h4 class="mt-20 mb-3">Added School</h4>
+                                                                <div id="adfadsa34dasf">
+                                                                    <div>
+                                                                        <div class="data">Kindomecome International
+                                                                            Public School</div>
+                                                                        <div class="data">Kindomecome, Canada
+                                                                        </div>
+                                                                        <div class="data">From 2020 - Present</div>
+                                                                    </div>
+                                                                    <div class="sm-action">
+                                                                        <button class="sm-action-btn" data-action="edit"
+                                                                            onclick="editMulCon('adfadsa34dasf','institute')">
+                                                                            <i class="far fa-pencil"></i>
+                                                                        </button>
+                                                                        <button class="sm-action-btn"
+                                                                            data-action="remove"
+                                                                            onclick="deleteCon('adfadsa34dasf')">
+                                                                            <i class="far fa-times"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- College -->
+                                                        <div class="form-group">
+                                                            <h4 class="mb-3">Add College</h4>
+                                                            <div id="company-input">
+                                                                <label for="col-name">College Name<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="col-name" placeholder="Company Name" required>
+                                                                <label for="col-add">College Address<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="col-add" placeholder="Company Address" required>
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6">
+                                                                        <label for="coljfrom">From<sup>*</sup></label>
+                                                                        <select name="from"
+                                                                            class="form-control from-select "
+                                                                            id="coljfrom">
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2019">2019</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="coltfrom">To<sup>*</sup></label>
+                                                                        <select name="from"
+                                                                            class="form-control to-select"
+                                                                            id="coltfrom">
+                                                                            <option value="Present">Present</option>
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2019">2019</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" data-target="#company-input"
+                                                                data-for="institute"
+                                                                class="thm_btn br_btn multy-btn btn_sub_cus_md mt-3">Add
+                                                                College</button>
+                                                            <div class="inputed-list">
+                                                                <h4 class="mt-20 mb-3">Added College</h4>
+                                                                <div id="adfa22dsa34dasf">
+                                                                    <div>
+                                                                        <div class="data">Kindomecome International
+                                                                            Public College</div>
+                                                                        <div class="data">Kindomecome, Canada
+                                                                        </div>
+                                                                        <div class="data">From 2020 - Present</div>
+                                                                    </div>
+                                                                    <div class="sm-action">
+                                                                        <button class="sm-action-btn" data-action="edit"
+                                                                            onclick="editMulCon('adfa22dsa34dasf','institute')">
+                                                                            <i class="far fa-pencil"></i>
+                                                                        </button>
+                                                                        <button class="sm-action-btn"
+                                                                            data-action="remove"
+                                                                            onclick="deleteCon('adfa22dsa34dasf')">
+                                                                            <i class="far fa-times"></i>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- University -->
+                                                        <div class="form-group">
+                                                            <h4 class="mb-3">Add University</h4>
+                                                            <div id="company-input">
+                                                                <label for="uni-name">University
+                                                                    Name<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="uni-name" placeholder="Company Name" required>
+                                                                <label for="uni-add">University
+                                                                    Address<sup>*</sup></label>
+                                                                <input type="text" class="form-control mb-2"
+                                                                    id="uni-add" placeholder="Company Address" required>
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6">
+                                                                        <label for="unijfrom">From<sup>*</sup></label>
+                                                                        <select name="from"
+                                                                            class="form-control from-select "
+                                                                            id="unijfrom">
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2019">2019</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-md-6">
+                                                                        <label for="unitfrom">To<sup>*</sup></label>
+                                                                        <select name="from"
+                                                                            class="form-control to-select"
+                                                                            id="unitfrom">
+                                                                            <option value="Present">Present</option>
+                                                                            <option value="2021">2021</option>
+                                                                            <option value="2020">2020</option>
+                                                                            <option value="2019">2019</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" data-target="#company-input"
+                                                                data-for="institute"
+                                                                class="thm_btn br_btn multy-btn btn_sub_cus_md mt-3">Add
+                                                                University</button>
+                                                            <div class="inputed-list">
+                                                                <h4 class="mt-20 mb-3">Added University</h4>
+                                                                <div id="ada34dasf">
+                                                                    <div>
+                                                                        <div class="data">Kindomecome International
+                                                                            Public University</div>
+                                                                        <div class="data">Kindomecome, Canada
+                                                                        </div>
+                                                                        <div class="data">From 2020 - Present</div>
+                                                                    </div>
+                                                                    <div class="sm-action">
+                                                                        <button class="sm-action-btn" data-action="edit"
+                                                                            onclick="editMulCon('ada34dasf','institute')">
+                                                                            <i class="far fa-pencil"></i>
+                                                                        </button>
+                                                                        <button class="sm-action-btn"
+                                                                            data-action="remove"
+                                                                            onclick="deleteCon('ada34dasf')">
                                                                             <i class="far fa-times"></i>
                                                                         </button>
                                                                     </div>
