@@ -15,8 +15,8 @@ $(".add-btn").click(function (e) {
     date.getMilliseconds() +
     date.getSeconds() +
     date.getHours();
-  if ($(inputField).val().length == "") {
-    alert("Please Input Data");
+  if ($(inputField).val().length <= 0) {
+    alert("Please Input Name");
   } else {
     let inputValue = $(inputField).val();
     let listTemplate = `<div id=${rand}>
@@ -79,31 +79,35 @@ function updateCon(x) {
 
 $(".multy-btn").click(function (e) {
   let dataArray = [];
-  e.preventDefault();
-  let randM =
-    "M" +
-    Math.floor(Math.random() * 100) +
-    date.getDay() +
-    date.getMilliseconds() +
-    date.getSeconds() +
-    date.getHours();
   let listContainer = $(this).parent().find(".inputed-list");
   let fieldsContainer = $(this).data("target");
   let inputFields = $(fieldsContainer).find("input");
   let selectFields = $(fieldsContainer).find("select");
   let addFor = $(this).data("for");
-  let template;
+  e.preventDefault();
+  if ($(fieldsContainer).find("input").val().length <= 0) {
+    alert("Please Input Name");
+  } else {
+    let randM =
+      "M" +
+      Math.floor(Math.random() * 100) +
+      date.getDay() +
+      date.getMilliseconds() +
+      date.getSeconds() +
+      date.getHours();
 
-  inputFields.each(function () {
-    dataArray.push($(this).val());
-    $(this).val("");
-  });
-  selectFields.each(function () {
-    dataArray.push($(this).find(":selected").val());
-    $(this).find(":selected").attr("selected", "false");
-  });
+    let template;
 
-  let companyTemp = `<div id=${randM}>
+    inputFields.each(function () {
+      dataArray.push($(this).val());
+      $(this).val("");
+    });
+    selectFields.each(function () {
+      dataArray.push($(this).find(":selected").val());
+      $(this).find(":selected").attr("selected", "false");
+    });
+
+    let companyTemp = `<div id=${randM}>
   <div>
       <div class="data">${dataArray[0]}</div>
       <div class="data">${dataArray[1]}</div>
@@ -122,7 +126,7 @@ $(".multy-btn").click(function (e) {
       </button>
   </div>
 </div>`;
-  let instituteTemp = `<div id=${randM}>
+    let instituteTemp = `<div id=${randM}>
   <div>
       <div class="data">${dataArray[0]}</div>
       <div class="data">${dataArray[1]}</div>
@@ -140,17 +144,18 @@ $(".multy-btn").click(function (e) {
       </button>
   </div>
 </div>`;
-  if (addFor == "company") {
-    template = companyTemp;
-  }
-  if (addFor == "institute") {
-    template = instituteTemp;
-  }
+    if (addFor == "company") {
+      template = companyTemp;
+    }
+    if (addFor == "institute") {
+      template = instituteTemp;
+    }
 
-  if (listContainer.find("h4").hasClass("d-none")) {
-    listContainer.find("h4").removeClass("d-none");
+    if (listContainer.find("h4").hasClass("d-none")) {
+      listContainer.find("h4").removeClass("d-none");
+    }
+    listContainer.append(template);
   }
-  listContainer.append(template);
 });
 
 // multi edit field
