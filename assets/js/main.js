@@ -20,11 +20,21 @@
   });
 
   // sticky
+
   var wind = $(window);
   var sticky = $("#sticky-header");
   var main_nav = sticky.parent();
   var menu_height = main_nav.height();
+
+  // Footer Gap
+  if (wind.width() <= 767) {
+    if ($("body").find(".mob-bottom-menu div").length > 0) {
+      $("footer").addClass("pb-70");
+    }
+  }
+
   if (wind.width() > 767) {
+    //Scroll
     wind.on("scroll", function () {
       var scroll = wind.scrollTop();
       if (scroll < 120) {

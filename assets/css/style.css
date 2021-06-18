@@ -645,6 +645,7 @@ input, textarea, select {
 .mob-bottom-menu>div{
 	flex:1;
 	width: 100%;
+	height: auto;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
