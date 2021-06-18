@@ -652,6 +652,7 @@ input, textarea, select {
 	padding: 10px 0;
 	transition: all 0.3s ease;
 	border-radius: 0;
+	margin: 0;
 }
 
 .mob-bottom-menu>div:not(:last-child){
