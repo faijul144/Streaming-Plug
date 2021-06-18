@@ -1,0 +1,12 @@
+.dark-mode .header_cus .header_wrap {
+  background: #151515;
+}
+
+.dark-mode .header_cus .main_menu ul li a:not(:hover) {
+  color: #fff;
+}
+
+.dark-mode .main_menu ul li ul.submenu,
+.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+  background: #212121;
+}

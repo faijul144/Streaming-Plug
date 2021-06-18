@@ -1,0 +1,16 @@
+$primaryDark: #151515;
+$secondaryDark: #212121;
+$primaryWhite: #fff;
+
+.dark-mode {
+  .header_cus .header_wrap {
+    background: $primaryDark;
+  }
+  .header_cus .main_menu ul li a:not(:hover) {
+    color: $primaryWhite;
+  }
+  .main_menu ul li ul.submenu,
+  .main_menu ul li.nf ul.submenu li.see-all {
+    background: $secondaryDark;
+  }
+}

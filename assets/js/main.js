@@ -19,9 +19,36 @@
     });
   });
 
+  //Light Dark Toogle
+  var wind = $(window);
+  let themeSwitch = `
+  <li>
+    <div class="check-green dl mb-0">
+          <input type="checkbox" name="check-green" id="l1">
+          <label for="l1">
+              <div></div>
+          </label>
+      </div>
+  </li>`;
+
+  if ($("body").find(".mob-bottom-menu div").length > 0) {
+    if (wind.width() > 767) {
+      $(".main_menu nav>ul>li:first-child").before(themeSwitch);
+      themeChange();
+    } else {
+      $("#mobile-menu-active").append(themeSwitch);
+      themeChange();
+    }
+  }
+
+  function themeChange() {
+    $(".dl").change(function () {
+      $("body").toggleClass("dark-mode");
+    });
+  }
+
   // sticky
 
-  var wind = $(window);
   var sticky = $("#sticky-header");
   var main_nav = sticky.parent();
   var menu_height = main_nav.height();
