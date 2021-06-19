@@ -6044,7 +6044,7 @@ margin:  5px 0;
 }
 
 .main_menu ul li:hover a.oicon{
-	color: #0c0c0c;
+	color: #0c0c0c !important;
 }
 
 .blog_details_area .d_content ul{

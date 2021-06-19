@@ -25,7 +25,8 @@ body.dark-mode select,
 body.dark-mode option,
 body.dark-mode input:focus,
 body.dark-mode select:focus,
-body.dark-mode .post-set {
+body.dark-mode .post-set,
+body.dark-mode .about-list li a {
   color: #c7c7c7;
 }
 
@@ -87,7 +88,8 @@ body.dark-mode .popover-body,
 body.dark-mode .custom-control-label::before,
 body.dark-mode .price-br::before,
 body.dark-mode .dropdown-menu,
-body.dark-mode .notification-box {
+body.dark-mode .notification-box,
+body.dark-mode .modal-content {
   background: #212121;
 }
 
@@ -134,7 +136,6 @@ body.dark-mode .form-control:focus {
 body.dark-mode .deletion-part,
 body.dark-mode #goodbymodal .modal-body,
 body.dark-mode .usub-modal .modal-body,
-body.dark-mode .popover,
 body.dark-mode .header_cus .main_menu ul li ul.submenu {
   box-shadow: 0 0 4px #1b1b1b;
 }
@@ -170,7 +171,8 @@ body.dark-mode .form-control[readonly] {
 }
 
 body.dark-mode a:hover,
-body.dark-mode .streamer-about p a {
+body.dark-mode .streamer-about p a,
+body.dark-mode .about-list li a:hover {
   color: #ff9100;
 }
 
@@ -188,7 +190,6 @@ body.dark-mode .thm_btn.br_btn:hover {
 }
 
 body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
-body.dark-mode .modal-content,
 body.dark-mode .services_tab .nav-link {
   background: #000;
 }
@@ -208,4 +209,13 @@ body.dark-mode .pop-share-links a {
 
 body.dark-mode .close {
   text-shadow: none;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  font-weight: normal;
 }
