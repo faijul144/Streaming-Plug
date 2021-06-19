@@ -7145,3 +7145,10 @@ font-size: 16px;
 	text-transform: uppercase;
 	font-weight: 600;
 }
+
+/* Privacy Button */
+.privacy-list li{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
