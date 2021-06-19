@@ -79,7 +79,8 @@ body.dark-mode .popover .post-setting-list label,
 body.dark-mode .dropdown-item,
 body.dark-mode .skills li a,
 body.dark-mode .inputed-list > div .sm-action button i,
-body.dark-mode .dropdown-menu {
+body.dark-mode .dropdown-menu,
+body.dark-mode .pack-price {
   color: #fff;
 }
 
@@ -98,7 +99,8 @@ body.dark-mode .custom-control-label::before,
 body.dark-mode .price-br::before,
 body.dark-mode .notification-box,
 body.dark-mode .check-green label,
-body.dark-mode .aff-table .action-list li a:hover {
+body.dark-mode .aff-table .action-list li a:hover,
+body.dark-mode .pack-radio div:not(.my-switch) > label {
   background: #212121;
 }
 
@@ -138,7 +140,8 @@ body.dark-mode .custom-select,
 body.dark-mode .form-control:focus,
 body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
 body.dark-mode .aff-table tr th,
-body.dark-mode .aff-table tr td {
+body.dark-mode .aff-table tr td,
+body.dark-mode .pack-price {
   border-color: #252525;
 }
 
@@ -233,7 +236,8 @@ body.dark-mode .pricing_single .price_icon {
   background: #212121;
 }
 
-body.dark-mode .pricing_single .price_icon img {
+body.dark-mode .pricing_single .price_icon img,
+body.dark-mode .pack_icon img {
   filter: invert(1);
   -webkit-filter: invert(1);
 }
