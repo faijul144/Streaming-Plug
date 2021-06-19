@@ -51,7 +51,7 @@
       );
       themeChange();
     } else {
-      $("#mobile-menu-active").append(themeSwitch);
+      $("#mobile-menu-active>li[data-placement = last]").before(themeSwitch);
       themeChange();
     }
   }

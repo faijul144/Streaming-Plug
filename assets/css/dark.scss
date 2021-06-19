@@ -1,28 +1,97 @@
 $primaryDark: #151515;
 $secondaryDark: #212121;
+$mainBgColor: #0c0c0c;
+$darkBlack: #000;
+$activeBg: #333333;
+$bgGradient: linear-gradient(to bottom right, #000 0%, #191919 50%, #000 100%);
 $darkBorderColor: #252525;
 $primaryWhite: #fff;
+$bodyColorDefault: #c7c7c7;
 
-.dark-mode {
-  .header_cus .header_wrap {
+body.dark-mode {
+  color: $bodyColorDefault;
+  p,
+  .comment-opt ul li a,
+  .input-text-opt a,
+  .input-text-opt button,
+  .comentar-name a {
+    color: $bodyColorDefault;
+  }
+
+  .header_cus .header_wrap,
+  .team_details .td_social li a,
+  .create-post,
+  .card,
+  .file-formate {
     background: $primaryDark;
   }
+
   .header_cus .main_menu ul li a:not(:hover),
-  .pro-img-thumb ul li .dl.check-green span {
+  .pro-img-thumb ul li .dl.check-green span,
+  .team_details .td_social li a,
+  .posting-opt > div > label,
+  .posting-opt > div > a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     color: $primaryWhite;
   }
   .main_menu ul li ul.submenu,
-  .main_menu ul li.nf ul.submenu li.see-all {
+  .main_menu ul li.nf ul.submenu li.see-all,
+  .posting-opt > div,
+  input,
+  textarea,
+  select,
+  .comment-text,
+  .post-options,
+  .audio-bg,
+  .green-audio-player .slider,
+  .boxed-selects .pr-input.checked {
     background: $secondaryDark;
   }
   .main_menu ul li.pro-img-thumb .submenu li:last-child,
-  .main_menu ul li.nf ul.submenu li.see-all {
+  .main_menu ul li.nf ul.submenu li.see-all,
+  .skills li a,
+  .create-post textarea,
+  .posting-opt > div:not(:last-child),
+  .comment-from {
     border-color: $darkBorderColor;
   }
-  .pro-img-thumb ul li .dl.check-green span {
+  .pro-img-thumb ul li .dl.check-green span,
+  .services_tab .nav-link,
+  .skills li a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .form-control,
+  .post-options a {
     color: #ddd;
   }
   .header_cus .main_menu ul li ul.submenu {
     box-shadow: 0 0 4px #1b1b1b;
+  }
+  .bg-white {
+    background-color: $mainBgColor !important;
+  }
+  .services_tab .nav-link {
+    background-color: $mainBgColor;
+  }
+  .services_tab .nav-link.active,
+  .skills li a {
+    background-color: $activeBg;
+  }
+  .team_left {
+    background: $bgGradient;
+  }
+
+  .form-control:focus,
+  .green-audio-player .slider .gap-progress {
+    background: $darkBlack;
   }
 }

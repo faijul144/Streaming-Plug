@@ -4266,28 +4266,6 @@ text-transform: uppercase;
 	color: #fff;
 }
 
-/* .pricing_single.active .price_btn a{
-	margin-top: -5px;
-} */
-
-
-/* .pricing_single.active .price_head h2 {
-	font-size: 105px;
-}
-.pricing_single.active hr {
-	margin: 35px 0;
-} */
-/* .pricing_single.active .price_icon {
-	width: 80px;
-	height: 80px;
-	line-height: 80px;
-	margin-top: 40px;
-	margin-bottom: 45px;
-} */
-/* .pricing_single.active .price_btn a {
-	padding: 17px 40px;
-} */
-
 .pricing-content-container{
 	display: flex;
     flex-wrap: wrap;
@@ -6680,6 +6658,12 @@ background: rgba(0, 0, 0, 0.7);
 	justify-content: space-evenly;
 	text-align: center;
 	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
 }
 
 .posting-opt>div{
@@ -6767,7 +6751,11 @@ font-size: 16px;
 	justify-content: space-between;
 	margin-bottom: 0;
 	transition: all 0.3s ease;
-  }
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
 
   .check-green label > div {
 	position: absolute;
@@ -6782,7 +6770,15 @@ font-size: 16px;
 	overflow: hidden;
 	cursor: pointer;
 	pointer-events: all;
-  }
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
 
   .check-green input:checked + label {
 	background: #ff9100;
@@ -6922,17 +6918,25 @@ font-size: 16px;
 .unsub-btn{
 	position: absolute;
 	top: 10px;
-    font-size: 12px;
-    right: 12px;
-    padding: 2px 8px;
-    overflow: hidden;
+	font-size: 12px;
+	right: 12px;
+	padding: 2px 8px;
+	overflow: hidden;
 	background: #ff9100;
-    border-radius: 100px;
-    color: #fff;
+	border-radius: 100px;
+	color: #fff;
 	z-index: 0;
 	transition: all 0.3s ease;
 	opacity: 0;
 	visibility: hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
 }
 
 .unsub-btn.on-pro{
@@ -6947,11 +6951,19 @@ font-size: 16px;
 	background: #0c0c0c;
 	box-shadow: 1px 3px 3px rgba(0, 0, 0, .3);
 	transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
 }
 
 .unsub-btn:hover:focus{
 	transform: translateY(-1px);
 	box-shadow: 1px 2px 2px rgba(0, 0, 0, .3);
+	-webkit-transform: translateY(-1px);
+	-moz-transform: translateY(-1px);
+	-ms-transform: translateY(-1px);
+	-o-transform: translateY(-1px);
 }
 
 .team_single:hover .unsub-btn{
@@ -7102,4 +7114,15 @@ font-size: 16px;
 
 .pro-img-thumb ul li .dl.check-green input:checked + label > div{
 	right: 28px;
+}
+
+.side-mobile-menu ul li .dl.check-green{
+	padding: 15px 0;
+}
+
+.side-mobile-menu ul li .dl.check-green span{
+	font-size: 15px;
+	color: #101a23;
+	text-transform: uppercase;
+	font-weight: 600;
 }

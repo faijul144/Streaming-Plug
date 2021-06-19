@@ -1,26 +1,96 @@
-.dark-mode .header_cus .header_wrap {
+body.dark-mode {
+  color: #c7c7c7;
+}
+
+body.dark-mode p,
+body.dark-mode .comment-opt ul li a,
+body.dark-mode .input-text-opt a,
+body.dark-mode .input-text-opt button,
+body.dark-mode .comentar-name a {
+  color: #c7c7c7;
+}
+
+body.dark-mode .header_cus .header_wrap,
+body.dark-mode .team_details .td_social li a,
+body.dark-mode .create-post,
+body.dark-mode .card,
+body.dark-mode .file-formate {
   background: #151515;
 }
 
-.dark-mode .header_cus .main_menu ul li a:not(:hover),
-.dark-mode .pro-img-thumb ul li .dl.check-green span {
+body.dark-mode .header_cus .main_menu ul li a:not(:hover),
+body.dark-mode .pro-img-thumb ul li .dl.check-green span,
+body.dark-mode .team_details .td_social li a,
+body.dark-mode .posting-opt > div > label,
+body.dark-mode .posting-opt > div > a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
   color: #fff;
 }
 
-.dark-mode .main_menu ul li ul.submenu,
-.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+body.dark-mode .main_menu ul li ul.submenu,
+body.dark-mode .main_menu ul li.nf ul.submenu li.see-all,
+body.dark-mode .posting-opt > div,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode .comment-text,
+body.dark-mode .post-options,
+body.dark-mode .audio-bg,
+body.dark-mode .green-audio-player .slider,
+body.dark-mode .boxed-selects .pr-input.checked {
   background: #212121;
 }
 
-.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
-.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
+body.dark-mode .main_menu ul li.nf ul.submenu li.see-all,
+body.dark-mode .skills li a,
+body.dark-mode .create-post textarea,
+body.dark-mode .posting-opt > div:not(:last-child),
+body.dark-mode .comment-from {
   border-color: #252525;
 }
 
-.dark-mode .pro-img-thumb ul li .dl.check-green span {
+body.dark-mode .pro-img-thumb ul li .dl.check-green span,
+body.dark-mode .services_tab .nav-link,
+body.dark-mode .skills li a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode .form-control,
+body.dark-mode .post-options a {
   color: #ddd;
 }
 
-.dark-mode .header_cus .main_menu ul li ul.submenu {
+body.dark-mode .header_cus .main_menu ul li ul.submenu {
   box-shadow: 0 0 4px #1b1b1b;
+}
+
+body.dark-mode .bg-white {
+  background-color: #0c0c0c !important;
+}
+
+body.dark-mode .services_tab .nav-link {
+  background-color: #0c0c0c;
+}
+
+body.dark-mode .services_tab .nav-link.active,
+body.dark-mode .skills li a {
+  background-color: #333333;
+}
+
+body.dark-mode .team_left {
+  background: linear-gradient(to bottom right, #000 0%, #191919 50%, #000 100%);
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode .green-audio-player .slider .gap-progress {
+  background: #000;
 }
