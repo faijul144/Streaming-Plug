@@ -4917,11 +4917,11 @@ margin: 15px 0;
 	border-color:#0c0c0c;
 }
 
-.nav.content-count .nav-link{
+.content-count .nav-link{
 	position: relative;
 }
 
-.nav.content-count .nav-link::before{
+.nav.content-count .nav-link[data-count]::before{
 	content:attr(data-count);
 	position: absolute;
     top: -25px;
