@@ -28,7 +28,10 @@ body.dark-mode {
   .usub-modal .modal-body,
   #goodbymodal p,
   .usub-modal p,
-  .services_tab .nav-link {
+  .services_tab .nav-link,
+  input,
+  textarea,
+  .post-set {
     color: $bodyColorDefault;
   }
 
@@ -67,7 +70,8 @@ body.dark-mode {
   .popover-body,
   .popover .post-setting-list label,
   .dropdown-item,
-  .skills li a {
+  .skills li a,
+  .inputed-list > div .sm-action button i {
     color: $primaryWhite;
   }
   .main_menu ul li ul.submenu,
@@ -124,7 +128,8 @@ body.dark-mode {
   .modal-header,
   hr,
   .pricing_single .price_btn a,
-  .custom-select {
+  .custom-select,
+  .form-control:focus {
     border-color: $darkBorderColor;
   }
   .pro-img-thumb ul li .dl.check-green span,
@@ -156,7 +161,8 @@ body.dark-mode {
   }
 
   .services_tab .nav-link.active,
-  .skills li a {
+  .skills li a,
+  .inputed-list > div .sm-action button {
     background-color: $activeBg;
   }
   .team_left,
@@ -208,5 +214,9 @@ body.dark-mode {
 
   .close {
     text-shadow: none;
+  }
+
+  .post-owner h5 {
+    box-shadow: none;
   }
 }
