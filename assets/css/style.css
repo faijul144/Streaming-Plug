@@ -192,6 +192,10 @@ label {
 	font-size: 14px;
 	font-weight: 400;
 }
+a, button{
+	color: #0c0c0c;
+}
+
 i,
 span,
 a {
@@ -4973,6 +4977,10 @@ margin: 15px 0;
     top: 0;
 }
 
+.post-container:not(:last-child){
+	margin-bottom: 40px;
+}
+
 .post-setting-list li{
 	padding: 3px 0px;
 }
@@ -5919,7 +5927,7 @@ margin:  5px 0;
 	background-color: #ff9100;
 }
 
-.custom-control-input:focus~.custom-control-label::before{
+.custom-control-input:focus~.custom-control-label::before,.form-control:focus{
 	box-shadow: 0 0 0 0.2rem rgba(255 ,145, 0,0.25);
 }
 

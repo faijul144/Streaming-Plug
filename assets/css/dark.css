@@ -9,8 +9,21 @@ body.dark-mode .input-text-opt button,
 body.dark-mode .comentar-name a,
 body.dark-mode .side-mobile-menu ul li a,
 body.dark-mode .side-mobile-menu ul li .dl.check-green span,
-body.dark-mode .profile-opt {
+body.dark-mode .profile-opt,
+body.dark-mode .about-list li p,
+body.dark-mode .close,
+body.dark-mode .custom-select,
+body.dark-mode .deletion-part,
+body.dark-mode #goodbymodal .modal-body,
+body.dark-mode .usub-modal .modal-body,
+body.dark-mode #goodbymodal p,
+body.dark-mode .usub-modal p,
+body.dark-mode .services_tab .nav-link {
   color: #c7c7c7;
+}
+
+body.dark-mode .main-post a {
+  color: #ff9100;
 }
 
 body.dark-mode .header_cus .header_wrap,
@@ -41,7 +54,10 @@ body.dark-mode #sup_form a,
 body.dark-mode .form_cus a,
 body.dark-mode #sup_form a,
 body.dark-mode .form_cus a,
-body.dark-mode .popover-body {
+body.dark-mode .popover-body,
+body.dark-mode .popover .post-setting-list label,
+body.dark-mode .dropdown-item,
+body.dark-mode .skills li a {
   color: #fff;
 }
 
@@ -59,15 +75,30 @@ body.dark-mode .boxed-selects .pr-input.checked,
 body.dark-mode .slide-bar,
 body.dark-mode .popover-body,
 body.dark-mode .custom-control-label::before,
-body.dark-mode .price-br::before {
+body.dark-mode .price-br::before,
+body.dark-mode .dropdown-menu,
+body.dark-mode .notification-box {
   background: #212121;
 }
 
+body.dark-mode .dropdown-item:focus,
+body.dark-mode .dropdown-item:hover {
+  background: #1c1c1c;
+}
+
+body.dark-mode .team_details .td_social li a:hover,
+body.dark-mode .skills li a:hover {
+  background: #3b3b3b;
+}
+
 body.dark-mode .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
-body.dark-mode .bs-popover-bottom > .arrow::after,
+body.dark-mode .bs-popover-bottom > .arrow::after {
+  border-bottom-color: #212121;
+}
+
 body.dark-mode .bs-popover-auto[x-placement^="top"] > .arrow::after,
 body.dark-mode .bs-popover-top > .arrow::after {
-  border-bottom-color: #212121;
+  border-top-color: #212121;
 }
 
 body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
@@ -84,12 +115,12 @@ body.dark-mode .custom-control-label::before,
 body.dark-mode .connect-link,
 body.dark-mode .modal-header,
 body.dark-mode hr,
-body.dark-mode .pricing_single .price_btn a {
+body.dark-mode .pricing_single .price_btn a,
+body.dark-mode .custom-select {
   border-color: #252525;
 }
 
 body.dark-mode .pro-img-thumb ul li .dl.check-green span,
-body.dark-mode .services_tab .nav-link,
 body.dark-mode .skills li a,
 body.dark-mode h1,
 body.dark-mode h2,
@@ -99,14 +130,12 @@ body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode .form-control,
 body.dark-mode input,
+body.dark-mode textarea,
 body.dark-mode .post-options a,
 body.dark-mode .deletion-part,
 body.dark-mode #goodbymodal .modal-body,
 body.dark-mode .usub-modal .modal-body,
-body.dark-mode .popover {
-  color: #ddd;
-}
-
+body.dark-mode .popover,
 body.dark-mode .header_cus .main_menu ul li ul.submenu {
   box-shadow: 0 0 4px #1b1b1b;
 }
@@ -115,8 +144,9 @@ body.dark-mode .bg-white {
   background-color: #101010 !important;
 }
 
-body.dark-mode .services_tab .nav-link,
-body.dark-mode .header_4 .sticky .header_btn .thm_btn::before {
+body.dark-mode .header_4 .sticky .header_btn .thm_btn::before,
+body.dark-mode .custom-control-input:disabled ~ .custom-control-label::before,
+body.dark-mode .custom-control-input[disabled] ~ .custom-control-label::before {
   background-color: #101010;
 }
 
@@ -126,7 +156,6 @@ body.dark-mode .skills li a {
 }
 
 body.dark-mode .team_left,
-body.dark-mode .notification-box,
 body.dark-mode .pricing_single {
   background: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
 }
@@ -140,7 +169,8 @@ body.dark-mode .form-control[readonly] {
   background: #000;
 }
 
-body.dark-mode a:hover {
+body.dark-mode a:hover,
+body.dark-mode .streamer-about p a {
   color: #ff9100;
 }
 
@@ -153,8 +183,13 @@ body.dark-mode .thm_btn:not(.thm_btn-black):hover {
   background: #fff;
 }
 
+body.dark-mode .thm_btn.br_btn:hover {
+  color: #000 !important;
+}
+
 body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
-body.dark-mode .modal-content {
+body.dark-mode .modal-content,
+body.dark-mode .services_tab .nav-link {
   background: #000;
 }
 
@@ -164,4 +199,13 @@ body.dark-mode .pricing_single .price_icon {
 
 body.dark-mode .streamer_thumb.steamer-status::after {
   box-shadow: none;
+}
+
+body.dark-mode .pop-share-links a {
+  background: #151515;
+  color: #fff;
+}
+
+body.dark-mode .close {
+  text-shadow: none;
 }

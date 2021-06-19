@@ -19,8 +19,21 @@ body.dark-mode {
   .comentar-name a,
   .side-mobile-menu ul li a,
   .side-mobile-menu ul li .dl.check-green span,
-  .profile-opt {
+  .profile-opt,
+  .about-list li p,
+  .close,
+  .custom-select,
+  .deletion-part,
+  #goodbymodal .modal-body,
+  .usub-modal .modal-body,
+  #goodbymodal p,
+  .usub-modal p,
+  .services_tab .nav-link {
     color: $bodyColorDefault;
+  }
+
+  .main-post a {
+    color: $themePrimary;
   }
 
   .header_cus .header_wrap,
@@ -51,7 +64,10 @@ body.dark-mode {
   .form_cus a,
   #sup_form a,
   .form_cus a,
-  .popover-body {
+  .popover-body,
+  .popover .post-setting-list label,
+  .dropdown-item,
+  .skills li a {
     color: $primaryWhite;
   }
   .main_menu ul li ul.submenu,
@@ -68,15 +84,29 @@ body.dark-mode {
   .slide-bar,
   .popover-body,
   .custom-control-label::before,
-  .price-br::before {
+  .price-br::before,
+  .dropdown-menu,
+  .notification-box {
     background: $secondaryDark;
   }
 
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: darken($secondaryDark, 2%);
+  }
+
+  .team_details .td_social li a:hover,
+  .skills li a:hover {
+    background: lighten($secondaryDark, 10%);
+  }
+
   .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
-  .bs-popover-bottom > .arrow::after,
+  .bs-popover-bottom > .arrow::after {
+    border-bottom-color: $secondaryDark;
+  }
   .bs-popover-auto[x-placement^="top"] > .arrow::after,
   .bs-popover-top > .arrow::after {
-    border-bottom-color: $secondaryDark;
+    border-top-color: $secondaryDark;
   }
 
   .main_menu ul li.pro-img-thumb .submenu li:last-child,
@@ -93,11 +123,11 @@ body.dark-mode {
   .connect-link,
   .modal-header,
   hr,
-  .pricing_single .price_btn a {
+  .pricing_single .price_btn a,
+  .custom-select {
     border-color: $darkBorderColor;
   }
   .pro-img-thumb ul li .dl.check-green span,
-  .services_tab .nav-link,
   .skills li a,
   h1,
   h2,
@@ -107,21 +137,21 @@ body.dark-mode {
   h6,
   .form-control,
   input,
+  textarea,
   .post-options a,
   .deletion-part,
   #goodbymodal .modal-body,
   .usub-modal .modal-body,
-  .popover {
-    color: #ddd;
-  }
+  .popover,
   .header_cus .main_menu ul li ul.submenu {
     box-shadow: 0 0 4px #1b1b1b;
   }
   .bg-white {
     background-color: $mainBgColor !important;
   }
-  .services_tab .nav-link,
-  .header_4 .sticky .header_btn .thm_btn::before {
+  .header_4 .sticky .header_btn .thm_btn::before,
+  .custom-control-input:disabled ~ .custom-control-label::before,
+  .custom-control-input[disabled] ~ .custom-control-label::before {
     background-color: $mainBgColor;
   }
 
@@ -130,7 +160,6 @@ body.dark-mode {
     background-color: $activeBg;
   }
   .team_left,
-  .notification-box,
   .pricing_single {
     background: $bgGradient;
   }
@@ -144,7 +173,8 @@ body.dark-mode {
     background: $darkBlack;
   }
 
-  a:hover {
+  a:hover,
+  .streamer-about p a {
     color: $themePrimary;
   }
 
@@ -156,9 +186,13 @@ body.dark-mode {
       color: $darkBlack;
       background: $primaryWhite;
     }
+    &.br_btn:hover {
+      color: $darkBlack !important;
+    }
   }
   .header_4 .sticky .header_btn .thm_btn:hover,
-  .modal-content {
+  .modal-content,
+  .services_tab .nav-link {
     background: $darkBlack;
   }
   .pricing_single .price_icon {
@@ -166,5 +200,13 @@ body.dark-mode {
   }
   .streamer_thumb.steamer-status::after {
     box-shadow: none;
+  }
+  .pop-share-links a {
+    background: $primaryDark;
+    color: $primaryWhite;
+  }
+
+  .close {
+    text-shadow: none;
   }
 }

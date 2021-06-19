@@ -46,20 +46,17 @@
 
   //Light Dark Toogle Apearence In Specific Places
   if ($("body").find(".mob-bottom-menu div").length > 0) {
-    if (wind.width() > 767) {
-      $(".main_menu nav>ul>li.pro-img-thumb>ul>li:last-child").before(
-        themeSwitch
-      );
-      themeChange();
-    } else {
-      $("#mobile-menu-active>li[data-placement = last]").before(themeSwitch);
-      themeChange();
-    }
+    $(".main_menu nav>ul>li.pro-img-thumb>ul>li:last-child").before(
+      themeSwitch
+    );
+    $("#mobile-menu-active>li[data-placement = last]").before(themeSwitch);
+    themeChange();
   }
 
   function themeChange() {
-    $(".dl").change(function () {
+    $(".dl input").change(function () {
       $("body").toggleClass("dark-mode");
+      $(".dl input").not(this).prop("checked", this.checked);
       $(".site-logo").each(function () {
         let lightLogo = $(this).data("lightlogo");
         let darkLogo = $(this).data("darklogo");
@@ -184,58 +181,6 @@
     }
   );
 
-  // portfolio active
-  $(".portfolio_active").owlCarousel({
-    loop: true,
-    autoplay: true,
-    smartSpeed: 1500,
-    autoplayHoverPause: true,
-    margin: 30,
-    autoplayTimeout: 6000,
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
-
-  // portfolio active
-  $(".portfolio_active_2").owlCarousel({
-    loop: true,
-    autoplay: true,
-    smartSpeed: 1500,
-    autoplayHoverPause: true,
-    margin: 30,
-    autoplayTimeout: 6000,
-    nav: false,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      768: {
-        items: 2,
-      },
-      992: {
-        items: 2,
-      },
-      1000: {
-        items: 4,
-      },
-    },
-  });
-
   // testimonial active
   $(".testimonial_active").owlCarousel({
     loop: true,
@@ -262,99 +207,8 @@
     },
   });
 
-  // brand active
-  $(".brand_active").owlCarousel({
-    loop: true,
-    margin: 0,
-    items: 1,
-    dots: false,
-    autoplay: true,
-    smartSpeed: 1000,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      500: {
-        items: 2,
-      },
-      767: {
-        items: 3,
-      },
-      992: {
-        items: 4,
-      },
-      1200: {
-        items: 5,
-      },
-    },
-  });
-
-  // blog post active
-  $(".gallery_post_active").owlCarousel({
-    loop: true,
-    margin: 0,
-    items: 1,
-    navText: [
-      '<i class="ti-arrow-left"></i>',
-      '<i class="ti-arrow-right"></i>',
-    ],
-    nav: true,
-    dots: false,
-    responsive: {
-      0: {
-        items: 1,
-      },
-    },
-  });
-
-  // skill bar
-  if ($("#bar1").length) {
-    $("#bar1").barfiller();
-  }
-  if ($("#bar2").length) {
-    $("#bar2").barfiller();
-  }
-  if ($("#bar3").length) {
-    $("#bar3").barfiller();
-  }
-
-  $(function () {
-    $(".progress").each(function () {
-      var value = $(this).attr("data-value");
-      var left = $(this).find(".progress-left .progress-bar");
-      var right = $(this).find(".progress-right .progress-bar");
-      if (value > 0) {
-        if (value <= 50) {
-          right.css(
-            "transform",
-            "rotate(" + percentageToDegrees(value) + "deg)"
-          );
-        } else {
-          right.css("transform", "rotate(180deg)");
-          left.css(
-            "transform",
-            "rotate(" + percentageToDegrees(value - 50) + "deg)"
-          );
-        }
-      }
-    });
-    function percentageToDegrees(percentage) {
-      return (percentage / 100) * 360;
-    }
-  });
-
   // WoW Js
   new WOW().init();
-
-  /* magnificPopup img view */
-  $(".popup-image").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
 
   /* magnificPopup video view */
   $(".popup-video").magnificPopup({
@@ -564,6 +418,7 @@
     $(this).attr("data-content", content);
   });
 
+  //Used In Simulation
   function decComa(nStr) {
     var $decimalDot = ".";
     var $decimalComma = ",";
@@ -608,23 +463,29 @@
   });
 
   // Max Three Cat Check
-  let maxChecks = $(".boxed-selects").data("max");
-  $(".boxed-selects .custom-control-input:checked").length >= maxChecks
-    ? $(".boxed-selects .custom-control-input")
-        .not(":checked")
-        .attr("disabled", true)
-    : "";
-  $(".boxed-selects .custom-control-input").change(function () {
-    $(".boxed-selects .custom-control-input:checked").length >= maxChecks
-      ? $(".boxed-selects .custom-control-input")
-          .not(":checked")
-          .attr("disabled", true)
-      : $(".boxed-selects .custom-control-input:disabled").attr(
-          "disabled",
-          false
-        );
+  $(".boxed-selects").each(function () {
+    let maxChecks = $(this).data("max");
+    let eachBox = $(this);
+    console.log(eachBox.find(".custom-control-input:checked").length);
+    if (maxChecks != undefined || maxChecks > 0) {
+      eachBox.find(".custom-control-input:checked").length >= maxChecks
+        ? eachBox
+            .find(".custom-control-input")
+            .not(":checked")
+            .attr("disabled", true)
+        : "";
+      eachBox.find(".custom-control-input").change(function () {
+        eachBox.find(".custom-control-input:checked").length >= maxChecks
+          ? eachBox
+              .find(".custom-control-input")
+              .not(":checked")
+              .attr("disabled", true)
+          : eachBox
+              .find(".custom-control-input:disabled")
+              .attr("disabled", false);
+      });
+    }
   });
-
   // Select Payment Method
   $(".select-method").each(function () {
     let other = $(this).data("target");
