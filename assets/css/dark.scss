@@ -133,11 +133,13 @@ body.dark-mode {
   .form-control,
   .custom-control-label::before,
   .connect-link,
-  .modal-header,
   hr,
   .pricing_single .price_btn a,
   .custom-select,
   .form-control:focus {
+    border-color: $darkBorderColor;
+  }
+  .modal-header {
     border-color: $darkBorderColor;
   }
 
@@ -197,6 +199,11 @@ body.dark-mode {
   .services_tab .nav-link {
     background: $darkBlack;
   }
+
+  .header_4.header_cus .header_btn .thm_btn:hover {
+    background: $darkBlack !important;
+  }
+
   .pricing_single .price_icon {
     background: $darkBgBlackColor;
   }

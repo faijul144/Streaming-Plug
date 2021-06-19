@@ -125,11 +125,14 @@ body.dark-mode .streamer_thumb.steamer-status::after,
 body.dark-mode .form-control,
 body.dark-mode .custom-control-label::before,
 body.dark-mode .connect-link,
-body.dark-mode .modal-header,
 body.dark-mode hr,
 body.dark-mode .pricing_single .price_btn a,
 body.dark-mode .custom-select,
 body.dark-mode .form-control:focus {
+  border-color: #252525;
+}
+
+body.dark-mode .modal-header {
   border-color: #252525;
 }
 
@@ -192,6 +195,10 @@ body.dark-mode .thm_btn.br_btn:hover {
 body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
 body.dark-mode .services_tab .nav-link {
   background: #000;
+}
+
+body.dark-mode .header_4.header_cus .header_btn .thm_btn:hover {
+  background: #000 !important;
 }
 
 body.dark-mode .pricing_single .price_icon {
