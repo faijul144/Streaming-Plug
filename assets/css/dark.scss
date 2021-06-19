@@ -246,7 +246,8 @@ body.dark-mode {
     -webkit-filter: invert(1);
   }
 
-  .streamer_thumb.steamer-status::after {
+  .streamer_thumb.steamer-status::after,
+  .boxed-selects > div > label {
     box-shadow: none;
   }
   .pop-share-links a,

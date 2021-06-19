@@ -242,7 +242,8 @@ body.dark-mode .pack_icon img {
   -webkit-filter: invert(1);
 }
 
-body.dark-mode .streamer_thumb.steamer-status::after {
+body.dark-mode .streamer_thumb.steamer-status::after,
+body.dark-mode .boxed-selects > div > label {
   box-shadow: none;
 }
 
