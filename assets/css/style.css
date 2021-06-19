@@ -7147,8 +7147,18 @@ font-size: 16px;
 }
 
 /* Privacy Button */
+.privacy-list{
+	margin-bottom: 40px;
+}
+
 .privacy-list li{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+}
+
+.privacy-action .custom-radio{
+	margin-bottom: 0;
 }
