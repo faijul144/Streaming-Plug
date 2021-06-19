@@ -8,6 +8,7 @@ $darkBorderColor: #252525;
 $primaryWhite: #fff;
 $bodyColorDefault: #c7c7c7;
 $themePrimary: #ff9100;
+$darkBgBlackColor: #6d6d6d;
 
 body.dark-mode {
   color: $bodyColorDefault;
@@ -66,7 +67,8 @@ body.dark-mode {
   .boxed-selects .pr-input.checked,
   .slide-bar,
   .popover-body,
-  .custom-control-label::before {
+  .custom-control-label::before,
+  .price-br::before {
     background: $secondaryDark;
   }
 
@@ -89,7 +91,9 @@ body.dark-mode {
   .form-control,
   .custom-control-label::before,
   .connect-link,
-  .modal-header {
+  .modal-header,
+  hr,
+  .pricing_single .price_btn a {
     border-color: $darkBorderColor;
   }
   .pro-img-thumb ul li .dl.check-green span,
@@ -126,7 +130,8 @@ body.dark-mode {
     background-color: $activeBg;
   }
   .team_left,
-  .notification-box {
+  .notification-box,
+  .pricing_single {
     background: $bgGradient;
   }
 
@@ -155,5 +160,8 @@ body.dark-mode {
   .header_4 .sticky .header_btn .thm_btn:hover,
   .modal-content {
     background: $darkBlack;
+  }
+  .pricing_single .price_icon {
+    background: $darkBgBlackColor;
   }
 }

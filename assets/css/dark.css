@@ -58,7 +58,8 @@ body.dark-mode .green-audio-player .slider,
 body.dark-mode .boxed-selects .pr-input.checked,
 body.dark-mode .slide-bar,
 body.dark-mode .popover-body,
-body.dark-mode .custom-control-label::before {
+body.dark-mode .custom-control-label::before,
+body.dark-mode .price-br::before {
   background: #212121;
 }
 
@@ -81,7 +82,9 @@ body.dark-mode .streamer_thumb.steamer-status::after,
 body.dark-mode .form-control,
 body.dark-mode .custom-control-label::before,
 body.dark-mode .connect-link,
-body.dark-mode .modal-header {
+body.dark-mode .modal-header,
+body.dark-mode hr,
+body.dark-mode .pricing_single .price_btn a {
   border-color: #252525;
 }
 
@@ -123,7 +126,8 @@ body.dark-mode .skills li a {
 }
 
 body.dark-mode .team_left,
-body.dark-mode .notification-box {
+body.dark-mode .notification-box,
+body.dark-mode .pricing_single {
   background: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
 }
 
@@ -152,4 +156,8 @@ body.dark-mode .thm_btn:not(.thm_btn-black):hover {
 body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
 body.dark-mode .modal-content {
   background: #000;
+}
+
+body.dark-mode .pricing_single .price_icon {
+  background: #6d6d6d;
 }
