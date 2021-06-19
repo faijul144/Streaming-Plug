@@ -82,8 +82,7 @@ body.dark-mode {
   .inputed-list > div .sm-action button i {
     color: $primaryWhite;
   }
-  .main_menu ul li ul.submenu,
-  .main_menu ul li.nf ul.submenu li.see-all,
+
   .posting-opt > div,
   input,
   textarea,
@@ -121,8 +120,6 @@ body.dark-mode {
     border-top-color: $secondaryDark;
   }
 
-  .main_menu ul li.pro-img-thumb .submenu li:last-child,
-  .main_menu ul li.nf ul.submenu li.see-all,
   .skills li a,
   .create-post textarea,
   .posting-opt > div:not(:last-child),
@@ -145,10 +142,21 @@ body.dark-mode {
 
   .deletion-part,
   #goodbymodal .modal-body,
-  .usub-modal .modal-body,
-  .header_cus .main_menu ul li ul.submenu {
+  .usub-modal .modal-body {
     box-shadow: 0 0 4px #1b1b1b;
   }
+
+  .main_menu ul li ul.submenu,
+  .main_menu ul li.nf ul.submenu li.see-all {
+    box-shadow: none;
+    background: darken($secondaryDark, 2%);
+  }
+
+  .main_menu ul li.pro-img-thumb .submenu li:last-child,
+  .main_menu ul li.nf ul.submenu li.see-all {
+    border-color: darken($darkBorderColor, 7.5%);
+  }
+
   .bg-white {
     background-color: $mainBgColor !important;
   }

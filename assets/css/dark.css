@@ -73,8 +73,6 @@ body.dark-mode .inputed-list > div .sm-action button i {
   color: #fff;
 }
 
-body.dark-mode .main_menu ul li ul.submenu,
-body.dark-mode .main_menu ul li.nf ul.submenu li.see-all,
 body.dark-mode .posting-opt > div,
 body.dark-mode input,
 body.dark-mode textarea,
@@ -113,8 +111,6 @@ body.dark-mode .bs-popover-top > .arrow::after {
   border-top-color: #212121;
 }
 
-body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
-body.dark-mode .main_menu ul li.nf ul.submenu li.see-all,
 body.dark-mode .skills li a,
 body.dark-mode .create-post textarea,
 body.dark-mode .posting-opt > div:not(:last-child),
@@ -138,9 +134,19 @@ body.dark-mode .modal-header {
 
 body.dark-mode .deletion-part,
 body.dark-mode #goodbymodal .modal-body,
-body.dark-mode .usub-modal .modal-body,
-body.dark-mode .header_cus .main_menu ul li ul.submenu {
+body.dark-mode .usub-modal .modal-body {
   box-shadow: 0 0 4px #1b1b1b;
+}
+
+body.dark-mode .main_menu ul li ul.submenu,
+body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+  box-shadow: none;
+  background: #1c1c1c;
+}
+
+body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
+body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+  border-color: #121212;
 }
 
 body.dark-mode .bg-white {
