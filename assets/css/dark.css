@@ -17,7 +17,9 @@ body.dark-mode .team_details .td_social li a,
 body.dark-mode .create-post,
 body.dark-mode .card,
 body.dark-mode .file-formate,
-body.dark-mode .close-mobile-menu {
+body.dark-mode .close-mobile-menu,
+body.dark-mode #backtotop,
+body.dark-mode .mob-bottom-menu > div {
   background: #151515;
 }
 
@@ -31,7 +33,8 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
-body.dark-mode h6 {
+body.dark-mode h6 #backtotop #scroll,
+body.dark-mode .mob-bottom-menu > div a.icon-link i {
   color: #fff;
 }
 
@@ -55,7 +58,9 @@ body.dark-mode .main_menu ul li.nf ul.submenu li.see-all,
 body.dark-mode .skills li a,
 body.dark-mode .create-post textarea,
 body.dark-mode .posting-opt > div:not(:last-child),
-body.dark-mode .comment-from {
+body.dark-mode .comment-from,
+body.dark-mode .mob-bottom-menu > div:not(:last-child),
+body.dark-mode .streamer_thumb .pro-img {
   border-color: #252525;
 }
 
@@ -69,6 +74,7 @@ body.dark-mode h4,
 body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode .form-control,
+body.dark-mode input,
 body.dark-mode .post-options a {
   color: #ddd;
 }
@@ -95,6 +101,7 @@ body.dark-mode .team_left {
 }
 
 body.dark-mode .form-control:focus,
+body.dark-mode input:focus,
 body.dark-mode .green-audio-player .slider .gap-progress {
   background: #000;
 }

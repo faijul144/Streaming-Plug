@@ -25,7 +25,9 @@ body.dark-mode {
   .create-post,
   .card,
   .file-formate,
-  .close-mobile-menu {
+  .close-mobile-menu,
+  #backtotop,
+  .mob-bottom-menu > div {
     background: $primaryDark;
   }
 
@@ -39,7 +41,8 @@ body.dark-mode {
   h3,
   h4,
   h5,
-  h6 {
+  h6 #backtotop #scroll,
+  .mob-bottom-menu > div a.icon-link i {
     color: $primaryWhite;
   }
   .main_menu ul li ul.submenu,
@@ -61,7 +64,9 @@ body.dark-mode {
   .skills li a,
   .create-post textarea,
   .posting-opt > div:not(:last-child),
-  .comment-from {
+  .comment-from,
+  .mob-bottom-menu > div:not(:last-child),
+  .streamer_thumb .pro-img {
     border-color: $darkBorderColor;
   }
   .pro-img-thumb ul li .dl.check-green span,
@@ -74,6 +79,7 @@ body.dark-mode {
   h5,
   h6,
   .form-control,
+  input,
   .post-options a {
     color: #ddd;
   }
@@ -95,6 +101,7 @@ body.dark-mode {
   }
 
   .form-control:focus,
+  input:focus,
   .green-audio-player .slider .gap-progress {
     background: $darkBlack;
   }
