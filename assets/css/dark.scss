@@ -3,10 +3,11 @@ $secondaryDark: #212121;
 $mainBgColor: #0c0c0c;
 $darkBlack: #000;
 $activeBg: #333333;
-$bgGradient: linear-gradient(to bottom right, #000 0%, #191919 50%, #000 100%);
+$bgGradient: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
 $darkBorderColor: #252525;
 $primaryWhite: #fff;
 $bodyColorDefault: #c7c7c7;
+$themePrimary: #ff9100;
 
 body.dark-mode {
   color: $bodyColorDefault;
@@ -16,7 +17,8 @@ body.dark-mode {
   .input-text-opt button,
   .comentar-name a,
   .side-mobile-menu ul li a,
-  .side-mobile-menu ul li .dl.check-green span {
+  .side-mobile-menu ul li .dl.check-green span,
+  .profile-opt {
     color: $bodyColorDefault;
   }
 
@@ -26,7 +28,6 @@ body.dark-mode {
   .card,
   .file-formate,
   .close-mobile-menu,
-  #backtotop,
   .mob-bottom-menu > div {
     background: $primaryDark;
   }
@@ -41,8 +42,15 @@ body.dark-mode {
   h3,
   h4,
   h5,
-  h6 #backtotop #scroll,
-  .mob-bottom-menu > div a.icon-link i {
+  h6,
+  #backtotop #scroll,
+  .mob-bottom-menu > div a.icon-link i,
+  .post-setting-list a,
+  #sup_form a,
+  .form_cus a,
+  #sup_form a,
+  .form_cus a,
+  .popover-body {
     color: $primaryWhite;
   }
   .main_menu ul li ul.submenu,
@@ -56,9 +64,19 @@ body.dark-mode {
   .audio-bg,
   .green-audio-player .slider,
   .boxed-selects .pr-input.checked,
-  .slide-bar {
+  .slide-bar,
+  .popover-body,
+  .custom-control-label::before {
     background: $secondaryDark;
   }
+
+  .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
+  .bs-popover-bottom > .arrow::after,
+  .bs-popover-auto[x-placement^="top"] > .arrow::after,
+  .bs-popover-top > .arrow::after {
+    border-bottom-color: $secondaryDark;
+  }
+
   .main_menu ul li.pro-img-thumb .submenu li:last-child,
   .main_menu ul li.nf ul.submenu li.see-all,
   .skills li a,
@@ -66,7 +84,12 @@ body.dark-mode {
   .posting-opt > div:not(:last-child),
   .comment-from,
   .mob-bottom-menu > div:not(:last-child),
-  .streamer_thumb .pro-img {
+  .streamer_thumb .pro-img,
+  .streamer_thumb.steamer-status::after,
+  .form-control,
+  .custom-control-label::before,
+  .connect-link,
+  .modal-header {
     border-color: $darkBorderColor;
   }
   .pro-img-thumb ul li .dl.check-green span,
@@ -80,7 +103,11 @@ body.dark-mode {
   h6,
   .form-control,
   input,
-  .post-options a {
+  .post-options a,
+  .deletion-part,
+  #goodbymodal .modal-body,
+  .usub-modal .modal-body,
+  .popover {
     color: #ddd;
   }
   .header_cus .main_menu ul li ul.submenu {
@@ -89,20 +116,44 @@ body.dark-mode {
   .bg-white {
     background-color: $mainBgColor !important;
   }
-  .services_tab .nav-link {
+  .services_tab .nav-link,
+  .header_4 .sticky .header_btn .thm_btn::before {
     background-color: $mainBgColor;
   }
+
   .services_tab .nav-link.active,
   .skills li a {
     background-color: $activeBg;
   }
-  .team_left {
+  .team_left,
+  .notification-box {
     background: $bgGradient;
   }
 
   .form-control:focus,
   input:focus,
-  .green-audio-player .slider .gap-progress {
+  .green-audio-player .slider .gap-progress,
+  #backtotop,
+  .form-control:disabled,
+  .form-control[readonly] {
+    background: $darkBlack;
+  }
+
+  a:hover {
+    color: $themePrimary;
+  }
+
+  .thm_btn {
+    &:not(.thm_btn-black)::before {
+      background: $primaryWhite;
+    }
+    &:not(.thm_btn-black):hover {
+      color: $darkBlack;
+      background: $primaryWhite;
+    }
+  }
+  .header_4 .sticky .header_btn .thm_btn:hover,
+  .modal-content {
     background: $darkBlack;
   }
 }

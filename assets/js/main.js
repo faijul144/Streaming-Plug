@@ -44,6 +44,7 @@
     }
   });
 
+  //Light Dark Toogle Apearence In Specific Places
   if ($("body").find(".mob-bottom-menu div").length > 0) {
     if (wind.width() > 767) {
       $(".main_menu nav>ul>li.pro-img-thumb>ul>li:last-child").before(
