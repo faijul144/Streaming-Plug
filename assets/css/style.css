@@ -638,8 +638,8 @@ input, textarea, select {
 	box-shadow: 1px 3px 3px rgba(0, 0, 0, .36);
 }
 .mob-bottom-menu>div a.icon-link{
-	height: auto;
-	width: auto;
+	height: 100%;
+	width: 100%;
 	padding: 3px 8px;
 }
 .mob-bottom-menu>div{
@@ -669,12 +669,19 @@ input, textarea, select {
 }
 
 .mob-bottom-menu>div .menu-toggle{
-	height: 40px;
-	width: 40px;
-	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	border-radius: 0;
 	background: transparent;
 	overflow: hidden;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
 
+.pro-img-thumb a.menu-toggle>div{
+	margin: 0 auto;
 }
 
 .mob-bottom-menu>div a.icon-link i{
@@ -693,8 +700,9 @@ input, textarea, select {
     align-items: center;
     justify-content: center;
     font-size: 12px;
-    top: 0px;
-    right: 5px;
+	top: 0px;
+    right: calc(50% - 10px);
+    transform: translateX(50%);
 }
 
 .sticky {
