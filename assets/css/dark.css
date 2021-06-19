@@ -42,7 +42,8 @@ body.dark-mode .create-post,
 body.dark-mode .card,
 body.dark-mode .file-formate,
 body.dark-mode .close-mobile-menu,
-body.dark-mode .mob-bottom-menu > div {
+body.dark-mode .mob-bottom-menu > div,
+body.dark-mode .modal-content {
   background: #151515;
 }
 
@@ -88,8 +89,7 @@ body.dark-mode .popover-body,
 body.dark-mode .custom-control-label::before,
 body.dark-mode .price-br::before,
 body.dark-mode .dropdown-menu,
-body.dark-mode .notification-box,
-body.dark-mode .modal-content {
+body.dark-mode .notification-box {
   background: #212121;
 }
 

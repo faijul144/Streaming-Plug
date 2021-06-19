@@ -52,7 +52,8 @@ body.dark-mode {
   .card,
   .file-formate,
   .close-mobile-menu,
-  .mob-bottom-menu > div {
+  .mob-bottom-menu > div,
+  .modal-content {
     background: $primaryDark;
   }
 
@@ -97,8 +98,7 @@ body.dark-mode {
   .custom-control-label::before,
   .price-br::before,
   .dropdown-menu,
-  .notification-box,
-  .modal-content {
+  .notification-box {
     background: $secondaryDark;
   }
 
