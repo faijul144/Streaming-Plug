@@ -141,12 +141,12 @@ body.dark-mode .usub-modal .modal-body {
 body.dark-mode .main_menu ul li ul.submenu,
 body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
   box-shadow: none;
-  background: #1c1c1c;
+  background: #141414;
 }
 
 body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
 body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
-  border-color: #121212;
+  border-color: #161616;
 }
 
 body.dark-mode .bg-white {
