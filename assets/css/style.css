@@ -4911,6 +4911,8 @@ margin: 15px 0;
 	border: 1px solid #c7c7c7
 }
 
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before{border-color: #ced4da;}
+
 .skills li a:hover{
 	color:#fff;
 	background: #0c0c0c;

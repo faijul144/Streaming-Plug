@@ -36,7 +36,11 @@ body.dark-mode {
   input:focus,
   select:focus,
   .post-set,
-  .about-list li a {
+  .about-list li a,
+  .datepicker table tr td.active,
+  .datepicker table tr td.active.disabled,
+  .datepicker table tr td.active.disabled:hover,
+  .datepicker table tr td.active:hover {
     color: $bodyColorDefault;
   }
 
@@ -79,7 +83,8 @@ body.dark-mode {
   .popover .post-setting-list label,
   .dropdown-item,
   .skills li a,
-  .inputed-list > div .sm-action button i {
+  .inputed-list > div .sm-action button i,
+  .dropdown-menu {
     color: $primaryWhite;
   }
 
@@ -96,8 +101,8 @@ body.dark-mode {
   .popover-body,
   .custom-control-label::before,
   .price-br::before,
-  .dropdown-menu,
-  .notification-box {
+  .notification-box,
+  .check-green label {
     background: $secondaryDark;
   }
 
@@ -133,7 +138,8 @@ body.dark-mode {
   hr,
   .pricing_single .price_btn a,
   .custom-select,
-  .form-control:focus {
+  .form-control:focus,
+  .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
     border-color: $darkBorderColor;
   }
   .modal-header {
@@ -218,9 +224,29 @@ body.dark-mode {
   .streamer_thumb.steamer-status::after {
     box-shadow: none;
   }
-  .pop-share-links a {
-    background: $primaryDark;
+  .pop-share-links a,
+  .datepicker table tr td.day.focused,
+  .datepicker table tr td.day:hover {
+    background: $secondaryDark;
     color: $primaryWhite;
+  }
+
+  .dropdown-menu {
+    background: lighten($darkBlack, 3%);
+  }
+
+  .datepicker-dropdown.datepicker-orient-top:after,
+  .datepicker-dropdown.datepicker-orient-top:before {
+    border-top-color: lighten($darkBlack, 3%);
+  }
+
+  .datepicker table tr td.active,
+  .datepicker table tr td.active.disabled,
+  .datepicker table tr td.active.disabled:hover,
+  .datepicker table tr td.active:hover {
+    background: $themePrimary;
+    color: $primaryWhite;
+    text-shadow: none;
   }
 
   .close {
@@ -231,7 +257,8 @@ body.dark-mode {
   h3,
   h4,
   h5,
-  h6 {
+  h6,
+  th {
     font-weight: normal;
   }
 }

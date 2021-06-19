@@ -26,7 +26,11 @@ body.dark-mode option,
 body.dark-mode input:focus,
 body.dark-mode select:focus,
 body.dark-mode .post-set,
-body.dark-mode .about-list li a {
+body.dark-mode .about-list li a,
+body.dark-mode .datepicker table tr td.active,
+body.dark-mode .datepicker table tr td.active.disabled,
+body.dark-mode .datepicker table tr td.active.disabled:hover,
+body.dark-mode .datepicker table tr td.active:hover {
   color: #c7c7c7;
 }
 
@@ -69,7 +73,8 @@ body.dark-mode .popover-body,
 body.dark-mode .popover .post-setting-list label,
 body.dark-mode .dropdown-item,
 body.dark-mode .skills li a,
-body.dark-mode .inputed-list > div .sm-action button i {
+body.dark-mode .inputed-list > div .sm-action button i,
+body.dark-mode .dropdown-menu {
   color: #fff;
 }
 
@@ -86,8 +91,8 @@ body.dark-mode .slide-bar,
 body.dark-mode .popover-body,
 body.dark-mode .custom-control-label::before,
 body.dark-mode .price-br::before,
-body.dark-mode .dropdown-menu,
-body.dark-mode .notification-box {
+body.dark-mode .notification-box,
+body.dark-mode .check-green label {
   background: #212121;
 }
 
@@ -124,7 +129,8 @@ body.dark-mode .connect-link,
 body.dark-mode hr,
 body.dark-mode .pricing_single .price_btn a,
 body.dark-mode .custom-select,
-body.dark-mode .form-control:focus {
+body.dark-mode .form-control:focus,
+body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
   border-color: #252525;
 }
 
@@ -215,9 +221,29 @@ body.dark-mode .streamer_thumb.steamer-status::after {
   box-shadow: none;
 }
 
-body.dark-mode .pop-share-links a {
-  background: #151515;
+body.dark-mode .pop-share-links a,
+body.dark-mode .datepicker table tr td.day.focused,
+body.dark-mode .datepicker table tr td.day:hover {
+  background: #212121;
   color: #fff;
+}
+
+body.dark-mode .dropdown-menu {
+  background: #080808;
+}
+
+body.dark-mode .datepicker-dropdown.datepicker-orient-top:after,
+body.dark-mode .datepicker-dropdown.datepicker-orient-top:before {
+  border-top-color: #080808;
+}
+
+body.dark-mode .datepicker table tr td.active,
+body.dark-mode .datepicker table tr td.active.disabled,
+body.dark-mode .datepicker table tr td.active.disabled:hover,
+body.dark-mode .datepicker table tr td.active:hover {
+  background: #ff9100;
+  color: #fff;
+  text-shadow: none;
 }
 
 body.dark-mode .close {
@@ -229,6 +255,7 @@ body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
-body.dark-mode h6 {
+body.dark-mode h6,
+body.dark-mode th {
   font-weight: normal;
 }

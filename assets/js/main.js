@@ -26,8 +26,8 @@
     <div class="check-green dl mb-0 w-100 justify-content-between">
     <span class="ml-0">Dark Mode</span>
     <div>
-        <input type="checkbox" name="check-green" id="l1">
-        <label for="l1">
+        <input type="checkbox" name="check-green" id="l004">
+        <label for="l004">
             <div></div>
         </label>
     </div>
