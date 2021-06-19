@@ -14,7 +14,9 @@ body.dark-mode {
   .comment-opt ul li a,
   .input-text-opt a,
   .input-text-opt button,
-  .comentar-name a {
+  .comentar-name a,
+  .side-mobile-menu ul li a,
+  .side-mobile-menu ul li .dl.check-green span {
     color: $bodyColorDefault;
   }
 
@@ -22,7 +24,8 @@ body.dark-mode {
   .team_details .td_social li a,
   .create-post,
   .card,
-  .file-formate {
+  .file-formate,
+  .close-mobile-menu {
     background: $primaryDark;
   }
 
@@ -49,7 +52,8 @@ body.dark-mode {
   .post-options,
   .audio-bg,
   .green-audio-player .slider,
-  .boxed-selects .pr-input.checked {
+  .boxed-selects .pr-input.checked,
+  .slide-bar {
     background: $secondaryDark;
   }
   .main_menu ul li.pro-img-thumb .submenu li:last-child,

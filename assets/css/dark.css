@@ -6,7 +6,9 @@ body.dark-mode p,
 body.dark-mode .comment-opt ul li a,
 body.dark-mode .input-text-opt a,
 body.dark-mode .input-text-opt button,
-body.dark-mode .comentar-name a {
+body.dark-mode .comentar-name a,
+body.dark-mode .side-mobile-menu ul li a,
+body.dark-mode .side-mobile-menu ul li .dl.check-green span {
   color: #c7c7c7;
 }
 
@@ -14,7 +16,8 @@ body.dark-mode .header_cus .header_wrap,
 body.dark-mode .team_details .td_social li a,
 body.dark-mode .create-post,
 body.dark-mode .card,
-body.dark-mode .file-formate {
+body.dark-mode .file-formate,
+body.dark-mode .close-mobile-menu {
   background: #151515;
 }
 
@@ -42,7 +45,8 @@ body.dark-mode .comment-text,
 body.dark-mode .post-options,
 body.dark-mode .audio-bg,
 body.dark-mode .green-audio-player .slider,
-body.dark-mode .boxed-selects .pr-input.checked {
+body.dark-mode .boxed-selects .pr-input.checked,
+body.dark-mode .slide-bar {
   background: #212121;
 }
 
