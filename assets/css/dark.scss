@@ -149,7 +149,7 @@ body.dark-mode {
   .deletion-part,
   #goodbymodal .modal-body,
   .usub-modal .modal-body {
-    box-shadow: 0 0 4px #1b1b1b;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
   }
 
   .main_menu ul li ul.submenu,
@@ -232,12 +232,16 @@ body.dark-mode {
   }
 
   .dropdown-menu {
-    background: lighten($darkBlack, 3%);
+    background: lighten($primaryDark, 3%);
   }
 
+  .datepicker-dropdown:before,
+  .datepicker-dropdown:after {
+    border-bottom-color: lighten($primaryDark, 3%);
+  }
   .datepicker-dropdown.datepicker-orient-top:after,
   .datepicker-dropdown.datepicker-orient-top:before {
-    border-top-color: lighten($darkBlack, 3%);
+    border-top-color: lighten($primaryDark, 3%);
   }
 
   .datepicker table tr td.active,

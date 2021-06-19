@@ -141,7 +141,7 @@ body.dark-mode .modal-header {
 body.dark-mode .deletion-part,
 body.dark-mode #goodbymodal .modal-body,
 body.dark-mode .usub-modal .modal-body {
-  box-shadow: 0 0 4px #1b1b1b;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
 }
 
 body.dark-mode .main_menu ul li ul.submenu,
@@ -229,12 +229,17 @@ body.dark-mode .datepicker table tr td.day:hover {
 }
 
 body.dark-mode .dropdown-menu {
-  background: #080808;
+  background: #1d1d1d;
+}
+
+body.dark-mode .datepicker-dropdown:before,
+body.dark-mode .datepicker-dropdown:after {
+  border-bottom-color: #1d1d1d;
 }
 
 body.dark-mode .datepicker-dropdown.datepicker-orient-top:after,
 body.dark-mode .datepicker-dropdown.datepicker-orient-top:before {
-  border-top-color: #080808;
+  border-top-color: #1d1d1d;
 }
 
 body.dark-mode .datepicker table tr td.active,
