@@ -140,7 +140,7 @@ body.dark-mode {
     border-color: $darkBorderColor;
   }
   .modal-header {
-    border-color: $darkBorderColor;
+    border-color: darken($darkBorderColor, 5%);
   }
 
   .deletion-part,
