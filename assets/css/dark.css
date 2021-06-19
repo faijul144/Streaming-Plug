@@ -30,8 +30,13 @@ body.dark-mode .about-list li a,
 body.dark-mode .datepicker table tr td.active,
 body.dark-mode .datepicker table tr td.active.disabled,
 body.dark-mode .datepicker table tr td.active.disabled:hover,
-body.dark-mode .datepicker table tr td.active:hover {
+body.dark-mode .datepicker table tr td.active:hover,
+body.dark-mode .aff-table tr th {
   color: #c7c7c7;
+}
+
+body.dark-mode .thm_btn-black {
+  background: #000;
 }
 
 body.dark-mode .main-post a,
@@ -92,7 +97,8 @@ body.dark-mode .popover-body,
 body.dark-mode .custom-control-label::before,
 body.dark-mode .price-br::before,
 body.dark-mode .notification-box,
-body.dark-mode .check-green label {
+body.dark-mode .check-green label,
+body.dark-mode .aff-table .action-list li a:hover {
   background: #212121;
 }
 
@@ -130,11 +136,14 @@ body.dark-mode hr,
 body.dark-mode .pricing_single .price_btn a,
 body.dark-mode .custom-select,
 body.dark-mode .form-control:focus,
-body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+body.dark-mode .aff-table tr th,
+body.dark-mode .aff-table tr td {
   border-color: #252525;
 }
 
-body.dark-mode .modal-header {
+body.dark-mode .modal-header,
+body.dark-mode .stat-list li {
   border-color: #181818;
 }
 
@@ -172,7 +181,9 @@ body.dark-mode .inputed-list > div .sm-action button {
 }
 
 body.dark-mode .team_left,
-body.dark-mode .pricing_single {
+body.dark-mode .pricing_single,
+body.dark-mode .stat-card,
+body.dark-mode .acc-detail-top div {
   background: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
 }
 
@@ -191,6 +202,10 @@ body.dark-mode .about-list li a:hover {
   color: #ff9100;
 }
 
+body.dark-mode .acc-detail-top div {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.38);
+}
+
 body.dark-mode .thm_btn:not(.thm_btn-black)::before {
   background: #fff;
 }
@@ -205,7 +220,8 @@ body.dark-mode .thm_btn.br_btn:hover {
 }
 
 body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
-body.dark-mode .services_tab .nav-link {
+body.dark-mode .services_tab .nav-link,
+body.dark-mode .swal2-popup {
   background: #000;
 }
 
@@ -214,7 +230,12 @@ body.dark-mode .header_4.header_cus .header_btn .thm_btn:hover {
 }
 
 body.dark-mode .pricing_single .price_icon {
-  background: #6d6d6d;
+  background: #212121;
+}
+
+body.dark-mode .pricing_single .price_icon img {
+  filter: invert(1);
+  -webkit-filter: invert(1);
 }
 
 body.dark-mode .streamer_thumb.steamer-status::after {
