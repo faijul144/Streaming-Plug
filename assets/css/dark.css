@@ -21,11 +21,17 @@ body.dark-mode .usub-modal p,
 body.dark-mode .services_tab .nav-link,
 body.dark-mode input,
 body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode option,
+body.dark-mode input:focus,
+body.dark-mode select:focus,
 body.dark-mode .post-set {
   color: #c7c7c7;
 }
 
-body.dark-mode .main-post a {
+body.dark-mode .main-post a,
+body.dark-mode #goodbymodal p a,
+body.dark-mode .usub-modal p a {
   color: #ff9100;
 }
 
@@ -125,18 +131,6 @@ body.dark-mode .form-control:focus {
   border-color: #252525;
 }
 
-body.dark-mode .pro-img-thumb ul li .dl.check-green span,
-body.dark-mode .skills li a,
-body.dark-mode h1,
-body.dark-mode h2,
-body.dark-mode h3,
-body.dark-mode h4,
-body.dark-mode h5,
-body.dark-mode h6,
-body.dark-mode .form-control,
-body.dark-mode input,
-body.dark-mode textarea,
-body.dark-mode .post-options a,
 body.dark-mode .deletion-part,
 body.dark-mode #goodbymodal .modal-body,
 body.dark-mode .usub-modal .modal-body,
@@ -214,8 +208,4 @@ body.dark-mode .pop-share-links a {
 
 body.dark-mode .close {
   text-shadow: none;
-}
-
-body.dark-mode .post-owner h5 {
-  box-shadow: none;
 }

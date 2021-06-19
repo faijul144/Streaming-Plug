@@ -31,11 +31,17 @@ body.dark-mode {
   .services_tab .nav-link,
   input,
   textarea,
+  select,
+  option,
+  input:focus,
+  select:focus,
   .post-set {
     color: $bodyColorDefault;
   }
 
-  .main-post a {
+  .main-post a,
+  #goodbymodal p a,
+  .usub-modal p a {
     color: $themePrimary;
   }
 
@@ -132,18 +138,7 @@ body.dark-mode {
   .form-control:focus {
     border-color: $darkBorderColor;
   }
-  .pro-img-thumb ul li .dl.check-green span,
-  .skills li a,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  .form-control,
-  input,
-  textarea,
-  .post-options a,
+
   .deletion-part,
   #goodbymodal .modal-body,
   .usub-modal .modal-body,
@@ -214,9 +209,5 @@ body.dark-mode {
 
   .close {
     text-shadow: none;
-  }
-
-  .post-owner h5 {
-    box-shadow: none;
   }
 }
