@@ -141,7 +141,7 @@ body.dark-mode .usub-modal .modal-body {
 body.dark-mode .main_menu ul li ul.submenu,
 body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
   box-shadow: none;
-  background: #141414;
+  background: #0f0f0f;
 }
 
 body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
