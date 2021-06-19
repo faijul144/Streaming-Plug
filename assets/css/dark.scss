@@ -1,6 +1,6 @@
 $primaryDark: #151515;
 $secondaryDark: #212121;
-$mainBgColor: #0c0c0c;
+$mainBgColor: #101010;
 $darkBlack: #000;
 $activeBg: #333333;
 $bgGradient: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
@@ -163,5 +163,8 @@ body.dark-mode {
   }
   .pricing_single .price_icon {
     background: $darkBgBlackColor;
+  }
+  .streamer_thumb.steamer-status::after {
+    box-shadow: none;
   }
 }

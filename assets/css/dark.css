@@ -112,12 +112,12 @@ body.dark-mode .header_cus .main_menu ul li ul.submenu {
 }
 
 body.dark-mode .bg-white {
-  background-color: #0c0c0c !important;
+  background-color: #101010 !important;
 }
 
 body.dark-mode .services_tab .nav-link,
 body.dark-mode .header_4 .sticky .header_btn .thm_btn::before {
-  background-color: #0c0c0c;
+  background-color: #101010;
 }
 
 body.dark-mode .services_tab .nav-link.active,
@@ -160,4 +160,8 @@ body.dark-mode .modal-content {
 
 body.dark-mode .pricing_single .price_icon {
   background: #6d6d6d;
+}
+
+body.dark-mode .streamer_thumb.steamer-status::after {
+  box-shadow: none;
 }
