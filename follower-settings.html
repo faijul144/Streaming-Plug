@@ -379,6 +379,13 @@
                                                 </a>
                                             </li>
                                             <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-10" role="tab"
+                                                    aria-controls="l-10" aria-selected="false">
+                                                    <span class="title"><i class="fas fa-money-check-alt"></i>Add
+                                                        Payment</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
                                                 <a class="nav-link" data-toggle="tab" href="#l-5" role="tab"
                                                     aria-controls="l-5" aria-selected="false">
                                                     <span class="title"><i class="far fa-coins"></i>Affiliate</span>
@@ -1018,6 +1025,174 @@
                                                                 class="thm_btn br_btn btn_sub_cus_big ">Save</button>
                                                         </div>
                                                     </form>
+                                                </div>
+                                                <!-- Add Card -->
+                                                <div class="tab-pane fade" id="l-10" role="tabpanel"
+                                                    aria-labelledby="l-tab-10">
+                                                    <div class="row">
+                                                        <div class="col-12 mb-3">
+                                                            <h4>Add Your Payment Method</h4>
+                                                            <div class="disclaimer mb-30 mt-10">
+                                                                <i class="fas fa-exclamation-triangle"></i>
+                                                                Rest assured your account information will be completely
+                                                                encrypted. It won't be visible to us or any other third
+                                                                person.
+                                                            </div>
+                                                            <h5 class="my-3">Card Information</h5>
+                                                            <div class="form-group">
+                                                                <ul class="gateway-img">
+                                                                    <li>
+                                                                        <input type="radio" name="price" id="pal-or"
+                                                                            value="pack-vip"
+                                                                            data-target="#paypal-form-or" checked>
+                                                                        <label for="pal-or">
+                                                                            <img src="./assets/img/payment/paypal.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="price" id="visa-or"
+                                                                            value="pack-vip"
+                                                                            data-target="#credit-form-or">
+                                                                        <label for="visa-or">
+                                                                            <img src="./assets/img/payment/visa.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="price"
+                                                                            id="mastercard-or" value="pack-vip"
+                                                                            data-target="#credit-form-or">
+                                                                        <label for="mastercard-or">
+                                                                            <img src="./assets/img/payment/mastercard.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="price"
+                                                                            id="americanexpress-or" value="pack-vip"
+                                                                            data-target="#credit-form-or">
+                                                                        <label for="americanexpress-or">
+                                                                            <img src="./assets/img/payment/amex.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                            <form class="selected-card-form mb-30">
+                                                                <div id="paypal-form-or" class="card-forms">
+                                                                    <div class="form-group">
+                                                                        <label
+                                                                            for="paypal-email">Email<sup>*</sup></label>
+                                                                        <input type="email" class="form-control"
+                                                                            id="paypal-email"
+                                                                            placeholder="Enter Paypal Email">
+                                                                    </div>
+                                                                </div>
+                                                                <div id="credit-form-or" class="card-forms">
+                                                                    <div class="form-row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label for="card-number">Card
+                                                                                    Number<sup>*</sup></label>
+                                                                                <input type="number"
+                                                                                    class="form-control"
+                                                                                    id="card-number"
+                                                                                    placeholder="Enter Card Number">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="exp-date">Expire
+                                                                                    Date<sup>*</sup></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="exp-date" placeholder="MM/YY">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group pos-rel">
+                                                                                <label for="cvv">CVV<sup>*</sup></label>
+                                                                                <input type="number"
+                                                                                    class="form-control pop-focus opt-pop"
+                                                                                    id="cvv" placeholder="Enter CVV"
+                                                                                    data-container="body"
+                                                                                    data-toggle="popover"
+                                                                                    data-placement="top"
+                                                                                    data-list="#cvv-hint">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <button type="button"
+                                                                    class="thm_btn br_btn add-btn btn_sub_cus_md">Add
+                                                                    Card</button>
+                                                            </form>
+                                                            <h5 class="">Bank Information</h5>
+                                                            <form>
+                                                                <div class="form-row">
+                                                                    <div class="col-md-6 col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="bname">Bank<sup>*</sup></label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="bname"
+                                                                                placeholder="Enter Your Bank Name">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-12">
+                                                                        <div class="form-group">
+                                                                            <label
+                                                                                for="bbrance">Branch<sup>*</sup></label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="bbrance"
+                                                                                placeholder="Enter Your Bank Branch">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-12">
+                                                                        <div class="form-group">
+                                                                            <label for="ano">Account
+                                                                                No<sup>*</sup></label>
+                                                                            <input type="text" class="form-control"
+                                                                                id="ano"
+                                                                                placeholder="Enter Account No.">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-12">
+                                                                        <button type="button"
+                                                                            class="thm_btn br_btn add-btn btn_sub_cus_md">Add
+                                                                            Bank</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <h4 class="mb-30 mt-30">Added Payment Methods</h4>
+                                                            <div class="acc-detail-top">
+                                                                <div class="currently-active">
+                                                                    <p>Bank Detail</p>
+                                                                    <ul>
+                                                                        <li>City Bank</li>
+                                                                        <li>New York</li>
+                                                                        <li>1111255622651244</li>
+                                                                    </ul>
+                                                                    <div class="account-ac">
+                                                                        <button><i class="far fa-times"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                                <div>
+                                                                    <p>Card Detail</p>
+                                                                    <ul>
+                                                                        <li>Mastercard</li>
+                                                                        <li>105414125122142</li>
+                                                                    </ul>
+                                                                    <div class="account-ac">
+                                                                        <button><i class="far fa-times"></i></button>
+                                                                        <button>Set Active</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <!-- Unsub Affiliate -->
                                                 <div class="tab-pane fade" id="l-5" role="tabpanel"

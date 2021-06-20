@@ -7162,11 +7162,7 @@ font-size: 16px;
 	margin-bottom: 0;
 }
 
-/* Category Select Page */
-.boxed-selects.cat-select>div{
-	flex:0 0 50%;
-	width:50%;
-}
+
 
 /* Account Card Add */
 .account-ac{
