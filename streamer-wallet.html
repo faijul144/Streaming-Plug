@@ -406,12 +406,14 @@
                                                         <div class="col-md-3 mb-30">
                                                             <div class="stat-card">
                                                                 <h3>Time Left</h3>
-                                                                <div class="stat-count count-down" data-count="30">
+                                                                <div class="stat-count count-down" data-count="30"
+                                                                    data-date="2021-10-20">
                                                                 </div>
 
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 mt-30">
+                                                            <!-- Charts Configaration In Affiliate JS -->
                                                             <ul class="chart-view-types">
                                                                 <li><button data-type="day" id="ch-day"
                                                                         class="thm_btn thm_btn-black br_btn">Day</button>
@@ -426,7 +428,7 @@
                                                                         class="thm_btn br_btn">Year</button>
                                                                 </li>
                                                             </ul>
-                                                            <div id="newChart"></div>
+                                                            <canvas id="newChart" class="mb-40"></canvas>
 
                                                         </div>
                                                         <div class="col-12">
@@ -1222,7 +1224,7 @@
     <script src="assets/js/video.min.js"></script>
     <script src="assets/js/simple-lightbox.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
-    <script src="assets/js/highstock.src.js"></script>
+    <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/affiliate.js"></script>
@@ -1255,7 +1257,8 @@
 
         // Day Counter
         var countDown = new Date();
-        countDown.setDate(countDown.getDate() + $('.count-down').data('count'));
+        var setDate = $('.count-down').data('date').split("-")
+        countDown.setFullYear(parseInt(setDate[0]), parseInt(setDate[1]), parseInt(setDate[2]) + $('.count-down').data('count'));
         // Update the count down every 1 second
         var x = setInterval(function () {
             var today = new Date();

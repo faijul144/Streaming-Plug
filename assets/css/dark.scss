@@ -62,7 +62,8 @@ body.dark-mode {
   .file-formate,
   .close-mobile-menu,
   .mob-bottom-menu > div,
-  .modal-content {
+  .modal-content,
+  .aff-img .aff-link {
     background: $primaryDark;
   }
 
@@ -150,7 +151,8 @@ body.dark-mode {
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
   .aff-table tr th,
   .aff-table tr td,
-  .pack-price {
+  .pack-price,
+  .aff-link input {
     border-color: $darkBorderColor;
   }
   .modal-header,
@@ -192,7 +194,9 @@ body.dark-mode {
   .team_left,
   .pricing_single,
   .stat-card,
-  .acc-detail-top div {
+  .acc-detail-top div,
+  .team_single .team_text,
+  .team_single {
     background: $bgGradient;
   }
 
@@ -290,5 +294,24 @@ body.dark-mode {
   h6,
   th {
     font-weight: normal;
+  }
+
+  .team_single .team_thumb {
+    .team_avatar {
+      z-index: 1;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: #000;
+      opacity: 0.2;
+      pointer-events: none;
+      z-index: 0;
+    }
   }
 }

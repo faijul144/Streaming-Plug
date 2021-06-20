@@ -5929,7 +5929,7 @@ margin:  5px 0;
 	background-color: #ff9100;
 }
 
-.custom-control-input:focus~.custom-control-label::before,.form-control:focus{
+.custom-control-input:focus~.custom-control-label::before,.form-control:focus,.custom-select:focus{
 	box-shadow: 0 0 0 0.2rem rgba(255 ,145, 0,0.25);
 }
 

@@ -52,7 +52,8 @@ body.dark-mode .card,
 body.dark-mode .file-formate,
 body.dark-mode .close-mobile-menu,
 body.dark-mode .mob-bottom-menu > div,
-body.dark-mode .modal-content {
+body.dark-mode .modal-content,
+body.dark-mode .aff-img .aff-link {
   background: #151515;
 }
 
@@ -141,7 +142,8 @@ body.dark-mode .form-control:focus,
 body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
 body.dark-mode .aff-table tr th,
 body.dark-mode .aff-table tr td,
-body.dark-mode .pack-price {
+body.dark-mode .pack-price,
+body.dark-mode .aff-link input {
   border-color: #252525;
 }
 
@@ -186,7 +188,9 @@ body.dark-mode .inputed-list > div .sm-action button {
 body.dark-mode .team_left,
 body.dark-mode .pricing_single,
 body.dark-mode .stat-card,
-body.dark-mode .acc-detail-top div {
+body.dark-mode .acc-detail-top div,
+body.dark-mode .team_single .team_text,
+body.dark-mode .team_single {
   background: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
 }
 
@@ -289,4 +293,22 @@ body.dark-mode h5,
 body.dark-mode h6,
 body.dark-mode th {
   font-weight: normal;
+}
+
+body.dark-mode .team_single .team_thumb .team_avatar {
+  z-index: 1;
+}
+
+body.dark-mode .team_single .team_thumb:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #000;
+  opacity: 0.2;
+  pointer-events: none;
+  z-index: 0;
 }
