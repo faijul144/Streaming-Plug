@@ -7200,11 +7200,23 @@ font-size: 16px;
 	font-size: 12px;
 	background: #eee;
 	padding: 3px 10px;
-	border-radius: 100px;
-	-webkit-border-radius: 100px;
-	-moz-border-radius: 100px;
-	-ms-border-radius: 100px;
-	-o-border-radius: 100px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+.disclaimer{
+	background: #f3f3f3;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, .36);
+	padding: 15px;
+    border-radius: 3px;
+}
+
+.disclaimer i{
+	margin-left: 5px;
+	color: #ff9100;
+
 }
 
 .account-ac button{
