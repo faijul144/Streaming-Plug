@@ -197,7 +197,7 @@ body.dark-mode .team_single {
 
 body.dark-mode .stat-card,
 body.dark-mode .acc-detail-top div {
-  background: linear-gradient(to bottom, #000 0%, #101010 50%);
+  background: #000;
 }
 
 body.dark-mode .form-control:focus,
