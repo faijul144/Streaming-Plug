@@ -263,7 +263,6 @@ body.dark-mode .disclaimer {
 body.dark-mode .pop-share-links a,
 body.dark-mode .datepicker table tr td.day.focused,
 body.dark-mode .datepicker table tr td.day:hover,
-body.dark-mode .acc-detail-top > div.currently-active::before,
 body.dark-mode .account-ac button {
   background: #212121;
   color: #fff;
