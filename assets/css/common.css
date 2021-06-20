@@ -1065,8 +1065,16 @@
 .br-10x{
 	border-radius: 10px !important;
 	overflow: hidden;
+	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
+	-ms-border-radius: 10px !important;
+	-o-border-radius: 10px !important;
 }
 
 .w-150px{
 	width: 150px;
+}
+
+.disabled-click{
+	pointer-events: none;
 }

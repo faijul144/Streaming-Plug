@@ -294,10 +294,6 @@ body.dark-mode {
     border-top-color: lighten($primaryDark, 3%);
   }
 
-  .datepicker table tr td.active,
-  .datepicker table tr td.active.disabled,
-  .datepicker table tr td.active.disabled:hover,
-  .datepicker table tr td.active:hover,
   .team_single .team_text ul.cat li a:hover {
     background: $themePrimary;
     color: $primaryWhite;

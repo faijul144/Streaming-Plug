@@ -7063,8 +7063,23 @@ font-size: 16px;
 .thm_btn.btn_sub_cus_edit::before{
     border-radius: 3px;
 }
-
-.datepicker{padding: 4px 10px;}
+.datepicker table tr td.active,
+  .datepicker table tr td.active.disabled,
+  .datepicker table tr td.active.disabled:hover,
+  .datepicker table tr td.active:hover,
+  .datepicker .datepicker-switch:hover,
+  .datepicker .next:hover,
+  .datepicker .prev:hover,
+  .datepicker tfoot tr th:hover{
+	  background: #ff9100 !important;
+	  color: #fff;
+	  text-shadow: none;
+	  transition: 0.3s ease;
+	  -webkit-transition: 0.3s ease;
+	  -moz-transition: 0.3s ease;
+	  -ms-transition: 0.3s ease;
+	  -o-transition: 0.3s ease;
+}
 
 /* Added list actions */
 .inputed-list{
@@ -7240,4 +7255,55 @@ font-size: 16px;
 	background: #ff9100;
 	color: #fff;
 	box-shadow: 1px 2px 3px rgba(0, 0, 0, .36);
+}
+
+/* Ac Sign Up Form */
+.initial-cat .boxed-selects{
+    margin: 0 auto;
+	width: 70%;
+	align-items: center;
+	justify-content: center;
+}
+
+.initial-cat .boxed-selects>div{
+	margin: 0 0 5px;
+    padding: 0;
+    flex: 0 0 33.33%;
+    padding: 15px;
+}
+.initial-cat .boxed-selects>div>label{
+	font-size: 20px;
+	background: #f2f2f2;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 20px;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, .36);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	text-align: center;
+}
+
+.initial-cat .custom-control-input:checked~.custom-control-label{
+	background: #ff9100;
+	color: #fff;
+	transform: translateY(-2px);
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	box-shadow: 1px 3px 3px rgba(0, 0, 0, .36);
+
+}
+
+.initial-cat .custom-control-input:disabled~.custom-control-label, .initial-cat .custom-control-input[disabled]~.custom-control-label{
+	background: #eee;
+}
+
+.initial-cat .boxed-selects .custom-control-label::before,.initial-cat .boxed-selects .custom-control-label::after{
+	display: none;
 }

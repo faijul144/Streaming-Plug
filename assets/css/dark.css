@@ -291,10 +291,6 @@ body.dark-mode .datepicker-dropdown.datepicker-orient-top:before {
   border-top-color: #1d1d1d;
 }
 
-body.dark-mode .datepicker table tr td.active,
-body.dark-mode .datepicker table tr td.active.disabled,
-body.dark-mode .datepicker table tr td.active.disabled:hover,
-body.dark-mode .datepicker table tr td.active:hover,
 body.dark-mode .team_single .team_text ul.cat li a:hover {
   background: #ff9100;
   color: #fff;

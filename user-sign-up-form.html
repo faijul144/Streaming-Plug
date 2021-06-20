@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="utf-8">
@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/themify-icons.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/barfiller.css">
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css" />
     <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
@@ -167,6 +168,7 @@
         <!-- main body start -->
         <main>
             <!-- pagetitle start -->
+            <!-- pagetitle start -->
             <section class="page_title_area">
                 <div class="page_title_wrap" data-background="assets/img/bg/bread.png">
                     <div class="container">
@@ -174,7 +176,7 @@
                             <div class="br_text">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li>Complete Sign Up</li>
+                                    <li>Finish Sign Up</li>
                                 </ul>
                             </div>
                         </div>
@@ -183,348 +185,606 @@
             </section>
             <!-- pagetitle end -->
 
-            <!-- Edit details forms -->
-            <section class="privacy_area d_content_wrap pt-120 pb-90">
+            <!-- details start -->
+            <section class="team_details pt-120 pb-90 bg-white">
                 <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-12">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-lg-3 mb-sm-5 d-none">
 
-                            <form class="form_cus" action="" name="">
-                                <div class="sec_title text-center">
-                                    <h2>Step 1: Choose Category</h2>
-                                </div>
-                                <!-- Select Sector -->
-                                <div class="form-group sign-up-cat">
-                                    <label for="cat-select">Select Your Sector Of
-                                        Expertice<sup>*</sup></label>
-                                    <div class="boxed-selects" data-max="3">
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-1">
-                                            <label class="custom-control-label" for="cat-1">Sports</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-2">
-                                            <label class="custom-control-label" for="cat-2">Travel</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-3">
-                                            <label class="custom-control-label" for="cat-3">Yoga
-                                                Classes</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-4">
-                                            <label class="custom-control-label" for="cat-4"
-                                                checked>Entertainment</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-5">
-                                            <label class="custom-control-label" for="cat-5">Music</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-6">
-                                            <label class="custom-control-label" for="cat-6">News</label>
-                                        </div>
-                                        <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="cat-7">
-                                            <label class="custom-control-label" for="cat-7">Trade Shows</label>
-                                        </div>
-                                    </div>
-                                    <small class="form-text text-muted mt-0">Pick Your Field Your
-                                        Expertise Which Will Be
-                                        Your Main Streaming Topic (Maximum 3 Can Be Selected)</small>
-                                </div>
-                                <div class="sec_title text-center">
-                                    <h2>Step 2: Connect To Social Media</h2>
-                                </div>
-                                <div class="form-group">
-                                    <label>Social Connect</label>
-                                    <div class="social-connect">
-                                        <div class="connect-link">
-                                            <span><i class="fab fa-facebook-f"></i><span>Facebook</span></span>
-                                            <a href="javascript:void(0)">Connect</a>
-                                        </div>
-                                        <div class="connect-link">
-                                            <span><i class="fab fa-twitter"></i><span>Twitter</span></span>
-                                            <a href="javascript:void(0)">Connect</a>
-                                        </div>
-                                        <div class="connect-link">
-                                            <span><i class="fab fa-linkedin"></i><span>Linkedin</span></span>
-                                            <a href="javascript:void(0)">Connect</a>
-                                        </div>
-                                        <div class="connect-link">
-                                            <span><i class="fab fa-instagram"></i><span>Instagram</span></span>
-                                            <a href="javascript:void(0)">Connect</a>
-                                        </div>
+                                <div class="seetings-tab mb-30">
+                                    <div class="services_tab">
+                                        <ul class="nav" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#l-1" role="tab"
+                                                    aria-controls="l-1" aria-selected="false">
+                                                    <span class="title">Step 1</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-2" role="tab"
+                                                    aria-controls="l-2" aria-selected="false">
+                                                    <span class="title">Step 2</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-3" role="tab"
+                                                    aria-controls="l-3" aria-selected="false">
+                                                    <span class="title">Step 3</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-4" role="tab"
+                                                    aria-controls="l-4" aria-selected="false">
+                                                    <span class="title">Step 4</span>
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#l-5" role="tab"
+                                                    aria-controls="l-5" aria-selected="false">
+                                                    <span class="title">Step 5</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="sec_title text-center">
-                                    <h2>Step 3: Fill Up Your Basic Information</h2>
-                                </div>
-                                <!-- Profile Img -->
-                                <div class="form-group img-input">
-                                    <div class="label_img">Profile Image</div>
-                                    <label for="profile-img"><i class="fas fa-camera-alt"></i></label>
-                                    <input id="profile-img" type="file">
-                                </div>
-                                <!-- Cover Img -->
-                                <div class="form-group img-input">
-                                    <div class="label_img">Cover Image</div>
-                                    <label for="cover-img"><i class="fas fa-camera-alt"></i></label>
-                                    <input id="cover-img" type="file">
-                                </div>
 
-                                <!-- Localtion -->
-                                <div class="form-group">
-                                    <label for="loc">Address<sup>*</sup></label>
-                                    <input type="text" class="form-control" id="loc" placeholder="Enter Your Address"
-                                        required>
-                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="tab-content tab-border">
+                                                <!-- Select Category -->
+                                                <div class="tab-pane fade active show" id="l-1" role="tabpanel"
+                                                    aria-labelledby="l-tab-01">
+                                                    <div class="sec_title text-center">
+                                                        <h2>Select Categories For Your Contents</h2>
+                                                    </div>
+                                                    <div class="initial-cat">
+                                                        <div class="boxed-selects" data-max="3">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-1">
+                                                                <label class="custom-control-label"
+                                                                    for="cat-1">Sports</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-2">
+                                                                <label class="custom-control-label"
+                                                                    for="cat-2">Travel</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-3">
+                                                                <label class="custom-control-label" for="cat-3">Yoga
+                                                                    Classes</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-4">
+                                                                <label class="custom-control-label" for="cat-4"
+                                                                    checked>Entertainment</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-5">
+                                                                <label class="custom-control-label"
+                                                                    for="cat-5">Music</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-6">
+                                                                <label class="custom-control-label"
+                                                                    for="cat-6">News</label>
+                                                            </div>
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="cat-7">
+                                                                <label class="custom-control-label" for="cat-7">Trade
+                                                                    Shows</label>
+                                                            </div>
+                                                        </div>
+                                                        <small class="form-text text-muted mt-0">Pick Your Field Of
+                                                            Expertise Which Will Be
+                                                            Your Main Streaming Topic (Maximum 3 Can Be
+                                                            Selected)</small>
 
-                                <!-- About You -->
-                                <div class="form-group">
-                                    <label for="sup_des">About You<sup>*</sup></label>
-                                    <textarea class="form-control" id="sup_des" rows="6" placeholder="Write Here"
-                                        required></textarea>
-                                </div>
-                                <div class="sec_title text-center">
-                                    <h2>Step 4: Select Package</h2>
-                                </div>
-                                <div class="sec_title text-center">
-                                    <h2>Step 5: Select Payment Method</h2>
-                                </div>
-                                <div class="streamer-part">
-                                    <div class="form-row align-items-center pack-radio">
-                                        <div class="col-12 d-flex justify-content-between align-items-center mb-2">
-                                            <div class="label_img">Choose Package</div>
-                                            <!-- .Month/Year Switch -->
-                                            <div class="my-switch m-0">
-                                                <input type="checkbox" value="None" id="pay-s" name="check" checked />
-                                                <label for="pay-s"></label>
-                                            </div>
-                                            <!-- Month/Year Switch -->
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <input type="radio" name="packs" id="pack-1" value="pack-1">
-                                                <label for="pack-1">
-                                                    <div class="pack-title">
-                                                        Free
                                                     </div>
-                                                    <div class="pack_icon">
-                                                        <img src="assets/img/icon/tax-free.svg" alt="Icon">
+                                                    <button type="button"
+                                                        class="thm_btn br_btn add-btn btn_sub_cus_md mt-3 steps-press"
+                                                        data-target="#l-2">Next
+                                                        Step</button>
+                                                </div>
+                                                <!-- Connect To Social -->
+                                                <div class="tab-pane fade" id="l-2" role="tabpanel"
+                                                    aria-labelledby="l-tab-06">
+                                                    <div class="sec_title text-center">
+                                                        <h2>Connect To Your Social Account</h2>
                                                     </div>
-                                                    <div class="pack-price">
-                                                        0
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <input type="radio" name="packs" id="pack-2" value="pack-2">
-                                                <label for="pack-2">
-                                                    <div class="pack-title">
-                                                        Silver
-                                                    </div>
-                                                    <div class="pack_icon">
-                                                        <img src="assets/img/icon/money.svg" alt="Icon">
-                                                    </div>
-                                                    <div class="pack-price">
-                                                        45
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <input type="radio" name="packs" id="pack-3" value="pack-3">
-                                                <label for="pack-3">
-                                                    <div class="pack-title">
-                                                        Gold
-                                                    </div>
-                                                    <div class="pack_icon">
-                                                        <img src="assets/img/icon/p_03.png" alt="Icon">
-                                                    </div>
-                                                    <div class="pack-price">
-                                                        80
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <input type="radio" name="packs" id="pack-4" value="pack-4">
-                                                <label for="pack-4">
-                                                    <div class="pack-title">
-                                                        Platinum
-                                                    </div>
-                                                    <div class="pack_icon">
-                                                        <img src="assets/img/icon/p_02.png" alt="Icon">
-                                                    </div>
-                                                    <div class="pack-price">
-                                                        160
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <input type="radio" name="packs" id="pack-vip" value="pack-vip">
-                                                <label for="pack-vip">
-                                                    <div class="pack-title">
-                                                        Vip Package
-                                                    </div>
-                                                    <div class="pack_icon">
-                                                        <img src="assets/img/icon/diamond.svg" alt="Icon">
-                                                    </div>
-                                                    <div class="">
-                                                        contact us at: <a
-                                                            href="mailto:info@streamingplug.com">info@streamingplug.com</a>
-                                                    </div>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Acount -->
-                                <div class="col-12 p-0 d-none-nr streamer-part">
-                                    <hr class="price-br" data-text="Payment methods">
-                                    <div class="payment-choose-payout align-items-start">
-                                        <div class="custom-control custom-radio custom-control-inline mb-3">
-                                            <input type="radio" class="custom-control-input select-method" name="method"
-                                                id="card" value="card" data-target="#card-section" checked>
-                                            <label class="custom-control-label" for="card">Select Card</label>
-                                        </div>
-
-                                        <div id="card-section">
-                                            <div class="form-group">
-                                                <label>Select Your Payment
-                                                    Mathod<sup>*</sup></label>
-                                                <ul class="gateway-img">
-                                                    <li>
-                                                        <input type="radio" name="price" id="pal" value="pack-vip"
-                                                            data-target="#paypal-form">
-                                                        <label for="pal">
-                                                            <img src="./assets/img/payment/paypal.svg"
-                                                                alt="Payment Icon">
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="price" id="visa" value="pack-vip"
-                                                            data-target="#credit-form">
-                                                        <label for="visa">
-                                                            <img src="./assets/img/payment/visa.svg" alt="Payment Icon">
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="price" id="mastercard"
-                                                            value="pack-vip" data-target="#credit-form">
-                                                        <label for="mastercard">
-                                                            <img src="./assets/img/payment/mastercard.svg"
-                                                                alt="Payment Icon">
-                                                        </label>
-                                                    </li>
-                                                    <li>
-                                                        <input type="radio" name="price" id="americanexpress"
-                                                            value="pack-vip" data-target="#credit-form">
-                                                        <label for="americanexpress">
-                                                            <img src="./assets/img/payment/amex.svg" alt="Payment Icon">
-                                                        </label>
-                                                    </li>
-                                                </ul>
-
-                                            </div>
-                                            <div class="selected-card-form">
-                                                <div id="paypal-form" class="card-forms">
                                                     <div class="form-group">
-                                                        <label for="paypal-email">Email<sup>*</sup></label>
-                                                        <input type="email" class="form-control" id="paypal-email"
-                                                            placeholder="Enter Paypal Email">
+                                                        <label>Social Connect</label>
+                                                        <div class="social-connect">
+                                                            <div class="connect-link mb-4">
+                                                                <span><i
+                                                                        class="fab fa-facebook-f"></i><span>Facebook</span></span>
+                                                                <a href="javascript:void(0)">Connect</a>
+                                                            </div>
+                                                            <div class="connect-link mb-4">
+                                                                <span><i
+                                                                        class="fab fa-twitter"></i><span>Twitter</span></span>
+                                                                <a href="javascript:void(0)">Connect</a>
+                                                            </div>
+                                                            <div class="connect-link mb-4">
+                                                                <span><i
+                                                                        class="fab fa-linkedin"></i><span>Linkedin</span></span>
+                                                                <a href="javascript:void(0)">Connect</a>
+                                                            </div>
+                                                            <div class="connect-link mb-4">
+                                                                <span><i
+                                                                        class="fab fa-instagram"></i><span>Instagram</span></span>
+                                                                <a href="javascript:void(0)">Connect</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-3">
+                                                        <button type="button"
+                                                            class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
+                                                            data-target="#l-1">Previous
+                                                            Step</button>
+                                                        <button type="button"
+                                                            class="thm_btn br_btn add-btn btn_sub_cus_md ml-3 steps-press"
+                                                            data-target="#l-3">Next
+                                                            Step</button>
                                                     </div>
                                                 </div>
-                                                <div id="credit-form" class="card-forms">
+                                                <!-- Check Your Basic Informtion -->
+                                                <div class="tab-pane fade" id="l-3" role="tabpanel"
+                                                    aria-labelledby="l-tab-07">
+                                                    <div class="sec_title text-center">
+                                                        <h2>Check Out Your Basic Information</h2>
+                                                    </div>
+                                                    <!-- Name -->
                                                     <div class="form-row">
-                                                        <div class="col-md-12">
+                                                        <div class="col-md-6 col-12">
                                                             <div class="form-group">
-                                                                <label for="card-number">Card Number<sup>*</sup></label>
-                                                                <input type="number" class="form-control"
-                                                                    id="card-number" placeholder="Enter Card Number">
+                                                                <label for="fname">First Name<sup>*</sup></label>
+                                                                <input type="text" class="form-control" id="fname"
+                                                                    placeholder="Enter First Name">
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-6">
+                                                        <div class="col-md-6 col-12">
                                                             <div class="form-group">
-                                                                <label for="exp-date">Expire Date<sup>*</sup></label>
-                                                                <input type="text" class="form-control" id="exp-date"
-                                                                    placeholder="MM/YY">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-6">
-                                                            <div class="form-group pos-rel">
-                                                                <label for="cvv">CVV<sup>*</sup></label>
-                                                                <input type="number"
-                                                                    class="form-control pop-focus opt-pop" id="cvv"
-                                                                    placeholder="Enter CVV" data-container="body"
-                                                                    data-toggle="popover" data-placement="top"
-                                                                    data-list="#cvv-hint">
+                                                                <label for="lname">Last Name<sup>*</sup></label>
+                                                                <input type="text" class="form-control" id="lname"
+                                                                    placeholder="Enter Last Name">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                                    <!-- Email Phone -->
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="form-group">
+                                                                <label for="email">Email<sup>*</sup></label>
+                                                                <input type="email" class="form-control" id="email"
+                                                                    placeholder="Enter Email">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="form-group">
+                                                                <label for="fname">Phone<sup>*</sup></label>
+                                                                <input type="text" class="form-control" id="fname"
+                                                                    placeholder="Enter Phone Number" required>
+                                                            </div>
+                                                        </div>
 
-                                        <div class="custom-control custom-radio custom-control-inline mb-3">
-                                            <input type="radio" class="custom-control-input select-method" name="method"
-                                                id="bank" value="bank" data-target="#bank-section">
-                                            <label class="custom-control-label" for="bank">Enter Bank Statement</label>
-                                        </div>
+                                                    </div>
+                                                    <!-- Username And Role -->
+                                                    <div class="form-row">
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="form-group">
+                                                                <label for="username">Username<sup>*</sup></label>
+                                                                <input type="text" class="form-control" id="username"
+                                                                    placeholder="Enter Username">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-12">
+                                                            <div class="form-group">
+                                                                <label for="role">Select Role<sup>*</sup></label>
+                                                                <select class="custom-select" id="role" required>
+                                                                    <option value="Streamer"
+                                                                        data-target=".streamer-part"
+                                                                        data-action="steamer-form" selected>
+                                                                        Streamer</option>
+                                                                    <option value="Follower"
+                                                                        data-target=".follower-part"
+                                                                        data-action="follower-form">
+                                                                        Follower</option>
+                                                                    <option value="Affiliate"
+                                                                        data-target=".affiliate-part"
+                                                                        data-action="affiliate-form" selected>
+                                                                        Affiliate</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Profile Img -->
+                                                    <div class="form-group img-input">
+                                                        <div class="label_img">Profile Image</div>
+                                                        <label for="profile-img"><i
+                                                                class="fas fa-camera-alt"></i></label>
+                                                        <input id="profile-img" type="file">
+                                                    </div>
+                                                    <!-- Cover Img -->
+                                                    <div class="form-group img-input">
+                                                        <div class="label_img">Cover Image</div>
+                                                        <label for="cover-img"><i class="fas fa-camera-alt"></i></label>
+                                                        <input id="cover-img" type="file">
+                                                    </div>
+                                                    <div class="d-flex mt-3">
+                                                        <button type="button"
+                                                            class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
+                                                            data-target="#l-2">Previous
+                                                            Step</button>
+                                                        <button type="button"
+                                                            class="thm_btn br_btn add-btn btn_sub_cus_md ml-3 steps-press"
+                                                            data-target="#l-4">Next
+                                                            Step</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Pricing Packages -->
+                                                <div class="tab-pane fade" id="l-4" role="tabpanel"
+                                                    aria-labelledby="l-tab-10">
+                                                    <div class="mb-50">
+                                                        <div class="sec_title text-center position-relative">
+                                                            <h2>Select Your Pricing Plan</h2>
+                                                            <!-- .Month/Year Switch -->
+                                                            <div class="my-switch">
+                                                                <input type="checkbox" value="None" id="my-switch"
+                                                                    name="check" checked />
+                                                                <label for="my-switch"></label>
+                                                            </div>
+                                                            <!-- Month/Year Switch End -->
+                                                            <!-- Save 10% Text -->
+                                                            <span class="save-text">Save 10% For A Yearly Plan</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row justify-content-center gutters-5">
 
-                                        <div class="form-row" id="bank-section">
-                                            <div class="col-md-6 col-12">
-                                                <div class="form-group">
-                                                    <label for="bname">Bank<sup>*</sup></label>
-                                                    <input type="text" class="form-control" id="bname"
-                                                        placeholder="Enter Your Bank Name">
+                                                        <div class="col-md-3">
+                                                            <div class="pricing_single active text-center">
+                                                                <div class="price_head">
+                                                                    <span class="pack">Free</span>
+                                                                    <h2>0</h2>
+                                                                    <span class="time">Monthly</span>
+                                                                </div>
+                                                                <hr>
+
+                                                                <div class="pricing-content-container">
+                                                                    <ul class="pricing-content">
+                                                                        <li>Unlimited Subscribers</li>
+                                                                        <li>Live Streaming 2hr/Day</li>
+                                                                        <li>Live Chats And Comments</li>
+                                                                        <li>Unlimited Messages</li>
+                                                                        <li>Accept Tips</li>
+                                                                        <li>Up to 4 Videos Uploading/Month</li>
+                                                                        <li>No Ads</li>
+                                                                        <li>15% Deduction on Total Earnings And Tips
+                                                                        </li>
+                                                                        <li>No Processing Fees</li>
+                                                                        <li>24/7 Customer Service</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="price_icon">
+                                                                    <img src="assets/img/icon/tax-free.svg" alt="Icon">
+                                                                </div>
+                                                                <div class="price_btn pselect">
+                                                                    <a href="javascript:void(0)">select
+                                                                        plan</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="pricing_single text-center">
+                                                                <div class="price_head">
+                                                                    <span class="pack">Silver</span>
+                                                                    <h2>45</h2>
+                                                                    <span class="time">Monthly</span>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="pricing-content-container">
+                                                                    <ul class="pricing-content">
+                                                                        <li>Unlimited Subscribers</li>
+                                                                        <li>Live Streaming 4hr/Day</li>
+                                                                        <li>Live Chats And Comments</li>
+                                                                        <li>Unlimited Messages</li>
+                                                                        <li>Accept Tips</li>
+                                                                        <li>Up to 8 Videos Uploading/ Month</li>
+                                                                        <li>No Ads</li>
+                                                                        <li>No Deduction on Total Earnings And Tips</li>
+                                                                        <li>5% Processing Fees</li>
+                                                                        <li>24/7 Customer Service</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="price_icon">
+                                                                    <img src="assets/img/icon/money.svg" width="40"
+                                                                        alt="Icon">
+                                                                </div>
+                                                                <div class="price_btn pselect">
+                                                                    <a href="javascript:void(0)">select
+                                                                        plan</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="pricing_single text-center">
+                                                                <span class="recommend">Recommended</span>
+                                                                <div class="price_head">
+                                                                    <span class="pack">Gold</span>
+                                                                    <h2>80</h2>
+                                                                    <span class="time">Monthly</span>
+                                                                </div>
+                                                                <hr>
+                                                                <div class="pricing-content-container">
+                                                                    <ul class="pricing-content">
+                                                                        <li>Unlimited Subscribers</li>
+                                                                        <li>Live Streaming 6hr/Day</li>
+                                                                        <li>Live Chats And Comments</li>
+                                                                        <li>Unlimited Messages</li>
+                                                                        <li>Accept Tips</li>
+                                                                        <li>Accept Crypto Currency</li>
+                                                                        <li>Up to 16 Videos Uploading/ Month</li>
+                                                                        <li>Accept Ads And Earn 5% From Ads Revenue</li>
+                                                                        <li>No Deduction on Total Earnings And Tips</li>
+                                                                        <li>5% Processing Fees</li>
+                                                                        <li>24/7 Customer Service</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="price_icon">
+                                                                    <img src="assets/img/icon/p_03.png" alt="Icon">
+                                                                </div>
+                                                                <div class="price_btn pselect">
+                                                                    <a href="javascript:void(0)">select
+                                                                        plan</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="pricing_single text-center">
+                                                                <div class="price_head">
+                                                                    <span class="pack">Platinum</span>
+                                                                    <h2>160</h2>
+                                                                    <span class="time">Monthly</span>
+                                                                </div>
+                                                                <hr>
+
+                                                                <div class="pricing-content-container">
+                                                                    <ul class="pricing-content">
+                                                                        <li>Unlimited Subscribers</li>
+                                                                        <li>Live Streaming 8hr/Day</li>
+                                                                        <li>Live Chat And Comments</li>
+                                                                        <li>Unlimited Messages</li>
+                                                                        <li>Accept Tips</li>
+                                                                        <li>Accept Crypto Currency</li>
+                                                                        <li>Up to 20 Videos Uploading/Month</li>
+                                                                        <li>Accept Ads And Earn 10% From Ads Revenue
+                                                                        </li>
+                                                                        <li>No Deduction On Total Earnings And Tips</li>
+                                                                        <li>5% Processing Fees</li>
+                                                                        <li>24/7 Customer Service</li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="price_icon">
+                                                                    <img src="assets/img/icon/p_02.png" alt="Icon">
+                                                                </div>
+                                                                <div class="price_btn pselect">
+                                                                    <a href="javascript:void(0)">select
+                                                                        plan</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 d-none d-md-block">
+                                                            <hr class="price-br" data-text="Our VIP Package" />
+                                                        </div>
+                                                        <div class="col-lg-5 col-md-8 col-12  mt-md-0 mt-sm-4">
+                                                            <div class="pricing_single text-center">
+                                                                <div class="price_head">
+                                                                    <span class="pack mb-2">VIP Package</span>
+                                                                    <h4>Packages For Clebrities, Ngo'S And Enterprises.
+                                                                    </h4>
+                                                                </div>
+                                                                <hr>
+
+                                                                <div class="pricing-content-container min-h-auto">
+                                                                    <ul class="pricing-content">
+                                                                        <li>Please contact at: <a
+                                                                                href="mailto:info@streamingplug.com">info@streamingplug.com</a>
+                                                                            for
+                                                                            customized packages.
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="price_icon">
+                                                                    <img src="assets/img/icon/diamond.svg" alt="Icon">
+                                                                </div>
+                                                                <div class="price_btn">
+                                                                    <a href="javascript:void(0)" target="_blank">select
+                                                                        plan</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex mt-3">
+                                                        <button type="button"
+                                                            class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
+                                                            data-target="#l-3">Previous
+                                                            Step</button>
+                                                        <button type="button"
+                                                            class="thm_btn br_btn add-btn btn_sub_cus_md ml-3 steps-press"
+                                                            data-target="#l-5">Next
+                                                            Step</button>
+                                                    </div>
+                                                </div>
+                                                <!-- Payment -->
+                                                <div class="tab-pane fade" id="l-5" role="tabpanel"
+                                                    aria-labelledby="l-tab-04">
+                                                    <div class="payment-choose-payout align-items-start ">
+                                                        <div
+                                                            class="custom-control custom-radio custom-control-inline mb-3">
+                                                            <input type="radio"
+                                                                class="custom-control-input select-method" name="method"
+                                                                id="card" value="card" data-target="#card-section"
+                                                                checked>
+                                                            <label class="custom-control-label" for="card">Select
+                                                                Card</label>
+                                                        </div>
+
+                                                        <div id="card-section">
+                                                            <div class="form-group">
+                                                                <label>Select Your Payment
+                                                                    Mathod<sup>*</sup></label>
+                                                                <ul class="gateway-img">
+                                                                    <li>
+                                                                        <input type="radio" name="price" id="pal"
+                                                                            value="pack-vip" data-target="#paypal-form">
+                                                                        <label for="pal">
+                                                                            <img src="./assets/img/payment/paypal.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="price" id="visa"
+                                                                            value="pack-vip" data-target="#credit-form">
+                                                                        <label for="visa">
+                                                                            <img src="./assets/img/payment/visa.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="price" id="mastercard"
+                                                                            value="pack-vip" data-target="#credit-form">
+                                                                        <label for="mastercard">
+                                                                            <img src="./assets/img/payment/mastercard.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="radio" name="price"
+                                                                            id="americanexpress" value="pack-vip"
+                                                                            data-target="#credit-form">
+                                                                        <label for="americanexpress">
+                                                                            <img src="./assets/img/payment/amex.svg"
+                                                                                alt="Payment Icon">
+                                                                        </label>
+                                                                    </li>
+                                                                </ul>
+
+                                                            </div>
+                                                            <div class="selected-card-form">
+                                                                <div id="paypal-form" class="card-forms">
+                                                                    <div class="form-group">
+                                                                        <label
+                                                                            for="paypal-email">Email<sup>*</sup></label>
+                                                                        <input type="email" class="form-control"
+                                                                            id="paypal-email"
+                                                                            placeholder="Enter Paypal Email">
+                                                                    </div>
+                                                                </div>
+                                                                <div id="credit-form" class="card-forms">
+                                                                    <div class="form-row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label for="card-number">Card
+                                                                                    Number<sup>*</sup></label>
+                                                                                <input type="number"
+                                                                                    class="form-control"
+                                                                                    id="card-number"
+                                                                                    placeholder="Enter Card Number">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group">
+                                                                                <label for="exp-date">Expire
+                                                                                    Date<sup>*</sup></label>
+                                                                                <input type="text" class="form-control"
+                                                                                    id="exp-date" placeholder="MM/YY">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group pos-rel">
+                                                                                <label for="cvv">CVV<sup>*</sup></label>
+                                                                                <input type="number"
+                                                                                    class="form-control pop-focus opt-pop"
+                                                                                    id="cvv" placeholder="Enter CVV"
+                                                                                    data-container="body"
+                                                                                    data-toggle="popover"
+                                                                                    data-placement="top"
+                                                                                    data-list="#cvv-hint">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="custom-control custom-radio custom-control-inline mb-3">
+                                                            <input type="radio"
+                                                                class="custom-control-input select-method" name="method"
+                                                                id="bank" value="bank" data-target="#bank-section">
+                                                            <label class="custom-control-label" for="bank">Enter Bank
+                                                                Statement</label>
+                                                        </div>
+
+                                                        <div class="form-row" id="bank-section">
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="bname">Bank<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="bname"
+                                                                        placeholder="Enter Your Bank Name">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="bbrance">Branch<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="bbrance"
+                                                                        placeholder="Enter Your Bank Branch">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="ano">Account
+                                                                        No<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="ano"
+                                                                        placeholder="Enter Account No.">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="button"
+                                                        class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
+                                                        data-target="#l-4">Previous
+                                                        Step</button>
+                                                    <button type="button"
+                                                        class="thm_btn br_btn add-btn btn_sub_cus_md ml-3 steps-press">Finish</button>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-12">
-                                                <div class="form-group">
-                                                    <label for="bbrance">Branch<sup>*</sup></label>
-                                                    <input type="text" class="form-control" id="bbrance"
-                                                        placeholder="Enter Your Bank Branch">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-12">
-                                                <div class="form-group">
-                                                    <label for="ano">Account
-                                                        No<sup>*</sup></label>
-                                                    <input type="text" class="form-control" id="ano"
-                                                        placeholder="Enter Account No.">
-                                                </div>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center">
-                                    <button type="submit" class="thm_btn br_btn btn_sub_cus_big">Submit</button>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- Edit details forms -->
+            <!-- team details end -->
         </main>
         <!-- main body end -->
-        <!-- Pop Up -->
-        <div id="popup-holder">
-            <div id="cvv-hint">
-                <div class="mb-1">
-                    <img src='./assets/img/cvv.png' class="cvv-img">
-                </div>
-                <div class='text-center'>The CVV is the 3 digit number on the back of your card.</div>
-            </div>
-        </div>
+
+
+
         <!-- footer start -->
         <footer class="footer_area footer_bg footer_3">
             <div class="footer_bottom pt-110 pb-70">
@@ -633,57 +893,47 @@
 
     <!-- jquery include -->
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.barfiller.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/sweetalert2.js"></script>
+    <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
 
+        // disabeling other tabs
+        $("#myTab").find(".nav-link:not(.active)").each(function () {
 
-        // Package Price Change
-        $(".pack-price").each(function () {
-            var price = $(this).text();
-            var priceSpan = `<span class="old-price d-none">` + price + `</span>`;
-            $(this).parent().append(priceSpan);
+            $(this).addClass("disabled-click");
+        })
+        // Package selects
+        $(".pselect").click(function (e) {
+            e.preventDefault();
+            $(".pselect").parent().removeClass("active");
+            $(this).parent().addClass("active");
         })
 
-        $("#pay-s").change(function () {
-            if (!this.checked) {
-                $(".pack-price").each(function () {
-                    var price = $(this).parent().find(".old-price").text();
-                    var percent = (price * 10) / 100;
-                    $(this).text(Math.floor(price * 12 - percent));
-                })
-            }
-            else {
-                $(".pack-price").each(function () {
-                    var price = $(this).parent().find(".old-price").text();
-                    $(this).text(price);
-
-                })
-            }
+        // Step Chnage Sign Up
+        $(".steps-press").each(function () {
+            $(this).click(function (e) {
+                e.preventDefault();
+                let target = $(this).data("target");
+                $(this)
+                    .parents()
+                    .find("#myTab .nav-link[href='" + target + "']")
+                    .click();
+                // $("#scroll").click();
+            });
         });
-
-        var target = $('#role').find('option:selected').data("target");
-        var action = $('#role').find('option:selected').data("action");
-        $(target).show();
-
-        // Role Swith
-        $('#role').change(function () {
-            var target = $(this).find('option:selected').data("target");
-            var action = $(this).find('option:selected').data("action");
-            $('.form_cus').attr('action', action)
-            $('.form_cus').find('.d-none-nr').slideUp();
-            $(target).slideDown();
-        })
-
     </script>
+
 </body>
 
 </html>
