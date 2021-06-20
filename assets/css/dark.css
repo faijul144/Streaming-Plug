@@ -140,11 +140,14 @@ body.dark-mode .pricing_single .price_btn a,
 body.dark-mode .custom-select,
 body.dark-mode .form-control:focus,
 body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
-body.dark-mode .aff-table tr th,
-body.dark-mode .aff-table tr td,
-body.dark-mode .pack-price,
 body.dark-mode .aff-link input {
   border-color: #252525;
+}
+
+body.dark-mode .aff-table tr th,
+body.dark-mode .aff-table tr td,
+body.dark-mode .pack-price {
+  border-color: #0d0d0d;
 }
 
 body.dark-mode .modal-header,
@@ -187,11 +190,14 @@ body.dark-mode .inputed-list > div .sm-action button {
 
 body.dark-mode .team_left,
 body.dark-mode .pricing_single,
-body.dark-mode .stat-card,
-body.dark-mode .acc-detail-top div,
 body.dark-mode .team_single .team_text,
 body.dark-mode .team_single {
   background: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .acc-detail-top div {
+  background: linear-gradient(to bottom right, #000 0%, #101010 50%, #000 100%);
 }
 
 body.dark-mode .form-control:focus,

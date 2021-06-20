@@ -149,12 +149,16 @@ body.dark-mode {
   .custom-select,
   .form-control:focus,
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
-  .aff-table tr th,
-  .aff-table tr td,
-  .pack-price,
   .aff-link input {
     border-color: $darkBorderColor;
   }
+
+  .aff-table tr th,
+  .aff-table tr td,
+  .pack-price {
+    border-color: #0d0d0d;
+  }
+
   .modal-header,
   .stat-list li {
     border-color: darken($darkBorderColor, 5%);
@@ -193,11 +197,19 @@ body.dark-mode {
   }
   .team_left,
   .pricing_single,
-  .stat-card,
-  .acc-detail-top div,
   .team_single .team_text,
   .team_single {
     background: $bgGradient;
+  }
+
+  .stat-card,
+  .acc-detail-top div {
+    background: linear-gradient(
+      to bottom right,
+      #000 0%,
+      #101010 50%,
+      #000 100%
+    );
   }
 
   .form-control:focus,

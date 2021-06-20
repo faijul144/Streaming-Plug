@@ -82,6 +82,8 @@
                                                 <li><a href="javascript:void(0)">French</a></li>
                                                 <li><a href="javascript:void(0)">Spanish</a></li>
                                                 <li><a href="javascript:void(0)">Russian</a></li>
+                                                <li><a href="javascript:void(0)">Romanian</a></li>
+                                                <li><a href="javascript:void(0)">Hungarian</a></li>
                                                 <li><a href="javascript:void(0)">Arabic</a></li>
                                                 <li><a href="javascript:void(0)">German</a></li>
                                                 <li><a href="javascript:void(0)">Chinese</a></li>
@@ -273,6 +275,8 @@
                                                 <li><a href="javascript:void(0)">French</a></li>
                                                 <li><a href="javascript:void(0)">Spanish</a></li>
                                                 <li><a href="javascript:void(0)">Russian</a></li>
+                                                <li><a href="javascript:void(0)">Romanian</a></li>
+                                                <li><a href="javascript:void(0)">Hungarian</a></li>
                                                 <li><a href="javascript:void(0)">Arabic</a></li>
                                                 <li><a href="javascript:void(0)">German</a></li>
                                                 <li><a href="javascript:void(0)">Chinese</a></li>
@@ -406,8 +410,8 @@
                                                         <div class="col-md-3 mb-30">
                                                             <div class="stat-card">
                                                                 <h3>Time Left</h3>
-                                                                <div class="stat-count count-down" data-count="30"
-                                                                    data-date="2021-10-20">
+                                                                <div class="stat-count count-down" data-month="1"
+                                                                    data-startdate="2021,5,29">
                                                                 </div>
 
                                                             </div>
@@ -1256,9 +1260,10 @@
         });
 
         // Day Counter
-        var countDown = new Date();
-        var setDate = $('.count-down').data('date').split("-")
-        countDown.setFullYear(parseInt(setDate[0]), parseInt(setDate[1]), parseInt(setDate[2]) + $('.count-down').data('count'));
+        var startdate = $(".count-down").data('startdate');
+        var addMonth = $(".count-down").data('month');
+        var countDown = new Date(startdate);
+        addMonths(countDown, addMonth);
         // Update the count down every 1 second
         var x = setInterval(function () {
             var today = new Date();
@@ -1273,11 +1278,20 @@
                 clearInterval(x);
                 $('.count-down').text(hours + "h " + minutes + "m " + seconds + "s");
             }
-            if (distance < 0) {
+            if (distance <= 0) {
                 clearInterval(x);
                 $('.count-down').text('EXPIRED');
             }
         }, 1000);
+        //Month Add
+        function addMonths(date, months) {
+            var d = date.getDate();
+            date.setMonth(date.getMonth() + +months);
+            if (date.getDate() != d) {
+                date.setDate(0);
+            }
+            return date;
+        }
     </script>
 
 </body>

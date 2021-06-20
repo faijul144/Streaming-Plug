@@ -7162,3 +7162,9 @@ font-size: 16px;
 .privacy-action .custom-radio{
 	margin-bottom: 0;
 }
+
+/* Category Select Page */
+.boxed-selects.cat-select>div{
+	flex:0 0 50%;
+	width:50%;
+}
