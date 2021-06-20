@@ -1,0 +1,316 @@
+$primaryDark: #151515;
+$secondaryDark: #212121;
+$mainBgColor: #101010;
+$darkBlack: #000;
+$activeBg: #333333;
+$bgGradient: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
+$darkBorderColor: #252525;
+$primaryWhite: #fff;
+$bodyColorDefault: #c7c7c7;
+$themePrimary: #ff9100;
+$darkBgBlackColor: #6d6d6d;
+
+body.dark-mode {
+  color: $bodyColorDefault;
+  background: $mainBgColor;
+  p,
+  .comment-opt ul li a,
+  .input-text-opt a,
+  .input-text-opt button,
+  .comentar-name a,
+  .side-mobile-menu ul li a,
+  .side-mobile-menu ul li .dl.check-green span,
+  .profile-opt,
+  .about-list li p,
+  .close,
+  .custom-select,
+  .deletion-part,
+  #goodbymodal .modal-body,
+  .usub-modal .modal-body,
+  #goodbymodal p,
+  .usub-modal p,
+  .services_tab .nav-link,
+  input,
+  textarea,
+  select,
+  option,
+  input:focus,
+  select:focus,
+  .post-set,
+  .about-list li a,
+  .datepicker table tr td.active,
+  .datepicker table tr td.active.disabled,
+  .datepicker table tr td.active.disabled:hover,
+  .datepicker table tr td.active:hover,
+  .aff-table tr th {
+    color: $bodyColorDefault;
+  }
+
+  .thm_btn-black {
+    background: $darkBlack;
+  }
+
+  .main-post a,
+  #goodbymodal p a,
+  .usub-modal p a {
+    color: $themePrimary;
+  }
+
+  .header_cus .header_wrap,
+  .team_details .td_social li a,
+  .team_social li a,
+  .create-post,
+  .card,
+  .file-formate,
+  .close-mobile-menu,
+  .mob-bottom-menu > div,
+  .modal-content,
+  .aff-img .aff-link {
+    background: $primaryDark;
+  }
+
+  .header_cus .main_menu ul li a:not(:hover),
+  .pro-img-thumb ul li .dl.check-green span,
+  .team_details .td_social li a,
+  .team_social li a,
+  .posting-opt > div > label,
+  .posting-opt > div > a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  #backtotop #scroll,
+  .mob-bottom-menu > div a.icon-link i,
+  .post-setting-list a,
+  #sup_form a,
+  .form_cus a,
+  #sup_form a,
+  .form_cus a,
+  .popover-body,
+  .popover .post-setting-list label,
+  .dropdown-item,
+  .skills li a,
+  .inputed-list > div .sm-action button i,
+  .dropdown-menu,
+  .pack-price {
+    color: $primaryWhite;
+  }
+
+  .posting-opt > div,
+  input,
+  textarea,
+  select,
+  .comment-text,
+  .post-options,
+  .audio-bg,
+  .green-audio-player .slider,
+  .boxed-selects .pr-input.checked,
+  .slide-bar,
+  .popover-body,
+  .custom-control-label::before,
+  .price-br::before,
+  .notification-box,
+  .check-green label,
+  .aff-table .action-list li a:hover,
+  .pack-radio div:not(.my-switch) > label {
+    background: $secondaryDark;
+  }
+
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: darken($secondaryDark, 2%);
+  }
+
+  .team_details .td_social li a:hover,
+  .team_social li a:hover,
+  .skills li a:hover {
+    background: lighten($secondaryDark, 10%);
+  }
+
+  .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
+  .bs-popover-bottom > .arrow::after {
+    border-bottom-color: $secondaryDark;
+  }
+  .bs-popover-auto[x-placement^="top"] > .arrow::after,
+  .bs-popover-top > .arrow::after {
+    border-top-color: $secondaryDark;
+  }
+
+  .skills li a,
+  .create-post textarea,
+  .posting-opt > div:not(:last-child),
+  .comment-from,
+  .mob-bottom-menu > div:not(:last-child),
+  .streamer_thumb .pro-img,
+  .streamer_thumb.steamer-status::after,
+  .form-control,
+  .custom-control-label::before,
+  .connect-link,
+  hr,
+  .pricing_single .price_btn a,
+  .custom-select,
+  .form-control:focus,
+  .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+  .aff-link input,
+  .page-link {
+    border-color: $darkBorderColor;
+  }
+
+  .aff-table tr th,
+  .aff-table tr td,
+  .pack-price {
+    border-color: #0d0d0d;
+  }
+
+  .modal-header,
+  .stat-list li {
+    border-color: darken($darkBorderColor, 5%);
+  }
+
+  .deletion-part,
+  #goodbymodal .modal-body,
+  .usub-modal .modal-body {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
+  }
+
+  .main_menu ul li ul.submenu,
+  .main_menu ul li.nf ul.submenu li.see-all {
+    box-shadow: none;
+    background: darken($secondaryDark, 7%);
+  }
+
+  .main_menu ul li.pro-img-thumb .submenu li:last-child,
+  .main_menu ul li.nf ul.submenu li.see-all {
+    border-color: darken($darkBorderColor, 6%);
+  }
+
+  .bg-white {
+    background-color: $mainBgColor !important;
+  }
+  .header_4 .sticky .header_btn .thm_btn::before,
+  .custom-control-input:disabled ~ .custom-control-label::before,
+  .custom-control-input[disabled] ~ .custom-control-label::before {
+    background-color: $mainBgColor;
+  }
+
+  .services_tab .nav-link.active,
+  .skills li a,
+  .inputed-list > div .sm-action button {
+    background-color: $activeBg;
+  }
+  .team_left,
+  .pricing_single,
+  .team_single .team_text,
+  .team_single {
+    background: $bgGradient;
+  }
+
+  .stat-card,
+  .acc-detail-top div {
+    background: $darkBlack;
+  }
+
+  .form-control:focus,
+  input:focus,
+  .green-audio-player .slider .gap-progress,
+  #backtotop,
+  .form-control:disabled,
+  .form-control[readonly] {
+    background: $darkBlack;
+  }
+
+  a:hover,
+  .streamer-about p a,
+  .about-list li a:hover {
+    color: $themePrimary;
+  }
+
+  .acc-detail-top div {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.38);
+  }
+
+  .thm_btn {
+    &:not(.thm_btn-black)::before {
+      background: $primaryWhite;
+    }
+    &:not(.thm_btn-black):hover {
+      color: $darkBlack;
+      background: $primaryWhite;
+    }
+    &.br_btn:hover {
+      color: $darkBlack !important;
+    }
+  }
+  .header_4 .sticky .header_btn .thm_btn:hover,
+  .services_tab .nav-link,
+  .swal2-popup {
+    background: $darkBlack;
+  }
+
+  .header_4.header_cus .header_btn .thm_btn:hover,
+  .masonry_active button:hover {
+    background: $darkBlack !important;
+  }
+
+  .pricing_single .price_icon,
+  .disclaimer {
+    background: $secondaryDark;
+  }
+  .pricing_single .price_icon img,
+  .pack_icon img {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+  }
+
+  .streamer_thumb.steamer-status::after,
+  .boxed-selects > div > label,
+  .swal2-popup.swal2-toast,
+  .disclaimer {
+    box-shadow: none;
+  }
+  .pop-share-links a,
+  .datepicker table tr td.day.focused,
+  .datepicker table tr td.day:hover,
+  .account-ac button,
+  .masonry_active button,
+  .page-link,
+  .team_single .team_text ul.cat li a {
+    background: $secondaryDark;
+    color: $primaryWhite;
+  }
+
+  .dropdown-menu {
+    background: lighten($primaryDark, 3%);
+  }
+
+  .datepicker-dropdown:before,
+  .datepicker-dropdown:after {
+    border-bottom-color: lighten($primaryDark, 3%);
+  }
+  .datepicker-dropdown.datepicker-orient-top:after,
+  .datepicker-dropdown.datepicker-orient-top:before {
+    border-top-color: lighten($primaryDark, 3%);
+  }
+
+  .team_single .team_text ul.cat li a:hover,
+  .account-ac button:hover {
+    background: $themePrimary;
+    color: $primaryWhite;
+    text-shadow: none;
+  }
+
+  .close {
+    text-shadow: none;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  th {
+    font-weight: normal;
+  }
+}
