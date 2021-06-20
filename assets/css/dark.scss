@@ -12,6 +12,7 @@ $darkBgBlackColor: #6d6d6d;
 
 body.dark-mode {
   color: $bodyColorDefault;
+  background: $mainBgColor;
   p,
   .comment-opt ul li a,
   .input-text-opt a,
@@ -149,7 +150,9 @@ body.dark-mode {
   .custom-select,
   .form-control:focus,
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
-  .aff-link input {
+  .aff-link input,
+  .page-link,
+  .pagination .page-item.active .page-link {
     border-color: $darkBorderColor;
   }
 
@@ -267,7 +270,9 @@ body.dark-mode {
   .pop-share-links a,
   .datepicker table tr td.day.focused,
   .datepicker table tr td.day:hover,
-  .account-ac button {
+  .account-ac button,
+  .page-link,
+  .pagination .page-item.active .page-link {
     background: $secondaryDark;
     color: $primaryWhite;
   }

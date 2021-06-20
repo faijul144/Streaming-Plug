@@ -1,5 +1,6 @@
 body.dark-mode {
   color: #c7c7c7;
+  background: #101010;
 }
 
 body.dark-mode p,
@@ -140,7 +141,9 @@ body.dark-mode .pricing_single .price_btn a,
 body.dark-mode .custom-select,
 body.dark-mode .form-control:focus,
 body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
-body.dark-mode .aff-link input {
+body.dark-mode .aff-link input,
+body.dark-mode .page-link,
+body.dark-mode .pagination .page-item.active .page-link {
   border-color: #252525;
 }
 
@@ -263,7 +266,9 @@ body.dark-mode .disclaimer {
 body.dark-mode .pop-share-links a,
 body.dark-mode .datepicker table tr td.day.focused,
 body.dark-mode .datepicker table tr td.day:hover,
-body.dark-mode .account-ac button {
+body.dark-mode .account-ac button,
+body.dark-mode .page-link,
+body.dark-mode .pagination .page-item.active .page-link {
   background: #212121;
   color: #fff;
 }
