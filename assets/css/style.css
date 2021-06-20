@@ -4754,17 +4754,12 @@ font-size: 16px;
     font-weight: 500;
 }
 
-.pagination .page-link:hover{
-	color: #ff9100;
-	background-color:#f3f3f3;
-	border-color: #dee2e6;
+.pagination .page-link:hover,.pagination .page-item.active .page-link{
+	color: #f3f3f3;
+	background-color:#ff9100;
+	border-color: #ff9100;
 }
 
-.pagination .page-item.active .page-link{
-	color: #0c0c0c;
-	background-color:#f3f3f3;
-	border-color: #dee2e6;
-}
 
 [data-toggle="tooltip"]{
 	cursor: pointer;

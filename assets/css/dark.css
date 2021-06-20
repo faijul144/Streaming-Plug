@@ -102,8 +102,7 @@ body.dark-mode .price-br::before,
 body.dark-mode .notification-box,
 body.dark-mode .check-green label,
 body.dark-mode .aff-table .action-list li a:hover,
-body.dark-mode .pack-radio div:not(.my-switch) > label,
-body.dark-mode .pagination .page-link:hover {
+body.dark-mode .pack-radio div:not(.my-switch) > label {
   background: #212121;
 }
 
@@ -143,9 +142,7 @@ body.dark-mode .custom-select,
 body.dark-mode .form-control:focus,
 body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
 body.dark-mode .aff-link input,
-body.dark-mode .page-link,
-body.dark-mode .pagination .page-item.active .page-link,
-body.dark-mode .pagination .page-link:hover {
+body.dark-mode .page-link {
   border-color: #252525;
 }
 
@@ -269,8 +266,7 @@ body.dark-mode .pop-share-links a,
 body.dark-mode .datepicker table tr td.day.focused,
 body.dark-mode .datepicker table tr td.day:hover,
 body.dark-mode .account-ac button,
-body.dark-mode .page-link,
-body.dark-mode .pagination .page-item.active .page-link {
+body.dark-mode .page-link {
   background: #212121;
   color: #fff;
 }

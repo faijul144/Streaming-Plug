@@ -112,8 +112,7 @@ body.dark-mode {
   .notification-box,
   .check-green label,
   .aff-table .action-list li a:hover,
-  .pack-radio div:not(.my-switch) > label,
-  .pagination .page-link:hover {
+  .pack-radio div:not(.my-switch) > label {
     background: $secondaryDark;
   }
 
@@ -152,9 +151,7 @@ body.dark-mode {
   .form-control:focus,
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
   .aff-link input,
-  .page-link,
-  .pagination .page-item.active .page-link,
-  .pagination .page-link:hover {
+  .page-link {
     border-color: $darkBorderColor;
   }
 
@@ -273,8 +270,7 @@ body.dark-mode {
   .datepicker table tr td.day.focused,
   .datepicker table tr td.day:hover,
   .account-ac button,
-  .page-link,
-  .pagination .page-item.active .page-link {
+  .page-link {
     background: $secondaryDark;
     color: $primaryWhite;
   }
