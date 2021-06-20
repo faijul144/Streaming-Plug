@@ -542,4 +542,26 @@
         $(target).slideDown();
       }
     });
+
+  // Textarea Text Limit
+  $("textarea[data-limit]").each(function () {
+    $(this)
+      .parent()
+      .find("label")
+      .append(`<span class="text-length ml-1"></span>`);
+    $(this).on("keydown keyup change", function (e) {
+      let limit = $(this).data("limit");
+      $(this)
+        .parent()
+        .find(".text-length")
+        .text(`${$(this).val().length} - ${limit}`);
+      if (
+        $(this).val().length >= limit &&
+        e.keyCode !== 46 &&
+        e.keyCode !== 8
+      ) {
+        e.preventDefault();
+      }
+    });
+  });
 })(jQuery);
