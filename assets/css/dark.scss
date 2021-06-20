@@ -112,7 +112,8 @@ body.dark-mode {
   .notification-box,
   .check-green label,
   .aff-table .action-list li a:hover,
-  .pack-radio div:not(.my-switch) > label {
+  .pack-radio div:not(.my-switch) > label,
+  .pagination .page-link:hover {
     background: $secondaryDark;
   }
 
@@ -152,7 +153,8 @@ body.dark-mode {
   .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
   .aff-link input,
   .page-link,
-  .pagination .page-item.active .page-link {
+  .pagination .page-item.active .page-link,
+  .pagination .page-link:hover {
     border-color: $darkBorderColor;
   }
 
@@ -310,24 +312,5 @@ body.dark-mode {
   h6,
   th {
     font-weight: normal;
-  }
-
-  .team_single .team_thumb {
-    .team_avatar {
-      z-index: 1;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: block;
-      background: #000;
-      opacity: 0.2;
-      pointer-events: none;
-      z-index: 0;
-    }
   }
 }
