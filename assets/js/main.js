@@ -385,7 +385,7 @@
       $('[data-toggle="popover"]').popover("hide");
     }
   });
-
+  // To make copy work on pop over
   $(".opt-pop").each(function () {
     var pthis = $(this);
     var pop_list = $(this).data("list");
@@ -413,9 +413,30 @@
     });
   </script>`);
     }
+
     var content = $(pop_list).html();
 
     $(this).attr("data-content", content);
+  });
+
+  // Copy Function
+  $(".clipboard").on("click", function (e) {
+    var $url = $(location).attr("href");
+    var $temp = $("<input>");
+    $("body").append($temp);
+    e.preventDefault();
+    $temp.val($url).select();
+    document.execCommand("copy");
+    Swal.fire({
+      position: "bottom-end",
+      icon: "success",
+      title: "Copied",
+      showConfirmButton: false,
+      timer: 800,
+      toast: true,
+      iconColor: "#ff9100",
+    });
+    $temp.remove();
   });
 
   //Used In Simulation

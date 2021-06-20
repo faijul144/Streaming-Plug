@@ -253,7 +253,8 @@ body.dark-mode .pack_icon img {
 }
 
 body.dark-mode .streamer_thumb.steamer-status::after,
-body.dark-mode .boxed-selects > div > label {
+body.dark-mode .boxed-selects > div > label,
+body.dark-mode .swal2-popup.swal2-toast {
   box-shadow: none;
 }
 

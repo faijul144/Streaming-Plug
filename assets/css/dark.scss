@@ -258,7 +258,8 @@ body.dark-mode {
   }
 
   .streamer_thumb.steamer-status::after,
-  .boxed-selects > div > label {
+  .boxed-selects > div > label,
+  .swal2-popup.swal2-toast {
     box-shadow: none;
   }
   .pop-share-links a,
