@@ -708,7 +708,7 @@
     font-size: 18px;
 }
 
-.acc-detail-top div{
+.acc-detail-top>div{
     padding: 0;
     width: 100%;
     margin-bottom: 15px;

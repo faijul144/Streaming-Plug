@@ -529,6 +529,7 @@
   $(".card-forms").hide();
   if ($(".gateway-img").find("input").is(":checked")) {
     $(".card-forms").slideUp();
+    let target = $(".gateway-img").find("input:checked").data("target");
     $(target).slideDown();
   }
 

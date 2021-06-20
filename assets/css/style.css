@@ -6311,7 +6311,7 @@ border-color: #0c0c0c;
 	justify-content: center;
 }
 
-.acc-detail-top div{
+.acc-detail-top>div{
 	padding: 10px 70px;
     background: linear-gradient(to bottom right,rgb(255, 255, 255) 0%, rgb(247 247 247) 50%, rgb(255 255 255) 100%);
     box-shadow: 0 0 3px rgba(0, 0, 0, .36);
@@ -6324,6 +6324,7 @@ border-color: #0c0c0c;
     justify-content: center;
     margin:  0 10px 10px;
 	text-align: center;
+	position: relative;
 }
 
 .acc-detail-top div p{
@@ -7169,4 +7170,71 @@ font-size: 16px;
 .boxed-selects.cat-select>div{
 	flex:0 0 50%;
 	width:50%;
+}
+
+/* Account Card Add */
+.account-ac{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: flex;
+	opacity: 0;
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+}
+
+.acc-detail-top>div:hover .account-ac{
+	opacity: 0.8;
+}
+
+.acc-detail-top>div.currently-active::before{
+	content: "Active Gatway";
+	position: absolute;
+	top: 6px;
+	left: 6px;
+	color: #0c0c0c;
+	opacity: 0.8;
+	font-size: 12px;
+	background: #eee;
+	padding: 3px 10px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-ms-border-radius: 100px;
+	-o-border-radius: 100px;
+}
+
+.account-ac button{
+	padding: 2px 8px;
+	margin-left: 8px;
+	font-size: 12px;
+	background: #f1f1f1;
+	color: #0c0c0c;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, .36);
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+}
+
+.account-ac button:hover{
+	transform: translateY(-3px);
+	-webkit-transform: translateY(-3px);
+	-moz-transform: translateY(-3px);
+	-ms-transform: translateY(-3px);
+	-o-transform: translateY(-3px);
+	background: #ff9100;
+	color: #fff;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, .36);
 }
