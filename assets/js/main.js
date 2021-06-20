@@ -531,6 +531,7 @@
     $(".card-forms").slideUp();
     $(target).slideDown();
   }
+
   $(".gateway-img")
     .find("input")
     .change(function () {
