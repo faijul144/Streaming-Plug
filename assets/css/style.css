@@ -7187,7 +7187,7 @@ font-size: 16px;
 }
 
 .acc-detail-top>div:hover .account-ac{
-	opacity: 0.8;
+	opacity: 1;
 }
 
 .acc-detail-top>div.currently-active::before{
