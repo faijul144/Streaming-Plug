@@ -7308,3 +7308,8 @@ font-size: 16px;
 .initial-cat .boxed-selects .custom-control-label::before,.initial-cat .boxed-selects .custom-control-label::after{
 	display: none;
 }
+
+.thm_btn.btn_sub_cus_md.steps-press{
+	padding: 5px 20px;
+    font-size: 15px;
+}
