@@ -58,6 +58,7 @@ body.dark-mode {
 
   .header_cus .header_wrap,
   .team_details .td_social li a,
+  .team_social li a,
   .create-post,
   .card,
   .file-formate,
@@ -71,6 +72,7 @@ body.dark-mode {
   .header_cus .main_menu ul li a:not(:hover),
   .pro-img-thumb ul li .dl.check-green span,
   .team_details .td_social li a,
+  .team_social li a,
   .posting-opt > div > label,
   .posting-opt > div > a,
   h1,
@@ -122,6 +124,7 @@ body.dark-mode {
   }
 
   .team_details .td_social li a:hover,
+  .team_social li a:hover,
   .skills li a:hover {
     background: lighten($secondaryDark, 10%);
   }
@@ -246,7 +249,8 @@ body.dark-mode {
     background: $darkBlack;
   }
 
-  .header_4.header_cus .header_btn .thm_btn:hover {
+  .header_4.header_cus .header_btn .thm_btn:hover,
+  .masonry_active button:hover {
     background: $darkBlack !important;
   }
 
@@ -270,7 +274,9 @@ body.dark-mode {
   .datepicker table tr td.day.focused,
   .datepicker table tr td.day:hover,
   .account-ac button,
-  .page-link {
+  .masonry_active button,
+  .page-link,
+  .team_single .team_text ul.cat li a {
     background: $secondaryDark;
     color: $primaryWhite;
   }
@@ -291,7 +297,8 @@ body.dark-mode {
   .datepicker table tr td.active,
   .datepicker table tr td.active.disabled,
   .datepicker table tr td.active.disabled:hover,
-  .datepicker table tr td.active:hover {
+  .datepicker table tr td.active:hover,
+  .team_single .team_text ul.cat li a:hover {
     background: $themePrimary;
     color: $primaryWhite;
     text-shadow: none;

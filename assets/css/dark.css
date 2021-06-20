@@ -48,6 +48,7 @@ body.dark-mode .usub-modal p a {
 
 body.dark-mode .header_cus .header_wrap,
 body.dark-mode .team_details .td_social li a,
+body.dark-mode .team_social li a,
 body.dark-mode .create-post,
 body.dark-mode .card,
 body.dark-mode .file-formate,
@@ -61,6 +62,7 @@ body.dark-mode .aff-img .aff-link {
 body.dark-mode .header_cus .main_menu ul li a:not(:hover),
 body.dark-mode .pro-img-thumb ul li .dl.check-green span,
 body.dark-mode .team_details .td_social li a,
+body.dark-mode .team_social li a,
 body.dark-mode .posting-opt > div > label,
 body.dark-mode .posting-opt > div > a,
 body.dark-mode h1,
@@ -112,6 +114,7 @@ body.dark-mode .dropdown-item:hover {
 }
 
 body.dark-mode .team_details .td_social li a:hover,
+body.dark-mode .team_social li a:hover,
 body.dark-mode .skills li a:hover {
   background: #3b3b3b;
 }
@@ -240,7 +243,8 @@ body.dark-mode .swal2-popup {
   background: #000;
 }
 
-body.dark-mode .header_4.header_cus .header_btn .thm_btn:hover {
+body.dark-mode .header_4.header_cus .header_btn .thm_btn:hover,
+body.dark-mode .masonry_active button:hover {
   background: #000 !important;
 }
 
@@ -266,7 +270,9 @@ body.dark-mode .pop-share-links a,
 body.dark-mode .datepicker table tr td.day.focused,
 body.dark-mode .datepicker table tr td.day:hover,
 body.dark-mode .account-ac button,
-body.dark-mode .page-link {
+body.dark-mode .masonry_active button,
+body.dark-mode .page-link,
+body.dark-mode .team_single .team_text ul.cat li a {
   background: #212121;
   color: #fff;
 }
@@ -288,7 +294,8 @@ body.dark-mode .datepicker-dropdown.datepicker-orient-top:before {
 body.dark-mode .datepicker table tr td.active,
 body.dark-mode .datepicker table tr td.active.disabled,
 body.dark-mode .datepicker table tr td.active.disabled:hover,
-body.dark-mode .datepicker table tr td.active:hover {
+body.dark-mode .datepicker table tr td.active:hover,
+body.dark-mode .team_single .team_text ul.cat li a:hover {
   background: #ff9100;
   color: #fff;
   text-shadow: none;
