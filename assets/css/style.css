@@ -7197,7 +7197,7 @@ font-size: 16px;
 	left: 6px;
 	color: #0c0c0c;
 	opacity: 0.8;
-	font-size: 12px;
+	font-size: 10px;
 	background: #eee;
 	padding: 3px 10px;
 	border-radius: 3px;
@@ -7220,9 +7220,9 @@ font-size: 16px;
 }
 
 .account-ac button{
-	padding: 2px 8px;
+	padding: 2px 6px;
 	margin-left: 8px;
-	font-size: 12px;
+	font-size: 10px;
 	background: #f1f1f1;
 	color: #0c0c0c;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, .36);

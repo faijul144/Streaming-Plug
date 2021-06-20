@@ -248,7 +248,8 @@ body.dark-mode {
     background: $darkBlack !important;
   }
 
-  .pricing_single .price_icon {
+  .pricing_single .price_icon,
+  .disclaimer {
     background: $secondaryDark;
   }
   .pricing_single .price_icon img,
@@ -259,12 +260,15 @@ body.dark-mode {
 
   .streamer_thumb.steamer-status::after,
   .boxed-selects > div > label,
-  .swal2-popup.swal2-toast {
+  .swal2-popup.swal2-toast,
+  .disclaimer {
     box-shadow: none;
   }
   .pop-share-links a,
   .datepicker table tr td.day.focused,
-  .datepicker table tr td.day:hover {
+  .datepicker table tr td.day:hover,
+  .acc-detail-top > div.currently-active::before,
+  .account-ac button {
     background: $secondaryDark;
     color: $primaryWhite;
   }
