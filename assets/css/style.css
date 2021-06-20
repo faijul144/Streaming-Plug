@@ -6251,7 +6251,9 @@ border-color: #0c0c0c;
 	position: relative;
 }
 
-
+.stat-card.shorten{
+	height: 190px;
+}
 
 .stat-list{
 	display: flex;
