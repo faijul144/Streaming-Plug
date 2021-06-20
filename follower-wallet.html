@@ -838,55 +838,7 @@
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script>
-        var chart = Highcharts.stockChart("newChart", {
-            xAxis: {
-                ordinal: false,
-            },
-
-            plotOptions: {
-                series: {
-                    dataGrouping: {
-                        forced: true,
-                        approximation: "sum",
-                    },
-                },
-            },
-
-            rangeSelector: {
-                enabled: false,
-            },
-
-            series: [
-                {
-                    data: [
-                        [Date.UTC(2020, 0, 1), 9],
-                        [Date.UTC(2021, 0, 2), 3],
-                        [Date.UTC(2020, 3, 1), 1],
-                        [Date.UTC(2021, 4, 1), 7],
-                    ],
-                },
-            ],
-        });
-
-        $(".chart-view-types li button").each(function () {
-            var type = $(this).data("type");
-            $("#ch-" + type).click(function () {
-                $(".chart-view-types li button").removeClass("thm_btn-black");
-                $(this).addClass("thm_btn-black");
-                chart.update({
-                    plotOptions: {
-                        series: {
-                            dataGrouping: {
-                                units: [[type, [0]]],
-                            },
-                        },
-                    },
-                });
-            });
-        });
-    </script>
+    <script src="assets/js/affiliate.js"></script>
 
 </body>
 

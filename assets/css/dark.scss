@@ -204,12 +204,7 @@ body.dark-mode {
 
   .stat-card,
   .acc-detail-top div {
-    background: linear-gradient(
-      to bottom right,
-      #000 0%,
-      #101010 50%,
-      #000 100%
-    );
+    background: linear-gradient(to bottom, #000 0%, #101010 50%);
   }
 
   .form-control:focus,
