@@ -564,4 +564,42 @@
       }
     });
   });
+
+  // Pricing Height
+
+  $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+    $(".creation-pack").each(function () {
+      let heights = [];
+      $(this)
+        .find(".pricing-content-container")
+        .each(function () {
+          heights.push($(this).height());
+        });
+      let maxHeight = Math.max.apply(Math, heights);
+      console.log(maxHeight);
+      $(this).find(".pricing-content-container").css("height", maxHeight);
+    });
+  });
+
+  $("#pack-modal").on("shown.bs.modal", function (e) {
+    $(".creation-pack").each(function () {
+      let heights = [];
+      $(this)
+        .find(".pricing-content-container")
+        .each(function () {
+          heights.push($(this).height());
+        });
+      let maxHeight = Math.max.apply(Math, heights);
+      console.log(maxHeight);
+      $(this).find(".pricing-content-container").css("height", maxHeight);
+    });
+  });
+
+  // Select 2
+  $("select").each(function () {
+    $(this).select2({
+      minimumResultsForSearch: -1,
+      width: "resolve",
+    });
+  });
 })(jQuery);

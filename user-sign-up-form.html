@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css" />
     <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
@@ -238,104 +239,125 @@
                                                 <!-- Select Category -->
                                                 <div class="tab-pane fade active show" id="l-1" role="tabpanel"
                                                     aria-labelledby="l-tab-01">
-                                                    <div class="sec_title text-center">
-                                                        <h2>Select Categories For Your Contents</h2>
-                                                        <span>A maximum of 3 categories can be selected</span>
-                                                    </div>
-                                                    <div class="initial-cat">
-                                                        <div class="boxed-selects" data-max="3">
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-1">
-                                                                <label class="custom-control-label"
-                                                                    for="cat-1">Sports</label>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="sec_title text-left">
+                                                                <h2>Select Categories For Your Contents</h2>
+                                                                <span>A maximum of 3 categories can be selected</span>
                                                             </div>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-2">
-                                                                <label class="custom-control-label"
-                                                                    for="cat-2">Travel</label>
-                                                            </div>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-3">
-                                                                <label class="custom-control-label" for="cat-3">Yoga
-                                                                    Classes</label>
-                                                            </div>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-4">
-                                                                <label class="custom-control-label" for="cat-4"
-                                                                    checked>Entertainment</label>
-                                                            </div>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-5">
-                                                                <label class="custom-control-label"
-                                                                    for="cat-5">Music</label>
-                                                            </div>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-6">
-                                                                <label class="custom-control-label"
-                                                                    for="cat-6">News</label>
-                                                            </div>
-                                                            <div class="custom-control custom-checkbox">
-                                                                <input type="checkbox" class="custom-control-input"
-                                                                    id="cat-7">
-                                                                <label class="custom-control-label" for="cat-7">Trade
-                                                                    Shows</label>
+
+                                                            <div class="initial-cat">
+                                                                <div class="boxed-selects" data-max="3">
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-1">
+                                                                        <label class="custom-control-label"
+                                                                            for="cat-1">Sports</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-2">
+                                                                        <label class="custom-control-label"
+                                                                            for="cat-2">Travel</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-3">
+                                                                        <label class="custom-control-label"
+                                                                            for="cat-3">Yoga
+                                                                            Classes</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-4">
+                                                                        <label class="custom-control-label" for="cat-4"
+                                                                            checked>Entertainment</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-5">
+                                                                        <label class="custom-control-label"
+                                                                            for="cat-5">Music</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-6">
+                                                                        <label class="custom-control-label"
+                                                                            for="cat-6">News</label>
+                                                                    </div>
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox"
+                                                                            class="custom-control-input" id="cat-7">
+                                                                        <label class="custom-control-label"
+                                                                            for="cat-7">Trade
+                                                                            Shows</label>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
                                                         </div>
+                                                        <div class="col-md-6">
+                                                            <img src="" alt="Cat Select">
+                                                        </div>
+                                                        <div class="col-12 d-flex justify-content-end mt-3">
+                                                            <button type="button"
+                                                                class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
+                                                                data-tab="#l-2">Next
+                                                                Step</button>
+                                                        </div>
+                                                    </div>
 
-                                                    </div>
-                                                    <div class="d-flex justify-content-end mt-3">
-                                                        <button type="button"
-                                                            class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
-                                                            data-tab="#l-2">Next
-                                                            Step</button>
-                                                    </div>
                                                 </div>
                                                 <!-- Connect To Social -->
                                                 <div class="tab-pane fade" id="l-2" role="tabpanel"
                                                     aria-labelledby="l-tab-06">
-                                                    <div class="sec_title text-center">
-                                                        <h2>Connect To Your Social Account</h2>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Social Connect</label>
-                                                        <div class="social-connect">
-                                                            <div class="connect-link mb-4">
-                                                                <span><i
-                                                                        class="fab fa-facebook-f"></i><span>Facebook</span></span>
-                                                                <a href="javascript:void(0)">Connect</a>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="sec_title text-left">
+                                                                <h2>Connect To Your Social Account</h2>
                                                             </div>
-                                                            <div class="connect-link mb-4">
-                                                                <span><i
-                                                                        class="fab fa-twitter"></i><span>Twitter</span></span>
-                                                                <a href="javascript:void(0)">Connect</a>
-                                                            </div>
-                                                            <div class="connect-link mb-4">
-                                                                <span><i
-                                                                        class="fab fa-linkedin"></i><span>Linkedin</span></span>
-                                                                <a href="javascript:void(0)">Connect</a>
-                                                            </div>
-                                                            <div class="connect-link mb-4">
-                                                                <span><i
-                                                                        class="fab fa-instagram"></i><span>Instagram</span></span>
-                                                                <a href="javascript:void(0)">Connect</a>
+                                                            <div class="form-group">
+                                                                <div class="social-connect initial">
+                                                                    <div class="connect-link mb-4">
+                                                                        <span><img src="./assets/img/icon/facebook.svg"
+                                                                                width="15" height="15"><span
+                                                                                class="ml-1">Facebook</span></span>
+                                                                        <a href="javascript:void(0)">Connect</a>
+                                                                    </div>
+                                                                    <div class="connect-link mb-4">
+                                                                        <span><img src="./assets/img/icon/twitter.svg"
+                                                                                width="15" height="15"><span
+                                                                                class="ml-1">Twitter</span></span>
+                                                                        <a href="javascript:void(0)">Connect</a>
+                                                                    </div>
+                                                                    <div class="connect-link mb-4">
+                                                                        <span><img src="./assets/img/icon/instagram.svg"
+                                                                                width="15" height="15"><span
+                                                                                class="ml-1">Instagram</span></span>
+                                                                        <a href="javascript:void(0)">Connect</a>
+                                                                    </div>
+                                                                    <div class="connect-link mb-4">
+                                                                        <span><img src="./assets/img/icon/youtube.svg"
+                                                                                width="15" height="15"><span
+                                                                                class="ml-1">Youtube</span></span>
+                                                                        <a href="javascript:void(0)">Connect</a>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="d-flex justify-content-end mt-3">
-                                                        <button type="button"
-                                                            class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
-                                                            data-tab="#l-1">Previous
-                                                            Step</button>
-                                                        <button type="button"
-                                                            class="thm_btn br_btn add-btn btn_sub_cus_md ml-3 steps-press"
-                                                            data-tab="#l-3">Next
-                                                            Step</button>
+                                                        <div class="col-md-6">
+                                                            <img src="" alt="Socail Connect">
+                                                        </div>
+                                                        <div class="col-12 d-flex justify-content-end mt-3">
+                                                            <button type="button"
+                                                                class="thm_btn br_btn add-btn btn_sub_cus_md steps-press"
+                                                                data-tab="#l-1">Previous
+                                                                Step</button>
+                                                            <button type="button"
+                                                                class="thm_btn br_btn add-btn btn_sub_cus_md ml-3 steps-press"
+                                                                data-tab="#l-3">Next
+                                                                Step</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <!-- Check Your Basic Informtion -->
@@ -740,26 +762,51 @@
                                                         </div>
 
                                                         <div class="form-row" id="bank-section">
-                                                            <div class="col-md-6 col-12">
-                                                                <div class="form-group">
-                                                                    <label for="bname">Bank<sup>*</sup></label>
-                                                                    <input type="text" class="form-control" id="bname"
-                                                                        placeholder="Enter Your Bank Name">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-6 col-12">
-                                                                <div class="form-group">
-                                                                    <label for="bbrance">Branch<sup>*</sup></label>
-                                                                    <input type="text" class="form-control" id="bbrance"
-                                                                        placeholder="Enter Your Bank Branch">
-                                                                </div>
-                                                            </div>
                                                             <div class="col-md-12 col-12">
                                                                 <div class="form-group">
-                                                                    <label for="ano">Account
-                                                                        No<sup>*</sup></label>
-                                                                    <input type="text" class="form-control" id="ano"
-                                                                        placeholder="Enter Account No.">
+                                                                    <label for="bname">Currency<sup>*</sup></label>
+                                                                    <select class="form-control">
+                                                                        <option>Australian Dollar</option>
+                                                                        <option>Australian Dollar</option>
+                                                                        <option>Canadian Dollar</option>
+                                                                        <option>Hong Kong Dollar</option>
+                                                                        <option>New Zealand Dollar</option>
+                                                                        <option>Singapore Dollar</option>
+                                                                        <option>New Taiwan Dollar</option>
+                                                                        <option>Jamaican Dollar</option>
+                                                                        <option selected>United States Dollar</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="tnum">Transit Number<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="tnum"
+                                                                        placeholder="12345">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="inum">Institution
+                                                                        Number<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="inum"
+                                                                        placeholder="000">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="acnum">Account
+                                                                        Number<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="acnum"
+                                                                        placeholder="00123456789">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-12">
+                                                                <div class="form-group">
+                                                                    <label for="cacnum">Confirm Account
+                                                                        Number<sup>*</sup></label>
+                                                                    <input type="text" class="form-control" id="cacnum"
+                                                                        placeholder="00123456789">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -941,6 +988,7 @@
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
+    <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script>

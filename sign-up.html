@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="assets/css/barfiller.css">
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
@@ -197,16 +198,17 @@
                                             </button>
                                         </div>
                                         <div class="or-div"></div>
-                                        <form action="" class="signup-form">
+                                        <form action="">
                                             <div class="form-row">
-                                                <div class="form-group col-md-12">
-                                                    <select name="as" id="role" class="form-control" required>
-                                                        <option value="" selected disabled>Sign Up As
-                                                        </option>
-                                                        <option value="Streamer">Streamer</option>
-                                                        <option value="Follower">Follower</option>
-                                                        <option value="Affiliate">Affiliate</option>
-                                                    </select>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <select name="as" id="role" class="form-control">
+                                                            <option disabled selected>Sign Up As</option>
+                                                            <option value="Streamer">Streamer</option>
+                                                            <option value="Follower">Follower</option>
+                                                            <option value="Affiliate">Affiliate</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                                 <div class="form-group col-md-12">
                                                     <input type="email" class="form-control" id="signup_email"
@@ -364,6 +366,7 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/main.js"></script>
