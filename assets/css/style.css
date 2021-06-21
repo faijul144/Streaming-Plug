@@ -581,6 +581,7 @@ input, textarea, select {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background: transparent;
 }
 
 .main_menu ul li.nf ul.submenu .inner-data,.main_menu ul li ul.submenu li a{
