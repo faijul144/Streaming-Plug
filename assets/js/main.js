@@ -565,7 +565,7 @@
     });
   });
 
-  // Pricing Height
+  // Creator Pricing Height
 
   $('a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
     $(".creation-pack").each(function () {

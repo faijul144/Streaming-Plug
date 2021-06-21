@@ -7121,6 +7121,9 @@ font-size: 16px;
     margin-left: 5px;
     border-radius: 3px;
     font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .thm_btn.btn_sub_cus_edit::before{

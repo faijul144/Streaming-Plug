@@ -46,18 +46,25 @@ $(".add-btn").click(function (e) {
 
 function editCon(x) {
   let thisBtn = $("#" + x);
+  let currentData = thisBtn.html();
+  let oldDataID = x + "now";
+  $("body").append(
+    `<div style="display='none'" id=${oldDataID}>${currentData}</div>`
+  );
   let currentValue = thisBtn.find("span").text();
   thisBtn.empty();
   thisBtn.append(`<input type="text" class="form-control" value="${currentValue}">
-<button type="button" class="thm_btn br_btn btn_sub_cus_edit" onclick="updateCon('${x}')">Update</button>`);
+<button type="button" class="thm_btn br_btn btn_sub_cus_edit" onclick="updateCon('${x}','${oldDataID}')">Update</button>
+<button type="button" class="thm_btn br_btn btn_sub_cus_edit" onclick="cancleUp('${oldDataID}','${x}')">Cancle</button>`);
 }
 
 // For single update submission
 
-function updateCon(x) {
+function updateCon(x, oldData) {
   let thisBtn = $("#" + x);
   let newValue = thisBtn.find("input").val();
   thisBtn.empty();
+  $("#" + oldData).remove();
   thisBtn.append(`<span>${newValue}</span>
   <div class="sm-action">
       <button class="sm-action-btn"
@@ -166,6 +173,11 @@ function editMulCon(x, addedfor) {
   let currentValues = thisBtn.find(".data");
   let formSelectOpt = [];
   let toSelectOpt = [];
+  let currentData = thisBtn.html();
+  let oldDataID = x + "now";
+  $("body").append(
+    `<div style="display='none'" id=${oldDataID}>${currentData}</div>`
+  );
   thisBtn
     .parent()
     .parent()
@@ -242,7 +254,8 @@ function editMulCon(x, addedfor) {
     }) +
     `</select>
     </div>
-    <button type="button" onclick="multiUpdate('${x}','${addedfor}')" class="thm_btn br_btn btn_sub_cus_md mt-3">Update</button>
+    <button type="button" onclick="multiUpdate('${x}','${addedfor}','${oldDataID}')" class="thm_btn br_btn btn_sub_cus_md mt-3">Update</button>
+    <button type="button" class="thm_btn br_btn btn_sub_cus_md ml-2 mt-3" onclick="cancleUp('${oldDataID}','${x}')">Cancle</button>
 </div>
 `;
   let insTemplate =
@@ -264,7 +277,8 @@ function editMulCon(x, addedfor) {
     }) +
     `</select>
       </div>
-      <button type="button" onclick="multiUpdate('${x}','${addedfor}')" class="thm_btn br_btn btn_sub_cus_md mt-3">Update</button>
+      <button type="button" onclick="multiUpdate('${x}','${addedfor}','${oldDataID}')" class="thm_btn br_btn btn_sub_cus_md mt-3">Update</button>
+      <button type="button" class="thm_btn br_btn btn_sub_cus_md ml-2 mt-3" onclick="cancleUp('${oldDataID}','${x}')">Cancle</button>
   </div>
   `;
 
@@ -287,7 +301,7 @@ function editMulCon(x, addedfor) {
 
 // multi update submission
 
-function multiUpdate(x, addedfor) {
+function multiUpdate(x, addedfor, oldData) {
   let updateCon = $("#" + x);
   let inputFields = updateCon.find("input");
   let selectFields = updateCon.find("select");
@@ -343,7 +357,8 @@ function multiUpdate(x, addedfor) {
   if (addedfor == "institute") {
     template = instituteTemp;
   }
-
+  console.log(oldData);
+  $("#" + oldData).remove();
   updateCon.empty();
   updateCon.removeClass("d-block");
   updateCon.append(template);
@@ -363,6 +378,13 @@ function deleteCon(x) {
       .addClass("d-none");
   }
   $("#" + x).remove();
+}
+
+// Cancle Update
+function cancleUp(oldata, x) {
+  $("#" + x).html($("#" + oldata).html());
+  $("#" + x).removeClass("d-block");
+  $("#" + oldata).remove();
 }
 
 // for cleaning up arrays with black strings
