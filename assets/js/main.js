@@ -595,6 +595,18 @@
     });
   });
 
+  $(".creation-pack").each(function () {
+    let heights = [];
+    $(this)
+      .find(".pricing-content-container")
+      .each(function () {
+        heights.push($(this).height());
+      });
+    let maxHeight = Math.max.apply(Math, heights);
+    console.log(maxHeight);
+    $(this).find(".pricing-content-container").css("height", maxHeight);
+  });
+
   // Select 2
   $("select").each(function () {
     $(this).select2({
