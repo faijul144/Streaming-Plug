@@ -87,7 +87,8 @@ body.dark-mode .dropdown-menu,
 body.dark-mode .pack-price,
 body.dark-mode .select2-container--default
 .select2-selection--single
-.select2-selection__rendered {
+.select2-selection__rendered,
+body.dark-mode .faq_wrapper .accordion-box .block .acc-btn {
   color: #fff;
 }
 
@@ -108,7 +109,8 @@ body.dark-mode .notification-box,
 body.dark-mode .check-green label,
 body.dark-mode .aff-table .action-list li a:hover,
 body.dark-mode .pack-radio div:not(.my-switch) > label,
-body.dark-mode .select2-container--default .select2-selection--single {
+body.dark-mode .select2-container--default .select2-selection--single,
+body.dark-mode .faq_wrapper .accordion-box .block {
   background: #212121;
 }
 
@@ -187,7 +189,8 @@ body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
   border-color: #161616;
 }
 
-body.dark-mode .bg-white {
+body.dark-mode .bg-white,
+body.dark-mode .gray-bg {
   background-color: #101010 !important;
 }
 
