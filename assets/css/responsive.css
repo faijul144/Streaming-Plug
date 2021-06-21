@@ -1446,7 +1446,7 @@
 
 @media screen and (max-width:575px) {
     .nav.content-count .nav-link::before{
-        top:unset;
+        top:unset !important;
         bottom: -25px;
     }
 
