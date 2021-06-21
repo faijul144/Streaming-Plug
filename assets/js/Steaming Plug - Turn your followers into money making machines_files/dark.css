@@ -1,0 +1,325 @@
+body.dark-mode {
+  color: #c7c7c7;
+  background: #101010;
+}
+
+body.dark-mode p,
+body.dark-mode .comment-opt ul li a,
+body.dark-mode .input-text-opt a,
+body.dark-mode .input-text-opt button,
+body.dark-mode .comentar-name a,
+body.dark-mode .side-mobile-menu ul li a,
+body.dark-mode .side-mobile-menu ul li .dl.check-green span,
+body.dark-mode .profile-opt,
+body.dark-mode .about-list li p,
+body.dark-mode .close,
+body.dark-mode .custom-select,
+body.dark-mode .deletion-part,
+body.dark-mode #goodbymodal .modal-body,
+body.dark-mode .usub-modal .modal-body,
+body.dark-mode #goodbymodal p,
+body.dark-mode .usub-modal p,
+body.dark-mode .services_tab .nav-link,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode option,
+body.dark-mode input:focus,
+body.dark-mode select:focus,
+body.dark-mode .post-set,
+body.dark-mode .about-list li a,
+body.dark-mode .datepicker table tr td.active,
+body.dark-mode .datepicker table tr td.active.disabled,
+body.dark-mode .datepicker table tr td.active.disabled:hover,
+body.dark-mode .datepicker table tr td.active:hover,
+body.dark-mode .aff-table tr th {
+  color: #c7c7c7;
+}
+
+body.dark-mode .thm_btn-black {
+  background: #000;
+}
+
+body.dark-mode .main-post a,
+body.dark-mode #goodbymodal p a,
+body.dark-mode .usub-modal p a {
+  color: #ff9100;
+}
+
+body.dark-mode .header_cus .header_wrap,
+body.dark-mode .team_details .td_social li a,
+body.dark-mode .team_social li a,
+body.dark-mode .create-post,
+body.dark-mode .card,
+body.dark-mode .file-formate,
+body.dark-mode .close-mobile-menu,
+body.dark-mode .mob-bottom-menu > div,
+body.dark-mode .modal-content,
+body.dark-mode .aff-img .aff-link {
+  background: #151515;
+}
+
+body.dark-mode .header_cus .main_menu ul li a:not(:hover),
+body.dark-mode .pro-img-thumb ul li .dl.check-green span,
+body.dark-mode .team_details .td_social li a,
+body.dark-mode .team_social li a,
+body.dark-mode .posting-opt > div > label,
+body.dark-mode .posting-opt > div > a,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode #backtotop #scroll,
+body.dark-mode .mob-bottom-menu > div a.icon-link i,
+body.dark-mode .post-setting-list a,
+body.dark-mode #sup_form a,
+body.dark-mode .form_cus a,
+body.dark-mode #sup_form a,
+body.dark-mode .form_cus a,
+body.dark-mode .popover-body,
+body.dark-mode .popover .post-setting-list label,
+body.dark-mode .dropdown-item,
+body.dark-mode .skills li a,
+body.dark-mode .inputed-list > div .sm-action button i,
+body.dark-mode .dropdown-menu,
+body.dark-mode .pack-price,
+body.dark-mode .select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
+  color: #fff;
+}
+
+body.dark-mode .posting-opt > div,
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select,
+body.dark-mode .comment-text,
+body.dark-mode .post-options,
+body.dark-mode .audio-bg,
+body.dark-mode .green-audio-player .slider,
+body.dark-mode .boxed-selects .pr-input.checked,
+body.dark-mode .slide-bar,
+body.dark-mode .popover-body,
+body.dark-mode .custom-control-label::before,
+body.dark-mode .price-br::before,
+body.dark-mode .notification-box,
+body.dark-mode .check-green label,
+body.dark-mode .aff-table .action-list li a:hover,
+body.dark-mode .pack-radio div:not(.my-switch) > label,
+body.dark-mode .select2-container--default .select2-selection--single {
+  background: #212121;
+}
+
+body.dark-mode .dropdown-item:focus,
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .select2-dropdown {
+  background: #1c1c1c;
+}
+
+body.dark-mode .team_details .td_social li a:hover,
+body.dark-mode .team_social li a:hover,
+body.dark-mode .skills li a:hover {
+  background: #3b3b3b;
+}
+
+body.dark-mode .bs-popover-auto[x-placement^="bottom"] > .arrow::after,
+body.dark-mode .bs-popover-bottom > .arrow::after {
+  border-bottom-color: #212121;
+}
+
+body.dark-mode .bs-popover-auto[x-placement^="top"] > .arrow::after,
+body.dark-mode .bs-popover-top > .arrow::after {
+  border-top-color: #212121;
+}
+
+body.dark-mode .skills li a,
+body.dark-mode .create-post textarea,
+body.dark-mode .posting-opt > div:not(:last-child),
+body.dark-mode .comment-from,
+body.dark-mode .mob-bottom-menu > div:not(:last-child),
+body.dark-mode .streamer_thumb .pro-img,
+body.dark-mode .streamer_thumb.steamer-status::after,
+body.dark-mode .form-control,
+body.dark-mode .custom-control-label::before,
+body.dark-mode .connect-link,
+body.dark-mode hr,
+body.dark-mode .pricing_single .price_btn a,
+body.dark-mode .custom-select,
+body.dark-mode .form-control:focus,
+body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+body.dark-mode .aff-link input,
+body.dark-mode .page-link,
+body.dark-mode .select2-container--default .select2-selection--single {
+  border-color: #252525;
+}
+
+body.dark-mode .select2-dropdown {
+  border-color: #252525 !important;
+}
+
+body.dark-mode .aff-table tr th,
+body.dark-mode .aff-table tr td,
+body.dark-mode .pack-price {
+  border-color: #0d0d0d;
+}
+
+body.dark-mode .modal-header,
+body.dark-mode .stat-list li {
+  border-color: #181818;
+}
+
+body.dark-mode .deletion-part,
+body.dark-mode #goodbymodal .modal-body,
+body.dark-mode .usub-modal .modal-body {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.85);
+}
+
+body.dark-mode .main_menu ul li ul.submenu,
+body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+  box-shadow: none;
+  background: #0f0f0f;
+}
+
+body.dark-mode .main_menu ul li.pro-img-thumb .submenu li:last-child,
+body.dark-mode .main_menu ul li.nf ul.submenu li.see-all {
+  border-color: #161616;
+}
+
+body.dark-mode .bg-white {
+  background-color: #101010 !important;
+}
+
+body.dark-mode .header_4 .sticky .header_btn .thm_btn::before,
+body.dark-mode .custom-control-input:disabled ~ .custom-control-label::before,
+body.dark-mode .custom-control-input[disabled] ~ .custom-control-label::before {
+  background-color: #101010;
+}
+
+body.dark-mode .services_tab .nav-link.active,
+body.dark-mode .skills li a,
+body.dark-mode .inputed-list > div .sm-action button {
+  background-color: #333333;
+}
+
+body.dark-mode .team_left,
+body.dark-mode .pricing_single,
+body.dark-mode .team_single .team_text,
+body.dark-mode .team_single {
+  background: linear-gradient(to bottom right, #000 0%, #131313 50%, #000 100%);
+}
+
+body.dark-mode .stat-card,
+body.dark-mode .acc-detail-top div,
+body.dark-mode .select2-container--default .select2-results__option--selected {
+  background: #000;
+}
+
+body.dark-mode .form-control:focus,
+body.dark-mode input:focus,
+body.dark-mode .green-audio-player .slider .gap-progress,
+body.dark-mode #backtotop,
+body.dark-mode .form-control:disabled,
+body.dark-mode .form-control[readonly] {
+  background: #000;
+}
+
+body.dark-mode a:hover,
+body.dark-mode .streamer-about p a,
+body.dark-mode .about-list li a:hover {
+  color: #ff9100;
+}
+
+body.dark-mode .acc-detail-top div {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.38);
+}
+
+body.dark-mode .thm_btn:not(.thm_btn-black)::before {
+  background: #fff;
+}
+
+body.dark-mode .thm_btn:not(.thm_btn-black):hover {
+  color: #000;
+  background: #fff;
+}
+
+body.dark-mode .thm_btn.br_btn:hover {
+  color: #000 !important;
+}
+
+body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
+body.dark-mode .services_tab .nav-link,
+body.dark-mode .swal2-popup {
+  background: #000;
+}
+
+body.dark-mode .header_4.header_cus .header_btn .thm_btn:hover,
+body.dark-mode .masonry_active button:hover {
+  background: #000 !important;
+}
+
+body.dark-mode .pricing_single .price_icon,
+body.dark-mode .disclaimer {
+  background: #212121;
+}
+
+body.dark-mode .pricing_single .price_icon img,
+body.dark-mode .pack_icon img {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+}
+
+body.dark-mode .streamer_thumb.steamer-status::after,
+body.dark-mode .boxed-selects > div > label,
+body.dark-mode .swal2-popup.swal2-toast,
+body.dark-mode .disclaimer {
+  box-shadow: none;
+}
+
+body.dark-mode .pop-share-links a,
+body.dark-mode .datepicker table tr td.day.focused,
+body.dark-mode .datepicker table tr td.day:hover,
+body.dark-mode .account-ac button,
+body.dark-mode .masonry_active button,
+body.dark-mode .page-link,
+body.dark-mode .team_single .team_text ul.cat li a {
+  background: #212121;
+  color: #fff;
+}
+
+body.dark-mode .dropdown-menu {
+  background: #1d1d1d;
+}
+
+body.dark-mode .datepicker-dropdown:before,
+body.dark-mode .datepicker-dropdown:after {
+  border-bottom-color: #1d1d1d;
+}
+
+body.dark-mode .datepicker-dropdown.datepicker-orient-top:after,
+body.dark-mode .datepicker-dropdown.datepicker-orient-top:before {
+  border-top-color: #1d1d1d;
+}
+
+body.dark-mode .team_single .team_text ul.cat li a:hover,
+body.dark-mode .account-ac button:hover,
+body.dark-mode .inputed-list > div .sm-action button:hover {
+  background: #ff9100;
+  color: #fff;
+  text-shadow: none;
+}
+
+body.dark-mode .close {
+  text-shadow: none;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6,
+body.dark-mode th {
+  font-weight: normal;
+}
