@@ -581,7 +581,6 @@ input, textarea, select {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background: transparent;
 }
 
 .main_menu ul li.nf ul.submenu .inner-data,.main_menu ul li ul.submenu li a{
@@ -591,6 +590,7 @@ input, textarea, select {
 	-moz-border-radius: 0!important;
 	-ms-border-radius: 0!important;
 	-o-border-radius: 0!important;
+	background: transparent;
 }
 
 .main_menu ul li.nf ul.submenu .inner-data .pro-img-thumb{
