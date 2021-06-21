@@ -642,6 +642,14 @@ input, textarea, select {
 	background: rgba(0 ,0 ,0 ,.036);
 }
 
+.mob-bottom-menu>div a.icon-link{
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	background: transparent;
+}
 
 .main_menu ul>li:hover a.icon-link{
 	background: #6b6b6b;
