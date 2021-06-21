@@ -510,17 +510,17 @@
   // Select Payment Method
   $(".select-method").each(function () {
     let other = $(this).data("target");
-    $(other).find("input").attr("disabled", "disabled");
+    $(other).find(".form-control").attr("disabled", "disabled");
     if ($(this).is(":checked")) {
       let target = $(this).data("target");
-      $(target).find("input").removeAttr("disabled");
+      $(target).find(".form-control").removeAttr("disabled");
     }
     $(".select-method").change(function () {
       if ($(this).is(":checked")) {
         let target = $(this).data("target");
-        $(other).find("input").attr("disabled", "disabled");
-        $(other).find("input").val("");
-        $(target).find("input").removeAttr("disabled");
+        $(other).find(".form-control").attr("disabled", "disabled");
+        $(other).find("input.form-control").val("");
+        $(target).find(".form-control").removeAttr("disabled");
         $(".card-forms").slideUp();
       }
     });
