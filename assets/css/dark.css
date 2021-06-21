@@ -303,7 +303,8 @@ body.dark-mode .datepicker-dropdown.datepicker-orient-top:before {
 }
 
 body.dark-mode .team_single .team_text ul.cat li a:hover,
-body.dark-mode .account-ac button:hover {
+body.dark-mode .account-ac button:hover,
+body.dark-mode .inputed-list > div .sm-action button:hover {
   background: #ff9100;
   color: #fff;
   text-shadow: none;

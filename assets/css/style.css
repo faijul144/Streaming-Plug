@@ -787,7 +787,7 @@ input, textarea, select {
 }
 
 .main_menu_area .logo img{
-	width: 170px;
+	width: 215px;
 }
 
 .header_area .header_wrap.sticky {
@@ -6425,6 +6425,10 @@ font-size: 20px;
     justify-content: flex-start;
     padding: 10px 0;
 	text-align: left;
+}
+
+.payment-choose-payout label{
+	font-size: 12px;
 }
 
 
