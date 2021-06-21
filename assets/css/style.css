@@ -1145,11 +1145,11 @@ input, textarea, select {
 	max-width: 710px;
 }
 .hero_4 .hero_content .hero_btn .thm_btn::before, .header_4 .header_btn .thm_btn::before {
-	background-color: #fff;
+	background-color: #0c0c0c;
 }
 .hero_4 .hero_content .hero_btn .thm_btn:hover, .header_4 .header_btn .thm_btn:hover {
-	color: #0c0c0c;
-	background: #fff;
+	color: #fff;
+	background: #0c0c0c;
 	transition: background 0.3s ease;
 	-webkit-transition: background 0.3s ease;
 	-moz-transition: background 0.3s ease;
@@ -5536,7 +5536,7 @@ box-shadow: none;
 }
 
 .header_cus .main_menu ul li.active > a{
-	color: #0c0c0c;
+	color: #fff;
 }
 
 .join-login{
@@ -6878,40 +6878,7 @@ font-size: 16px;
 
 
 
-  /* Login Select */
-  .select-login-as{
-	  display: flex;
-	  flex-wrap: wrap;
-	  align-items: center;
-	  justify-content: space-between;
-	  box-shadow: 0 1px 3px rgba(0, 0, 0, .36);
-	  border-radius: 5px;
-	  overflow: hidden;
-  }
 
-  .select-login-as .login-role{
-	 flex:1;
-  }
-
-  .select-login-as .login-role input{
-	  display: none;
-  }
-  .select-login-as .login-role label{
-	  display: inline-flex;
-	  width: 100%;
-	  justify-content: center;
-	  padding: 10px 0;
-	  font-size: 15px;
-	  background: #fff;
-	  border-top: 2px solid transparent;
-	  transition: all 0.3s ease;
-	  margin-bottom: 0;
-  }
-
-  .select-login-as .login-role input:checked+label{
-	  border-color: #ff9100;
-	  background: #f1f1f1;
-  }
 
 /* Notification */
 
@@ -7358,8 +7325,8 @@ font-size: 16px;
 	background: #ff9100;
 	color: #fff;
 	text-transform: uppercase;
-	font-size: 14px;
-	padding: 5px 18px;
+	font-size: 13px;
+    padding: 18px 22px;
 	margin-top: 10px;
 	border-radius: 100px;
 	-webkit-border-radius: 100px;
@@ -7483,4 +7450,9 @@ top: 5px;
 
 .social-login .sc-icon img,.social-connect img{
 	width: 25px;
+}
+
+.thm_btn.btn_sub_cus_pr{
+	padding: 11px 32px;
+    font-size: 15px;
 }

@@ -179,23 +179,9 @@
                             <div class="join-login">
                                 <div class="head-title">
                                     <h3>Sign In To Streaming Plug</h3>
-                                    <div class="text-center">Login As</div>
                                 </div>
                                 <form action="" class="signin-form">
-                                    <div class="select-login-as">
-                                        <div class="login-role">
-                                            <input type="radio" name="Login" id="streamer-login" checked>
-                                            <label for="streamer-login">Streamer</label>
-                                        </div>
-                                        <div class="login-role">
-                                            <input type="radio" name="Login" id="follower-login">
-                                            <label for="follower-login">Follower</label>
-                                        </div>
-                                        <div class="login-role">
-                                            <input type="radio" name="Login" id="affiliate-login">
-                                            <label for="affiliate-login">Affiliate</label>
-                                        </div>
-                                    </div>
+
                                     <div class="sl-content">
                                         <div class="social-login">
                                             <button class="fb-login thm_btn br_btn_2" type="button">
@@ -215,7 +201,17 @@
                                         </div>
                                         <div class="or-div"></div>
 
-                                        <div class="form-row tex">
+                                        <div class="form-row">
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <select name="as" id="role" class="form-control">
+                                                        <option disabled selected>Sign In As</option>
+                                                        <option value="Streamer">Streamer</option>
+                                                        <option value="Follower">Follower</option>
+                                                        <option value="Affiliate">Affiliate</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                             <div class="form-group col-md-12">
                                                 <input type="email" class="form-control" id="signup_email"
                                                     placeholder="Enter Your Email" required>
