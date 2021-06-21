@@ -1397,6 +1397,21 @@
         left: 10px;
     }
 
+    .social-login .thm_btn{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    .social-login .sc-icon{
+        height: auto;
+        width: auto;
+        margin-right: 7px;
+    }
+
+    .social-login .sc-icon img{
+        width: 17px;
+    }
+
 }
 
 @media screen and (max-width:762px){
