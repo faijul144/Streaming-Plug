@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/metisMenu.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/dark.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
@@ -76,19 +77,19 @@
                                             <a href="javascript:void(0)" class="oicon"><i class="fas fa-globe"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="javascript:void(0)">English</a></li>
-                                                <li><a href="javascript:void(0)">French</a></li>
-                                                <li><a href="javascript:void(0)">Spanish</a></li>
-                                                <li><a href="javascript:void(0)">Russian</a></li>
-                                                <li><a href="javascript:void(0)">Romanian</a></li>
-                                                <li><a href="javascript:void(0)">Hungarian</a></li>
-                                                <li><a href="javascript:void(0)">Arabic</a></li>
-                                                <li><a href="javascript:void(0)">German</a></li>
-                                                <li><a href="javascript:void(0)">Chinese</a></li>
-                                                <li><a href="javascript:void(0)">Polish</a></li>
-                                                <li><a href="javascript:void(0)">Hindi</a></li>
-                                                <li><a href="javascript:void(0)">Portuguese</a></li>
-                                                <li><a href="javascript:void(0)">Hebrew</a></li>
-                                                <li><a href="javascript:void(0)">Italian</a></li>
+                                                <li><a href="javascript:void(0)">Français</a></li>
+                                                <li><a href="javascript:void(0)">Español</a></li>
+                                                <li><a href="javascript:void(0)">Pусский</a></li>
+                                                <li><a href="javascript:void(0)">Română</a></li>
+                                                <li><a href="javascript:void(0)">Magyar</a></li>
+                                                <li><a href="javascript:void(0)">عربى</a></li>
+                                                <li><a href="javascript:void(0)">Deutsche</a></li>
+                                                <li><a href="javascript:void(0)">中国人</a></li>
+                                                <li><a href="javascript:void(0)">Polskie</a></li>
+                                                <li><a href="javascript:void(0)">हिंदी</a></li>
+                                                <li><a href="javascript:void(0)">Português</a></li>
+                                                <li><a href="javascript:void(0)">עִברִית</a></li>
+                                                <li><a href="javascript:void(0)">Italiana</a></li>
                                             </ul>
                                         </li>
                                         <li class="menu_item_has_child nf">
@@ -267,19 +268,19 @@
                                             <a href="javascript:void(0)" class="oicon"><i class="fas fa-globe"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="javascript:void(0)">English</a></li>
-                                                <li><a href="javascript:void(0)">French</a></li>
-                                                <li><a href="javascript:void(0)">Spanish</a></li>
-                                                <li><a href="javascript:void(0)">Russian</a></li>
-                                                <li><a href="javascript:void(0)">Romanian</a></li>
-                                                <li><a href="javascript:void(0)">Hungarian</a></li>
-                                                <li><a href="javascript:void(0)">Arabic</a></li>
-                                                <li><a href="javascript:void(0)">German</a></li>
-                                                <li><a href="javascript:void(0)">Chinese</a></li>
-                                                <li><a href="javascript:void(0)">Polish</a></li>
-                                                <li><a href="javascript:void(0)">Hindi</a></li>
-                                                <li><a href="javascript:void(0)">Portuguese</a></li>
-                                                <li><a href="javascript:void(0)">Hebrew</a></li>
-                                                <li><a href="javascript:void(0)">Italian</a></li>
+                                                <li><a href="javascript:void(0)">Français</a></li>
+                                                <li><a href="javascript:void(0)">Español</a></li>
+                                                <li><a href="javascript:void(0)">Pусский</a></li>
+                                                <li><a href="javascript:void(0)">Română</a></li>
+                                                <li><a href="javascript:void(0)">Magyar</a></li>
+                                                <li><a href="javascript:void(0)">عربى</a></li>
+                                                <li><a href="javascript:void(0)">Deutsche</a></li>
+                                                <li><a href="javascript:void(0)">中国人</a></li>
+                                                <li><a href="javascript:void(0)">Polskie</a></li>
+                                                <li><a href="javascript:void(0)">हिंदी</a></li>
+                                                <li><a href="javascript:void(0)">Português</a></li>
+                                                <li><a href="javascript:void(0)">עִברִית</a></li>
+                                                <li><a href="javascript:void(0)">Italiana</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -430,10 +431,9 @@
                                                                 class="d-flex align-items-center justify-content-start flex-wrap">
                                                                 <div
                                                                     class="flilter btn-inline-block text-right mr-3 mb-3">
-                                                                    <span>Filter by Date</span>
-                                                                    <select class="ml-2 custom-select w-auto"
-                                                                        id="filter">
-                                                                        <option value="0" selected>-</option>
+                                                                    <select class="custom-select w-auto" id="filter">
+                                                                        <option value="0" disabled selected>Filter by
+                                                                            Date</option>
                                                                         <option value="1">1</option>
                                                                         <option value="2">2</option>
                                                                         <option value="3">3</option>
@@ -468,10 +468,9 @@
                                                                 </div>
                                                                 <div
                                                                     class="flilter btn-inline-block text-right mr-3 mb-3">
-                                                                    <span>Filter by Month</span>
-                                                                    <select class="ml-2 custom-select w-auto"
-                                                                        id="filter">
-                                                                        <option value="0" selected>-</option>
+                                                                    <select class="custom-select w-auto" id="filter">
+                                                                        <option value="0" disabled selected>Filter by
+                                                                            Month</option>
                                                                         <option value="1">January</option>
                                                                         <option value="2">February</option>
                                                                         <option value="3">March</option>
@@ -488,10 +487,9 @@
                                                                 </div>
                                                                 <div
                                                                     class="flilter btn-inline-block text-right mr-3 mb-3">
-                                                                    <span>Filter by Year</span>
-                                                                    <select class="ml-2 custom-select w-auto"
-                                                                        id="filter">
-                                                                        <option value="0" selected>-</option>
+                                                                    <select class="custom-select w-auto" id="filter">
+                                                                        <option value="0" disabled selected>Filter by
+                                                                            Year</option>
                                                                         <option value="2021">2021</option>
                                                                         <option value="2020">2020</option>
                                                                         <option value="2019">2019</option>
@@ -590,10 +588,9 @@
                                                                 class="d-flex align-items-center justify-content-start flex-wrap">
                                                                 <div
                                                                     class="flilter btn-inline-block text-right mr-3 mb-3">
-                                                                    <span>Filter by Date</span>
-                                                                    <select class="ml-2 custom-select w-auto"
-                                                                        id="filter">
-                                                                        <option value="0" selected>-</option>
+                                                                    <select class="custom-select w-auto" id="filter">
+                                                                        <option value="0" disabled selected>Filter by
+                                                                            Date</option>
                                                                         <option value="1">1</option>
                                                                         <option value="2">2</option>
                                                                         <option value="3">3</option>
@@ -628,10 +625,9 @@
                                                                 </div>
                                                                 <div
                                                                     class="flilter btn-inline-block text-right mr-3 mb-3">
-                                                                    <span>Filter by Month</span>
-                                                                    <select class="ml-2 custom-select w-auto"
-                                                                        id="filter">
-                                                                        <option value="0" selected>-</option>
+                                                                    <select class="custom-select w-auto" id="filter">
+                                                                        <option value="0" disabled selected>Filter by
+                                                                            Month</option>
                                                                         <option value="1">January</option>
                                                                         <option value="2">February</option>
                                                                         <option value="3">March</option>
@@ -648,10 +644,9 @@
                                                                 </div>
                                                                 <div
                                                                     class="flilter btn-inline-block text-right mr-3 mb-3">
-                                                                    <span>Filter by Year</span>
-                                                                    <select class="ml-2 custom-select w-auto"
-                                                                        id="filter">
-                                                                        <option value="0" selected>-</option>
+                                                                    <select class="custom-select w-auto" id="filter">
+                                                                        <option value="0" disabled selected>Filter by
+                                                                            Year</option>
                                                                         <option value="2021">2021</option>
                                                                         <option value="2020">2020</option>
                                                                         <option value="2019">2019</option>
@@ -836,6 +831,7 @@
     <script src="assets/js/simple-lightbox.js"></script>
     <script src="assets/js/sweetalert2.js"></script>
     <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
     <script src="assets/js/polyfill.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/affiliate.js"></script>

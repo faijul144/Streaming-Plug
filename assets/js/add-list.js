@@ -279,6 +279,10 @@ function editMulCon(x, addedfor) {
   thisBtn.addClass("d-block");
 
   thisBtn.append(template);
+  $("select").select2({
+    minimumResultsForSearch: -1,
+    width: "resolve",
+  });
 }
 
 // multi update submission
