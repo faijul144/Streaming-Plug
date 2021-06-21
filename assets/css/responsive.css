@@ -698,7 +698,9 @@
     .modal-xl-cus{
         max-width: 500px;
     }
-
+    .initial-cat .boxed-selects>div{
+        flex: 0 0 100%;
+    }
 
 
 .table-container{
