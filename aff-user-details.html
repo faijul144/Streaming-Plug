@@ -642,7 +642,7 @@
                                                             <!-- Payout -->
                                                             <div class="tab-pane fade" id="nav-3" role="tabpanel"
                                                                 aria-labelledby="nav-tab-03">
-                                                                <div class="row table-container">
+                                                                <div class="row">
                                                                     <div class="col-md-12">
                                                                         <div class="my-3">
                                                                             <div class=" acc-detail-top">
@@ -663,305 +663,313 @@
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <table class="aff-table">
-                                                                            <tr>
-                                                                                <th>Available Amuount</th>
-                                                                                <th>Action</th>
-                                                                            </tr>
-                                                                            <tr>
-                                                                                <td class="bnum">$500000</td>
-                                                                                <td>
-                                                                                    <ul class="action-list">
-                                                                                        <li>
-                                                                                            <a href="javascript:void(0)"
-                                                                                                id="payout">Cash
-                                                                                                Out</a>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                    <form
-                                                                                        class="payment-choose-payout align-items-start text-left">
-                                                                                        <div>
-                                                                                            <div
-                                                                                                class="custom-control custom-radio custom-control-inline mb-3">
-                                                                                                <input type="radio"
-                                                                                                    class="custom-control-input select-method"
-                                                                                                    name="method-payout"
-                                                                                                    id="card-payout"
-                                                                                                    value="card"
-                                                                                                    data-target="#card-section-payout"
-                                                                                                    checked>
-                                                                                                <label
-                                                                                                    class="custom-control-label"
-                                                                                                    for="card-payout">Select
-                                                                                                    Card</label>
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                id="card-section-payout">
-                                                                                                <div class="form-group">
-                                                                                                    <label>Select Your
-                                                                                                        Payment
-                                                                                                        Mathod<sup>*</sup></label>
-                                                                                                    <ul
-                                                                                                        class="gateway-img">
-                                                                                                        <li>
-                                                                                                            <input
-                                                                                                                type="radio"
-                                                                                                                name="price"
-                                                                                                                id="pal-payout"
-                                                                                                                value="pack-vip"
-                                                                                                                data-target="#paypal-form-payout">
-                                                                                                            <label
-                                                                                                                for="pal-payout">
-                                                                                                                <img src="./assets/img/payment/paypal.svg"
-                                                                                                                    alt="Payment Icon">
-                                                                                                            </label>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <input
-                                                                                                                type="radio"
-                                                                                                                name="price"
-                                                                                                                id="visa-payout"
-                                                                                                                value="pack-vip"
-                                                                                                                data-target="#credit-form-payout">
-                                                                                                            <label
-                                                                                                                for="visa-payout">
-                                                                                                                <img src="./assets/img/payment/visa.svg"
-                                                                                                                    alt="Payment Icon">
-                                                                                                            </label>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <input
-                                                                                                                type="radio"
-                                                                                                                name="price"
-                                                                                                                id="mastercard-payout"
-                                                                                                                value="pack-vip"
-                                                                                                                data-target="#credit-form-payout">
-                                                                                                            <label
-                                                                                                                for="mastercard-payout">
-                                                                                                                <img src="./assets/img/payment/mastercard.svg"
-                                                                                                                    alt="Payment Icon">
-                                                                                                            </label>
-                                                                                                        </li>
-                                                                                                        <li>
-                                                                                                            <input
-                                                                                                                type="radio"
-                                                                                                                name="price"
-                                                                                                                id="americanexpress-payout"
-                                                                                                                value="pack-vip"
-                                                                                                                data-target="#credit-form-payout">
-                                                                                                            <label
-                                                                                                                for="americanexpress-payout">
-                                                                                                                <img src="./assets/img/payment/amex.svg"
-                                                                                                                    alt="Payment Icon">
-                                                                                                            </label>
-                                                                                                        </li>
-                                                                                                    </ul>
-
-                                                                                                </div>
+                                                                        <div class="table-container">
+                                                                            <table class="aff-table">
+                                                                                <tr>
+                                                                                    <th>Available Amuount</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="bnum">$500000</td>
+                                                                                    <td>
+                                                                                        <ul class="action-list">
+                                                                                            <li>
+                                                                                                <a href="javascript:void(0)"
+                                                                                                    id="payout">Cash
+                                                                                                    Out</a>
+                                                                                            </li>
+                                                                                        </ul>
+                                                                                        <form
+                                                                                            class="payment-choose-payout align-items-start text-left">
+                                                                                            <div>
                                                                                                 <div
-                                                                                                    class="selected-card-form">
-                                                                                                    <div id="paypal-form-payout"
-                                                                                                        class="card-forms">
+                                                                                                    class="custom-control custom-radio custom-control-inline mb-3">
+                                                                                                    <input type="radio"
+                                                                                                        class="custom-control-input select-method"
+                                                                                                        name="method-payout"
+                                                                                                        id="card-payout"
+                                                                                                        value="card"
+                                                                                                        data-target="#card-section-payout"
+                                                                                                        checked>
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="card-payout">Select
+                                                                                                        Card</label>
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    id="card-section-payout">
+                                                                                                    <div
+                                                                                                        class="form-group">
+                                                                                                        <label>Select
+                                                                                                            Your
+                                                                                                            Payment
+                                                                                                            Mathod<sup>*</sup></label>
+                                                                                                        <ul
+                                                                                                            class="gateway-img">
+                                                                                                            <li>
+                                                                                                                <input
+                                                                                                                    type="radio"
+                                                                                                                    name="price"
+                                                                                                                    id="pal-payout"
+                                                                                                                    value="pack-vip"
+                                                                                                                    data-target="#paypal-form-payout">
+                                                                                                                <label
+                                                                                                                    for="pal-payout">
+                                                                                                                    <img src="./assets/img/payment/paypal.svg"
+                                                                                                                        alt="Payment Icon">
+                                                                                                                </label>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <input
+                                                                                                                    type="radio"
+                                                                                                                    name="price"
+                                                                                                                    id="visa-payout"
+                                                                                                                    value="pack-vip"
+                                                                                                                    data-target="#credit-form-payout">
+                                                                                                                <label
+                                                                                                                    for="visa-payout">
+                                                                                                                    <img src="./assets/img/payment/visa.svg"
+                                                                                                                        alt="Payment Icon">
+                                                                                                                </label>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <input
+                                                                                                                    type="radio"
+                                                                                                                    name="price"
+                                                                                                                    id="mastercard-payout"
+                                                                                                                    value="pack-vip"
+                                                                                                                    data-target="#credit-form-payout">
+                                                                                                                <label
+                                                                                                                    for="mastercard-payout">
+                                                                                                                    <img src="./assets/img/payment/mastercard.svg"
+                                                                                                                        alt="Payment Icon">
+                                                                                                                </label>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <input
+                                                                                                                    type="radio"
+                                                                                                                    name="price"
+                                                                                                                    id="americanexpress-payout"
+                                                                                                                    value="pack-vip"
+                                                                                                                    data-target="#credit-form-payout">
+                                                                                                                <label
+                                                                                                                    for="americanexpress-payout">
+                                                                                                                    <img src="./assets/img/payment/amex.svg"
+                                                                                                                        alt="Payment Icon">
+                                                                                                                </label>
+                                                                                                            </li>
+                                                                                                        </ul>
+
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="selected-card-form">
+                                                                                                        <div id="paypal-form-payout"
+                                                                                                            class="card-forms">
+                                                                                                            <div
+                                                                                                                class="form-group">
+                                                                                                                <label
+                                                                                                                    for="paypal-email-payout">Email<sup>*</sup></label>
+                                                                                                                <input
+                                                                                                                    type="email"
+                                                                                                                    class="form-control"
+                                                                                                                    id="paypal-email-payout"
+                                                                                                                    placeholder="Enter Paypal Email">
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div id="credit-form-payout"
+                                                                                                            class="card-forms">
+                                                                                                            <div
+                                                                                                                class="form-row">
+                                                                                                                <div
+                                                                                                                    class="col-md-12">
+                                                                                                                    <div
+                                                                                                                        class="form-group">
+                                                                                                                        <label
+                                                                                                                            for="card-number-payout">Card
+                                                                                                                            Number<sup>*</sup></label>
+                                                                                                                        <input
+                                                                                                                            type="number"
+                                                                                                                            class="form-control"
+                                                                                                                            id="card-number-payout"
+                                                                                                                            placeholder="Enter Card Number">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="col-md-6">
+                                                                                                                    <div
+                                                                                                                        class="form-group">
+                                                                                                                        <label
+                                                                                                                            for="exp-date-payout">Expire
+                                                                                                                            Date<sup>*</sup></label>
+                                                                                                                        <input
+                                                                                                                            type="text"
+                                                                                                                            class="form-control"
+                                                                                                                            id="exp-date-payout"
+                                                                                                                            placeholder="MM/YY">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div
+                                                                                                                    class="col-md-6">
+                                                                                                                    <div
+                                                                                                                        class="form-group pos-rel">
+                                                                                                                        <label
+                                                                                                                            for="cvv-payout">CVV<sup>*</sup></label>
+                                                                                                                        <input
+                                                                                                                            type="number"
+                                                                                                                            class="form-control pop-focus opt-pop"
+                                                                                                                            id="cvv-payout"
+                                                                                                                            placeholder="Enter CVV"
+                                                                                                                            data-container="body"
+                                                                                                                            data-toggle="popover"
+                                                                                                                            data-placement="top"
+                                                                                                                            data-list="#cvv-hint">
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+
+                                                                                                <div
+                                                                                                    class="custom-control custom-radio custom-control-inline mb-3">
+                                                                                                    <input type="radio"
+                                                                                                        class="custom-control-input select-method"
+                                                                                                        name="method-payout"
+                                                                                                        id="bank-payout"
+                                                                                                        value="bank"
+                                                                                                        data-target="#bank-section-payout">
+                                                                                                    <label
+                                                                                                        class="custom-control-label"
+                                                                                                        for="bank-payout">Enter
+                                                                                                        Bank
+                                                                                                        Statement</label>
+                                                                                                </div>
+
+                                                                                                <div class="form-row"
+                                                                                                    id="bank-section-payout">
+                                                                                                    <div
+                                                                                                        class="col-md-12 col-12">
                                                                                                         <div
                                                                                                             class="form-group">
                                                                                                             <label
-                                                                                                                for="paypal-email-payout">Email<sup>*</sup></label>
-                                                                                                            <input
-                                                                                                                type="email"
-                                                                                                                class="form-control"
-                                                                                                                id="paypal-email-payout"
-                                                                                                                placeholder="Enter Paypal Email">
+                                                                                                                for="bname">Currency<sup>*</sup></label>
+                                                                                                            <select
+                                                                                                                class="form-control">
+                                                                                                                <option>
+                                                                                                                    Australian
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    Australian
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    Canadian
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    Hong
+                                                                                                                    Kong
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    New
+                                                                                                                    Zealand
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    Singapore
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    New
+                                                                                                                    Taiwan
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option>
+                                                                                                                    Jamaican
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                                <option
+                                                                                                                    selected>
+                                                                                                                    United
+                                                                                                                    States
+                                                                                                                    Dollar
+                                                                                                                </option>
+                                                                                                            </select>
                                                                                                         </div>
                                                                                                     </div>
-                                                                                                    <div id="credit-form-payout"
-                                                                                                        class="card-forms">
+                                                                                                    <div
+                                                                                                        class="col-md-6 col-12">
                                                                                                         <div
-                                                                                                            class="form-row">
-                                                                                                            <div
-                                                                                                                class="col-md-12">
-                                                                                                                <div
-                                                                                                                    class="form-group">
-                                                                                                                    <label
-                                                                                                                        for="card-number-payout">Card
-                                                                                                                        Number<sup>*</sup></label>
-                                                                                                                    <input
-                                                                                                                        type="number"
-                                                                                                                        class="form-control"
-                                                                                                                        id="card-number-payout"
-                                                                                                                        placeholder="Enter Card Number">
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col-md-6">
-                                                                                                                <div
-                                                                                                                    class="form-group">
-                                                                                                                    <label
-                                                                                                                        for="exp-date-payout">Expire
-                                                                                                                        Date<sup>*</sup></label>
-                                                                                                                    <input
-                                                                                                                        type="text"
-                                                                                                                        class="form-control"
-                                                                                                                        id="exp-date-payout"
-                                                                                                                        placeholder="MM/YY">
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <div
-                                                                                                                class="col-md-6">
-                                                                                                                <div
-                                                                                                                    class="form-group pos-rel">
-                                                                                                                    <label
-                                                                                                                        for="cvv-payout">CVV<sup>*</sup></label>
-                                                                                                                    <input
-                                                                                                                        type="number"
-                                                                                                                        class="form-control pop-focus opt-pop"
-                                                                                                                        id="cvv-payout"
-                                                                                                                        placeholder="Enter CVV"
-                                                                                                                        data-container="body"
-                                                                                                                        data-toggle="popover"
-                                                                                                                        data-placement="top"
-                                                                                                                        data-list="#cvv-hint">
-                                                                                                                </div>
-                                                                                                            </div>
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                for="tnum">Transit
+                                                                                                                Number<sup>*</sup></label>
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                class="form-control"
+                                                                                                                id="tnum"
+                                                                                                                placeholder="12345">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-md-6 col-12">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                for="inum">Institution
+                                                                                                                Number<sup>*</sup></label>
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                class="form-control"
+                                                                                                                id="inum"
+                                                                                                                placeholder="000">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-md-6 col-12">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                for="acnum">Account
+                                                                                                                Number<sup>*</sup></label>
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                class="form-control"
+                                                                                                                id="acnum"
+                                                                                                                placeholder="00123456789">
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                    <div
+                                                                                                        class="col-md-6 col-12">
+                                                                                                        <div
+                                                                                                            class="form-group">
+                                                                                                            <label
+                                                                                                                for="cacnum">Confirm
+                                                                                                                Account
+                                                                                                                Number<sup>*</sup></label>
+                                                                                                            <input
+                                                                                                                type="text"
+                                                                                                                class="form-control"
+                                                                                                                id="cacnum"
+                                                                                                                placeholder="00123456789">
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </div>
-                                                                                            </div>
-
-                                                                                            <div
-                                                                                                class="custom-control custom-radio custom-control-inline mb-3">
-                                                                                                <input type="radio"
-                                                                                                    class="custom-control-input select-method"
-                                                                                                    name="method-payout"
-                                                                                                    id="bank-payout"
-                                                                                                    value="bank"
-                                                                                                    data-target="#bank-section-payout">
-                                                                                                <label
-                                                                                                    class="custom-control-label"
-                                                                                                    for="bank-payout">Enter
-                                                                                                    Bank
-                                                                                                    Statement</label>
-                                                                                            </div>
-
-                                                                                            <div class="form-row"
-                                                                                                id="bank-section-payout">
                                                                                                 <div
-                                                                                                    class="col-md-12 col-12">
-                                                                                                    <div
-                                                                                                        class="form-group">
-                                                                                                        <label
-                                                                                                            for="bname">Currency<sup>*</sup></label>
-                                                                                                        <select
-                                                                                                            class="form-control">
-                                                                                                            <option>
-                                                                                                                Australian
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>
-                                                                                                                Australian
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>
-                                                                                                                Canadian
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>Hong
-                                                                                                                Kong
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>New
-                                                                                                                Zealand
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>
-                                                                                                                Singapore
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>New
-                                                                                                                Taiwan
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option>
-                                                                                                                Jamaican
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                            <option
-                                                                                                                selected>
-                                                                                                                United
-                                                                                                                States
-                                                                                                                Dollar
-                                                                                                            </option>
-                                                                                                        </select>
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12">
-                                                                                                    <div
-                                                                                                        class="form-group">
-                                                                                                        <label
-                                                                                                            for="tnum">Transit
-                                                                                                            Number<sup>*</sup></label>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control"
-                                                                                                            id="tnum"
-                                                                                                            placeholder="12345">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12">
-                                                                                                    <div
-                                                                                                        class="form-group">
-                                                                                                        <label
-                                                                                                            for="inum">Institution
-                                                                                                            Number<sup>*</sup></label>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control"
-                                                                                                            id="inum"
-                                                                                                            placeholder="000">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12">
-                                                                                                    <div
-                                                                                                        class="form-group">
-                                                                                                        <label
-                                                                                                            for="acnum">Account
-                                                                                                            Number<sup>*</sup></label>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control"
-                                                                                                            id="acnum"
-                                                                                                            placeholder="00123456789">
-                                                                                                    </div>
-                                                                                                </div>
-                                                                                                <div
-                                                                                                    class="col-md-6 col-12">
-                                                                                                    <div
-                                                                                                        class="form-group">
-                                                                                                        <label
-                                                                                                            for="cacnum">Confirm
-                                                                                                            Account
-                                                                                                            Number<sup>*</sup></label>
-                                                                                                        <input
-                                                                                                            type="text"
-                                                                                                            class="form-control"
-                                                                                                            id="cacnum"
-                                                                                                            placeholder="00123456789">
-                                                                                                    </div>
+                                                                                                    class="col-12 text-center">
+                                                                                                    <button
+                                                                                                        type="submit"
+                                                                                                        class="thm_btn br_btn btn_sub_cus_big ">Proceed</button>
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <div
-                                                                                                class="col-12 text-center">
-                                                                                                <button type="submit"
-                                                                                                    class="thm_btn br_btn btn_sub_cus_big ">Proceed</button>
-                                                                                            </div>
-                                                                                        </div>
-                                                                                    </form>
-                                                                                </td>
-                                                                            </tr>
-                                                                        </table>
+                                                                                        </form>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </table>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
