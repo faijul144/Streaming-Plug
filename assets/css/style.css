@@ -302,9 +302,10 @@ input, textarea, select {
 	background-color: #ff9100;
 	font-weight: 500;
 	display: inline-block;
-
 }
-
+.main_menu ul li a.thm_btn,.sticky .main_menu ul li a.thm_btn {
+	border-color: transparent;
+}
 
 .thm_btn:hover {
 	color: #ffff;
@@ -1149,6 +1150,11 @@ input, textarea, select {
 .hero_4 .hero_content .hero_btn .thm_btn:hover, .header_4 .header_btn .thm_btn:hover {
 	color: #0c0c0c;
 	background: #fff;
+	transition: background 0.3s ease;
+	-webkit-transition: background 0.3s ease;
+	-moz-transition: background 0.3s ease;
+	-ms-transition: background 0.3s ease;
+	-o-transition: background 0.3s ease;
 }
 .hero_5 .hero_height {
 	min-height: 850px;
@@ -5526,6 +5532,7 @@ box-shadow: none;
 
 .header_4.header_cus .header_btn .thm_btn:hover,.header_4.header_cus .header_btn .thm_btn{
 	color: #fff;
+	border-color: transparent;
 }
 
 .header_cus .main_menu ul li.active > a{
