@@ -305,6 +305,14 @@
     .main_menu_area .logo img{
         width: 175px;
     }
+    .pro-img-thumb a.menu-toggle>div{
+        height: 30px;
+        width: 30px;
+    }
+    .mob-bottom-menu>div a.icon-link{
+        font-size: 22px;
+    }
+
    .modal-xl-cus{
         max-width: 750px;
     }
