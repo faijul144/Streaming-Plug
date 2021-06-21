@@ -84,7 +84,10 @@ body.dark-mode .dropdown-item,
 body.dark-mode .skills li a,
 body.dark-mode .inputed-list > div .sm-action button i,
 body.dark-mode .dropdown-menu,
-body.dark-mode .pack-price {
+body.dark-mode .pack-price,
+body.dark-mode .select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
   color: #fff;
 }
 
@@ -104,12 +107,14 @@ body.dark-mode .price-br::before,
 body.dark-mode .notification-box,
 body.dark-mode .check-green label,
 body.dark-mode .aff-table .action-list li a:hover,
-body.dark-mode .pack-radio div:not(.my-switch) > label {
+body.dark-mode .pack-radio div:not(.my-switch) > label,
+body.dark-mode .select2-container--default .select2-selection--single {
   background: #212121;
 }
 
 body.dark-mode .dropdown-item:focus,
-body.dark-mode .dropdown-item:hover {
+body.dark-mode .dropdown-item:hover,
+body.dark-mode .select2-dropdown {
   background: #1c1c1c;
 }
 
@@ -145,8 +150,13 @@ body.dark-mode .custom-select,
 body.dark-mode .form-control:focus,
 body.dark-mode .custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
 body.dark-mode .aff-link input,
-body.dark-mode .page-link {
+body.dark-mode .page-link,
+body.dark-mode .select2-container--default .select2-selection--single {
   border-color: #252525;
+}
+
+body.dark-mode .select2-dropdown {
+  border-color: #252525 !important;
 }
 
 body.dark-mode .aff-table tr th,
@@ -201,7 +211,8 @@ body.dark-mode .team_single {
 }
 
 body.dark-mode .stat-card,
-body.dark-mode .acc-detail-top div {
+body.dark-mode .acc-detail-top div,
+body.dark-mode .select2-container--default .select2-results__option--selected {
   background: #000;
 }
 

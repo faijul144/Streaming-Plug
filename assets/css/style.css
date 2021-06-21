@@ -5974,7 +5974,7 @@ margin:  5px 0;
 }
 
 .connect-link a{
-	color: #ff9100;
+	color: #ff9100 ;
 	font-size: 16px;
     padding: 5px 20px;
 	background: transparent;
@@ -5993,7 +5993,7 @@ margin:  5px 0;
 
 .connect-link a:hover{
 	background:#ff9100;
-	color: #fff;
+	color: #fff!important;
 }
 
 .connect-link>span{

@@ -306,14 +306,23 @@
         max-width: 750px;
     }
 
-    initial-cat .boxed-selects{
-        width: 100%;
+    .seetings-tab .services_tab .nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
-    .initial-cat .boxed-selects>div>label{
-        padding: 0 12px;
-        height: 90px;
-        font-size: 15px;
+
+    .seetings-tab .services_tab .nav li{
+        width: auto;
     }
+
+    .seetings-tab .services_tab .nav-link{
+        margin: 0 5px;
+        padding: 8px 15px;
+        height: auto;
+        width: auto;
+    }
+
 
     .pricing-content-container{
         min-height: 420px;
@@ -679,17 +688,7 @@
         max-width: 500px;
     }
 
-    initial-cat .boxed-selects{
-        width: 100%;
-    }
-    .initial-cat .boxed-selects>div{
-    flex: 0 0 50%
-}
-    .initial-cat .boxed-selects>div>label{
-        padding: 0 8px;
-        height: 100px;
-    font-size: 12px;
-    }
+
 
 .table-container{
     width: 100%;
@@ -1026,15 +1025,25 @@
         border-radius: 3px;
     }
 
+    .seetings-tab .services_tab .nav{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .seetings-tab .services_tab .nav li{
+        width: auto;
+    }
+
     .seetings-tab .services_tab .nav-link{
-        margin: 0;
+        margin: 0 5px;
         padding: 8px 15px;
         height: auto;
         width: auto;
     }
 
     .seetings-tab .services_tab .nav-link .title i {
-        margin-right: 10px;
+        margin-right: 0;
     }
 
     .services_tab .nav-link .title{
@@ -1432,15 +1441,4 @@
     .page_title_wrap {
         height: calc(50vw - 0px);
     }
-}
-
-@media screen and (max-width:413px) {
-    .initial-cat .boxed-selects>div{
-        flex: 0 0 100%;
-    }
-    .initial-cat .boxed-selects>div>label {
-        height: 140px;
-        font-size: 20px;
-    }
-
 }
