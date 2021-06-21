@@ -7480,3 +7480,7 @@ top: 5px;
 .modal-header{
 	border-bottom-color: #f1f1f1;
 }
+
+.social-login .sc-icon img{
+	width: 25px;
+}
