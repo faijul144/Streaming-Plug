@@ -93,7 +93,8 @@ body.dark-mode .faq_wrapper .accordion-box .block .acc-btn,
 body.dark-mode .boxed-selects > div > label,
 body.dark-mode .post-options a,
 body.dark-mode label,
-body.dark-mode .share-modal a {
+body.dark-mode .share-modal a,
+body.dark-mode .pinned_post a {
   color: #fff;
 }
 
