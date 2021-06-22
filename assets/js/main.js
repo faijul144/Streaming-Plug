@@ -510,17 +510,23 @@
   // Select Payment Method
   $(".select-method").each(function () {
     let other = $(this).data("target");
-    $(other).find(".form-control").attr("disabled", "disabled");
+    $(other).find("input").attr("disabled", "disabled");
+    $(other).find("select").attr("disabled", "disabled");
     if ($(this).is(":checked")) {
       let target = $(this).data("target");
-      $(target).find(".form-control").removeAttr("disabled");
+      $(target).find("input").removeAttr("disabled");
+      $(target).find("select").removeAttr("disabled");
     }
     $(".select-method").change(function () {
       if ($(this).is(":checked")) {
         let target = $(this).data("target");
-        $(other).find(".form-control").attr("disabled", "disabled");
-        $(other).find("input.form-control").val("");
-        $(target).find(".form-control").removeAttr("disabled");
+        $(other).find("input").attr("disabled", "disabled");
+        $(other).find("select").attr("disabled", "disabled");
+        $(other).find("input").val("");
+        $(other).find("select").find("option[selected]").val();
+        $(other).find("input:checked").prop("checked", false);
+        $(target).find("input").removeAttr("disabled");
+        $(target).find("select").removeAttr("disabled");
         $(".card-forms").slideUp();
       }
     });
