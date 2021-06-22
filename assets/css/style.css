@@ -5556,7 +5556,7 @@ box-shadow: none;
 	margin: 20px 0 10px;
 	position: relative;
 	text-transform: capitalize;
-    color: #0c0c0c !important;
+    color: #000 !important;
 	background: #fff !important;
 	border: 1px solid #ced4da
 }
@@ -5809,7 +5809,7 @@ margin:  5px 0;
 }
 .sup-file-inputs .file{
 	position: relative;
-	color: #0c0c0c;
+	color: #000;
 	background: #efefef;
 	padding: 5px 10px;
 	margin: 5px 0 10px;
@@ -5924,7 +5924,7 @@ margin:  5px 0;
     margin-top: 20px;
     padding-top: 8px;
     border-top: 1px solid #dadada;
-    color: #0c0c0c;
+    color: #000;
 }
 .pack-price:before{
 	content:"$";
@@ -6026,7 +6026,7 @@ margin:  5px 0;
     right: 6px;
     top: 6px;
     font-size: 15px;
-    color: #0c0c0c;
+    color: #000;
 }
 
 .profile-opt:hover{
