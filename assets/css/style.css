@@ -177,7 +177,7 @@ p {
 	font-size: 16px;
 	font-weight: normal;
 	line-height: 28px;
-	color: #635f5f;
+	color: #0c0c0c;
 	margin-bottom: 15px;
 }
 hr {
@@ -7391,6 +7391,10 @@ font-size: 16px;
     -moz-border-radius: 3px !important;
     -ms-border-radius: 3px !important;
     -o-border-radius: 3px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+	color: #0c0c0c;
 }
 
 .select2-results__option{
