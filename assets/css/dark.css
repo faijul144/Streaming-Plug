@@ -55,7 +55,8 @@ body.dark-mode .file-formate,
 body.dark-mode .close-mobile-menu,
 body.dark-mode .mob-bottom-menu > div,
 body.dark-mode .modal-content,
-body.dark-mode .aff-img .aff-link {
+body.dark-mode .aff-img .aff-link,
+body.dark-mode .pop-share-links li a {
   background: #151515;
 }
 
@@ -88,7 +89,11 @@ body.dark-mode .pack-price,
 body.dark-mode .select2-container--default
 .select2-selection--single
 .select2-selection__rendered,
-body.dark-mode .faq_wrapper .accordion-box .block .acc-btn {
+body.dark-mode .faq_wrapper .accordion-box .block .acc-btn,
+body.dark-mode .boxed-selects > div > label,
+body.dark-mode .post-options a,
+body.dark-mode label,
+body.dark-mode .share-modal a {
   color: #fff;
 }
 
