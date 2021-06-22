@@ -274,7 +274,8 @@ body.dark-mode .disclaimer {
 }
 
 body.dark-mode .pricing_single .price_icon img,
-body.dark-mode .pack_icon img {
+body.dark-mode .pack_icon img,
+body.dark-mode .audio-bg img {
   filter: invert(1);
   -webkit-filter: invert(1);
 }
