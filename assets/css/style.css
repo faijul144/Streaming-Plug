@@ -3331,7 +3331,7 @@ margin: 10px 0;
 	margin-bottom: 10px;
     padding: 5px 10px;
     background: #f0f0f0;
-    color: #565656;
+    color: #000;
     border-radius: 50pc;
     font-size: 12px;
     white-space: nowrap;
@@ -4311,7 +4311,7 @@ text-transform: uppercase;
 	border: 2px solid #dbdbdb;
 	font-size: 14px;
 	text-transform: uppercase;
-	color: #8c8c8c;
+	color: #000;
 	font-weight: 500;
 }
 .pricing_single .price_btn a:hover, .pricing_single.active .price_btn a {
