@@ -48,13 +48,12 @@
 		font-style: normal;
 		}
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap');
  body {
 	font-family: 'aktiv-grotesk', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	font-size: 16px;
-	color: #635f5f;
+	color: #000;
 	/* background: #f8f8f8; */
 	background: #fff;
 }
@@ -187,13 +186,13 @@ hr {
 	padding: 0;
 }
 label {
-	color: #7e7e7e;
+	color: #000;
 	cursor: pointer;
 	font-size: 14px;
 	font-weight: 400;
 }
 a, button{
-	color: #0c0c0c;
+	color: #000;
 }
 
 i,
@@ -320,7 +319,7 @@ input, textarea, select {
 	bottom: 0px;
 	content: "";
 	position: absolute;
-	background-color: #0c0c0c;
+	background-color: #000;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -339,7 +338,7 @@ input, textarea, select {
 }
 
 .thm_btn-black {
-	background-color: #0c0c0c;
+	background-color: #000;
 	transition: all 0.5s ease;
 }
 .thm_btn-black::before {
@@ -347,7 +346,7 @@ input, textarea, select {
 }
 .thm_btn-white {
 	background-color: #fff;
-	color: #0c0c0c;
+	color: #000;
 }
 .br_btn, .br_btn::before {
 	overflow: hidden;
@@ -374,7 +373,7 @@ input, textarea, select {
 }
 .thm_btn-border:hover {
 	border-color: #fff;
-	color: #0c0c0c;
+	color: #000;
 }
 .thm_btn-border::before {
 	background-color: #fff;
@@ -506,7 +505,7 @@ input, textarea, select {
 	display: block;
 }
 .main_menu ul li ul.submenu li a {
-	color: #0c0c0c;
+	color: #000;
 	display: block;
 	font-size: 15px;
 	padding: 8px 25px;
@@ -725,7 +724,7 @@ input, textarea, select {
 }
 
 .mob-bottom-menu>div a.icon-link i{
-	color: #0c0c0c;
+	color: #000;
 }
 
 .icon-link[data-count]:after{
@@ -780,7 +779,7 @@ input, textarea, select {
 	display: none;
 }
 .sticky .main_menu ul li a {
-	color: #0c0c0c;
+	color: #000;
 }
 .main_menu_area .logo a {
 	/* max-width: 160px; */
@@ -822,10 +821,10 @@ input, textarea, select {
 	background-color: #fff;
 }
 .header_3 .sticky .header_btn .thm_btn::before {
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 .header_3 .header_btn .thm_btn:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 .header_3 .sticky .header_btn .thm_btn:hover {
 	color: #fff;
@@ -846,7 +845,7 @@ input, textarea, select {
 	border-radius: 50%;
 }
 .header_4 .sticky .header_btn .thm_btn::before {
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 .header_4 .sticky .header_btn .thm_btn:hover {
 	color: #fff;
@@ -946,7 +945,7 @@ input, textarea, select {
 	font-weight: 700;
 }
 .hero_2 .hero_content h2, .hero_3 .hero_content h2 {
-	color: #0c0c0c;
+	color: #000;
 }
 .hero_2 .hero_content p, .hero_3 .hero_content p {
 	color: #716e6e;
@@ -1074,7 +1073,7 @@ input, textarea, select {
 	margin-right: 10px;
 }
 .hero_3 .hero_bottom .hero_social a:hover {
-	background-color: #0c0c0c;
+	background-color: #000;
 	color: #fff;
 }
 
@@ -1145,7 +1144,7 @@ input, textarea, select {
 	max-width: 710px;
 }
 .hero_4 .hero_content .hero_btn .thm_btn::before, .header_4 .header_btn .thm_btn::before {
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 .hero_4 .hero_content .hero_btn .thm_btn:hover, .header_4 .header_btn .thm_btn:hover {
 	color: #fff;
@@ -1170,7 +1169,7 @@ input, textarea, select {
 	background-color: #fff;
 }
 .hero_5 .hero_content .thm_btn:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 /* 4. about */
 .about_area {
@@ -1254,7 +1253,7 @@ input, textarea, select {
 
 .btn_group .sp_wrap h4 {
 	font-size: 45px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: 2px;
 }
 .btn_group .sp_wrap h4 > span {
@@ -1263,7 +1262,7 @@ input, textarea, select {
 .btn_group .sp_wrap > span {
 	font-size: 16px;
 	text-transform: uppercase;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 700;
 }
 .about_2 .sec_title {
@@ -1316,7 +1315,7 @@ input, textarea, select {
 	font-size: 50px;
 	font-weight: 700;
 	margin-bottom: 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 }
 .coun_single .c_text h2 > span {
 	font-size: 20px;
@@ -1349,12 +1348,12 @@ input, textarea, select {
 	background: #fff;
 	font-size: 15px;
 	text-transform: uppercase;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 500;
 	border-radius: 50px;
 }
 .about_tab_wrap ul li a.active, .review_tab ul li a.active {
-	background-color: #0c0c0c;
+	background-color: #000;
 	color: #fff;
 }
 .about_tab_wrap .tab-content {
@@ -1433,7 +1432,7 @@ input, textarea, select {
 }
 .services_single a {
 	font-size: 14px;
-	color: #0c0c0c;
+	color: #000;
 }
 .services_2 .services_single {
 	z-index: 1;
@@ -1486,7 +1485,7 @@ input, textarea, select {
 }
 .services_3 .services_single a {
 	font-size: 15px;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 700;
 	text-transform: uppercase;
 }
@@ -1498,7 +1497,7 @@ input, textarea, select {
 }
 
 .sec_title span a{
-	color: #0c0c0c;
+	color: #000;
 }
 
 .sec_title span a:hover{
@@ -1528,7 +1527,7 @@ input, textarea, select {
     align-items: center;
     margin: 0;
     padding: 5px 17px;
-    color: #0c0c0c;
+    color: #000;
     font-size: 18px;
     font-weight: 500;
     position: relative;
@@ -1546,7 +1545,7 @@ input, textarea, select {
     font-size: 16px;
 }
 .services_tab .nav-link.active {
-	background-color: #0c0c0c;
+	background-color: #000;
     color: #fff;
 }
 .services_content_wrap .services_thumb > img,
@@ -1609,7 +1608,7 @@ input, textarea, select {
 	margin-top: 14px;
 	text-transform: uppercase;
 	color: #111;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 }
 .capabilities_6 {
 	margin-top: -140px;
@@ -1632,7 +1631,7 @@ input, textarea, select {
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
-	color: #0c0c0c;
+	color: #000;
 	border-radius: 4px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
@@ -1712,7 +1711,7 @@ input, textarea, select {
 	display: flex;
 	align-items: center;
 	margin-bottom: 20px;
-	color: #0c0c0c;
+	color: #000;
 }
 .d_content .d_list li:last-child {
 	margin-bottom: 0;
@@ -1767,7 +1766,7 @@ input, textarea, select {
 	overflow: hidden;
 }
 .widget .service_list li a:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 .widget .service_list li a span {
 	position: absolute;
@@ -1803,7 +1802,7 @@ input, textarea, select {
 	font-size: 15px;
 	margin-bottom: 0;
 	font-weight: 600;
-	color: #0c0c0c;
+	color: #000;
 }
 /* 7. portfolio */
 .portfolio_area.section_bg::before {
@@ -1830,7 +1829,7 @@ input, textarea, select {
 }
 .masonry_active button {
 	background: #fff;
-	color: #0c0c0c;
+	color: #000;
 	border: none;
 	font-weight: 500;
 	font-size: 14px;
@@ -1867,7 +1866,7 @@ blockquote .author_info {
 blockquote .author_info cite {
 	font-size: 16px;
 	font-weight: 700;
-	color: #0c0c0c;
+	color: #000;
 	display: block;
 	text-transform: uppercase;
 	margin-bottom: -8px;
@@ -1900,7 +1899,7 @@ blockquote .author_info span{
 	padding-left: 20px;
 }
 .port_content .port_icon a {
-	color: #0c0c0c;
+	color: #000;
 	margin-top: 8px;
 }
 .port_content .port_text span {
@@ -1953,7 +1952,7 @@ blockquote .author_info span{
 	font-size: 45px;
 	font-weight: 700;
 	margin-bottom: 4px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 }
 .video_area .video_text li .bt_box h3 > span {
 	font-size: 20px;
@@ -2059,7 +2058,7 @@ blockquote .author_info span{
 .capablities_3 .capablities_bg::after {
 	width: 51%;
 	height: 100%;
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 .capablities_3 .sec_title > h2 {
 	color: #fff;
@@ -2071,7 +2070,7 @@ blockquote .author_info span{
 	background-color: #fff;
 }
 .capablities_3 .cb_btn > a:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 .capablities_3 .capablities_left {
 	padding: 100px 0;
@@ -2098,7 +2097,7 @@ blockquote .author_info span{
 .capablities_4 .cb_right .cb_single h3 {
 	font-size: 50px;
 	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: 10px;
 }
 .capablities_4 .cb_right .cb_single h3 > span {
@@ -2160,7 +2159,7 @@ blockquote .author_info span{
 }
 .tm_item .tm_text p {
 	font-size: 20px;
-	color: #0c0c0c;
+	color: #000;
 	line-height: 35px;
 	margin-bottom: 40px;
 	font-family: 'Playfair Display', serif;
@@ -2169,7 +2168,7 @@ blockquote .author_info span{
 	font-size: 16px;
 	text-transform: uppercase;
 	font-weight: bold;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: 3px;
 }
 .tm_item .tm_text span {
@@ -2376,19 +2375,19 @@ blockquote .author_info span{
 	-o-transition: .3s;
 }
 .blog_bottom .blog_social li a:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 .blog_single .thm_btn {
 	padding: 10px 20px;
 	font-size: 12px;
 	background-color: #f8f8f8;
-	color: #0c0c0c;
+	color: #000;
 }
 .blog_single .thm_btn:hover {
 	color: #fff;
 }
 .blog_single .thm_btn::before {
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 .blog_content .meta li {
 	display: inline-block;
@@ -2428,7 +2427,7 @@ blockquote .author_info span{
 .btn_wrap .r_btn {
 	font-size: 17px;
 	text-transform: uppercase;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 700;
 }
 .btn_wrap .r_btn:hover {
@@ -2448,7 +2447,7 @@ blockquote .author_info span{
 	transform: translate(5px, 1px);
 }
 .btn_wrap .share {
-	color: #0c0c0c;
+	color: #000;
 	font-size: 17px;
 }
 .btn_wrap .share:hover {
@@ -2714,7 +2713,7 @@ blockquote .author_info span{
 	left: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	color: #0c0c0c;
+	color: #000;
 	font-family: 'themify';
 	font-size: 80px;
 	content: "\e67f";
@@ -2727,7 +2726,7 @@ blockquote .author_info span{
 	height: 60px;
 	font-size: 15px;
 	background-color: #f8f8f8;
-	color: #0c0c0c;
+	color: #000;
 	padding-left: 30px;
 	padding-right: 60px;
 }
@@ -2737,7 +2736,7 @@ blockquote .author_info span{
 	top: 0;
 	width: 60px;
 	height: 60px;
-	color: #0c0c0c;
+	color: #000;
 	font-size: 14px;
 	border: none;
 	z-index: 2;
@@ -2794,7 +2793,7 @@ blockquote .author_info span{
 	margin: 0 8px;
 }
 .widget .author_content .social_icon li a:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 .widget .post_tags {
 	display: flex;
@@ -2815,7 +2814,7 @@ blockquote .author_info span{
 	border-radius: 50px;
 }
 .widget .post_tags li a:hover {
-	background-color: #0c0c0c;
+	background-color: #000;
 	color: #fff;
 }
 .blog_dtls_wrap {
@@ -2847,7 +2846,7 @@ blockquote .author_info span{
 }
 .post_tag_wrap .related_tag ul li a:hover {
 	color: #fff;
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 .post_tag_wrap .related_tag h5, .post_tag_wrap .social_share h5 {
 	font-size: 20px;
@@ -2863,7 +2862,7 @@ blockquote .author_info span{
 	margin-left: 15px;
 }
 .post_tag_wrap .social_share ul li a:hover {
-	color: #0c0c0c;
+	color: #000;
 }
 .post_tag_wrap .social_share ul li:first-child a {
 	margin-left: 0;
@@ -2978,7 +2977,7 @@ blockquote .author_info span{
 	padding: 0 30px;
 	border: none;
 	background: #fff;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 600;
 	font-size: 15px;
 }
@@ -3004,7 +3003,7 @@ blockquote .author_info span{
 	margin-right: 10px;
 }
 .footer_widget .footer_social > a:hover {
-	color: #0c0c0c;
+	color: #000;
 	background-color: #fff;
 }
 .footer_widget h3 {
@@ -3126,7 +3125,7 @@ blockquote .author_info span{
 	padding: 0 15px;
 	border: none;
 	background: none;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 600;
 	font-size: 14px;
 }
@@ -3263,7 +3262,7 @@ blockquote .author_info span{
 }
 .progress-value h2 {
 	font-size: 40px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 }
 .progress-value span {
 	font-size: 22px;
@@ -3532,7 +3531,7 @@ text-transform: uppercase;
 }
 
 .team_details .td_social li a:hover,.team_social li a:hover {
-	background-color: #0c0c0c;
+	background-color: #000;
 	color: #fff;
 }
 .team_details .team_content {
@@ -3547,10 +3546,10 @@ text-transform: uppercase;
 .team_info_list li {
 	margin-bottom: 30px;
 	font-size: 15px;
-	color: #0c0c0c;
+	color: #000;
 }
 .team_info_list li a {
-	color: #0c0c0c;
+	color: #000;
 }
 .team_info_list li a:hover {
 	color: #ff9100;
@@ -3576,7 +3575,7 @@ text-transform: uppercase;
 	color: #111111;
 	margin-bottom: 0;
 	margin-top: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 }
 /* 16. page title */
 .page_title_area {
@@ -3632,7 +3631,7 @@ text-transform: uppercase;
 	text-transform: uppercase;
 }
 .breadcrumb_wrap .br_text ul li a {
-	color: #0c0c0c;
+	color: #000;
 }
 .br_text ul li::before {
 	position: absolute;
@@ -3734,7 +3733,7 @@ text-transform: uppercase;
 	justify-content: center;
 	width: 35px;
 	height: 35px;
-	color: #0c0c0c;
+	color: #000;
 	background-color: #fff;
 	position: relative;
 	transition: .3s;
@@ -3756,7 +3755,7 @@ text-transform: uppercase;
 	margin-bottom: 0;
 }
 .shop_single .actions .action:hover {
-	background-color: #0c0c0c;
+	background-color: #000;
 	color: #fff;
 }
 .shop_single:hover .thumb .actions .action {
@@ -3779,10 +3778,10 @@ text-transform: uppercase;
 	margin: 0 2px;
 }
 .shop_single .content .title {
-	color: #0c0c0c;
+	color: #000;
 	font-size: 14px;
 	font-weight: 400;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: 4px;
 }
 .shop_single .content .price .old {
@@ -3793,7 +3792,7 @@ text-transform: uppercase;
 }
 .shop_single .content .price > span {
 	font-size: 17px;
-	color: #0c0c0c;
+	color: #000;
 	font-weight: 700;
 	margin-left: 3px;
 }
@@ -3818,7 +3817,7 @@ text-transform: uppercase;
 	border: 1px solid transparent;
 }
 .shop_thumb_tab ul li a.active {
-	border-color: #0c0c0c;
+	border-color: #000;
 }
 .product_wrap {
 	display: flex;
@@ -3841,7 +3840,7 @@ text-transform: uppercase;
 }
 .details_content .price {
 	font-size: 25px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: 6px;
 }
 .details_content .review_wrap {
@@ -3928,7 +3927,7 @@ text-transform: uppercase;
 	margin-bottom: 0px;
 	border-radius: 5px;
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	font-weight: 600;
 }
 .quantity_boxed input {
@@ -3936,7 +3935,7 @@ text-transform: uppercase;
 	border: none;
 	text-align: center;
 	display: inline-block;
-	color: #0c0c0c;
+	color: #000;
 	height: 19px;
 	padding: 0;
 }
@@ -3951,7 +3950,7 @@ text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 600;
 	margin-bottom: 10px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 }
 .details_share_links .list_title i {
 	font-size: 10px;
@@ -3970,7 +3969,7 @@ text-transform: uppercase;
 	font-size: 14px;
 }
 .social_icons a:hover {
-	background-color: #0c0c0c;
+	background-color: #000;
 	color: #fff;
 }
 .related_product .shop_single {
@@ -4003,7 +4002,7 @@ text-transform: uppercase;
 }
 .additional_info .title {
 	font-size: 16px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	text-transform: uppercase;
 	margin-bottom: 20px;
 }
@@ -4059,12 +4058,12 @@ text-transform: uppercase;
 	border: none;
 	text-align: center;
 	display: inline-block;
-	color: #0c0c0c;
+	color: #000;
 	height: 18px;
 	padding: 0;
 }
 .quantity_input button {
-	color: #0c0c0c;
+	color: #000;
 }
 .carttable_product_item .item_title {
 	font-size: 15px;
@@ -4118,7 +4117,7 @@ text-transform: uppercase;
 	font-size: 24px;
 	text-transform: uppercase;
 	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: 20px;
 }
 .cart_tutal_wrap ul li {
@@ -4201,7 +4200,7 @@ text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 500;
 	margin-right: 50px;
-	color: #0c0c0c;
+	color: #000;
 }
 .from_wrapper .payment_img {
 	position: absolute;
@@ -4262,7 +4261,7 @@ text-transform: uppercase;
 .pricing_single .price_head h2 {
 	font-size: 90px;
 	font-weight: 700;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'aktiv-grotesk', sans-serif;
 	margin-bottom: -6px;
 	position: relative;
 }
@@ -4278,7 +4277,7 @@ text-transform: uppercase;
 }
 .pricing_single .price_head .pack {
 	text-transform: uppercase;
-	color: #0c0c0c;
+	color: #000;
 }
 .pricing_single .price_head .time {
 	color: #7d7d7d;
@@ -4316,8 +4315,8 @@ text-transform: uppercase;
 	font-weight: 500;
 }
 .pricing_single .price_btn a:hover, .pricing_single.active .price_btn a {
-	background-color: #0c0c0c;
-	border-color: #0c0c0c;
+	background-color: #000;
+	border-color: #000;
 	color: #fff;
 }
 
@@ -4632,7 +4631,7 @@ text-transform: uppercase;
 }
 
 .foot_area .thm_btn:hover::before{
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 
 .foot_area .thm_btn:hover{
@@ -4762,7 +4761,7 @@ font-size: 16px;
 	}
 
 	.follower a:hover{
-		color: #0c0c0c;
+		color: #000;
 	}
 	.read-more:hover{
 		color: #fff;
@@ -4792,7 +4791,7 @@ font-size: 16px;
 }
 
 .pagination .page-link{
-	color: #0c0c0c;
+	color: #000;
 	font-size: 15px;
     font-weight: 500;
 }
@@ -4943,7 +4942,7 @@ margin: 15px 0;
 	padding: 5px 20px;
     font-size: 13px;
 	background:#fff;
-	color: #0c0c0c;
+	color: #000;
 	border-radius: 50px;
 	transition: all 0.3s ease-in-out;
 	border: 1px solid #c7c7c7
@@ -5011,7 +5010,7 @@ margin: 15px 0;
 }
 
 .post-set{
-	color: #0c0c0c;
+	color: #000;
 	position: absolute;
 	right: 5px;
     top: 0;
@@ -5026,7 +5025,7 @@ margin: 15px 0;
 }
 
 .post-setting-list a{
-	color: #0c0c0c;
+	color: #000;
 	font-size: 14px;
 	display: flex;
 	align-items: center;
@@ -5195,7 +5194,7 @@ margin-right: 10px;
 
 .comentar-name a{
 	font-size: 20px;
-	color: #0c0c0c;
+	color: #000;
 }
 
 .comment-text{
@@ -5287,7 +5286,7 @@ border:0;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	color: #0c0c0c;
+	color: #000;
 }
 
 .input-text-opt a:hover, .input-text-opt button:hover{
@@ -5472,7 +5471,7 @@ box-shadow: none;
 .privacy_area .d_content .sub_sub_title{font-size: 20px;}
 
 .privacy_area .d_content a{
-	color: #0c0c0c;
+	color: #000;
 }
 
 .privacy_area .d_content a:hover{
@@ -5519,7 +5518,7 @@ box-shadow: none;
 
 
 .header_cus .main_menu ul li a:not(:hover){
-	color: #0c0c0c;
+	color: #000;
 }
 
 .header_cus .main_menu ul li ul.submenu{
@@ -5527,7 +5526,7 @@ box-shadow: none;
 }
 
 .header_4.header_cus .header_btn .thm_btn::before{
-	background-color: #0c0c0c;
+	background-color: #000;
 }
 
 .header_4.header_cus .header_btn .thm_btn:hover,.header_4.header_cus .header_btn .thm_btn{
@@ -5714,7 +5713,7 @@ sup{font-size: 8px;}
 }
 
 .about_content p a{
-	color: #0c0c0c;
+	color: #000;
 }
 
 .contact_text a:hover, .about_content p a:hover{
@@ -6090,7 +6089,7 @@ margin:  5px 0;
 }
 
 .short_text a,.foot a,.signup-form a{color: #ff9100;}
-.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #0c0c0c;}
+.short_text a:hover,.foot a:hover,.signup-form a:hover{color: #000;}
 .signup-form .custom-control-label{line-height: 23px;}
 
 .main_menu ul li a.oicon{
@@ -6116,7 +6115,7 @@ margin:  5px 0;
 }
 
 .blog_details_area .d_content a {
-	color: #0c0c0c;
+	color: #000;
 }
 .blog_details_area .d_content a:hover {
 	color: #ff9100;
@@ -6182,8 +6181,8 @@ margin:  5px 0;
 }
 
 .sm-menu-lang.main_menu ul li a{
-color: #0c0c0c;
-border-color: #0c0c0c;
+color: #000;
+border-color: #000;
 }
 .sm-menu-lang{
 	margin-right: 15px;
@@ -6206,7 +6205,7 @@ border-color: #0c0c0c;
 
 }
 .aff_man a{
-	color: #0c0c0c;
+	color: #000;
 	text-transform: capitalize;
 }
 
@@ -6399,7 +6398,7 @@ border-color: #0c0c0c;
     font-size: 18px;
 }
 .aff-table tr th{
-color: #0c0c0c;
+color: #000;
 font-size: 20px;
 }
 
@@ -6930,7 +6929,7 @@ font-size: 16px;
 	margin-top: 40px;
 	padding: 30px 50px;
 	font-size: 16px;
-	color: #0c0c0c;
+	color: #000;
 	text-align: center;
 }
 
@@ -6955,7 +6954,7 @@ font-size: 16px;
 
 #goodbymodal .modal-body, .usub-modal .modal-body{margin: 0;}
 
-#goodbymodal p, .usub-modal p{color: #0c0c0c;font-size: 15px;}
+#goodbymodal p, .usub-modal p{color: #000;font-size: 15px;}
 
 #goodbymodal p a, .usub-modal p a{color:#ff9100; transition:all 0.3s ease}
 #goodbymodal p a:hover, .usub-modal p a:hover{color:#0c0c0c}
@@ -7042,7 +7041,7 @@ font-size: 16px;
 }
 .about-list li p{
 	margin-bottom: 0;
-    color: #0c0c0c;
+    color: #000;
     font-size: 16px;
 	line-height: 25px;
 }
@@ -7053,7 +7052,7 @@ font-size: 16px;
 }
 
 .about-list li a{
-    color: #0c0c0c;
+    color: #000;
 	transition: color 0.3s ease;
 }
 
@@ -7140,7 +7139,7 @@ font-size: 16px;
 	transition: all 0.3s ease;
 }
 .inputed-list>div .sm-action button i{
-	color: #0c0c0c;
+	color: #000;
 	font-size: 14px;
 	transition: all 0.3s ease;
 }
@@ -7261,7 +7260,7 @@ font-size: 16px;
 	margin-left: 8px;
 	font-size: 10px;
 	background: #f1f1f1;
-	color: #0c0c0c;
+	color: #000;
 	box-shadow: 1px 1px 2px rgba(0, 0, 0, .36);
 	transition: all 0.3s ease;
 	-webkit-transition: all 0.3s ease;
@@ -7394,7 +7393,7 @@ font-size: 16px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered{
-	color: #0c0c0c;
+	color: #000;
 }
 
 .select2-results__option{
