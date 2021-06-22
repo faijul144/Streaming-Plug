@@ -257,7 +257,6 @@ body.dark-mode .thm_btn.br_btn:hover {
   color: #000 !important;
 }
 
-body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover,
 body.dark-mode .services_tab .nav-link,
 body.dark-mode .swal2-popup {
   background: #000;
@@ -266,6 +265,10 @@ body.dark-mode .swal2-popup {
 body.dark-mode .header_4.header_cus .header_btn .thm_btn:hover,
 body.dark-mode .masonry_active button:hover {
   background: #000 !important;
+}
+
+body.dark-mode .header_4 .sticky .header_btn .thm_btn:hover {
+  background: #101010 !important;
 }
 
 body.dark-mode .pricing_single .price_icon,
