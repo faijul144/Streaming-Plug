@@ -94,8 +94,13 @@ body.dark-mode .boxed-selects > div > label,
 body.dark-mode .post-options a,
 body.dark-mode label,
 body.dark-mode .share-modal a,
-body.dark-mode .pinned_post a {
+body.dark-mode .pinned_post a,
+body.dark-mode .pricing_single .price_head .pack {
   color: #fff;
+}
+
+body.dark-mode .pricing_single .price_head .pack {
+  font-weight: normal;
 }
 
 body.dark-mode .posting-opt > div,
